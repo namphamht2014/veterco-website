@@ -1,0 +1,47 @@
+body{
+  background-color: #eee;
+}
+
+.m-r-10{
+  margin-right: 10px;
+}
+
+.m-l-10{
+  margin-left: 10px;
+}
+
+.no-p-l{
+  padding-left: 0;
+}
+.no-p-r{
+  padding-right: 0;
+}
+
+.exp-p{
+  padding-left: 21px;
+  padding-right: 0px
+}
+
+.sp-btn-w{
+  width: 215px;
+}
+
+.text-transparent{
+  opacity: 0;
+}
+.actionTabName{
+  min-width: 200px;
+}
+.actionTab{
+  min-width: 220px;
+}
+.actionTab2{
+  min-width: 300px;
+}
+.myHr{
+  border-top: 1px solid black;
+  margin: 0;
+}
+.myHr2{
+  border-top: 1px solid black;
+}

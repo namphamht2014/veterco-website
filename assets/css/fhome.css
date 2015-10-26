@@ -1,0 +1,48 @@
+@font-face {
+   font-family: Myriad;
+   src: url(../font/Myriad_Pro_font/MyriadPro-Regular.otf);
+}
+
+@font-face {
+   font-family: Myriad;
+   src: url(../font/Myriad_Pro_font/MyriadPro-Bold.otf);
+   font-weight: bold;
+}
+
+body, html {
+  font-family: Myriad;
+  height: 100%;
+  padding: 0; margin: 0;
+}
+
+.myContainer {
+  height: 100%;
+}
+
+.myContainer header {
+  height: 50px;
+  background-color: #ddd;
+  line-height: 50px;
+  text-align: center;
+}
+
+.myContainer article {
+  height: calc(100% - 50px);
+  background-color: #eee;
+}
+
+/*Thank Article*/
+.thank-title{
+  padding-top: 160px;
+  padding-bottom: 30px;
+  font-size: 60px
+}
+.thank-article{
+  background: url(../images/thank-bg.jpg);
+  color: black;
+  height: 748px !important;
+}
+.thank-content{
+  font-size: 21px;
+}
+/*Thank Article - end*/

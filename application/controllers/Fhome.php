@@ -17,14 +17,14 @@ class Fhome extends CI_Controller {
     $data['headers'] = array(base_url().'assets/css/fhome.css');
 
     //add js to page
-    // $data['footers'] = array(
-      // base_url().'assets/bower_components/footable/dist/footable.min.js',
-      // base_url().'assets/bower_components/footable/dist/footable.filter.min.js',
-      // base_url().'assets/bower_components/footable/dist/footable.paginate.min.js'
-    // );
+    $data['footers'] = array(
+      'http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js',
+      base_url().'assets/js/fhome.js'
+    );
 
     //add js script to page
-    // $data['script'] = 'main.initFootable();';
+    // $data['script'] = '$(function(){});';
+
     //add data to page
     $data['data'] = array('test', 'test');
 

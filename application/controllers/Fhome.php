@@ -33,6 +33,30 @@ class Fhome extends CI_Controller {
     $this->load->view('template/footer');
   }
 
+  public function sourcing()
+  {
+    //Page title
+    $data['title'] = '- '.$this->lang->line('f_sourcing');
+
+    //Add css to page
+    $data['headers'] = array(
+      base_url().'assets/css/fhome.css',
+      base_url().'assets/css/fsourcing.css'
+    );
+
+    //add js to page
+    $data['footers'] = array(
+      'http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js',
+      base_url().'assets/js/fsourcing.js'
+    );
+
+    //add js script to page
+    $data['script'] = '$(function(){header.active("sourcing")});';
+
+    $this->load->view('template/header', $data);
+    $this->load->view('frontend/sourcing');
+    $this->load->view('template/footer');
+  }
 }
 
 /* End of file Fhome.php */

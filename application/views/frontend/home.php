@@ -6,13 +6,13 @@
 <div class="myContainer">
   <article class="first-article">
     <div class="logo-block">
-        <img src="../assets/images/logo-path1.png" alt="" id="logo1" />
-        <img src="../assets/images/logo-path2.png" alt="" id="logo2" />
-        <img src="../assets/images/logo-path3.png" alt="" id="logo3" />
-        <img src="../assets/images/logo-path4.png" alt="" id="logo4" />
-        <img src="../assets/images/logo-path7.png" alt="" id="logo7" />
-        <img src="../assets/images/logo-path6.png" alt="" id="logo6" />
-        <img src="../assets/images/logo-path5.png" alt="" id="logo5" />
+        <img src="<?= base_url()?>assets/images/logo-path1.png" alt="" id="logo1" />
+        <img src="<?= base_url()?>assets/images/logo-path2.png" alt="" id="logo2" />
+        <img src="<?= base_url()?>assets/images/logo-path3.png" alt="" id="logo3" />
+        <img src="<?= base_url()?>assets/images/logo-path4.png" alt="" id="logo4" />
+        <img src="<?= base_url()?>assets/images/logo-path7.png" alt="" id="logo7" />
+        <img src="<?= base_url()?>assets/images/logo-path6.png" alt="" id="logo6" />
+        <img src="<?= base_url()?>assets/images/logo-path5.png" alt="" id="logo5" />
     </div>
     <div class="title-block">
       <div class="text-center">
@@ -48,7 +48,7 @@
         </div>
       </div>
       <div class="col-md-6 menu4">
-        <a href="#" onmouseover="menus.hover(this)" onmouseout="menus.unhover(this)"><b>PRODUCT SOURCING</b></a>
+        <a href="<?= site_url('fhome/sourcing')?>" onmouseover="menus.hover(this)" onmouseout="menus.unhover(this)"><b>PRODUCT SOURCING</b></a>
         <div class="menu-desc">
           <div class="desc-line"></div>
         </div>
@@ -213,19 +213,19 @@
     <div class="block-container">
       <div class="red-dot"></div>
       <div class="block1">
-        <img src="../assets/images/lab-block3.png" alt="" />
+        <img src="<?= base_url()?>assets/images/lab-block3.png" alt="" />
         <div class="title">
           Excellent products
         </div>
       </div>
       <div class="block2">
-        <img src="../assets/images/lab-block4.png" alt="" />
+        <img src="<?= base_url()?>assets/images/lab-block4.png" alt="" />
         <div class="title">
           International standard
         </div>
       </div>
       <div class="block3">
-        <img src="../assets/images/lab-block2.png" alt="" />
+        <img src="<?= base_url()?>assets/images/lab-block2.png" alt="" />
         <div class="title">
           Premium customer service
         </div>
@@ -234,7 +234,7 @@
         </div>
       </div>
       <div class="block4">
-        <img src="../assets/images/lab-block1.png" alt="" />
+        <img src="<?= base_url()?>assets/images/lab-block1.png" alt="" />
         <div class="title">
           Friendly exporter
         </div>
@@ -245,7 +245,7 @@
 <!-- lab3 -->
 <div class="myContainer">
   <article class="lab-img-article">
-    <img src="../assets/images/lab-bg.png"/>
+    <img src="<?= base_url()?>assets/images/lab-bg.png"/>
   </article>
 </div>
 <!-- Served -->

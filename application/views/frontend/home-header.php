@@ -1,7 +1,7 @@
 <header id="header" class="">
 	<nav>
 		<ul class="main-nav">
-			<li class="small">
+			<li class="small" id="chairman">
         <a href="" onmouseover="header.hover(this);" onmouseout="header.unhover(this);">
 					<div>
 	          <div class="red-arrow"></div>
@@ -9,7 +9,7 @@
 					</div>
         </a>
       </li>
-			<li class="m-t-32">
+			<li class="m-t-32" id="story">
         <a href="" onmouseover="header.hover(this);" onmouseout="header.unhover(this);">
           <div>
 						<div class="red-arrow"></div>
@@ -17,7 +17,7 @@
           </div>
         </a>
       </li>
-			<li class="m-t-32">
+			<li class="m-t-32" id="workplac">
         <a href="" onmouseover="header.hover(this);" onmouseout="header.unhover(this);">
           <div>
 						<div class="red-arrow"></div>
@@ -25,7 +25,7 @@
           </div>
         </a>
       </li>
-      <li class="m-t-32">
+      <li class="m-t-32" id="life">
         <a href="" onmouseover="header.hover(this);" onmouseout="header.unhover(this);">
           <div>
 						<div class="red-arrow"></div>
@@ -33,16 +33,16 @@
           </div>
         </a>
       </li>
-			<li class="small">
-        <a href="" onmouseover="header.hover(this);" onmouseout="header.unhover(this);">
+			<li class="small" id="sourcing">
+        <a href="<?= site_url('fhome/sourcing')?>" onmouseover="header.hover(this);" onmouseout="header.unhover(this);">
           <div>
 						<div class="red-arrow"></div>
 	          <b>Product sourcing</b>
           </div>
         </a>
       </li>
-			<li><a href=""><img src="../assets/images/header-logo.png" alt="" style="margin-top:-13px" /></a></li>
-			<li class="small2">
+			<li><a href="<?= base_url()?>"><img src="<?= base_url()?>assets/images/header-logo.png" alt="" style="margin-top:-13px" /></a></li>
+			<li class="small2" id="distributor">
         <a href="" onmouseover="header.hover(this);" onmouseout="header.unhover(this);">
           <div>
 						<div class="red-arrow"></div>
@@ -50,7 +50,7 @@
           </div>
         </a>
       </li>
-      <li class="big">
+      <li class="big" id="innovation">
         <a href="" onmouseover="header.hover(this);" onmouseout="header.unhover(this);">
           <div>
 						<div class="red-arrow"></div>
@@ -58,7 +58,7 @@
           </div>
         </a>
       </li>
-      <li class="m-t-32">
+      <li class="m-t-32" id="catalogue">
         <a href="" onmouseover="header.hover(this);" onmouseout="header.unhover(this);">
           <div>
 						<div class="red-arrow"></div>
@@ -66,7 +66,7 @@
           </div>
         </a>
       </li>
-      <li class="m-t-32">
+      <li class="m-t-32" id="talk">
         <a href="" onmouseover="header.hover(this);" onmouseout="header.unhover(this);">
           <div>
 						<div class="red-arrow"></div>

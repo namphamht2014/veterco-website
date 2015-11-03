@@ -13,4 +13,8 @@ $lang['f_welcome'] = 'Welcome to Veterco';
 Home page
  */
 $lang['f_home'] = 'Home';
+/*
+Product sourcing
+ */
+$lang['f_sourcing'] = 'Product Sourcing';
 ?>

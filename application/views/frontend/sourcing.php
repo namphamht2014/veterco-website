@@ -1,0 +1,68 @@
+<?php $this->load->view('frontend/home-header'); ?>
+<div class="sourcingContainer">
+  <div class="title">
+    Sourcing By
+  </div>
+  <a href="" onmouseover="block.hover(this)" onmouseout="block.unhover(this)">
+    <div class="block1-bg">
+    </div>
+    <div class="block1">
+      <div class="block-title">
+        ABC
+      </div>
+    </div>
+  </a>
+  <a href="" onmouseover="block.hover(this)" onmouseout="block.unhover(this)">
+    <div class="block2-bg">
+    </div>
+    <div class="block2">
+      <div class="block-title">
+        <div class="">
+            Pathology
+        </div>
+        <div class="">
+          ---
+        </div>
+        <div class="">
+          Diseases
+        </div>
+      </div>
+    </div>
+  </a>
+  <a href="" onmouseover="block.hover(this)" onmouseout="block.unhover(this)">
+    <div class="block3-bg">
+    </div>
+    <div class="block3">
+      <div class="block-title">
+        Product series
+      </div>
+    </div>
+  </a>
+  <a href="" onmouseover="block.hover(this)" onmouseout="block.unhover(this)">
+    <div class="block4-bg">
+    </div>
+    <div class="block4">
+      <div class="block-title">
+        Product form
+      </div>
+    </div>
+  </a>
+  <a href="" onmouseover="block.hover(this)" onmouseout="block.unhover(this)">
+    <div class="block5-bg">
+    </div>
+    <div class="block5">
+      <div class="block-title">
+        Category
+      </div>
+    </div>
+  </a>
+  <a href="" onmouseover="block.hover(this)" onmouseout="block.unhover(this)">
+    <div class="block6-bg">
+    </div>
+    <div class="block6">
+      <div class="block-title">
+        Animal type
+      </div>
+    </div>
+  </a>
+</div>

@@ -9,12 +9,6 @@
    font-weight: bold;
 }
 
-@font-face {
-   font-family: Myriad-Bold;
-   src: url(../font/Myriad_Pro_font/MyriadPro-Bold.otf);
-   font-weight: bold;
-}
-
 body, html {
   font-family: Myriad;
   height: 100%;
@@ -303,6 +297,12 @@ body, html {
   top: -8px;
   margin-left: 29px;
   display: none;
+}
+#header > nav > ul > li.active > a{
+  color: red;
+}
+#header > nav > ul > li.active .red-arrow{
+  display: block;
 }
 .big .red-arrow{
   margin-left:85px !important;

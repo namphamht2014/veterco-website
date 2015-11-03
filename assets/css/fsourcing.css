@@ -27,6 +27,18 @@ body, html {
 }
 .sourcingContainer .block1 .block-title,
 .sourcingContainer .block2 .block-title,
+.sourcingContainer .block3 .block-title,
+.sourcingContainer .block4 .block-title,
+.sourcingContainer .block5 .block-title,
+.sourcingContainer .block6 .block-title{
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.sourcingContainer .block1 .block-title,
+.sourcingContainer .block2 .block-title,
 .sourcingContainer .block3 .block-title{
   top: 50%;
 }
@@ -42,35 +54,22 @@ body, html {
 .sourcingContainer .block4-bg,
 .sourcingContainer .block5-bg,
 .sourcingContainer .block6-bg{
-  width: 322px;
-  height: 322px;
   position: absolute;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  background: url(../images/sourcing-ico.png) 218px;
 }
-.sourcingContainer .block1-bg.move,
-.sourcingContainer .block2-bg.move,
-.sourcingContainer .block3-bg.move{
-  top: 190px;
-}
-.sourcingContainer .block4-bg.move,
-.sourcingContainer .block5-bg.move,
-.sourcingContainer .block6-bg.move{
-  margin-top: 0px;
-}
-.sourcingContainer .block1-bg,
-.sourcingContainer .block2-bg,
-.sourcingContainer .block3-bg{
-  -webkit-transition: top .3s ease-in-out;
-  -moz-transition: top .3s ease-in-out;
-  -o-transition: top .3s ease-in-out;
-  transition: top .3s ease-in-out;
-}
-.sourcingContainer .block4-bg,
-.sourcingContainer .block5-bg,
-.sourcingContainer .block6-bg{
-  -webkit-transition: margin-top .3s ease-in-out;
-  -moz-transition: margin-top .3s ease-in-out;
-  -o-transition: margin-top .3s ease-in-out;
-  transition: margin-top .3s ease-in-out;
+.sourcingContainer .block1,
+.sourcingContainer .block2,
+.sourcingContainer .block3,
+.sourcingContainer .block4,
+.sourcingContainer .block5,
+.sourcingContainer .block6{
+  width: 218px;
+  height: 218px;
 }
 .sourcingContainer .block1-bg,
 .sourcingContainer .block2-bg,
@@ -78,132 +77,178 @@ body, html {
 .sourcingContainer .block4-bg,
 .sourcingContainer .block5-bg,
 .sourcingContainer .block6-bg{
-  background: url(../images/sourcingBlock-bg.png);
+  width: 210px;
+  height: 210px;
+}
+.sourcingContainer .block1-bg.move,
+.sourcingContainer .block2-bg.move,
+.sourcingContainer .block3-bg.move{
+  top: 225px;
+}
+.sourcingContainer .block4-bg.move,
+.sourcingContainer .block5-bg.move,
+.sourcingContainer .block6-bg.move{
+  margin-top: 25px;
+}
+.sourcingContainer .block1-bg,
+.sourcingContainer .block2-bg,
+.sourcingContainer .block3-bg{
+  -webkit-transition: top .2s ease-in-out;
+  -moz-transition: top .2s ease-in-out;
+  -o-transition: top .2s ease-in-out;
+  transition: top .2s ease-in-out;
+}
+.sourcingContainer .block4-bg,
+.sourcingContainer .block5-bg,
+.sourcingContainer .block6-bg{
+  -webkit-transition: margin-top .2s ease-in-out;
+  -moz-transition: margin-top .2s ease-in-out;
+  -o-transition: margin-top .2s ease-in-out;
+  transition: margin-top .2s ease-in-out;
 }
 
 .sourcingContainer{
   height: 100%;
   width: 100%;
   background: url(../images/sourcing-bg.jpg) center 0;
+  background-size: 100%;
+}
+
+.sourcingContainer .content{
+  width: 1250px;
+  height: 100%;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  position: absolute;
+  padding-top: 61px;
 }
 .sourcingContainer .title{
   position: absolute;
   color: #00d9a8;
-  left: 295px;
-  top: 135px;
+  left: 145px;
+  top: 127px;
   font-size: 31.5px;
-  letter-spacing: 1px
+  letter-spacing: .1px
 }
 
-.sourcingContainer .block1,
-.sourcingContainer .block1-bg{
-  top: 220px;
-  left: 215px;
-}
 .sourcingContainer .block1{
-  background: url(../images/sourcing1.png);
+  top: 252px;
+  left: 112px;
+  background-position-x: -218px;
+}
+.sourcingContainer .block1-bg{
+  top: 256px;
+  left: 114px;
 }
 .sourcingContainer a:hover .block1{
-  background: url(../images/sourcing1-active.png);
+  background-position-x: 0px;
 }
 .sourcingContainer .block1 .block-title{
   width: 100px;
-  margin: 135px 0 0 37px;
+  margin: 37px 0 0 12px;
   font-size: 31px;
-  letter-spacing: 1.5px
+  letter-spacing: 1.5px;
 }
 
-.sourcingContainer .block2,
-.sourcingContainer .block2-bg{
-  top: 218px;
-  left: 559px;
-}
 .sourcingContainer .block2{
-  background: url(../images/sourcing2.png);
+  background-position-x: -654px;
+  top: 252px;
+  left: 440px;
+}
+.sourcingContainer .block2-bg{
+  top: 256px;
+  left: 443px;
 }
 .sourcingContainer .block2 .block-title{
   width: 150px;
-  margin: 125px 0 0 40px;
+  margin: 40px 0 0 0px;
   font-size: 20px;
   letter-spacing: 2px;
   text-align: center
 }
 .sourcingContainer a:hover .block2{
-  background: url(../images/sourcing2-active.png);
+  background-position-x: -436px;
 }
 
-.sourcingContainer .block3,
-.sourcingContainer .block3-bg{
-  top: 218px;
-  left: 50%;
-  margin-left: 101px;
-}
 .sourcingContainer .block3{
-  background: url(../images/sourcing3.png);
+  top: 250px;
+  left: 50%;
+  margin-left: 141px;
+  background-position-x: -1090px;
+}
+.sourcingContainer .block3-bg{
+  top: 255px;
+  left: 50%;
+  margin-left: 142px;
 }
 .sourcingContainer .block3 .block-title{
   width: 200px;
-  margin: 148px 0 0 35px;
+  margin: 80px 0 0 -10px;
   font-size: 21px;
   letter-spacing: .5px;
 }
 .sourcingContainer a:hover .block3{
-  background: url(../images/sourcing3-active.png);
+  background-position-x: -872px;
 }
 
-.sourcingContainer .block4,
-.sourcingContainer .block4-bg{
-  top: 50%;
-  left: 50%;
-  margin: -31px 0 0 274px;
-}
 .sourcingContainer .block4{
-  background: url(../images/sourcing4.png);
+  top: 413px;
+  left: 930px;
+  background-position-x: -1526px;
+}
+.sourcingContainer .block4-bg{
+  top: 416px;
+  left: 932px;
 }
 .sourcingContainer .block4 .block-title{
   width: 200px;
-  margin: 145px 0 0 45px;
+  margin: 85px 0 0 3px;
   font-size: 21px;
   letter-spacing: 1.1px;
 }
 .sourcingContainer a:hover .block4{
-  background: url(../images/sourcing4-active.png);
+  background-position-x: -1308px;
 }
 
-.sourcingContainer .block5,
-.sourcingContainer .block5-bg{
-  top: 50%;
-  left: 50%;
-  margin: -31px 0 0 -69px;
-}
 .sourcingContainer .block5{
-  background: url(../images/sourcing5.png);
+  top: 413px;
+  left: 603px;
+  background-position-x: -1962px;
+}
+.sourcingContainer .block5-bg{
+  top: 415px;
+  left: 607px;
 }
 .sourcingContainer .block5 .block-title{
   width: 150px;
-  margin: 145px 0 0 50px;
+  margin: 73px 0 0 14px;
   font-size: 20px;
   letter-spacing: 2px;
 }
 .sourcingContainer a:hover .block5{
-  background: url(../images/sourcing5-active.png);
+  background-position-x: -1744px;
 }
 
 
-.sourcingContainer .block6,
-.sourcingContainer .block6-bg{
-  top: 50%;
-  left: 215px;
-  margin: -31px 0 0 171px;
-}
 .sourcingContainer .block6{
-  background: url(../images/sourcing6.png);
+  top: 411px;
+  left: 273px;
+  background-position-x: -2398px;
+}
+.sourcingContainer .block6-bg{
+  top: 413px;
+  left: 276px;
 }
 .sourcingContainer a:hover .block6{
-  background: url(../images/sourcing6-active.png);
+  background-position-x: -2180px;
 }
 .sourcingContainer .block6 .block-title{
   width: 150px;
-  margin: 146px 0 0 30px;
+  margin: 60px 0 0 -3px;
   font-size: 23px;
 }

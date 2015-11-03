@@ -6,6 +6,7 @@ class Fhome extends CI_Controller {
   {
     parent::__construct();
     $this->load->language('frontend_lang');
+    date_default_timezone_set('Asia/Saigon');
   }
 
   public function index()

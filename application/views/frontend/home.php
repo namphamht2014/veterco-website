@@ -435,6 +435,6 @@
 </div>
 <footer class="footer">
   <div class="copyright">
-    All rights reversed &copy; 2015
+    All rights reversed &copy; <?= date('Y')?>
   </div>
 </footer>

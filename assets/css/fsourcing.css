@@ -126,6 +126,7 @@ body, html {
   transform: translate(-50%, -50%);
   position: absolute;
   padding-top: 61px;
+  padding-bottom: 42px;
 }
 .sourcingContainer .title{
   position: absolute;

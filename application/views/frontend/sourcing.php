@@ -67,4 +67,5 @@
       </div>
     </a>
   </div>
+  <?php $this->load->view('frontend/footer');?>
 </div>

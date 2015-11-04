@@ -31,7 +31,6 @@ class Fwelcome extends CI_Controller {
     $this->load->view('frontend/welcome');
     $this->load->view('template/footer');
   }
-
 }
 
 /* End of file F_welcome.php */

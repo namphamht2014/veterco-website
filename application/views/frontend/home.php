@@ -48,7 +48,7 @@
         </div>
       </div>
       <div class="col-md-6 menu4">
-        <a href="<?= site_url('fhome/sourcing')?>" onmouseover="menus.hover(this)" onmouseout="menus.unhover(this)"><b>PRODUCT SOURCING</b></a>
+        <a href="<?= site_url('fsourcing')?>" onmouseover="menus.hover(this)" onmouseout="menus.unhover(this)"><b>PRODUCT SOURCING</b></a>
         <div class="menu-desc">
           <div class="desc-line"></div>
         </div>

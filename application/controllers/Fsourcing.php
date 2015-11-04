@@ -1,6 +1,6 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-class Fhome extends CI_Controller {
+class Fsourcing extends CI_Controller {
 
   public function __construct()
   {
@@ -12,28 +12,29 @@ class Fhome extends CI_Controller {
   public function index()
   {
     //Page title
-    $data['title'] = '- '.$this->lang->line('f_home');
+    $data['title'] = '- '.$this->lang->line('f_sourcing');
 
     //Add css to page
-    $data['headers'] = array(base_url().'assets/css/fhome.css');
+    $data['headers'] = array(
+      base_url().'assets/css/fhome.css',
+      base_url().'assets/css/fsourcing.css'
+    );
 
     //add js to page
     $data['footers'] = array(
       'http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js',
-      base_url().'assets/js/fhome.js'
+      base_url().'assets/js/fsourcing.js'
     );
 
     //add js script to page
-    // $data['script'] = '$(function(){});';
-
-    //add data to page
-    $data['data'] = array('test', 'test');
+    $data['script'] = '$(function(){header.active("sourcing")});';
 
     $this->load->view('template/header', $data);
-    $this->load->view('frontend/home');
+    $this->load->view('frontend/sourcing');
     $this->load->view('template/footer');
   }
+
 }
 
-/* End of file Fhome.php */
-/* Location: ./application/controllers/Fhome.php */
+/* End of file Fsourcing.php */
+/* Location: ./application/controllers/Fsourcing.php */

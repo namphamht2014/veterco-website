@@ -34,7 +34,7 @@
         </a>
       </li>
 			<li class="small" id="sourcing">
-        <a href="<?= site_url('fhome/sourcing')?>" onmouseover="header.hover(this);" onmouseout="header.unhover(this);">
+        <a href="<?= site_url('fsourcing')?>" onmouseover="header.hover(this);" onmouseout="header.unhover(this);">
           <div>
 						<div class="red-arrow"></div>
 	          <b>Product sourcing</b>

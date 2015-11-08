@@ -4,7 +4,7 @@
     <div class="title">
       Sourcing By
     </div>
-    <a href="" onmouseover="block.hover(this)" onmouseout="block.unhover(this)">
+    <a href="<?= site_url('fsourcing/abc')?>" onmouseover="block.hover(this)" onmouseout="block.unhover(this)">
       <div class="block1-bg">
       </div>
       <div class="block1">

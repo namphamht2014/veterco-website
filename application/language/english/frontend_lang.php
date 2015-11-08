@@ -17,4 +17,5 @@ $lang['f_home'] = 'Home';
 Product sourcing
  */
 $lang['f_sourcing'] = 'Product Sourcing';
+$lang['f_sourcing_abc'] = 'ABC Showcase';
 ?>

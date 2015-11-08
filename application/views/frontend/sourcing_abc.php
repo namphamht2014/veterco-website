@@ -168,5 +168,6 @@
       <div class="clear-both"></div>
     </div>
   </div>
-  <!-- <?php $this->load->view('frontend/footer');?> -->
 </div>
+
+<?php $this->load->view('frontend/footer');?>

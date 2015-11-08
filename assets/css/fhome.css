@@ -1349,11 +1349,15 @@ footer.footer2 .textLeft{
   left: 50%;
   margin-left: -567px;
 }
+footer.footer2 .textLeft ul{
+  height: 42px;
+  margin-bottom: 0;
+  padding: 8px 1.5px;
+}
 footer.footer2 .textLeft ul li div{
   background: url(../images/footer-icons.png);
   width: 26px;
   height: 26px;
-  margin: 8px 1.5px;
 }
 footer.footer2 .textLeft ul li{
   display: inline-block;

@@ -52,7 +52,11 @@ class Fsourcing extends CI_Controller {
     );
 
     //add js script to page
-    $data['script'] = '$(function(){header.active("sourcing")});';
+    $data['script'] = '$(function(){
+      header.active("sourcing");
+      $("#header").attr("style", "position: relative");
+      $(".footer2").attr("style", "position: relative");
+    });';
 
     $this->load->view('template/header', $data);
     $this->load->view('frontend/sourcing_abc');

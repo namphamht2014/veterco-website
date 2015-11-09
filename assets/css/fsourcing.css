@@ -67,6 +67,56 @@ body, html {
   transform: rotate(-45deg);
   background: url(../images/sourcing-ico.png) 218px;
 }
+
+@-moz-document url-prefix() {
+  .sourcingContainer .block1{
+    background: url(../images/sourcing-ico.png) -218px;
+  }
+  .sourcingContainer .block2{
+    background: url(../images/sourcing-ico.png) -654px;
+  }
+  .sourcingContainer .block3{
+    background: url(../images/sourcing-ico.png) -1090px;
+  }
+  .sourcingContainer .block4{
+    background: url(../images/sourcing-ico.png) -1526px;
+  }
+  .sourcingContainer .block5{
+    background: url(../images/sourcing-ico.png) -1962px;
+  }
+  .sourcingContainer .block6{
+    background: url(../images/sourcing-ico.png) -2398px;
+  }
+
+  .sourcingContainer .block1-bg,
+  .sourcingContainer .block2-bg,
+  .sourcingContainer .block3-bg,
+  .sourcingContainer .block4-bg,
+  .sourcingContainer .block5-bg,
+  .sourcingContainer .block6-bg{
+    background: url(../images/sourcing-ico.png) 218px;
+  }
+
+  .sourcingContainer a:hover .block1{
+    background: url(../images/sourcing-ico.png) 0px;
+  }
+  .sourcingContainer a:hover .block2{
+    background: url(../images/sourcing-ico.png) -436px;
+  }
+  .sourcingContainer a:hover .block3{
+    background: url(../images/sourcing-ico.png) -872px;
+  }
+  .sourcingContainer a:hover .block4{
+    background: url(../images/sourcing-ico.png) -1308px;
+  }
+  .sourcingContainer a:hover .block5{
+    background: url(../images/sourcing-ico.png) -1744px;
+  }
+  .sourcingContainer a:hover .block6{
+    background: url(../images/sourcing-ico.png) -2180px;
+  }
+}
+
 .sourcingContainer .block1,
 .sourcingContainer .block2,
 .sourcingContainer .block3,

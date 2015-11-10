@@ -669,3 +669,272 @@ body, html {
 #cssmenu ul ul li > a:hover::after {
   border-color: #ffffff;
 }
+
+/*Animal Type*/
+.sourcingAnimalContainer .outter-cycle,
+.sourcingAnimalContainer .inner-cycle,
+.sourcingAnimalContainer .inner-cycle .title:before,
+.sourcingAnimalContainer .inner-cycle .title:after{
+  position: absolute;
+}
+.sourcingAnimalContainer .outter-cycle:before,
+.sourcingAnimalContainer .outter-cycle:after,
+.sourcingAnimalContainer .inner-cycle .title:before,
+.sourcingAnimalContainer .inner-cycle .title:after{
+  content: "";
+}
+.sourcingAnimalContainer .outter-cycle,
+.sourcingAnimalContainer .inner-cycle,
+.cycle1,
+.cycle2,
+.cycle3,
+.cycle4,
+.cycle5,
+.cycle6,
+.cycle7,
+.cycle8,
+.cycle9,
+.cycle10,
+.cycle11,
+.cycle12{
+  border-radius: 100%;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+}
+
+.sourcingAnimalContainer{
+  background: url(../images/sourcing_animal_bg.png) no-repeat center 55%;
+  background-size: 100% 110%;
+  width: 100%;
+  position: relative;
+  height: calc(100% - 104px);
+}
+.sourcingAnimalContainer .content{
+  height: 100%;
+}
+.sourcingAnimalContainer .outter-cycle{
+  background: url(../images/contrau.jpg) center center no-repeat;
+  background-size: 100% 100%;
+  width: 40%;
+  height: auto;
+  left: 50%;
+  top: 50%;
+  margin: -20% 0 0 -20%;
+}
+.sourcingAnimalContainer .outter-cycle:before{
+  display: block;
+  margin-top: 100%;
+}
+.sourcingAnimalContainer .inner-cycle{
+  background: #20212b;
+  width: 50%;
+  height: 50%;
+  left: 50%;
+  top: 50%;
+  margin: -25% 0 0 -25%;
+}
+.sourcingAnimalContainer .inner-cycle .title{
+  font-family: Myriad;
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 20px;
+  width: 100%;
+  height: 100%;
+  margin-top: 35%;
+}
+.sourcingAnimalContainer .inner-cycle .title span{
+  font-size: 60px;
+}
+.sourcingAnimalContainer .inner-cycle .title:before,
+.sourcingAnimalContainer .inner-cycle .title:after{
+  width: 5px;
+  background: white;
+  height: 20%;
+  left: 50%;
+  margin-left: -2.5px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+}
+.sourcingAnimalContainer .inner-cycle .title:after{
+  bottom: 25px;
+}
+.sourcingAnimalContainer .inner-cycle .title:before{
+  top: 25px;
+}
+.sourcingAnimalContainer .outter-cycle .white-cycle{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+}
+.cycle1,
+.cycle2,
+.cycle3,
+.cycle4,
+.cycle5,
+.cycle6,
+.cycle7,
+.cycle8,
+.cycle9,
+.cycle10,
+.cycle11,
+.cycle12{
+  width: 14px;
+  height: 14px;
+  border: 2px solid transparent;
+  position: absolute;
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, 0), inset 0 0 0 7px rgba(255, 255, 255, 1);
+}
+.cycle1:hover,
+.cycle2:hover,
+.cycle3:hover,
+.cycle4:hover,
+.cycle5:hover,
+.cycle6:hover,
+.cycle7:hover,
+.cycle8:hover,
+.cycle9:hover,
+.cycle10:hover,
+.cycle11:hover,
+.cycle12:hover{
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, 1), inset 0 0 0 7px rgba(255, 255, 255, 1);
+}
+.cycle1.active,
+.cycle2.active,
+.cycle3.active,
+.cycle4.active,
+.cycle5.active,
+.cycle6.active,
+.cycle7.active,
+.cycle8.active,
+.cycle9.active,
+.cycle10.active,
+.cycle11.active,
+.cycle12.active{
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, 1), inset 0 0 0 7px rgba(255, 255, 255, 0);
+}
+
+.cycle1.black,
+.cycle2.black,
+.cycle3.black,
+.cycle4.black,
+.cycle5.black,
+.cycle6.black,
+.cycle7.black,
+.cycle8.black,
+.cycle9.black,
+.cycle10.black,
+.cycle11.black,
+.cycle12.black{
+  box-shadow: 0 0 0 3px rgba(0, 0, 0, 0), inset 0 0 0 7px rgba(0, 0, 0, 1);
+}
+.cycle1.black:hover,
+.cycle2.black:hover,
+.cycle3.black:hover,
+.cycle4.black:hover,
+.cycle5.black:hover,
+.cycle6.black:hover,
+.cycle7.black:hover,
+.cycle8.black:hover,
+.cycle9.black:hover,
+.cycle10.black:hover,
+.cycle11.black:hover,
+.cycle12.black:hover{
+  box-shadow: 0 0 0 3px rgba(0, 0, 0, 1), inset 0 0 0 7px rgba(0, 0, 0, 1);
+}
+.cycle1.black.active,
+.cycle2.black.active,
+.cycle3.black.active,
+.cycle4.black.active,
+.cycle5.black.active,
+.cycle6.black.active,
+.cycle7.black.active,
+.cycle8.black.active,
+.cycle9.black.active,
+.cycle10.black.active,
+.cycle11.black.active,
+.cycle12.black.active{
+  box-shadow: 0 0 0 3px rgba(0, 0, 0, 1), inset 0 0 0 7px rgba(0, 0, 0, 0);
+}
+
+.cycle1,
+.cycle2,
+.cycle12{
+  left: 50%;
+}
+.cycle1{
+  margin-left: -7px;
+  top: 4%;
+}
+.cycle2,
+.cycle3{
+  top: 11%;
+}
+.cycle2{
+  left: 24%;
+}
+.cycle3{
+  right: 24%;
+}
+.cycle4,
+.cycle5{
+  top: 27%;
+}
+.cycle4{
+  right: 11%;
+}
+.cycle5{
+  left: 11%;
+}
+.cycle6,
+.cycle7{
+  top: 50%;
+  margin-top: -7px;
+}
+.cycle6{
+  right: 4%;
+}
+.cycle7{
+  left: 4%;
+}
+.cycle8,
+.cycle9{
+  bottom: 27%;
+}
+.cycle8{
+  right: 11%;
+}
+.cycle9{
+  left: 11%;
+}
+.cycle10,
+.cycle11{
+  bottom: 11%;
+}
+.cycle10{
+  right: 24%;
+}
+.cycle11{
+  left: 24%;
+}
+.cycle12{
+  bottom: 4%;
+  margin-left: -7px;
+}
+/*.sourcingAbcContainer .banner{
+  background: url(../images/showcase-banner.jpg) no-repeat;
+  background-size: 100% 100%;
+  width: 100%;
+  height: 167px;
+}
+.sourcingAbcContainer .banner .title{
+  font-family: Myriad-Cond;
+  height: 100%;
+  padding: 122px 8px 0 7px;
+  width: 1050px;
+  margin: auto;
+  text-transform: uppercase;
+  font-size: 29px;
+}*/

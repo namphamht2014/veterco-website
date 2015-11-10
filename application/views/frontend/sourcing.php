@@ -57,7 +57,7 @@
         </div>
       </div>
     </a>
-    <a href="" onmouseover="block.hover(this)" onmouseout="block.unhover(this)">
+    <a href="<?= site_url('fsourcing/animal_type')?>" onmouseover="block.hover(this)" onmouseout="block.unhover(this)">
       <div class="block6-bg">
       </div>
       <div class="block6">

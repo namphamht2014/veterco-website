@@ -1,4 +1,4 @@
-<header id="header" class="">
+<header class="header">
 	<nav>
 		<ul class="main-nav">
 			<li class="small" id="chairman">

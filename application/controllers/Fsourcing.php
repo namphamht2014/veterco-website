@@ -27,7 +27,10 @@ class Fsourcing extends CI_Controller {
     );
 
     //add js script to page
-    $data['script'] = '$(function(){header.active("sourcing")});';
+    $data['script'] = '$(function(){
+      header.active("sourcing");
+      $("header").removeClass("header").addClass("headerFixed");
+    });';
 
     $this->load->view('template/header', $data);
     $this->load->view('frontend/sourcing');
@@ -54,7 +57,7 @@ class Fsourcing extends CI_Controller {
     //add js script to page
     $data['script'] = '$(function(){
       header.active("sourcing");
-      $("#header").attr("style", "position: relative");
+      $("header").removeClass("header").addClass("headerFixed");
       $(".footer2").attr("style", "position: relative");
     });';
 
@@ -83,7 +86,7 @@ class Fsourcing extends CI_Controller {
     //add js script to page
     $data['script'] = '$(function(){
       header.active("sourcing");
-      $("#header").attr("style", "position: relative");
+      $("header").removeClass("header").addClass("headerFixed");
       $(".footer2").attr("style", "position: relative");
       $(".sourcingProductDetailsContainer .diamond .desc > .title").addClass("line'.$type.'");
       $(".sourcingProductDetailsContainer .bottle").attr("style", "background: url(/assets/images/productDetails-line'.$type.'-bottle.png) no-repeat center center;background-size: 100% 100%;");
@@ -115,7 +118,7 @@ class Fsourcing extends CI_Controller {
     //add js script to page
     $data['script'] = '$(function(){
       header.active("sourcing");
-      $("#header").attr("style", "position: relative");
+      $("header").removeClass("header").addClass("headerFixed");
       $(".footer2").attr("style", "position: relative");
     });';
 

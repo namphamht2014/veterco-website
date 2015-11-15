@@ -229,7 +229,7 @@ body, html {
 /*first Article - end*/
 
 /*header*/
-#header{
+.header{
   position: fixed;
   height: 62px;
   width: 100%;
@@ -241,51 +241,69 @@ body, html {
   transition: top .5s;
   z-index: 999;
 }
-#header.show{
+.header.show{
   top: 0;
 }
-#header > nav {
+.headerFixed{
+  position: relative;
+  height: 62px;
+  width: 100%;
+  background: rgba(0, 0, 0, .9);
+  z-index: 999;
+}
+.headerFixed > nav ,
+.header > nav {
   width: 1350px;
   margin: 0 auto;
   text-align: center;
 }
-#header > nav > ul{
+.headerFixed > nav > ul,
+.header > nav > ul{
   margin: 0;
   display: inline-block;
 }
-#header > nav > ul > li.m-t-32{
+.headerFixed > nav > ul > li.m-t-32,
+.header > nav > ul > li.m-t-32{
   margin-top: 32px;
 }
-#header > nav > ul > li{
+.headerFixed > nav > ul > li,
+.header > nav > ul > li{
   float: left;
   text-transform: uppercase;
   text-align: center;
   margin: 24px 20px 0 20px;
   height: 36px;
 }
-#header > nav > ul > li.smallLogo{
+.headerFixed > nav > ul > li.smallLogo,
+.header > nav > ul > li.smallLogo{
   width: 42px;
   margin: 15px 20px 0 12px;
 }
-#header > nav > ul > li.small{
+.headerFixed > nav > ul > li.small,
+.header > nav > ul > li.small{
   width: 85px;
 }
-#header > nav > ul > li.small2{
+.headerFixed > nav > ul > li.small2,
+.header > nav > ul > li.small2{
   width: 86px;
 }
-#header > nav > ul > li.big{
+.headerFixed > nav > ul > li.big,
+.header > nav > ul > li.big{
   width: 195px;
 }
-#header > nav > ul > li > a{
+.headerFixed > nav > ul > li > a,
+.header > nav > ul > li > a{
   text-decoration: none;
   cursor: pointer;
   color: white;
   font-size: 13px;
 }
-#header > nav > ul > li > a:hover{
+.headerFixed > nav > ul > li > a:hover,
+.header > nav > ul > li > a:hover{
   color: red;
 }
-#header > nav > ul > li .red-arrow{
+.headerFixed > nav > ul > li .red-arrow,
+.header > nav > ul > li .red-arrow{
   border-bottom: 20px solid red;
   border-right: 20px solid transparent;
   -webkit-transform: rotate(-45deg);
@@ -298,10 +316,12 @@ body, html {
   margin-left: 29px;
   display: none;
 }
-#header > nav > ul > li.active > a{
+.headerFixed > nav > ul > li.active > a,
+.header > nav > ul > li.active > a{
   color: red;
 }
-#header > nav > ul > li.active .red-arrow{
+.headerFixed > nav > ul > li.active .red-arrow,
+.header > nav > ul > li.active .red-arrow{
   display: block;
 }
 .big .red-arrow{

@@ -280,9 +280,9 @@ $(function(){
 
      //header menus
      if (st >= 680) {
-       $('#header').addClass('show');
+       $('header').addClass('show');
      }else{
-       $('#header').removeClass('show');
+       $('header').removeClass('show');
      }
      /* hello */
      if (st >= 850 && st < 2240) {

@@ -169,7 +169,7 @@ body, html {
 }
 
 .sourcingContainer{
-  height: 100%;
+  height: calc(100% -  104px);
   width: 100%;
   background: url(../images/sourcing-bg.jpg) center 0;
   background-size: 100%;

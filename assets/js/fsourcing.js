@@ -10,8 +10,8 @@ var header = {
     }
   },
   active: function (menuID) {
-    $('#header ul li').removeClass('active');
-    $('#header ul li#'+menuID).addClass('active');
+    $('header ul li').removeClass('active');
+    $('header ul li#'+menuID).addClass('active');
   }
 };
 var block = {
@@ -133,9 +133,6 @@ var productDetails = {
     $('.product-info .more').show();
   }
 };
-$(function () {
-  $('#header').addClass('show');
-});
 
 ( function( $ ) {
 $( document ).ready(function() {

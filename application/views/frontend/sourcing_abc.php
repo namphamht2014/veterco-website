@@ -90,25 +90,25 @@
         <div class="product-list">
           <!-- line 1 -->
           <div class="product">
-            <a href="">
+            <a href="<?= site_url('fsourcing/product_details')?>">
               <img src="/assets/images/sourcing-product4.png" alt="" />
               <div class="product-name">ade bc complex</div>
             </a>
           </div>
           <div class="product">
-            <a href="">
+            <a href="<?= site_url('fsourcing/product_details')?>">
               <img src="/assets/images/sourcing-product3.png" alt="" />
               <div class="product-name">ampi cotrim oral</div>
             </a>
           </div>
           <div class="product">
-            <a href="">
+            <a href="<?= site_url('fsourcing/product_details')?>">
               <img src="/assets/images/sourcing-product1.png" alt="" />
               <div class="product-name">Flumequil</div>
             </a>
           </div>
           <div class="product">
-            <a href="">
+            <a href="<?= site_url('fsourcing/product_details')?>">
               <img src="/assets/images/sourcing-product2.png" alt="" />
               <div class="product-name">enzymsubtyl</div>
             </a>

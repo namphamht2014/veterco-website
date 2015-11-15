@@ -63,6 +63,35 @@ class Fsourcing extends CI_Controller {
     $this->load->view('template/footer');
   }
 
+  public function product_details()
+  {
+    //Page title
+    $data['title'] = '- '.$this->lang->line('f_sourcing_productDetails');
+
+    //Add css to page
+    $data['headers'] = array(
+      base_url().'assets/css/fhome.css',
+      base_url().'assets/css/fsourcing.css'
+    );
+
+    //add js to page
+    $data['footers'] = array(
+      'http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js',
+      base_url().'assets/js/fsourcing.js'
+    );
+
+    //add js script to page
+    $data['script'] = '$(function(){
+      header.active("sourcing");
+      $("#header").attr("style", "position: relative");
+      $(".footer2").attr("style", "position: relative");
+    });';
+
+    $this->load->view('template/header', $data);
+    $this->load->view('frontend/sourcing_productDetails');
+    $this->load->view('template/footer');
+  }
+
   public function animal_type()
   {
     //Page title

@@ -14,6 +14,12 @@
    font-weight: bold;
 }
 
+@font-face {
+   font-family: MyriadPro-Semibold;
+   src: url(../font/Myriad_Pro_font/MyriadPro-Semibold.otf);
+   font-weight: bold;
+}
+
 body, html {
   font-family: Myriad;
   height: 100%;
@@ -713,7 +719,7 @@ body, html {
   height: 100%;
 }
 .sourcingAnimalContainer .outter-cycle{
-  background: url(../images/contrau.jpg) center center no-repeat;
+  background: url(../images/sourcing-animal-trau.png) center center no-repeat;
   background-size: 100% 100%;
   width: 40%;
   height: auto;
@@ -923,18 +929,146 @@ body, html {
   bottom: 4%;
   margin-left: -7px;
 }
-/*.sourcingAbcContainer .banner{
-  background: url(../images/showcase-banner.jpg) no-repeat;
+
+/*Product details*/
+.sourcingProductDetailsContainer{
+  background: url(../images/productDetails-bg.jpg) no-repeat center center;
   background-size: 100% 100%;
   width: 100%;
-  height: 167px;
+  position: relative;
+  height: calc(100% - 104px);
 }
-.sourcingAbcContainer .banner .title{
-  font-family: Myriad-Cond;
+.sourcingProductDetailsContainer .content{
   height: 100%;
-  padding: 122px 8px 0 7px;
-  width: 1050px;
+  width: 1500px;
   margin: auto;
+  position: relative;
+}
+.sourcingProductDetailsContainer .diamond{
+  background: url(../images/productDetails-line1-diamond.png) no-repeat center center;
+  background-size: 100% 100%;
+  width: 542px;
+  height: 550px;
+  position: absolute;
+  right: 10%;
+}
+.sourcingProductDetailsContainer .diamond .product-info{
+  width: 370px;
+  float: left;
+}
+.sourcingProductDetailsContainer .diamond .buttons{
+  width: 170px;
+  float: left;
+}
+.sourcingProductDetailsContainer .diamond .desc{
+  margin-top: 27%;
+}
+.sourcingProductDetailsContainer .diamond .desc > .title{
+  font-family: MyriadPro-Semibold;
+  color: #ea7c27;
+  font-size: 55px;
+  text-shadow: 3px 3px black;
+  line-height: 49px;
+}
+.sourcingProductDetailsContainer .diamond .desc > .subtitle{
+  font-family: MyriadPro-Semibold;
+  font-size: 27px;
+}
+.sourcingProductDetailsContainer .diamond .desc .product-info-group{
+  margin-top: 20px;
+}
+.sourcingProductDetailsContainer .diamond .desc .product-info .weight{
+  font-family: MyriadPro-Semibold;
+  font-size: 27px;
+  line-height: 20px;
+}
+.sourcingProductDetailsContainer .diamond .desc .product-info .form{
+  font-family: MyriadPro-Semibold;
+  font-size: 21px;
+  font-style: italic;
+  color: #a8403b;
+}
+.sourcingProductDetailsContainer .diamond .desc .product-info .product-desc .title,
+.sourcingProductDetailsContainer .diamond .desc .product-info-group .more{
+  margin-top: 5px;
+  font-family: MyriadPro;
+  font-size: 18px;
+}
+.sourcingProductDetailsContainer .diamond .desc .product-info .product-desc .title span{
+  font-family: MyriadPro-Semibold;
+  font-size: 18px;
+  color: #a8403b;
+}
+.sourcingProductDetailsContainer .diamond .desc .product-info-group .more{
+  display: none;
+}
+.sourcingProductDetailsContainer .diamond .desc .product-info-group .more,
+.sourcingProductDetailsContainer .diamond .desc .product-info-group .product-desc{
+  height: 325px;
+  overflow-y: auto;
+}
+.sourcingProductDetailsContainer .diamond .desc .product-info-group .buttons{
+  padding-left: 25px;
+}
+.sourcingProductDetailsContainer .diamond .desc .product-info-group .buttons .line1 a > div,
+.sourcingProductDetailsContainer .diamond .desc .product-info-group .buttons .line2 a > div{
+  border: 2px solid black;
+  width: 65px;
+  height: 60px;
+  display: inline-block;
+}
+.sourcingProductDetailsContainer .diamond .desc .product-info-group .buttons .line3 a div{
+  font-family: MyriadPro;
+  border: 2px solid black;
+  width: 137px;
+  height: 60px;
+  color: black;
+  text-align: center;
+  display: table-cell;
+  vertical-align: middle;
   text-transform: uppercase;
-  font-size: 29px;
-}*/
+}
+.sourcingProductDetailsContainer .diamond .desc .product-info-group .buttons .line1 a div.paper{
+  background: url(../images/productDetails-btnIcons.png) no-repeat center 10px;
+}
+.sourcingProductDetailsContainer .diamond .desc .product-info-group .buttons .line2 a div.pointer{
+  background: url(../images/productDetails-btnIcons.png) no-repeat center -83px;
+}
+.sourcingProductDetailsContainer .diamond .desc .product-info-group .buttons .line2 a div div.blackArrow{
+  border-bottom: 20px solid black;
+  border-right: 20px solid transparent;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  width: 20px;
+  margin: 13px 20px;
+}
+.sourcingProductDetailsContainer .diamond .desc .product-info-group .buttons .line1 a > div div.blackCircle{
+  width: 25px;
+  height: 25px;
+  border: 2px solid transparent;
+  box-shadow: 0 0 0 9px rgba(255, 255, 255, 0), inset 0 0 0 3px rgba(255, 255, 255, 1);
+  border-radius: 100%;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  background: black;
+  margin-left: 19px;
+  margin-top: 15px;
+}
+.sourcingProductDetailsContainer .bottle{
+  background: url(../images/productDetails-line1-bottle.png) no-repeat center center;
+  background-size: 100% 100%;
+  width: 467px;
+  height: 350px;
+  position: absolute;
+  top: 170px;
+  left: 15%
+}
+.m-l-5{
+  margin-left: 5px;
+}
+.m-b-5{
+  margin-bottom: 5px;
+}

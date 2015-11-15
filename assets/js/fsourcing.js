@@ -118,9 +118,19 @@ var animal = {
           break;
         default:
           titleBlock.text('buffalo');
-          outter_cycle.attr('style', 'background: url(/assets/images/contrau.jpg) center center no-repeat;background-size: 100% 100%;');
+          outter_cycle.attr('style', 'background: url(/assets/images/sourcing-animal-trau.png) center center no-repeat;background-size: 100% 100%;');
       }
     }
+  }
+};
+var productDetails = {
+  showDesc:function (){
+    $('.product-info .product-desc').show();
+    $('.product-info .more').hide();
+  },
+  showLoremIpsum: function () {
+    $('.product-info .product-desc').hide();
+    $('.product-info .more').show();
   }
 };
 $(function () {

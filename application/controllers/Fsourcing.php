@@ -63,7 +63,7 @@ class Fsourcing extends CI_Controller {
     $this->load->view('template/footer');
   }
 
-  public function product_details()
+  public function product_details($type)
   {
     //Page title
     $data['title'] = '- '.$this->lang->line('f_sourcing_productDetails');
@@ -85,6 +85,9 @@ class Fsourcing extends CI_Controller {
       header.active("sourcing");
       $("#header").attr("style", "position: relative");
       $(".footer2").attr("style", "position: relative");
+      $(".sourcingProductDetailsContainer .diamond .desc > .title").addClass("line'.$type.'");
+      $(".sourcingProductDetailsContainer .bottle").attr("style", "background: url(/assets/images/productDetails-line'.$type.'-bottle.png) no-repeat center center;background-size: 100% 100%;");
+      $(".sourcingProductDetailsContainer .diamond").attr("style", "background: url(/assets/images/productDetails-line'.$type.'-diamond.png) no-repeat center center;background-size: 100% 100%;");
     });';
 
     $this->load->view('template/header', $data);

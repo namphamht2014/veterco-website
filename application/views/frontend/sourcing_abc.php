@@ -90,50 +90,50 @@
         <div class="product-list">
           <!-- line 1 -->
           <div class="product">
-            <a href="<?= site_url('fsourcing/product_details')?>">
+            <a href="<?= site_url('fsourcing/product_details/4')?>">
               <img src="/assets/images/sourcing-product4.png" alt="" />
               <div class="product-name">ade bc complex</div>
             </a>
           </div>
           <div class="product">
-            <a href="<?= site_url('fsourcing/product_details')?>">
+            <a href="<?= site_url('fsourcing/product_details/3')?>">
               <img src="/assets/images/sourcing-product3.png" alt="" />
               <div class="product-name">ampi cotrim oral</div>
             </a>
           </div>
           <div class="product">
-            <a href="<?= site_url('fsourcing/product_details')?>">
+            <a href="<?= site_url('fsourcing/product_details/1')?>">
               <img src="/assets/images/sourcing-product1.png" alt="" />
               <div class="product-name">Flumequil</div>
             </a>
           </div>
           <div class="product">
-            <a href="<?= site_url('fsourcing/product_details')?>">
+            <a href="<?= site_url('fsourcing/product_details/2')?>">
               <img src="/assets/images/sourcing-product2.png" alt="" />
               <div class="product-name">enzymsubtyl</div>
             </a>
           </div>
           <!-- line 2 -->
           <div class="product">
-            <a href="">
+            <a href="<?= site_url('fsourcing/product_details/5')?>">
               <img src="/assets/images/sourcing-product5.png" alt="" />
               <div class="product-name">erytracin-c</div>
             </a>
           </div>
           <div class="product">
-            <a href="">
+            <a href="<?= site_url('fsourcing/product_details/6')?>">
               <img src="/assets/images/sourcing-product2.png" alt="" />
               <div class="product-name">enzymsubtyl</div>
             </a>
           </div>
           <div class="product">
-            <a href="">
+            <a href="<?= site_url('fsourcing/product_details/7')?>">
               <img src="/assets/images/sourcing-product6.png" alt="" />
               <div class="product-name">anti-stress</div>
             </a>
           </div>
           <div class="product">
-            <a href="">
+            <a href="<?= site_url('fsourcing/product_details/8')?>">
               <img src="/assets/images/sourcing-product1.png" alt="" />
               <div class="product-name">Flumequil</div>
             </a>

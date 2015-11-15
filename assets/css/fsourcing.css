@@ -944,9 +944,14 @@ body, html {
   margin: auto;
   position: relative;
 }
+.sourcingProductDetailsContainer .bottle{
+  width: 467px;
+  height: 350px;
+  position: absolute;
+  top: 170px;
+  left: 15%
+}
 .sourcingProductDetailsContainer .diamond{
-  background: url(../images/productDetails-line1-diamond.png) no-repeat center center;
-  background-size: 100% 100%;
   width: 542px;
   height: 550px;
   position: absolute;
@@ -963,9 +968,32 @@ body, html {
 .sourcingProductDetailsContainer .diamond .desc{
   margin-top: 27%;
 }
+.sourcingProductDetailsContainer .diamond .desc > .title.line1{
+  color: #ea7c27;
+}
+.sourcingProductDetailsContainer .diamond .desc > .title.line2{
+  color: #cb0b0b;
+}
+.sourcingProductDetailsContainer .diamond .desc > .title.line3{
+  color: #1cdfce;
+}
+.sourcingProductDetailsContainer .diamond .desc > .title.line4{
+  color: #6bae19;
+}
+.sourcingProductDetailsContainer .diamond .desc > .title.line5{
+  color: #eac52a;
+}
+.sourcingProductDetailsContainer .diamond .desc > .title.line6{
+  color: #e094fc;
+}
+.sourcingProductDetailsContainer .diamond .desc > .title.line7{
+  color: #55c5e2;
+}
+.sourcingProductDetailsContainer .diamond .desc > .title.line8{
+  color: #fe5b94;
+}
 .sourcingProductDetailsContainer .diamond .desc > .title{
   font-family: MyriadPro-Semibold;
-  color: #ea7c27;
   font-size: 55px;
   text-shadow: 3px 3px black;
   line-height: 49px;
@@ -1056,15 +1084,6 @@ body, html {
   background: black;
   margin-left: 19px;
   margin-top: 15px;
-}
-.sourcingProductDetailsContainer .bottle{
-  background: url(../images/productDetails-line1-bottle.png) no-repeat center center;
-  background-size: 100% 100%;
-  width: 467px;
-  height: 350px;
-  position: absolute;
-  top: 170px;
-  left: 15%
 }
 .m-l-5{
   margin-left: 5px;

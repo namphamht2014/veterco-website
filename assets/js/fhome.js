@@ -148,7 +148,7 @@ var hello = {
         animateBox2.addClass('move');
       }, 100);
       setTimeout(function() {
-        whiteArrow.attr('style', 'margin-top:163px;border-top: 10px solid transparent;border-bottom: 10px solid white;');
+        whiteArrow.attr('style', 'bottom:75px;border-top: 10px solid transparent;border-bottom: 10px solid white;animation: moveUp .5s infinite;');
         diamondBox.attr('style', 'background: url(../assets/images/hello-rec2.png)');
         descBox.addClass('move');
       }, 500);
@@ -317,10 +317,10 @@ $(function(){
      }
      /* hello */
      if (st >= 850 && st < 2240) {
-       hello.stopTimer = false;
-       hello.animate(false);
+      //  hello.stopTimer = false;
+      //  hello.animate(false);
      }else{
-       hello.stopTimer = true;
+      //  hello.stopTimer = true;
      }
      /* hello - end */
     /*Lab*/

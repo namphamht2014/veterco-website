@@ -511,17 +511,20 @@ body, html {
   left: 50%;
   position: absolute;
   margin-left: -11px;
-  margin-top: 173px;
-  -webkit-transition: margin-top .1s ease-in-out;
-  -moz-transition: margin-top .1s ease-in-out;
-  -o-transition: margin-top .1s ease-in-out;
-  transition: margin-top .1s ease-in-out;
+  bottom: 59px;
+  -webkit-transition: bottom .1s ease-in-out;
+  -moz-transition: bottom .1s ease-in-out;
+  -o-transition: bottom .1s ease-in-out;
+  transition: bottom .1s ease-in-out;
+  animation: moveDown .5s infinite;
 }
-.hello-article .white-arrow.move{
-  margin-top: 178px !important;
+@keyframes moveDown{
+  from {bottom: 60px;}
+  to {bottom: 55px;}
 }
-.hello-article .white-arrow.move2{
-  margin-top: 158px !important;
+@keyframes moveUp{
+  from {bottom: 75px;}
+  to {bottom: 80px;}
 }
 .hello-article .myDiamond .title{
   position: absolute;

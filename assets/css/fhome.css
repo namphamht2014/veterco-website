@@ -37,7 +37,32 @@ body, html {
   position: absolute;
   top: 50%;
   left: 50%;
-  margin: -232px 0 0 -92px;
+  margin: -20% 0 0 -20%;
+}
+#logo1{
+  margin-left: 118px;
+  margin-top: 1px;
+}
+#logo2{
+  margin-top: -42px;
+  margin-left: -40px;
+}
+#logo3{
+  margin-left: 200px;
+  margin-top: -105px;
+}
+#logo4{
+  margin-left: 193px;
+  margin-top: -25px;
+}
+#logo5{
+  margin: -394px 0px 0px -100px;
+}
+#logo6{
+  margin: -215px 0px 0px -298px;
+}
+#logo7{
+  margin: -95px 0px 0px 161px;
 }
 #logo1,
 #logo2,
@@ -47,33 +72,6 @@ body, html {
 #logo6,
 #logo7{
   opacity: 0;
-  -webkit-transition: all 2s ease-in-out;
-  -moz-transition: all 2s ease-in-out;
-  -o-transition: all 2s ease-in-out;
-  transition: all 2s ease-in-out;
-}
-#logo1{
-  margin-left: 118px;
-  margin-top: 1px;
-}
-#logo2{
-  margin: 0;
-}
-#logo3{
-  margin:0;
-}
-#logo4{
-  margin-left: 193px;
-  margin-top: -25px;
-}
-#logo5{
-  margin: 0;
-}
-#logo6{
-  margin: 0;
-}
-#logo7{
-  margin: 0;
 }
 /*Khop - menus*/
 .khop{
@@ -118,9 +116,19 @@ body, html {
   font-family: Myriad-Bold;
 }
 .first-article{
-  background: url(../images/khop1-bg2.jpg) center center;
+  background: url(../images/khop1-bg3.jpg) no-repeat center center;
+  background-size:100% 100%;
   color: black;
-  height: 815px !important;
+  width: 100%;
+}
+.first-article .animals{
+  width: 443px;
+  height: 417px;
+  background: url(../images/khop1-animals.png) no-repeat center center;
+  position: absolute;
+  left: 50%;
+  margin-left: -222px;
+  top: 10%;
 }
 .first-article .title-block{
   margin-left: -166px;
@@ -128,8 +136,28 @@ body, html {
   color: #ed3743;
   letter-spacing: 2.5px;
   position: absolute;
-  top: 65%;
+  top: calc(417px + 17%);
   left: 50%;
+}
+.first-article .title-block::before{
+  content: "";
+  background: black;
+  width: 16%;
+  height: 5px;
+  position: absolute;
+  left: 50%;
+  margin-left: -8%;
+  margin-top: -10%;
+}
+.first-article .title-block::after{
+  content: "";
+  background: black;
+  width: 16%;
+  height: 5px;
+  position: absolute;
+  left: 50%;
+  margin-left: -8%;
+  margin-top: 6%;
 }
 .first-article .menu1{
   padding-left: 295px;
@@ -185,8 +213,9 @@ body, html {
   letter-spacing: 2.4px;
 }
 .first-article .row{
-  padding-top: 105px;
-  margin: 0;
+  padding-top: 5.2%;
+  margin: auto;
+  max-width: 1585px;
 }
 .first-article .col-md-6{
   height: 130px;
@@ -331,9 +360,10 @@ body, html {
 
 /*search Article*/
 .search-article{
-  background: url(../images/search-bg.jpg) center -813px;
+  background: url(../images/search-bg2.jpg) center center no-repeat;
+  background-size: 100% 100%;
   color: black;
-  height: 815px !important;
+  /*height: 815px !important;*/
 }
 .search-article .search-form-bg{
   width: 560px;

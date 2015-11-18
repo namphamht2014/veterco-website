@@ -5,14 +5,16 @@
 
 <div class="myContainer">
   <article class="first-article">
-    <div class="logo-block">
-        <img src="<?= base_url()?>assets/images/logo-path1.png" alt="" id="logo1" />
-        <img src="<?= base_url()?>assets/images/logo-path2.png" alt="" id="logo2" />
-        <img src="<?= base_url()?>assets/images/logo-path3.png" alt="" id="logo3" />
-        <img src="<?= base_url()?>assets/images/logo-path4.png" alt="" id="logo4" />
-        <img src="<?= base_url()?>assets/images/logo-path7.png" alt="" id="logo7" />
-        <img src="<?= base_url()?>assets/images/logo-path6.png" alt="" id="logo6" />
-        <img src="<?= base_url()?>assets/images/logo-path5.png" alt="" id="logo5" />
+    <div class="animals">
+      <div class="logo-block">
+          <img src="<?= base_url()?>assets/images/logo-path1.png" alt="" id="logo1" />
+          <img src="<?= base_url()?>assets/images/logo-path2.png" alt="" id="logo2" />
+          <img src="<?= base_url()?>assets/images/logo-path3.png" alt="" id="logo3" />
+          <img src="<?= base_url()?>assets/images/logo-path4.png" alt="" id="logo4" />
+          <img src="<?= base_url()?>assets/images/logo-path7.png" alt="" id="logo7" />
+          <img src="<?= base_url()?>assets/images/logo-path6.png" alt="" id="logo6" />
+          <img src="<?= base_url()?>assets/images/logo-path5.png" alt="" id="logo5" />
+      </div>
     </div>
     <div class="title-block">
       <div class="text-center">

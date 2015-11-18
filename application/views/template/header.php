@@ -14,7 +14,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
     <? if(isset($headers)): ?>
       <? foreach($headers as $key => $value): ?>
-      <link rel="stylesheet" href="<?=$value?>">
+      <link rel="stylesheet" href="<?= $value?>">
       <? endforeach; ?>
     <? endif; ?>
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->

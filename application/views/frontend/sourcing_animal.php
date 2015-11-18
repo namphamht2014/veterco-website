@@ -1,6 +1,7 @@
 <?php $this->load->view('frontend/home-header'); ?>
 <div class="sourcingAnimalContainer">
   <div class="content">
+    <div class="shine"></div>
     <div class="outter-cycle">
       <div class="inner-cycle">
         <div class="title">

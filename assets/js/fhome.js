@@ -195,6 +195,7 @@ $(function(){
   khop1bg.calcByHeight(windowHeight);
   $('.first-article').attr('style', 'height: '+khop1bg.height+'px;');
   $('.search-article').attr('style', 'height: '+khop1bg.height+'px;');
+  $('.hello-article').attr('style', 'height: '+khop1bg.height+'px;');
 
   var logo_run = '-webkit-transition: all 2s ease-in-out;-moz-transition: all 2s ease-in-out;-o-transition: all 2s ease-in-out;transition: all 2s ease-in-out;';
   setTimeout(function() {

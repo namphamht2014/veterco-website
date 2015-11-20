@@ -39,7 +39,7 @@ var grid = {
 var animal = {
   changed: function (element, animalType, colorType) {
     if (!element.childNodes[0].classList.contains('active')) {
-      $('.white-cycle div').removeClass('active');
+      $('.small-cycle div').removeClass('active');
       element.childNodes[0].className += ' active';
       var titleBlock = $('.inner-cycle .title span');
       var outter_cycle = $('.sourcingAnimalContainer .outter-cycle');
@@ -121,6 +121,9 @@ var animal = {
           outter_cycle.attr('style', 'background: url(/assets/images/sourcing-animal-trau.png) center center no-repeat;background-size: 100% 100%;');
       }
     }
+  },
+  details: function () {
+    location.href = "/index.php/fsourcing/lifecycle_details";
   }
 };
 var productDetails = {
@@ -131,6 +134,19 @@ var productDetails = {
   showLoremIpsum: function () {
     $('.product-info .product-desc').hide();
     $('.product-info .more').show();
+  }
+};
+var lifecycle = {
+  showed: false,
+  showPill: function (element) {
+    this.showed = !this.showed;
+    if (this.showed) {
+      $('.sourcingLifeCycleDetailsContainer .pill').attr('style', 'background:rgba(0,0,0,0.8)');
+      $('.sourcingLifeCycleDetailsContainer .pill #pill-img').show();
+    }else{
+      $('.sourcingLifeCycleDetailsContainer .pill').attr('style', 'background:rgba(0,0,0,0)');
+      $('.sourcingLifeCycleDetailsContainer .pill #pill-img').hide();
+    }
   }
 };
 

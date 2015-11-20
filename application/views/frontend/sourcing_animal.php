@@ -9,7 +9,8 @@
           <span>Buffalo</span>
         </div>
       </div>
-      <div class="white-cycle">
+      <a onclick="animal.details()"><div class="white-cycle"></div></a>
+      <div class="small-cycle">
         <a onclick="animal.changed(this, 1, 1)"><div class="cycle1 active"></div></a>
         <a onclick="animal.changed(this, 2, 1)"><div class="cycle2"></div></a>
         <a onclick="animal.changed(this, 3, 0)"><div class="cycle3"></div></a>

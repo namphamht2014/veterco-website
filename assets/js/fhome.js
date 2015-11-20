@@ -186,6 +186,13 @@ function bground(height) {
   };
 }
 
+function myWindow(height) {
+  this.height = height;
+  this.getPercent = function (scrolled) {
+    return (scrolled * 100) / this.height;
+  };
+}
+
 var lastScrollTop = 0;
 $(function(){
   var windowHeight = $(window).height();
@@ -196,6 +203,22 @@ $(function(){
   $('.first-article').attr('style', 'height: '+khop1bg.height+'px;');
   $('.search-article').attr('style', 'height: '+khop1bg.height+'px;');
   $('.hello-article').attr('style', 'height: '+khop1bg.height+'px;');
+  $('.lab-article').attr('style', 'height: '+khop1bg.height+'px;');
+  $('.lab2-article').attr('style', 'height: '+khop1bg.height+'px;');
+  $('.lab-img-article').attr('style', 'height: '+khop1bg.height+'px;');
+  $('.served-container').attr('style', 'height: '+(khop1bg.height * 2)+'px;');
+  $('.served-article').attr('style', 'height: '+(khop1bg.height * 2)+'px;');
+  $('.served-article .circle').attr('style', 'height: '+(khop1bg.height - 62)+'px;');
+  $('.distribution-article').attr('style', 'height: '+khop1bg.height+'px;');
+  $('.vietnam-article').attr('style', 'height: '+khop1bg.height+'px;');
+  $('.leading-article').attr('style', 'height: '+(khop1bg.height * 2)+'px;');
+  $('.leading-bg').attr('style', 'height: '+khop1bg.height+'px;');
+  $('.value-article-container').attr('style', 'height: '+(khop1bg.height * 6)+'px;');
+  $('.value-article').attr('style', 'height: '+khop1bg.height+'px;');
+  $('.thank-article').attr('style', 'height: '+(khop1bg.height - 63)+'px;');
+
+  var total_height = khop1bg.height * 18;
+  var windowTotalHeight = new myWindow(total_height);
 
   var logo_run = '-webkit-transition: all 2s ease-in-out;-moz-transition: all 2s ease-in-out;-o-transition: all 2s ease-in-out;transition: all 2s ease-in-out;';
   setTimeout(function() {
@@ -310,42 +333,54 @@ $(function(){
      var st = $("body").scrollTop();
 
      //header menus
-     if (st >= 680) {
+     if (windowTotalHeight.getPercent(st) >= 5) {
        $('header').addClass('show');
      }else{
        $('header').removeClass('show');
      }
-     /* hello */
-     if (st >= 850 && st < 2240) {
-      //  hello.stopTimer = false;
-      //  hello.animate(false);
-     }else{
-      //  hello.stopTimer = true;
-     }
-     /* hello - end */
     /*Lab*/
-    if (st >=2900) {
+    if (windowTotalHeight.getPercent(st) >= 19 && windowTotalHeight.getPercent(st) < 21) {
       $('.lab2-article .block1').addClass('move');
       $('.lab2-article .block2').addClass('move');
       $('.lab2-article .block3').addClass('move');
       $('.lab2-article .block4').addClass('move');
-    }else if (st < 2900) {
+    }else if (windowTotalHeight.getPercent(st) < 19) {
       $('.lab2-article .block1').removeClass('move');
       $('.lab2-article .block2').removeClass('move');
       $('.lab2-article .block3').removeClass('move');
       $('.lab2-article .block4').removeClass('move');
     }
     /*Lab - end*/
+     //Served
+     if (windowTotalHeight.getPercent(st) >= 28 && windowTotalHeight.getPercent(st) < 32) {
+       articleServed.startBlock1();
+     }else if (windowTotalHeight.getPercent(st) >= 35.84) {
+         articleServed.startBlock2();
+     }
+
+     if(windowTotalHeight.getPercent(st) < 31.26){
+       $('.served-article .circle').removeClass('circle-bottom circle-fixed');
+     }else if (windowTotalHeight.getPercent(st) >= 31.26 && windowTotalHeight.getPercent(st) < 36.83) {
+       $('.served-article .circle').removeClass('circle-bottom').addClass('circle-fixed');
+     }else if (windowTotalHeight.getPercent(st) >= 36.83) {
+       $('.served-article .circle').removeClass('circle-fixed').addClass('circle-bottom');
+     }
+     //Vietnam
+     if (windowTotalHeight.getPercent(st) >= 44.62) {
+       $('.vietnam-article').attr('style', 'height: '+khop1bg.height+'px;background-size: 110% 110%;');
+     }else if (windowTotalHeight.getPercent(st) < 44.62) {
+       $('.vietnam-article').attr('style', 'height: '+khop1bg.height+'px;background-size: 100% 100%;');
+     }
     /*leading*/
     var leading = $('.leading-article .leading-bg');
     var leadingContent = $('.leading-article .content1');
     var leadingRect = $('.leading-article .white-rec');
-    if (st < 8088) {
+    if (windowTotalHeight.getPercent(st) < 55.22) {
       leading.removeClass('fixed');
-    } else if (st >= 8088 && st < 8900) {
-      if (st > 8400) {
+    } else if (windowTotalHeight.getPercent(st) >= 55.22 && windowTotalHeight.getPercent(st) < 61.1) {
+      if (windowTotalHeight.getPercent(st) > 58) {
         leadingContent.css({"opacity":0});
-        leading.css({"background-position-y": "810px"});
+        leading.css({"background-position-y": "100%"});
         if (!leadingRect.hasClass('open')) {
           leadingRect.addClass('open');
         }
@@ -355,34 +390,14 @@ $(function(){
         leadingRect.removeClass('open');
       }
       leading.removeClass('bottom').addClass('fixed');
-    }else if (st >= 8900){
+    }else if (windowTotalHeight.getPercent(st) >= 57.22){
       leading.removeClass('fixed').addClass('bottom');
     }
     /*leading - end*/
-     //Served
-     var servedPos = st - 4824;
-     if (st > 4200 && st < 4820) {
-       articleServed.startBlock1();
-     }else if (st > 5360) {
-         articleServed.startBlock2();
-     }
 
-     if(st < 4860){
-       $('.served-article .circle').removeClass('circle-bottom circle-fixed');
-     }else if (st > 4860 && st < 5636) {
-       $('.served-article .circle').removeClass('circle-bottom').addClass('circle-fixed');
-     }else if (st > 5636) {
-       $('.served-article .circle').removeClass('circle-fixed').addClass('circle-bottom');
-     }
-     //Vietnam
-     if (st >= 7000) {
-       $('.vietnam-article').attr('style', 'background-size: 101%;');
-     }else if (st < 7000) {
-       $('.vietnam-article').attr('style', 'background-size: 100%;');
-     }
-    if (st < 9720) {
+    if (windowTotalHeight.getPercent(st) < 66.31) {
       articleBlock.top();
-    } else if(st <= 10640 && st >= 9720){
+    } else if(windowTotalHeight.getPercent(st) >= 66.31 && windowTotalHeight.getPercent(st) < 94.42){
       articleBlock.fixed();
 
       if (st > lastScrollTop){
@@ -393,7 +408,7 @@ $(function(){
         articleBlock.scroll("up");
       }
       lastScrollTop = st;
-    }else if(st >= 10657){
+    }else if(windowTotalHeight.getPercent(st) >= 94.42){
       articleBlock.bottom();
     }
   }).scroll();

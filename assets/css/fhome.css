@@ -464,17 +464,17 @@ body, html {
   color: white
 }
 .distribution-article{
-  background: url(../images/distribution-bg.jpg) center center;
+  background: url(../images/distribution-bg.jpg) center center no-repeat;
+  background-size: 100% 100%;
   color: black;
-  height: 815px !important;
 }
 /*Distribution Article - end*/
 
 /*vietname Article*/
 .vietnam-article{
-  background: url(../images/vn-bg.jpg) center top;
+  background: url(../images/vn-bg.jpg) center center no-repeat;
+  background-size: 100% 100%;
   color: black;
-  height: 777px !important;
   -moz-transition: all .5s;
   -webkit-transition: all .5s;
   transition: all .5s;
@@ -632,9 +632,9 @@ body, html {
 
 /*lab Article*/
 .lab-article{
-  background: url(../images/search-bg.jpg) center -2438px;
+  background: url(../images/lab-bg.jpg) center center no-repeat;
+  background-size: 100% 100%;
   color: black;
-  height: 815px !important;
 }
 .lab-article .title{
   font-family: Myriad-Bold;
@@ -657,9 +657,9 @@ body, html {
 /*lab Article - end*/
 /*lab2 Article*/
 .lab2-article{
-  background: url(../images/search-bg.jpg) center -3254px;
+  background: url(../images/lab2-bg.jpg) center center no-repeat;
+  background-size: 100% 100%;
   color: black;
-  height: 815px !important;
   position: relative;
 }
 .lab2-article .block-container{
@@ -819,9 +819,9 @@ body, html {
 /*lab2 Article - end*/
 /*lab image Article*/
 .lab-img-article{
-  background: url(../images/search-bg.jpg) center -4072px;
+  background: url(../images/lab3-bg.jpg) center center no-repeat;
+  background-size: 100% 100%;
   color: black;
-  height: 815px !important;
 }
 
 .lab-img-article img{
@@ -833,12 +833,11 @@ body, html {
 /*leading Article*/
 .leading-article{
   color: black;
-  height: 1630px !important;
   position: relative;
 }
 .leading-article .leading-bg{
-  background: url(../images/leading-bg.jpg) center 0;
-  height: 816px;
+  background: url(../images/leading-bg.jpg) center 0 no-repeat;
+  background-size: 100% 200%;
   width: 100%;
   position: absolute;
 }
@@ -909,8 +908,8 @@ body, html {
 }
 .thank-article{
   background: url(../images/thank-bg.jpg) center center;
+  background-size: 101% 100%;
   color: black;
-  height: 748px !important;
 }
 .thank-content{
   font-size: 21px;
@@ -927,9 +926,9 @@ body, html {
   font-size: 35px;
 }
 .served-article{
-  background: url(../images/served-bg.jpg) -75px 0 transparent;
+  background: url(../images/served-bg.jpg) center center no-repeat;
+  background-size: 100% 100%;
   color: white;
-  height: 1630px !important;
   padding: 0;
 }
 .served-article .circle{
@@ -943,11 +942,11 @@ body, html {
 }
 .served-article .circle-fixed{
   position: fixed;
-  top: 20px;
+  top: 62px;
 }
 .served-article .circle-bottom{
   position: absolute;
-  top: 50%;
+  bottom: 0;
 }
 .served-article .circle-inner{
   width: 90%;
@@ -957,7 +956,7 @@ body, html {
   position: absolute;
   top: 50%;
   left: 50%;
-  margin: -46% 0 0 -45%
+  margin: -44% 0 0 -45%
 }
 .served-article .circle-number1{
   color: black;
@@ -995,7 +994,6 @@ body, html {
 /*Value Article*/
 .value-article-container{
   position: relative;
-  height: 1748px;
 }
 .value-title{
   padding-top: 160px;
@@ -1005,8 +1003,8 @@ body, html {
 }
 .value-article{
   background: url(../images/veterco-value-bg.jpg) center center;
+  background-size: 100% 100%;
   color: black;
-  height: 815px !important;
   position: absolute;
   width: 100%;
   top: 0;

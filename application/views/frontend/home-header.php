@@ -59,7 +59,7 @@
         </a>
       </li>
       <li class="m-t-32" id="catalogue">
-        <a href="" onmouseover="header.hover(this);" onmouseout="header.unhover(this);">
+        <a href="<?= site_url('fcatalogue')?>" onmouseover="header.hover(this);" onmouseout="header.unhover(this);">
           <div>
 						<div class="red-arrow"></div>
 	          <b>Catalogue</b>

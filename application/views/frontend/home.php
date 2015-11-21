@@ -56,7 +56,7 @@
         </div>
       </div>
       <div class="col-md-6 menu5">
-        <a href="#" onmouseover="menus.hover(this)" onmouseout="menus.unhover(this)"><b>CATALOGUE</b></a>
+        <a href="<?= site_url('fcatalogue')?>" onmouseover="menus.hover(this)" onmouseout="menus.unhover(this)"><b>CATALOGUE</b></a>
         <div class="menu-desc">
           <div class="desc-line"></div>
         </div>

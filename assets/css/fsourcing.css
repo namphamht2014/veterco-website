@@ -1139,8 +1139,7 @@ body, html {
 .sourcingLifeCycleDetailsContainer .content fieldset .desc{
   color: white;
 }
-.sourcingLifeCycleDetailsContainer .content .title,
-.sourcingLifeCycleDetailsContainer .content .sub-title{
+.sourcingLifeCycleDetailsContainer .content .title{
   font-family: Myriad-Bold;
 }
 .sourcingLifeCycleDetailsContainer .content .title{
@@ -1149,7 +1148,6 @@ body, html {
   line-height: 40px;
 }
 .sourcingLifeCycleDetailsContainer .content .sub-title{
-  font-size: 18px;
   margin-bottom: 20px;
 }
 .sourcingLifeCycleDetailsContainer .content fieldset{
@@ -1167,7 +1165,11 @@ body, html {
   padding: 0 5px;
   margin: 0;
 }
-.sourcingLifeCycleDetailsContainer .content fieldset .desc{
+.sourcingLifeCycleDetailsContainer .content fieldset .desc,
+.sourcingLifeCycleDetailsContainer .content .sub-title{
+  font-size: 20px;
+}
+.sourcingLifeCycleDetailsContainer .content fieldset .desc.small{
   font-size: 16px;
 }
 .sourcingLifeCycleDetailsContainer .content .block-arrow{
@@ -1221,4 +1223,134 @@ body, html {
   content: "+";
   margin-right: 4px;
   color: white;
+}
+/*Catalogue - Page*/
+.catalogueContainer{
+  height: calc(100% - 104px);
+  background: url(../images/catalogue-bg.jpg) center center no-repeat;
+  background-size: 100% 100%;
+}
+.catalogueContainer .dock{
+  height: 278px;
+  width: 1491px;
+  background: url(../images/catalogue-dock.png) center center no-repeat;
+  background-size: 100% 100%;
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  margin-left: -746px;
+}
+.catalogueContainer .books{
+  width: 1300px;
+  position: absolute;
+  left: 50%;
+  top: -103%;
+  margin: 0 0 0 -650px;
+  text-align: center;
+}
+.catalogueContainer .books .book{
+  display: inline-block;
+  width: 263px;
+  height: 329px;
+  -webkit-transform: translate3d(0,0,0);
+  -moz-transform: translate3d(0,0,0);
+  -ms-transform: translate3d(0,0,0);
+  -o-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+}
+.catalogueContainer .books .book ul{
+  display: block;
+  position: relative;
+  width: 263px;
+  height: 329px;
+  margin: 0px;
+  padding: 0;
+  list-style: none;
+  perspective-origin: 0 50% 0;
+  perspective: 800px;
+  -webkit-transform: translate3d(0,0,0);
+  -moz-transform: translate3d(0,0,0);
+  -ms-transform: translate3d(0,0,0);
+  -o-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+}
+.catalogueContainer .books .book ul > li{
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 263px;
+  height: 329px;
+  padding: 0;
+  margin: 0;
+  transform-origin: 0 50% 0;
+  transform-style: preserve-3d;
+  transition: all .5s cubic-bezier(0.25,1,.25,1);
+}
+.catalogueContainer .books .book .diamond{
+  opacity: 0;
+  position: absolute;
+  z-index: 3;
+  left: -55px;
+  top: 10px;
+  -webkit-transition: all .5s ease-in-out;
+  -moz-transition: all .5s ease-in-out;
+  -o-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+.catalogueContainer .books .book .cover {
+  z-index: 2 !important;
+  display: block;
+  width: 263px;
+  height: 329px;
+  transform: rotateY(0deg) translateZ(0px);
+}
+.catalogueContainer .books .book .page1 {
+  left:5px;
+  transform: rotateY(20deg) translateZ(-1px);
+}
+.catalogueContainer .books .book .page2 {
+  left:5px;
+  transform: rotateY(30deg) translateZ(-2px);
+}
+.catalogueContainer .books .book .page3 {
+  left:5px;
+  transform: rotateY(40deg) translateZ(-3px);
+}
+
+.catalogueContainer .books .book:hover .page1 {
+  transform: rotateY(-34deg);
+}
+
+.catalogueContainer .books .book:hover .page2 {
+  transform: rotateY(-27deg);
+}
+
+.catalogueContainer .books .book:hover .page3 {
+  transform: rotateY(-15deg);
+}
+
+.catalogueContainer .books .book:hover .cover {
+  transform: rotateY(-40deg);
+}
+
+.m-l-r-80{
+  margin: 0 80px;
+}
+.catalogueContainer .light{
+  position: absolute;
+  top: -260%;
+  -webkit-transition: left .5s ease-in-out;
+  -moz-transition: left .5s ease-in-out;
+  -o-transition: left .5s ease-in-out;
+  transition: left .5s ease-in-out;
+}
+.catalogueContainer .light.default{
+  left: 20%;
+}
+.catalogueContainer .light.move1{
+  left: 43%;
+}
+.catalogueContainer .light.move2{
+  left: 66%;
 }

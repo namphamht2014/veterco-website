@@ -73,57 +73,70 @@ var animal = {
 
       switch (animalType) {
         case 2:
+          this.animalName = "vittroi";
           titleBlock.text('bird');
           outter_cycle.attr('style', 'background: url(/assets/images/sourcing-animal-vittroi.png) center center no-repeat;background-size: 100% 100%;');
           break;
         case 3:
+          this.animalName = "bosua";
           titleBlock.text('dairy');
           outter_cycle.attr('style', 'background: url(/assets/images/sourcing-animal-bosua.png) center center no-repeat;background-size: 100% 100%;');
           break;
         case 4:
+          this.animalName = "ca";
           titleBlock.text('fish');
           outter_cycle.attr('style', 'background: url(/assets/images/sourcing-animal-ca.png) center center no-repeat;background-size: 100% 100%;');
           break;
         case 5:
+          this.animalName = "cho";
           titleBlock.text('dog');
           outter_cycle.attr('style', 'background: url(/assets/images/sourcing-animal-cho.png) center center no-repeat;background-size: 100% 100%;');
           break;
         case 6:
+          this.animalName = "cuu";
           titleBlock.text('sheep');
           outter_cycle.attr('style', 'background: url(/assets/images/sourcing-animal-cuu.png) center center no-repeat;background-size: 100% 100%;');
           break;
         case 7:
+          this.animalName = "de";
           titleBlock.text('goat');
           outter_cycle.attr('style', 'background: url(/assets/images/sourcing-animal-de.png) center center no-repeat;background-size: 100% 100%;');
           break;
         case 8:
+          this.animalName = "ga";
           titleBlock.text('chicken');
           outter_cycle.attr('style', 'background: url(/assets/images/sourcing-animal-ga.png) center center no-repeat;background-size: 100% 100%;');
           break;
         case 9:
+          this.animalName = "heo";
           titleBlock.text('pig sow');
           outter_cycle.attr('style', 'background: url(/assets/images/sourcing-animal-heome.png) center center no-repeat;background-size: 100% 100%;');
           break;
         case 10:
+          this.animalName = "ngua";
           titleBlock.text('horse');
           outter_cycle.attr('style', 'background: url(/assets/images/sourcing-animal-ngua.png) center center no-repeat;background-size: 100% 100%;');
           break;
         case 11:
+          this.animalName = "tom";
           titleBlock.text('shrimp');
           outter_cycle.attr('style', 'background: url(/assets/images/sourcing-animal-tom.png) center center no-repeat;background-size: 100% 100%;');
           break;
         case 12:
+          this.animalName = "vit";
           titleBlock.text('duck');
           outter_cycle.attr('style', 'background: url(/assets/images/sourcing-animal-vit.png) center center no-repeat;background-size: 100% 100%;');
           break;
         default:
+          this.animalName = "trau";
           titleBlock.text('buffalo');
           outter_cycle.attr('style', 'background: url(/assets/images/sourcing-animal-trau.png) center center no-repeat;background-size: 100% 100%;');
       }
     }
   },
+  animalName: "trau",
   details: function () {
-    location.href = "/index.php/fsourcing/lifecycle_details";
+    location.href = "/index.php/fsourcing/lifecycle_details/"+this.animalName;
   }
 };
 var productDetails = {
@@ -142,12 +155,75 @@ var lifecycle = {
     this.showed = !this.showed;
     if (this.showed) {
       $('.sourcingLifeCycleDetailsContainer .pill').attr('style', 'background:rgba(0,0,0,0.8);z-index: 9;');
+      $('.sourcingLifeCycleDetailsContainer .pill .pill-text').attr('style', 'opacity: 1;');
+      $('.sourcingLifeCycleDetailsContainer .pill #icon').attr('style', 'opacity: 1;');
       $('.sourcingLifeCycleDetailsContainer .pill #pill-img').show();
     }else{
       $('.sourcingLifeCycleDetailsContainer .pill').attr('style', 'background:rgba(0,0,0,0);z-index: 0;');
+      $('.sourcingLifeCycleDetailsContainer .pill .pill-text').attr('style', 'opacity: 0;');
+      $('.sourcingLifeCycleDetailsContainer .pill #icon').attr('style', 'opacity: 0.6;');
       $('.sourcingLifeCycleDetailsContainer .pill #pill-img').hide();
     }
-  }
+  },
+  choInit: function () {
+    if($('body').height() <= 835){
+      $('.block1 .desc').addClass('cho-small small');
+      $('.block2 .desc').addClass('small');
+      $('.block3 .desc').addClass('cho-small small');
+      $('.block4 .desc').addClass('cho-small small');
+    }else{
+      $('.block1 .desc').removeClass('cho-small small').addClass('cho-big');
+      $('.block2 .desc').removeClass('small');
+      $('.block3 .desc').removeClass('cho-small small').addClass('cho-big');
+      $('.block4 .desc').removeClass('cho-small small').addClass('cho-big');
+    }
+  },
+  gaInit: function () {
+    $('.block1 .desc').addClass('ga-small small');
+    $('.block2 .desc').addClass('small');
+    $('.block3 .desc').addClass('ga-small small');
+    $('.block4 .desc').addClass('ga-small small');
+    $('.block5 .desc').addClass('ga-small small');
+    $('.block6 .desc').addClass('ga-small small');
+    $('.block7 .desc').addClass('ga-small small');
+    if($('body').height() <= 835){
+      $('.block2 .desc').addClass('ga-small');
+      $('.block3 .desc').addClass('ga-small');
+    }else{
+      $('.block2 .desc').removeClass('ga-small');
+      $('.block3 .desc').removeClass('ga-small');
+    }
+  },
+  tomInit: function () {
+    if($('body').height() <= 835){
+      $('.block1 .desc').addClass('small');
+      $('.block2 .desc').addClass('small');
+      $('.block3 .desc').addClass('small');
+      $('.block4 .desc').addClass('tom-small small');
+      $('.block5 .desc').addClass('tom-small small');
+      $('.block6 .desc').addClass('tom-small small');
+      $('.block7 .desc').addClass('tom-small small');
+      $('.block8 .desc').addClass('tom-small small');
+    }else{
+      $('.block1 .desc').addClass('big');
+      $('.block2 .desc').addClass('big');
+      $('.block3 .desc').addClass('big');
+      $('.block4 .desc').addClass('tom-big big');
+      $('.block5 .desc').addClass('tom-big big');
+      $('.block6 .desc').addClass('tom-big big');
+      $('.block7 .desc').addClass('tom-big big');
+      $('.block8 .desc').addClass('tom-big big');
+
+      $('.block2-4').attr('style', 'top: 450%;');
+      $('.block4').attr('style', 'top: 330%;');
+      $('.block5').attr('style', 'top: 590%;');
+      $('.block3-5').attr('style', 'height: 350px;top: 210%');
+      $('.block7').attr('style', 'top: 530%;');
+
+      $('.block2-6').attr('style', 'top: 850%;');
+      $('.block2-6 .arrow-left').attr('style', 'height: 150px;top: -150px;');
+    }
+  },
 };
 var catalogue = {
   moveLightTo: function (className, element) {
@@ -163,18 +239,7 @@ var catalogue = {
 
 ( function( $ ) {
 $( document ).ready(function() {
-  if($('body').height() <= 835){
-    $('.block1 .desc').addClass('small');
-    $('.block2 .desc').addClass('small');
-    $('.block3 .desc').addClass('small');
-    $('.block4 .desc').addClass('small');
-  }else{
-    $('.block1 .desc').removeClass('small');
-    $('.block2 .desc').removeClass('small');
-    $('.block3 .desc').removeClass('small');
-    $('.block4 .desc').removeClass('small');
-  }
-$('#cssmenu li.has-sub>a').on('click', function(){
+  $('#cssmenu li.has-sub>a').on('click', function(){
 		$(this).removeAttr('href');
 		var element = $(this).parent('li');
 		if (element.hasClass('open')) {

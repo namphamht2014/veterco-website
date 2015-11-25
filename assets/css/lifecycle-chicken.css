@@ -1,0 +1,194 @@
+.sourcingLifeCycleDetailsContainer{
+  background: url(/assets/images/lifecycle-details-bg-ga.jpg) no-repeat center center;
+  background-size: 100% 100%;
+}
+.sourcingLifeCycleDetailsContainer .content .block3{
+  top: 300%;
+}
+.sourcingLifeCycleDetailsContainer .content .block1,
+.sourcingLifeCycleDetailsContainer .content .block7,
+.sourcingLifeCycleDetailsContainer .content .block4{
+  top: 140%;
+}
+.sourcingLifeCycleDetailsContainer .content fieldset{
+  width: 15%;
+  padding: 5px 15px;
+}
+.sourcingLifeCycleDetailsContainer .content .block-arrow{
+  right: -25%;
+}
+.sourcingLifeCycleDetailsContainer .content .block2{
+  left: calc(15% + 70px);
+  width: 15%;
+  top: 170%;
+}
+.sourcingLifeCycleDetailsContainer .content .block3{
+  left: calc(30% + 140px);
+}
+.sourcingLifeCycleDetailsContainer .content .block4{
+  left: calc(45% + 210px);
+}
+.sourcingLifeCycleDetailsContainer .content .block5{
+  left:calc(45% + 210px);
+  top: 300%;
+}
+.sourcingLifeCycleDetailsContainer .content .block6{
+  left:calc(45% + 210px);
+  top: 470%;
+}
+.sourcingLifeCycleDetailsContainer .content .block7{
+  left: calc(60% + 280px)
+}
+.sourcingLifeCycleDetailsContainer .content fieldset legend{
+  font-size: 19px;
+}
+.myHr{
+  border-top: 2px dashed white;
+  width: 80%;
+  margin: auto;
+}
+.arrow-left,
+.arrow-next-to-right,
+.arrow-right{
+  height: 25%;
+  border-right: 2px dashed white;
+  position: absolute;
+}
+.arrow-left{
+  left: 9.5%;
+}
+.arrow-right{
+  right: 10%;
+}
+.arrow-next-to-right{
+  right: 30%;
+}
+.arrow-left:after,
+.arrow-next-to-right:after,
+.arrow-right:after{
+  content: "";
+  border-bottom: 15px solid #004281;
+  border-right: 15px solid transparent;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  position: absolute;
+  bottom: -25%;
+  left: -6px;
+}
+.block3-arrow{
+  border-top: 2px dashed white;
+  position: absolute;
+  width: 23%;
+  left: 36%;
+  top: 250%
+}
+.block3-arrow:after{
+  content: "";
+  border-bottom: 15px solid #004281;
+  border-right: 15px solid transparent;
+  -webkit-transform: rotate(-135deg);
+  -moz-transform: rotate(-135deg);
+  -ms-transform: rotate(-135deg);
+  -o-transform: rotate(-135deg);
+  transform: rotate(-135deg);
+  position: absolute;
+  right: -5%;
+  top: -8px;
+}
+.block3-arrow .down-arrow{
+  border-left: 2px dashed white;
+  position: absolute;
+  left: 50%;
+  height: 20px
+}
+.block3-arrow .down-arrow:after{
+  content: "";
+  border-bottom: 15px solid #004281;
+  border-right: 15px solid transparent;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  position: absolute;
+  right: -7px;
+  bottom: -13px;
+}
+.block6 .left-arrow{
+  border-top: 2px dashed white;
+  position: absolute;
+  left: -25%;
+  width: 35px;
+  top: 40%;
+}
+.block6 .left-arrow:before{
+  content: "";
+  border-bottom: 15px solid #004281;
+  border-right: 15px solid transparent;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+  position: absolute;
+  left: -10px;
+  top: -8px;
+}
+.block5 .right-arrow{
+  border-top: 2px dashed white;
+  position: absolute;
+  right: -145px;
+  width: 140px;
+  top: 40%;
+}
+.block5 .up-arrow{
+  border-right: 2px dashed white;
+  position: absolute;
+  right: 0;
+  height: 30px;
+  top: -30px;
+}
+.block5 .up-arrow:before{
+  content: "";
+  border-bottom: 15px solid #004281;
+  border-right: 15px solid transparent;
+  -webkit-transform: rotate(135deg);
+  -moz-transform: rotate(135deg);
+  -ms-transform: rotate(135deg);
+  -o-transform: rotate(135deg);
+  transform: rotate(135deg);
+  position: absolute;
+  left: -7px;
+  top: -12px;
+}
+.sourcingLifeCycleDetailsContainer .content .block3 .block-arrow{
+  top: 20%;
+}
+.sourcingLifeCycleDetailsContainer .content .block2 .ga-small,
+.sourcingLifeCycleDetailsContainer .content .block3 .ga-small{
+  overflow-y: auto;
+}
+.sourcingLifeCycleDetailsContainer .content .block2 .ga-small{
+  height: 240px;
+}
+.sourcingLifeCycleDetailsContainer .content .block3 .ga-small{
+  height: 150px;
+}
+.block2 .desc::-webkit-scrollbar-track,
+.block3 .desc::-webkit-scrollbar-track{
+  background-color: transparent;
+}
+
+.block2 .desc::-webkit-scrollbar,
+.block3 .desc::-webkit-scrollbar{
+	width: 2px;
+}
+
+.block2 .desc::-webkit-scrollbar-thumb,
+.block3 .desc::-webkit-scrollbar-thumb{
+  background-color: #325c85;
+  border-radius: 5px;
+}

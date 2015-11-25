@@ -1,0 +1,57 @@
+.sourcingLifeCycleDetailsContainer{
+  background: url(/assets/images/lifecycle-details-bg-cho.jpg) no-repeat center center;
+  background-size: 100% 100%;
+}
+.sourcingLifeCycleDetailsContainer .content .block1,
+.sourcingLifeCycleDetailsContainer .content .block4{
+  top: 110%;
+}
+.sourcingLifeCycleDetailsContainer .content .block2,
+.sourcingLifeCycleDetailsContainer .content .block3{
+  top: 180%;
+}
+
+.sourcingLifeCycleDetailsContainer .content .block1 .desc.cho-small{
+  height: 180px;
+  overflow-y: auto;
+}
+.sourcingLifeCycleDetailsContainer .content .block3 .desc.cho-small{
+  height: 250px;
+  overflow-y: auto;
+}
+.sourcingLifeCycleDetailsContainer .content .block4 .desc.cho-small{
+  height: 110px;
+  overflow-y: auto;
+}
+
+.sourcingLifeCycleDetailsContainer .content .block1 .desc.cho-big{
+  height: 320px;
+  overflow-y: auto;
+}
+.sourcingLifeCycleDetailsContainer .content .block3 .desc.cho-big{
+  height: 350px;
+  overflow-y: auto;
+}
+.sourcingLifeCycleDetailsContainer .content .block4 .desc.cho-big{
+  height: 250px;
+  overflow-y: auto;
+}
+
+.block1 .desc::-webkit-scrollbar-track,
+.block3 .desc::-webkit-scrollbar-track,
+.block4 .desc::-webkit-scrollbar-track{
+  background-color: transparent;
+}
+
+.block1 .desc::-webkit-scrollbar,
+.block3 .desc::-webkit-scrollbar,
+.block4 .desc::-webkit-scrollbar{
+	width: 2px;
+}
+
+.block1 .desc::-webkit-scrollbar-thumb,
+.block3 .desc::-webkit-scrollbar-thumb,
+.block4 .desc::-webkit-scrollbar-thumb{
+  background-color: #325c85;
+  border-radius: 5px;
+}

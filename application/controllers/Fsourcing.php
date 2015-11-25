@@ -127,7 +127,7 @@ class Fsourcing extends CI_Controller {
     $this->load->view('template/footer');
   }
 
-  public function lifecycle_details()
+  public function lifecycle_details($animalName)
   {
     //Page title
     $data['title'] = '- '.$this->lang->line('f_sourcing_lifecycleDetails');
@@ -144,15 +144,39 @@ class Fsourcing extends CI_Controller {
       base_url().'assets/js/fsourcing.js'
     );
 
+    $data['animalName'] = $animalName;
+    $initStr = '';
+
+    switch ($animalName) {
+      case 'cho':
+        $animalEngName = 'dog';
+        $initStr = 'lifecycle.choInit();';
+        break;
+      case 'ga':
+        $animalEngName = 'chicken';
+        $initStr = 'lifecycle.gaInit();';
+        break;
+      case 'tom':
+        $animalEngName = 'shrimp';
+        $initStr = 'lifecycle.tomInit();';
+        break;
+
+      default:
+        $animalEngName = 'buffalo';
+        break;
+    }
+    $data['animalEngName'] = $animalEngName;
+
     //add js script to page
     $data['script'] = '$(function(){
       header.active("sourcing");
       $("header").removeClass("header").addClass("headerFixed");
       $(".footer2").attr("style", "position: relative");
+      $(".pill #pill-img").attr("src", "/assets/images/lifecycle-details-'.$animalName.'-pill.png");
+      '.$initStr.'
     });';
-
     $this->load->view('template/header', $data);
-    $this->load->view('frontend/sourcing_lifecycle_details');
+    $this->load->view('frontend/sourcing_lifecycle_details', $data);
     $this->load->view('template/footer');
   }
 

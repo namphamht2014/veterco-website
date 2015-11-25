@@ -264,8 +264,8 @@ body, html {
   background-position-x: -1526px;
 }
 .sourcingContainer .block4-bg{
-  top: 416px;
-  left: 932px;
+  top: 417px;
+  left: 935px;
 }
 .sourcingContainer .block4 .block-title{
   width: 200px;
@@ -303,8 +303,8 @@ body, html {
   background-position-x: -2398px;
 }
 .sourcingContainer .block6-bg{
-  top: 413px;
-  left: 276px;
+  top: 416px;
+  left: 279px;
 }
 .sourcingContainer a:hover .block6{
   background-position-x: -2180px;
@@ -1118,6 +1118,15 @@ body, html {
   bottom: 10%;
   position: absolute;
   right: 5%;
+  opacity: 0.6;
+}
+.sourcingLifeCycleDetailsContainer .pill .pill-text{
+  position: absolute;
+  right: calc(5% + 70px);
+  bottom: calc(10% + 13px);
+  font-size: 17px;
+  opacity: 0;
+  color: white;
 }
 .sourcingLifeCycleDetailsContainer .pill #pill-img{
   bottom: 10%;
@@ -1172,6 +1181,7 @@ body, html {
 .sourcingLifeCycleDetailsContainer .content fieldset .desc.small{
   font-size: 16px;
 }
+
 .sourcingLifeCycleDetailsContainer .content .block-arrow{
   color: white;
   font-size: 25px;

@@ -9,7 +9,7 @@
         <div class="book">
           <a href="#" onmouseover="catalogue.moveLightTo('default', this)" onmouseout="catalogue.hideDiamond(this)">
             <div class="diamond">
-              <img src="/assets/images/catalogue-book2-diamond.png" alt="" />
+              <img src="/assets/images/catalogue-book1-diamond.png" alt="" />
             </div>
             <ul>
               <li class="page page3"><img src="/assets/images/catalogue-book1.png" alt="" /></li>
@@ -35,7 +35,7 @@
         <div class="book">
           <a href="#" onmouseover="catalogue.moveLightTo('move2', this)" onmouseout="catalogue.hideDiamond(this)">
             <div class="diamond">
-              <img src="/assets/images/catalogue-book2-diamond.png" alt="" />
+              <img src="/assets/images/catalogue-book3-diamond.png" alt="" />
             </div>
             <ul>
               <li class="page page3"><img src="/assets/images/catalogue-book3.png" alt="" /></li>

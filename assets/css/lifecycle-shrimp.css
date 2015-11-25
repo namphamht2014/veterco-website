@@ -1,0 +1,225 @@
+.sourcingLifeCycleDetailsContainer{
+  background: url(/assets/images/lifecycle-details-bg-tom.jpg) no-repeat center center;
+  background-size: 100% 100%;
+}
+.sourcingLifeCycleDetailsContainer .content fieldset,
+.sourcingLifeCycleDetailsContainer .content .block2{
+  width: 15%;
+}
+.sourcingLifeCycleDetailsContainer .content fieldset{
+  padding: 5px 10px;
+}
+.sourcingLifeCycleDetailsContainer .content .block1,
+.sourcingLifeCycleDetailsContainer .content .block3,
+.sourcingLifeCycleDetailsContainer .content .block4,
+.sourcingLifeCycleDetailsContainer .content .block6,
+.sourcingLifeCycleDetailsContainer .content .block8{
+  top: 110%;
+}
+.sourcingLifeCycleDetailsContainer .content .block2{
+  left: calc(15% + 70px);
+}
+.sourcingLifeCycleDetailsContainer .content .block-arrow{
+  right: -25%;
+}
+.sourcingLifeCycleDetailsContainer .content .block3,
+.sourcingLifeCycleDetailsContainer .content .block4,
+.sourcingLifeCycleDetailsContainer .content .block5{
+  left: calc(30% + 140px);
+}
+.sourcingLifeCycleDetailsContainer .content .block4{
+  top: 280%;
+}
+.sourcingLifeCycleDetailsContainer .content .block5{
+  top: 470%;
+}
+.sourcingLifeCycleDetailsContainer .content .block6,
+.sourcingLifeCycleDetailsContainer .content .block7{
+  left: calc(45% + 175px);
+}
+.sourcingLifeCycleDetailsContainer .content .block7{
+  top: 450%;
+}
+.sourcingLifeCycleDetailsContainer .content .block8{
+  left: calc(60% + 245px);
+}
+
+.sourcingLifeCycleDetailsContainer .content .block4 .tom-small,
+.sourcingLifeCycleDetailsContainer .content .block5 .tom-small{
+  height: 80px;
+}
+
+.sourcingLifeCycleDetailsContainer .content .block4 .tom-big,
+.sourcingLifeCycleDetailsContainer .content .block5 .tom-big{
+  height: 130px;
+}
+
+.sourcingLifeCycleDetailsContainer .content .block6 .tom-small,
+.sourcingLifeCycleDetailsContainer .content .block7 .tom-small{
+  height: 160px;
+}
+
+.sourcingLifeCycleDetailsContainer .content .block6 .tom-big,
+.sourcingLifeCycleDetailsContainer .content .block7 .tom-big{
+  height: 220px;
+}
+
+.sourcingLifeCycleDetailsContainer .content .block8 .tom-small{
+  height: 220px;
+}
+.sourcingLifeCycleDetailsContainer .content .block8 .tom-big{
+  height: 370px;
+}
+
+.tom-small,
+.tom-big{
+  overflow-y: auto;
+}
+.tom-small::-webkit-scrollbar-track,
+.tom-small::-webkit-scrollbar-track,
+.tom-big::-webkit-scrollbar-track,
+.tom-big::-webkit-scrollbar-track{
+  background-color: transparent;
+}
+
+.tom-small::-webkit-scrollbar,
+.tom-small::-webkit-scrollbar,
+.tom-big::-webkit-scrollbar,
+.tom-big::-webkit-scrollbar{
+	width: 2px;
+}
+
+.tom-small::-webkit-scrollbar-thumb,
+.tom-small::-webkit-scrollbar-thumb,
+.tom-big::-webkit-scrollbar-thumb,
+.tom-big::-webkit-scrollbar-thumb{
+  background-color: #325c85;
+  border-radius: 5px;
+}
+.block2-6,
+.block2-6:before,
+.block2-6 .arrow-left,
+.block2-6 .arrow-left:before,
+.block3-5,
+.block2-4,
+.block3-5 .arrow3,
+.block3-5 .arrow5,
+.block3-5 .arrow3:after,
+.block3-5 .arrow5:after,
+.block2-4:after,
+.block7 .arrow-up:before,
+.block7 .arrow-up,
+.block6 .arrow-right:before,
+.block6 .arrow-right{
+  position: absolute;
+}
+
+.block2-6,
+.block2-4,
+.block3-5 .arrow3,
+.block3-5 .arrow5,
+.block6 .arrow-right{
+  border-top: 2px dashed white;
+}
+.block2-6{
+  width: 26%;
+  top: 670%;
+  left: 30%;
+}
+.block2-6:before,
+.block3-5 .arrow3:after,
+.block3-5 .arrow5:after,
+.block2-4:after,
+.block6 .arrow-right:before{
+  -webkit-transform: rotate(-135deg);
+  -moz-transform: rotate(-135deg);
+  -ms-transform: rotate(-135deg);
+  -o-transform: rotate(-135deg);
+  transform: rotate(-135deg);
+  top: -7px;
+  right: -13px
+}
+.block2-6:before,
+.block2-6 .arrow-left:before,
+.block2-4:after,
+.block7 .arrow-up:before,
+.block6 .arrow-right:before,
+.block3-5 .arrow3:after,
+.block3-5 .arrow5:after{
+  content: "";
+  border-bottom: 15px solid #004281;
+  border-right: 15px solid transparent;
+}
+.block2-6 .arrow-left,
+.block3-5,
+.block7 .arrow-up{
+  border-right: 2px dashed white;
+}
+.block2-6 .arrow-left{
+  height: 80px;
+  top: -80px;
+}
+.block2-6 .arrow-left:before,
+.block7 .arrow-up:before{
+  -webkit-transform: rotate(135deg);
+  -moz-transform: rotate(135deg);
+  -ms-transform: rotate(135deg);
+  -o-transform: rotate(135deg);
+  transform: rotate(135deg);
+}
+.block2-6 .arrow-left:before{
+  top: -13px;
+  left: -8px
+}
+.block2-4{
+  width: 45px;
+  left: calc(30% + 70px);
+  top: 380%;
+}
+.block2-4:after{
+  top: -8px;
+  right: -13px;
+}
+.block3-5{
+  height: 250px;
+  left: calc(30% + 85px);
+  top: 200%
+}
+.block3-5 .arrow3,
+.block3-5 .arrow5{
+  width: 30px;
+}
+.block3-5 .arrow5{
+  bottom: 0;
+}
+.block3-5 .arrow3:after{
+  top: -8px;
+}
+.block3-5 .arrow5:after{
+  bottom: -8px;
+}
+.block3-5 .arrow3:after,
+.block3-5 .arrow5:after{
+  right: -13px;
+}
+.block7 .arrow-up{
+  height: 20px;
+  top: -10px;
+  left: 80%;
+}
+.block7 .arrow-up:before{
+  top: -11px;
+  left: -7px
+}
+.block6 .arrow-right{
+  width: 40px;
+  right: -45px;
+  bottom: 50%;
+}
+.block6 .arrow-right:before{
+  top: -8px;
+  right: -11px;
+}
+.sourcingLifeCycleDetailsContainer .content fieldset .desc.big{
+  font-size: 19px;
+}

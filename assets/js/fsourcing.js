@@ -231,14 +231,54 @@ var catalogue = {
     light.removeClass();
     light.addClass('light '+className);
     element.childNodes[1].style.opacity = 1;
+    element.nextElementSibling.style.display = 'block';
   },
   hideDiamond: function (element) {
     element.childNodes[1].style.opacity = 0;
+    element.nextElementSibling.style.display = 'none';
   }
 };
 
 ( function( $ ) {
 $( document ).ready(function() {
+  var prevX = -1;
+  var item1 = $('.item1');
+  var item2 = $('.item2');
+  $('.myPagination .p1').attr('style', 'font-size: 18px;');
+
+  $('.books').draggable({
+      drag: function(e) {
+          if(prevX == -1) {
+              prevX = e.pageX;
+              return false;
+          }
+              // console.log(prevX +' > '+ e.pageX);
+          // dragged left
+          if(prevX > e.pageX) {
+            if (!item1.hasClass('active')) {
+              item1.addClass('active');
+              item1.attr('style', 'left: 50%;');
+              item2.removeClass('active');
+              item2.attr('style', 'left: 200%;');
+              $('.myPagination .p1').attr('style', 'font-size: 18px;');
+              $('.myPagination .p2').attr('style', 'font-size: 14px;');
+            }
+          }
+          else if(prevX < e.pageX) { // dragged right
+            if (!item2.hasClass('active')) {
+              item2.addClass('active');
+              item2.attr('style', 'left: 50%;');
+              item1.removeClass('active');
+              item1.attr('style', 'left: -200%;');
+              $('.myPagination .p2').attr('style', 'font-size: 18px;');
+              $('.myPagination .p1').attr('style', 'font-size: 14px;');
+            }
+          }
+          prevX = e.pageX;
+          return false;
+      }
+  });
+
   $('#cssmenu li.has-sub>a').on('click', function(){
 		$(this).removeAttr('href');
 		var element = $(this).parent('li');

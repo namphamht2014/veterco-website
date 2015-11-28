@@ -20,6 +20,7 @@ class Fhome extends CI_Controller {
     //add js to page
     $data['footers'] = array(
       'http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js',
+      base_url().'assets/js/jquery-ui.min.js',
       base_url().'assets/js/fhome.js'
     );
 

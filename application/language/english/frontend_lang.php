@@ -7,7 +7,7 @@ $lang['sitename'] = "Veterco";
 /*
 Welcome page
  */
-$lang['f_welcome'] = 'Welcome to Veterco';
+$lang['f_welcome'] = 'Welcome 2';
 
 /*
 Home page

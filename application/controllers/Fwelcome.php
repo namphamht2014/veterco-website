@@ -5,6 +5,7 @@ class Fwelcome extends CI_Controller {
   public function __construct()
   {
     parent::__construct();
+    $this->load->language('frontend_lang');
   }
 
   public function index()
@@ -13,14 +14,12 @@ class Fwelcome extends CI_Controller {
     $data['title'] = '- '.$this->lang->line('f_welcome');
 
     //Add css to page
-    // $data['headers'] = array(base_url().'assets/css/login.css');
+    $data['headers'] = array(base_url().'assets/css/fwelcome.css');
 
     //add js to page
-    // $data['footers'] = array(
-      // base_url().'assets/bower_components/footable/dist/footable.min.js',
-      // base_url().'assets/bower_components/footable/dist/footable.filter.min.js',
-      // base_url().'assets/bower_components/footable/dist/footable.paginate.min.js'
-    // );
+    $data['footers'] = array(
+      base_url().'assets/js/fwelcome.js'
+    );
 
     //add js script to page
     // $data['script'] = 'main.initFootable();';
@@ -28,8 +27,8 @@ class Fwelcome extends CI_Controller {
     $data['data'] = array('test', 'test');
 
     $this->load->view('template/header', $data);
-    $this->load->view('frontend/welcome');
-    $this->load->view('template/footer');
+    $this->load->view('frontend/welcome', $data);
+    $this->load->view('template/footer', $data);
   }
 }
 

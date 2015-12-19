@@ -1,0 +1,478 @@
+@font-face {
+   font-family: Myriad;
+   src: url(../font/Myriad_Pro_font/MyriadPro-Regular.otf);
+}
+
+@font-face {
+   font-family: Myriad-Light;
+   src: url(../font/Myriad_Pro_font/MyriadPro-Light.otf);
+}
+
+@font-face {
+   font-family: Myriad-Bold;
+   src: url(../font/Myriad_Pro_font/MyriadPro-Bold.otf);
+   font-weight: bold;
+}
+
+@font-face {
+   font-family: Pepsi;
+   src: url(../font/PEPSI_pl.ttf);
+   font-weight: bold;
+}
+
+body, html {
+  font-family: Myriad;
+  padding: 0; margin: 0;
+  height: 100%;
+}
+
+.logo img,
+.flies img,
+.blocks img,
+.block-big .text,
+.block-1 .text,
+.block-2 .text,
+.block-3 .text,
+.block-4 .text,
+.block-right .text,
+.video-block,
+.video-block .content,
+.video-block .content .block-back,
+.video-block .content .block-back .title,
+.loadingPage,
+.loadingPage .text{
+  position: absolute;
+}
+
+.loadingPage{
+  background: black;
+  width: 100%;
+  height: 100%;
+  z-index: 99999;
+  opacity: 1;
+  -webkit-transition: opacity 0.5s ease-in-out;
+  -moz-transition: opacity 0.5s ease-in-out;
+  -o-transition: opacity 0.5s ease-in-out;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.loadingPage .text{
+  font-family: Myriad-Bold;
+  color: white;
+  font-size: 35px;
+  top: 40%;
+  left: 50%;
+  margin-left: -153px;
+}
+
+.myContainer{
+  background: url(/assets/images/welcome-bg.png) center center no-repeat;
+  background-size: 100% 100%;
+  height: 100%;
+}
+
+.logo img{
+  left: 2.7%;
+  top: 3.5%;
+  width: 19%;
+}
+
+.flies #fly1{
+  left: 45.5%;
+  top: 20.5%;
+  width: 8.5%;
+}
+
+.flies #fly2{
+  left: 23.2%;
+  top: 10.5%;
+  width: 14%;
+}
+
+.flies #fly3{
+  left: 0.2%;
+  top: 54%;
+  width: 7%;
+}
+
+.flies #fly4{
+  left: 31.5%;
+  top: 5%;
+  width: 11%;
+}
+
+.flies #fly5{
+  left: 7.6%;
+  top: 32.3%;
+  width: 8%;
+}
+
+.flies #fly6{
+  left: 7.7%;
+  top: 17%;
+  width: 14%;
+}
+
+.block-big img{
+  width: 19%;
+  right: 25%;
+  top: 29.7%;
+}
+.block-1 img,
+.block-4 img{
+  right: 17.5%;
+}
+.block-1 img,
+.block-2 img,
+.block-3 img,
+.block-4 img{
+  width: 15%;
+  z-index: 9;
+}
+.block-1 img{
+  top: 19.3%;
+}
+.block-2 img,
+.block-3 img{
+  right: 10%;
+}
+.block-2 img{
+  top: 5%;
+}
+.block-big #active,
+.block-1 #active,
+.block-2 #active,
+.block-3 #active,
+.block-4 #active{
+  opacity: 0;
+}
+.block-3 img.small{
+  right: 9.76%;
+}
+.block-3 img{
+  top: 62.2%;
+}
+.block-4 img.small{
+  right: 17.25%;
+}
+.block-4 img{
+  top: 47.8%;
+}
+.block-right img{
+  right: 0;
+  width: 25%;
+}
+.block-big #white-logo{
+  right: 32.5%;
+  top: 38.5%;
+  width: 4%;
+}
+.block-big #btn-plus{
+  width: 5.5%;
+  right: 31.7%;
+  top: 55.5%;
+  z-index: 999;
+}
+.block-big .text,
+.block-1 .text,
+.block-2 .text,
+.block-3 .text,
+.block-4 .text{
+  font-family: Pepsi;
+  color: white;
+  text-transform: uppercase;
+  z-index: 9;
+}
+.block-big .text.biggest{
+  font-size: 30px;
+}
+.block-big .text.big{
+  font-size: 25px;
+}
+.block-big .text.small{
+  font-size: 17px;
+}
+.block-big .text{
+  right: 28.7%;
+  top: 49%;
+  font-size: 20px;
+}
+.block-1 .text,
+.block-2 .text,
+.block-3 .text{
+  font-size: 21px;
+  text-align: center;
+}
+.block-1 .text.small,
+.block-2 .text.small,
+.block-3 .text.small{
+  font-size: 17px;
+}
+.block-1 .text.big,
+.block-2 .text.big,
+.block-3 .text.big{
+  font-size: 25px;
+}
+.block-1 .text.biggest,
+.block-2 .text.biggest,
+.block-3 .text.biggest{
+  font-size: 31px;
+}
+.block-1 .text{
+  right: 20.8%;
+  top: 30%;
+}
+.block-2 .text{
+  right: 14.5%;
+  top: 16%;
+}
+.block-3 .text{
+  right: 11.7%;
+  top: 73%;
+  z-index: 9;
+}
+.block-4 .text.small{
+  font-size: 24px;
+}
+.block-4 .text.big{
+  font-size: 34px;
+}
+.block-4 .text.biggest{
+  font-size: 43px;
+}
+.block-4 .text{
+  right: 22.3%;
+  top: 60%;
+  font-size: 29px;
+  z-index: 9;
+}
+.block-1 #btn-play,
+.block-2 #btn-play,
+.block-3 #btn-play,
+.block-4 #btn-play{
+  width: 3.5%;
+}
+.block-1 #btn-play{
+  right: 23.26%;
+  top: 41.3%;
+  z-index: 999;
+  cursor: pointer;
+}
+.block-2 #btn-play{
+  right: 15.75%;
+  top: 27%;
+  z-index: 999;
+}
+.block-3 #btn-play{
+  right: 15.75%;
+  top: 84.1%;
+  z-index: 999;
+  cursor: pointer;
+}
+.block-4 #btn-play{
+  right: 23.25%;
+  top: 69.7%;
+  z-index: 999;
+  cursor: pointer;
+}
+.block-right .text.big{
+  font-size: 47px
+}
+.block-right .text.biggest{
+  font-size: 57px
+}
+.block-right .text.small{
+  font-size: 33px
+}
+.block-right .text{
+  font-family: Myriad-Light;
+  color: white;
+  right: 1.5%;
+  top: 45.5%;
+  font-size: 40px
+}
+.blocks #line-top.small{
+  right: 4.2%;
+  top: -20%;
+}
+.blocks #line-top{
+  right: 9.1%;
+  top: -11%;
+  z-index: 99;
+}
+.blocks #line-bottom.small{
+  right: 17.4%;
+  width: 30%;
+}
+.blocks #line-bottom{
+  right: 17.6%;
+  top: 33.5%;
+  z-index: 99;
+}
+.video-block{
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 9999;
+  display: none;
+}
+.video-block .content{
+  width: 60%;
+  height: 50%;
+  background: transparent;
+  left: 50%;
+  top: 50%;
+  margin: -15% 0 0 -30%;
+}
+.video-block .content .block-left,
+.video-block .content .block-right{
+  float: left;
+  height: 100%;
+}
+.video-block .content .block-left{
+  width: 25%;
+}
+.video-block .content .block-right iframe{
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  -webkit-transition: opacity 0.5s ease-in-out;
+  -moz-transition: opacity 0.5s ease-in-out;
+  -o-transition: opacity 0.5s ease-in-out;
+  transition: opacity 0.5s ease-in-out;
+
+}
+.video-block .content .block-right{
+  width: 0%;
+  border-top: 5px solid black;
+  border-right: 5px solid black;
+  border-bottom: 5px solid black;
+  border-left: 2.5px solid black;
+  -webkit-transition: width 0.5s ease-in-out;
+  -moz-transition: width 0.5s ease-in-out;
+  -o-transition: width 0.5s ease-in-out;
+  transition: width 0.5s ease-in-out;
+  background: black;
+}
+.video-block .content .block-left .top,
+.video-block .content .block-left .bottom{
+  height: 50%;
+}
+.video-block .content .block-left .bottom{
+  background: #1b1b1b;
+}
+.video-block .content .block-left .top{
+  background: url(/assets/images/welcome-video-1.png) center center no-repeat;
+  background-size: 100% 100%;
+  border-top: 5px solid black;
+  border-right: 2.5px solid black;
+  border-bottom: 2.5px solid black;
+  border-left: 5px solid black;
+}
+.video-block .content .block-left .top .title.small{
+  font-size: 26px;
+}
+.video-block .content .block-left .top .title.big{
+  font-size: 37px;
+}
+.video-block .content .block-left .top .title.biggest{
+  font-size: 46px;
+}
+.video-block .content .block-left .top .title{
+  font-family: Myriad-Bold;
+  color: white;
+  font-size: 33px;
+  padding: 10%;
+  text-transform: uppercase;
+}
+.video-block .content .block-left .top .title:after{
+  content: "";
+  width: 5%;
+  border-bottom: 5px solid white;
+  position: absolute;
+  left: 2.5%;
+  top: 26%;
+}
+.video-block .content .block-left .top .title.whyUs:after{
+  top: 16%;
+}
+.video-block .content .block-left .top .title.welcomeVeterco:after{
+  top: 36%;
+}
+.video-block .content .block-left .bottom{
+  border-top: 2.5px solid black;
+  border-right: 2.5px solid black;
+  border-bottom: 5px solid black;
+  border-left: 5px solid black;
+  padding: 25% 3% 3% 3%;
+}
+.video-block a{
+  text-decoration: none;
+}
+.video-block .video-link.big{
+  font-size: 19px;
+}
+.video-block .video-link.biggest{
+  font-size: 22px;
+}
+.video-block .video-link{
+  font-family: Myriad-Bold;
+  text-transform: uppercase;
+  color: #5a5a5a;
+  line-height: 220%;
+  cursor: pointer;
+}
+.video-block .video-link.active{
+  color: white;
+}
+.video-block .block-back .title.small{
+  font-size: 16px;
+}
+.video-block .block-back .title.big{
+  font-size: 22px;
+}
+.video-block .block-back .title.biggest{
+  font-size: 28px;
+}
+.video-block .block-back .title{
+  color: white;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  top: 33%;
+  left: 33%;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+.video-block .block-back{
+  background: black;
+  width: 7.5%;
+  height: 17.3%;
+  top: 41.5%;
+  left: 8.5%;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+  cursor: pointer;
+}
+.video-block .block-back:before{
+  content: "";
+  border-bottom: 1px solid white;
+  width: 40%;
+  position: absolute;
+  bottom: 0%;
+  margin-bottom: 12%;
+  margin-left: 15%
+}
+.video-block .block-back:after{
+  content: "";
+  border-left: 1px solid white;
+  height: 40%;
+  position: absolute;
+  bottom: 12%;
+  margin-left: 15%
+}

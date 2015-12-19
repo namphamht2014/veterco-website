@@ -22,26 +22,27 @@ var welcome2 = {
     var titleEle = $('.video-block .top .title');
     var currEle = $('.video-block .bottom #'+eleID);
     var blockEle = $('.video-block .top');
+    blockEle.removeClass('video1 video2 video3');
     var videoEle = $('.video-block .block-right');
     if (eleID == 'whyUs') {
       titleEle.addClass('whyUs');
       titleEle.html('WHY US?');
       currEle.addClass('active');
 
-      blockEle.attr('style', 'background: url(/assets/images/welcome-video-2.png) center center no-repeat;background-size: 100% 100%;');
+      blockEle.addClass('video2');
       videoEle.html('<iframe src="https://www.youtube.com/embed/wPTL9ZLsPgA" frameborder="0" allowfullscreen></iframe>');
     }else if (eleID == 'welcomeVeterco') {
       titleEle.addClass('welcomeVeterco');
       titleEle.html('Welcome to<br> Veterco <br>Vietnam');
       currEle.addClass('active');
 
-      blockEle.attr('style', 'background: url(/assets/images/welcome-video-3.png) center center no-repeat;background-size: 100% 100%;');
+      blockEle.addClass('video3');
       videoEle.html('<iframe src="https://www.youtube.com/embed/W4NCrwQZrTE" frameborder="0" allowfullscreen></iframe>');
     }else{
       titleEle.html('Factory <br>virtual tour');
       currEle.addClass('active');
 
-      blockEle.attr('style', 'background: url(/assets/images/welcome-video-1.png) center center no-repeat;background-size: 100% 100%;');
+      blockEle.addClass('video1');
       videoEle.html('<iframe src="https://www.youtube.com/embed/OmXuqDsESMM" frameborder="0" allowfullscreen></iframe>');
     }
     setTimeout(function() {
@@ -56,24 +57,25 @@ var welcome2 = {
     currentEle.childNodes[1].className += ' active';
     var titleEle = $('.video-block .top .title');
     var blockEle = $('.video-block .top');
+    blockEle.removeClass('video1 video2 video3');
     var videoEle = $('.video-block .block-right');
     titleEle.removeClass('whyUs welcomeVeterco');
     if (videoName == 'whyUs') {
       titleEle.addClass('whyUs');
       titleEle.html('WHY US?');
 
-      blockEle.attr('style', 'background: url(/assets/images/welcome-video-2.png) center center no-repeat;background-size: 100% 100%;');
+      blockEle.addClass('video2');
       videoEle.html('<iframe src="https://www.youtube.com/embed/wPTL9ZLsPgA" frameborder="0" allowfullscreen></iframe>');
     }else if (videoName == 'welcomeVeterco') {
       titleEle.addClass('welcomeVeterco');
       titleEle.html('Welcome to<br> Veterco <br>Vietnam');
 
-      blockEle.attr('style', 'background: url(/assets/images/welcome-video-3.png) center center no-repeat;background-size: 100% 100%;');
+      blockEle.addClass('video3');
       videoEle.html('<iframe src="https://www.youtube.com/embed/W4NCrwQZrTE" frameborder="0" allowfullscreen></iframe>');
     }else{
       titleEle.html('Factory <br>virtual tour');
 
-      blockEle.attr('style', 'background: url(/assets/images/welcome-video-1.png) center center no-repeat;background-size: 100% 100%;');
+      blockEle.addClass('video1');
       videoEle.html('<iframe src="https://www.youtube.com/embed/OmXuqDsESMM" frameborder="0" allowfullscreen></iframe>');
     }
     $('.video-block .block-right iframe').attr('style', 'opacity:1');

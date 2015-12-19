@@ -14,7 +14,7 @@
             </div>
           </div>
         </a>
-        <div class="top">
+        <div class="top video1">
           <div class="title">
             Factory <br>Virtual Tour
           </div>

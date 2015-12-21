@@ -40,6 +40,7 @@ body, html {
 .video-block .content .block-back,
 .video-block .content .block-back .title,
 .loadingPage,
+.loadingPage img,
 .loadingPage .text{
   position: absolute;
 }
@@ -56,13 +57,19 @@ body, html {
   transition: opacity 0.5s ease-in-out;
 }
 
+.loadingPage img{
+  width: 10%;
+  left: 50%;
+  top: 18%;
+  margin-left: -5%;
+}
 .loadingPage .text{
   font-family: Myriad-Bold;
   color: white;
   font-size: 35px;
   top: 40%;
   left: 50%;
-  margin-left: -153px;
+  margin-left: -77px;
 }
 
 .myContainer{

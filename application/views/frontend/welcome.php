@@ -1,5 +1,6 @@
 <div class="myContainer">
   <div class="loadingPage">
+    <img src="/assets/images/waiting.gif" alt="" />
     <div class="text">
       Loading...
     </div>

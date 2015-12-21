@@ -145,12 +145,6 @@ jQuery(window).load(function () {
     $('.loadingPage').hide();
   }, 500);
 
-  // alert('page is loaded');
-  //
-  // setTimeout(function () {
-  //     alert('page is loaded and 6s has passed');
-  // }, 6000);
-  //
   var lastX = 0;
   var count = 0;
   $('div.myContainer').mousemove(function(e){

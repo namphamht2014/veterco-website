@@ -220,33 +220,6 @@ $(function(){
   var total_height = khop1bg.height * 18;
   var windowTotalHeight = new myWindow(total_height);
 
-  var logo_run = '-webkit-transition: all 2s ease-in-out;-moz-transition: all 2s ease-in-out;-o-transition: all 2s ease-in-out;transition: all 2s ease-in-out;';
-  setTimeout(function() {
-    $('#logo1').attr('style', logo_run);
-    $('#logo2').attr('style', logo_run);
-    $('#logo3').attr('style', logo_run);
-    $('#logo4').attr('style', logo_run);
-    $('#logo5').attr('style', logo_run);
-    $('#logo6').attr('style', logo_run);
-    $('#logo7').attr('style', logo_run);
-  }, 0);
-
-  setTimeout(function() {
-    logo.run();
-  }, 100);
-
-  /*Menus*/
-  setTimeout(function() {
-    $('div.desc-line').attr('style', 'width:280px');
-    setTimeout(function() {
-      $('div.desc-line').attr('style', 'width:242px');
-    }, 800);
-  }, 2200);
-  setTimeout(function() {
-    $('div.desc-content').attr('style', 'opacity:1;');
-  }, 3500);
-  /*Menus - end*/
-
   /*
   served
    */
@@ -497,5 +470,32 @@ jQuery(window).load(function () {
   $('.loadingPage').css('opacity', '0');
   setTimeout(function() {
     $('.loadingPage').hide();
+
+    var logo_run = '-webkit-transition: all 2s ease-in-out;-moz-transition: all 2s ease-in-out;-o-transition: all 2s ease-in-out;transition: all 2s ease-in-out;';
+    setTimeout(function() {
+      $('#logo1').attr('style', logo_run);
+      $('#logo2').attr('style', logo_run);
+      $('#logo3').attr('style', logo_run);
+      $('#logo4').attr('style', logo_run);
+      $('#logo5').attr('style', logo_run);
+      $('#logo6').attr('style', logo_run);
+      $('#logo7').attr('style', logo_run);
+    }, 0);
+
+    setTimeout(function() {
+      logo.run();
+    }, 100);
+
+    /*Menus*/
+    setTimeout(function() {
+      $('div.desc-line').attr('style', 'width:280px');
+      setTimeout(function() {
+        $('div.desc-line').attr('style', 'width:242px');
+      }, 800);
+    }, 2200);
+    setTimeout(function() {
+      $('div.desc-content').attr('style', 'opacity:1;');
+    }, 3500);
+    /*Menus - end*/
   }, 500);
 });

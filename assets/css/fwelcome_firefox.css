@@ -1,0 +1,116 @@
+.block-4 img {
+    top: 49%;
+}
+.block-4 .text {
+    top: 62%;
+}
+.block-4 #btn-play {
+    top: 71.5%;
+}
+.block-big img {
+    top: 30.3%;
+}
+.block-1 img {
+    top: 19.7%;
+}
+.blocks #line-bottom {
+    right: 17.6%;
+    top: 34.3%;
+}
+.block-2 img, .block-3 img {
+    right: 10.05%;
+}
+.block-2 img {
+    top: 5.1%;
+}
+.block-big #btn-plus {
+    right: 31.75%;
+    top: 56.5%;
+}
+.block-big .text {
+    right: 29.2%;
+}
+.blocks #line-top {
+    right: 10.1%;
+    top: -9.5%;
+}
+.block-1 #btn-play {
+    right: 23.4%;
+    top: 42%;
+}
+.block-1 .text {
+    right: 21.5%;
+    top: 31%;
+}
+.block-2 #btn-play {
+    right: 15.9%;
+    top: 27.5%;
+}
+.block-2 .text {
+    top: 17%;
+}
+.block-3 #btn-play {
+    top: 84.7%;
+}
+/*small*/
+.block-1 img.small,
+.block-4 img.small {
+    right: 17.5%;
+}
+.blocks #line-top.small {
+    right: 4.45%;
+    top: -20.8%;
+}
+.blocks #line-bottom.small {
+    right: 17.55%;
+    top: 34.1%;
+}
+.block-4 img.small {
+    top: 49%;
+}
+.block-2 #btn-play.small {
+    right: 15.9%;
+    top: 27.5%;
+}
+.block-1 #btn-play.small {
+    right: 23.4%;
+    top: 42%;
+}
+.block-big img.small {
+    top: 30%;
+}
+.block-big #btn-plus.small {
+    top: 56.15%;
+}
+.block-4 #btn-play.small {
+    top: 71.5%;
+}
+.block-3 img.small {
+    right: 10%;
+    top: 63.6%;
+}
+.block-3 #btn-play.small {
+    top: 86.2%;
+}
+.block-big .text.small {
+    top: 50%;
+}
+.block-1 .text.small {
+    right: 21.5%;
+}
+.block-right .text.small {
+    top: 46.5%;
+}
+.block-4 .text.small {
+    top: 61.5%;
+}
+.block-3 .text.small {
+    top: 74.5%;
+}
+/*biggest*/
+.block-big .text.biggest {
+    top: 50%;
+}
+.block-right .text.biggest {
+    top: 47%;
+}

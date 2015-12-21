@@ -93,6 +93,9 @@ jQuery(window).load(function () {
   $('.video-block .video-link').removeClass('biggest big small');
   $('.video-block .content .block-left .top .title').removeClass('biggest big small');
   $('.video-block .block-back .title').removeClass('biggest big small');
+  $('.block-big img').removeClass('small');
+  $('.block-1 img').removeClass('small');
+  $('.block-2 img').removeClass('small');
   $('.block-3 img').removeClass('small');
   $('.block-4 img').removeClass('small');
   $('.blocks #line-bottom').removeClass('small');
@@ -128,6 +131,9 @@ jQuery(window).load(function () {
     $('.video-block .video-link').addClass('small');
     $('.video-block .content .block-left .top .title').addClass('small');
     $('.video-block .block-back .title').addClass('small');
+    $('.block-big img').addClass('small');
+    $('.block-1 img').addClass('small');
+    $('.block-2 img').addClass('small');
     $('.block-3 img').addClass('small');
     $('.block-4 img').addClass('small');
     $('.blocks #line-bottom').addClass('small');

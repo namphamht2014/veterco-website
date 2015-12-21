@@ -1,0 +1,75 @@
+.blocks #line-top.small {
+    right: 4.3%;
+    top: -20.5%;
+}
+.blocks #line-bottom.small {
+    right: 17.6%;
+    top: 34%;
+    width: 30%;
+}
+.block-big #btn-plus.small {
+    top: 55.6%;
+}
+.block-2 #btn-play.small {
+    right: 15.7%;
+    top: 27.2%;
+}
+.block-1 #btn-play.small {
+    right: 23.34%;
+    top: 41.5%;
+}
+.block-4 #btn-play.small {
+    right: 23%;
+    top: 70%;
+}
+.block-3 #btn-play.small {
+    right: 15.5%;
+    top: 84.6%;
+}
+
+.blocks #line-top {
+    right: 11.5%;
+    top: -6.8%;
+}
+.blocks #line-bottom {
+    top: 34%;
+}
+.block-2 #btn-play {
+    top: 27.3%;
+}
+.block-1 #btn-play {
+    right: 23.3%;
+    top: 41.5%;
+}
+.block-big #btn-plus {
+    top: 55.7%;
+}
+.block-4 #btn-play {
+    top: 70%;
+}
+.block-3 #btn-play {
+    top: 84.6%;
+}
+.block-big .text {
+    right: 29.5%;
+    top: 50%;
+}
+.block-1 .text {
+    right: 21.5%;
+    top: 31%;
+}
+.block-2 .text {
+    right: 15%;
+    top: 16.5%;
+}
+.block-3 .text {
+    right: 12%;
+}
+.block-4 .text {
+    right: 22.5%;
+    top: 60.5%;
+}
+
+.block-big .text.big {
+    right: 29%;
+}

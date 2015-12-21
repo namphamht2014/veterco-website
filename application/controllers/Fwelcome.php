@@ -6,6 +6,7 @@ class Fwelcome extends CI_Controller {
   {
     parent::__construct();
     $this->load->language('frontend_lang');
+    $this->load->library('user_agent');
   }
 
   public function index()
@@ -15,6 +16,15 @@ class Fwelcome extends CI_Controller {
 
     //Add css to page
     $data['headers'] = array(base_url().'assets/css/fwelcome.css');
+    if ($this->agent->is_browser('Safari')) {
+      // $data['headers'][] = base_url().'assets/css/fwelcome_safari.css';
+    } else if ($this->agent->is_browser('Chrome')) {
+      $data['headers'][] = base_url().'assets/css/fwelcome_chrome.css';
+    } else if ($this->agent->is_browser('Opera')) {
+      $data['headers'][] = base_url().'assets/css/fwelcome_opera.css';
+    } else if ($this->agent->is_browser('Firefox')) {
+      $data['headers'][] = base_url().'assets/css/fwelcome_firefox.css';
+    }
 
     //add js to page
     $data['footers'] = array(

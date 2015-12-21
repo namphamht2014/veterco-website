@@ -4,6 +4,12 @@
 <?php $this->load->view('frontend/home-header'); ?>
 
 <div class="myContainer">
+  <div class="loadingPage">
+    <img src="/assets/images/waiting.gif" alt="" />
+    <div class="text">
+      Loading...
+    </div>
+  </div>
   <article class="first-article">
     <div class="animals">
       <div class="logo-block">

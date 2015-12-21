@@ -45,3 +45,33 @@ body{
 .myHr2{
   border-top: 1px solid black;
 }
+
+.loadingPage{
+  position: absolute;
+  background: black;
+  width: 100%;
+  height: 100%;
+  z-index: 99999;
+  opacity: 1;
+  -webkit-transition: opacity 0.5s ease-in-out;
+  -moz-transition: opacity 0.5s ease-in-out;
+  -o-transition: opacity 0.5s ease-in-out;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.loadingPage img{
+  position: absolute;
+  width: 10%;
+  left: 50%;
+  top: 18%;
+  margin-left: -5%;
+}
+.loadingPage .text{
+  position: absolute;
+  font-family: Myriad-Bold;
+  color: white;
+  font-size: 35px;
+  top: 40%;
+  left: 50%;
+  margin-left: -77px;
+}

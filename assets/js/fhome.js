@@ -490,3 +490,12 @@ var articleBlock = {
       }
   }
 };
+
+
+jQuery(window).load(function () {
+  //hide loading page
+  $('.loadingPage').css('opacity', '0');
+  setTimeout(function() {
+    $('.loadingPage').hide();
+  }, 500);
+});

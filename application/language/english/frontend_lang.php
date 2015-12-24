@@ -25,4 +25,8 @@ $lang['f_sourcing_lifecycleDetails'] = 'Life cycle details';
 Catalogue
  */
 $lang['f_catalogue'] = 'Catalogue';
+/*
+Distributor Support
+ */
+$lang['f_distributor'] = 'Distributor Support';
 ?>

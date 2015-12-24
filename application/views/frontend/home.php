@@ -83,7 +83,7 @@
         </div>
       </div>
       <div class="col-md-6 menu8">
-        <a href="#" onmouseover="menus.hover(this)" onmouseout="menus.unhover(this)"><b>DISTIBUTOR SUPPORT</b></a>
+        <a href="<?= site_url('fdistributor')?>" onmouseover="menus.hover(this)" onmouseout="menus.unhover(this)"><b>DISTIBUTOR SUPPORT</b></a>
         <div class="menu-desc">
           <div class="desc-line"></div>
         </div>

@@ -1,0 +1,187 @@
+/*Common*/
+.blocks .bground,
+.blocks .title1,
+.blocks .title2,
+.blocks .be-the-first,
+.blocks .be-the-first .text,
+.blocks .order-status,
+.blocks .order-status .text,
+.blocks .product-customization,
+.blocks .product-customization .text,
+.blocks .promotional,
+.blocks .promotional .text,
+.blocks .samples,
+.blocks .samples .text,
+.blocks .why-us,
+.blocks .why-us .text{
+  position: absolute;
+}
+.blocks .title1,
+.blocks .title2{
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 22px;
+  left: 50%;
+  top: 50%;
+  opacity: 1;
+  -webkit-transition: opacity 0.5s ease-in-out;
+  -moz-transition: opacity 0.5s ease-in-out;
+  -o-transition: opacity 0.5s ease-in-out;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.myContainer{
+  background: url(/assets/images/distributor-bg-new.png) center center no-repeat;
+  background-size: 100% 100%;
+  height: calc(100% - 104px);
+}
+.blocks{
+  width: 100%;
+  height: 100%;
+}
+.blocks .bground{
+  width: 32%;
+  left: 50%;
+  top: 16%;
+  margin-left: -16%;
+}
+.blocks .title1{
+  background: url(/assets/images/distributor-text1.png) center center no-repeat;
+  background-size: 100% 100%;
+  width: 36%;
+  height: 9.1%;
+  padding-top: 1.5%;
+  margin-left: -18%;
+  margin-top: -4.7%;
+}
+.blocks .title2{
+  background: url(/assets/images/distributor-text2.png) center center no-repeat;
+  background-size: 100% 100%;
+  width: 24.5%;
+  height: 7.5%;
+  margin-left: -11.5%;
+  padding-top: 1%;
+}
+
+.blocks .order-status .text,
+.blocks .product-customization .text,
+.blocks .promotional .text,
+.blocks .samples .text,
+.blocks .why-us .text,
+.blocks .be-the-first .text{
+  background: rgba(0, 0, 0, 0.2);
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 18px;
+  left: 50%;
+}
+
+.blocks .be-the-first{
+  width: 25.5%;
+  height: 31.5%;
+  background: url(/assets/images/distributor-be-the-first.png) center center no-repeat;
+  background-size: 100% 100%;
+  left: 50%;
+  top: 8%;
+  margin-left: -9.9%;
+  opacity: 0;
+}
+.blocks .be-the-first .text{
+  width: 28%;
+  height: 14%;
+  padding-top: 2.5%;
+  top: 63%;
+  margin-left: -16%;
+}
+
+.blocks .order-status{
+  width: 22.1%;
+  height: 25.5%;
+  background: url(/assets/images/distributor-order-status.png) center center no-repeat;
+  background-size: 100% 100%;
+  left: 50%;
+  top: 28.3%;
+  margin-left: -5.7%;
+  opacity: 0;
+}
+.blocks .order-status .text{
+  width: 49%;
+  height: 24%;
+  padding-top: 4.5%;
+  top: 50%;
+  margin-left: -15%;
+}
+
+.blocks .product-customization{
+  width: 17.2%;
+  height: 24.5%;
+  background: url(/assets/images/distributor-product-customization.png) center center no-repeat;
+  background-size: 100% 100%;
+  left: 50%;
+  top: 51.4%;
+  margin-left: -2%;
+  opacity: 0;
+}
+.blocks .product-customization .text{
+  width: 50%;
+  height: 28%;
+  padding-top: 3.5%;
+  top: 40%;
+  margin-left: -20%;
+}
+
+.blocks .promotional{
+  width: 17%;
+  height: 39%;
+  background: url(/assets/images/distributor-promotional.png) center center no-repeat;
+  background-size: 100% 100%;
+  left: 34.45%;
+  top: 35%;
+  margin-left: -2%;
+  opacity: 0;
+}
+.blocks .promotional .text{
+  width: 55%;
+  height: 18%;
+  padding-top: 3.5%;
+  top: 32%;
+  margin-left: -23%;
+}
+
+.blocks .samples{
+  width: 16.5%;
+  height: 33.5%;
+  background: url(/assets/images/distributor-samples.png) center center no-repeat;
+  background-size: 100% 100%;
+  left: 60%;
+  top: 32%;
+  margin-left: -2%;
+  opacity: 0;
+}
+.blocks .samples .text{
+  width: 55%;
+  height: 19%;
+  padding-top: 3%;
+  top: 55%;
+  margin-left: -43%;
+}
+
+.blocks .why-us{
+  width: 17.5%;
+  height: 38.2%;
+  background: url(/assets/images/distributor-why-us.png) center center no-repeat;
+  background-size: 100% 100%;
+  left: 42.25%;
+  top: 35.8%;
+  margin-left: -2%;
+  opacity: 0;
+}
+.blocks .why-us .text{
+  width: 55%;
+  height: 12%;
+  padding-top: 4%;
+  top: 44%;
+  margin-left: -23%;
+}

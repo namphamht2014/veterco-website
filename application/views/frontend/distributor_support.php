@@ -1,5 +1,11 @@
 <?php $this->load->view('frontend/home-header'); ?>
 <div class="myContainer">
+  <div class="loadingPage">
+    <img src="/assets/images/waiting.gif" alt="" />
+    <div class="text">
+      Loading...
+    </div>
+  </div>
   <div class="blocks">
     <img class="bground" src="/assets/images/distributor-blocks.png" alt="" />
     <div class="title1">

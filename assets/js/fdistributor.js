@@ -1,4 +1,8 @@
 jQuery(window).load(function () {
+  $('.loadingPage').css('opacity', '0');
+  setTimeout(function() {
+    $('.loadingPage').hide();
+  }, 500);
   setTimeout(function() {
     $('.blocks .title1').css('opacity', '0');
     $('.blocks .title2').css('opacity', '0');

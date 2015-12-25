@@ -1,8 +1,8 @@
 jQuery(window).load(function () {
-  // $('.loadingPage').css('opacity', '0');
-  // setTimeout(function() {
-  //   $('.loadingPage').hide();
-  // }, 500);
+  $('.loadingPage').css('opacity', '0');
+  setTimeout(function() {
+    $('.loadingPage').hide();
+  }, 500);
 
   $('.whyUsContainer .block1 .text, .whyUsContainer .block2 .text, .whyUsContainer .block3 .text').removeClass('small');
   $('.whyUsContainer .block4 .text, .whyUsContainer .block5 .text, .whyUsContainer .block6 .text').removeClass('small');

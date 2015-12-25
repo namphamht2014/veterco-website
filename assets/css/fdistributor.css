@@ -2,19 +2,39 @@
 .blocks .bground,
 .blocks .title1,
 .blocks .title2,
+.blocks .be-the-first-block,
 .blocks .be-the-first,
 .blocks .be-the-first .text,
+.blocks .order-status-block,
 .blocks .order-status,
 .blocks .order-status .text,
+.blocks .product-customization-block,
 .blocks .product-customization,
 .blocks .product-customization .text,
+.blocks .promotional-block,
 .blocks .promotional,
 .blocks .promotional .text,
+.blocks .samples-block,
 .blocks .samples,
 .blocks .samples .text,
+.blocks .why-us-block,
 .blocks .why-us,
 .blocks .why-us .text{
   position: absolute;
+}
+.blocks .be-the-first-block,
+.blocks .be-the-first,
+.blocks .order-status-block,
+.blocks .order-status,
+.blocks .product-customization-block,
+.blocks .product-customization,
+.blocks .promotional-block,
+.blocks .promotional,
+.blocks .samples-block,
+.blocks .samples,
+.blocks .why-us-block,
+.blocks .why-us{
+  opacity: 0;
 }
 .blocks .title1,
 .blocks .title2{
@@ -29,6 +49,18 @@
   -moz-transition: opacity 0.5s ease-in-out;
   -o-transition: opacity 0.5s ease-in-out;
   transition: opacity 0.5s ease-in-out;
+}
+.blocks .title1.small,
+.blocks .title2.small{
+  font-size: 19px;
+}
+.blocks .title1.big,
+.blocks .title2.big{
+  font-size: 26px;
+}
+.blocks .title1.biggest,
+.blocks .title2.biggest{
+  font-size: 31px;
 }
 
 .myContainer{
@@ -77,6 +109,97 @@
   font-size: 18px;
   left: 50%;
 }
+.blocks .order-status .text.small,
+.blocks .product-customization .text.small,
+.blocks .promotional .text.small,
+.blocks .samples .text.small,
+.blocks .why-us .text.small,
+.blocks .be-the-first .text.small{
+  font-size: 16px;
+}
+.blocks .order-status .text.big,
+.blocks .product-customization .text.big,
+.blocks .promotional .text.big,
+.blocks .samples .text.big,
+.blocks .why-us .text.big,
+.blocks .be-the-first .text.big{
+  font-size: 22px;
+}
+.blocks .order-status .text.biggest,
+.blocks .product-customization .text.biggest,
+.blocks .promotional .text.biggest,
+.blocks .samples .text.biggest,
+.blocks .why-us .text.biggest,
+.blocks .be-the-first .text.biggest{
+  font-size: 26px;
+}
+
+.blocks .be-the-first-block{
+  width: 23%;
+  height: 16%;
+  left: 50%;
+  top: 19%;
+  margin-left: -10%;
+  -webkit-transform: rotate(-5.5deg);
+  -moz-transform: rotate(-5.5deg);
+  -ms-transform: rotate(-5.5deg);
+  -o-transform: rotate(-5.5deg);
+  transform: rotate(-5.5deg);
+}
+.blocks .order-status-block,
+.blocks .samples-block{
+  -webkit-transform: rotate(-75.5deg);
+  -moz-transform: rotate(-75.5deg);
+  -ms-transform: rotate(-75.5deg);
+  -o-transform: rotate(-75.5deg);
+  transform: rotate(-75.5deg);
+}
+.blocks .order-status-block{
+  width: 13%;
+  height: 30%;
+  left: 50%;
+  top: 21%;
+  margin-left: -4.7%;
+}
+.blocks .samples-block{
+  width: 17%;
+  height: 18%;
+  left: 55%;
+  top: 36%;
+}
+.blocks .product-customization-block{
+  width: 17%;
+  height: 18%;
+  left: 48%;
+  top: 62%;
+  -webkit-transform: rotate(-54deg);
+  -moz-transform: rotate(-54deg);
+  -ms-transform: rotate(-54deg);
+  -o-transform: rotate(-54deg);
+  transform: rotate(-54deg);
+}
+.blocks .why-us-block{
+  width: 17%;
+  height: 35%;
+  left: 38%;
+  top: 40%;
+  -webkit-transform: rotate(-64deg);
+  -moz-transform: rotate(-64deg);
+  -ms-transform: rotate(-64deg);
+  -o-transform: rotate(-64deg);
+  transform: rotate(-64deg);
+}
+.blocks .promotional-block{
+  width: 12%;
+  height: 45%;
+  left: 32.7%;
+  top: 36.5%;
+  -webkit-transform: rotate(-17deg);
+  -moz-transform: rotate(-17deg);
+  -ms-transform: rotate(-17deg);
+  -o-transform: rotate(-17deg);
+  transform: rotate(-17deg);
+}
 
 .blocks .be-the-first{
   width: 25.5%;
@@ -86,7 +209,6 @@
   left: 50%;
   top: 8%;
   margin-left: -9.9%;
-  opacity: 0;
 }
 .blocks .be-the-first .text{
   width: 28%;
@@ -104,7 +226,6 @@
   left: 50%;
   top: 28.3%;
   margin-left: -5.7%;
-  opacity: 0;
 }
 .blocks .order-status .text{
   width: 49%;
@@ -122,7 +243,6 @@
   left: 50%;
   top: 51.4%;
   margin-left: -2%;
-  opacity: 0;
 }
 .blocks .product-customization .text{
   width: 50%;
@@ -140,7 +260,6 @@
   left: 34.45%;
   top: 35%;
   margin-left: -2%;
-  opacity: 0;
 }
 .blocks .promotional .text{
   width: 55%;
@@ -158,7 +277,9 @@
   left: 60%;
   top: 32%;
   margin-left: -2%;
-  opacity: 0;
+}
+.blocks .samples .text.small{
+  padding-top: 2.3%;
 }
 .blocks .samples .text{
   width: 55%;
@@ -176,7 +297,6 @@
   left: 42.25%;
   top: 35.8%;
   margin-left: -2%;
-  opacity: 0;
 }
 .blocks .why-us .text{
   width: 55%;

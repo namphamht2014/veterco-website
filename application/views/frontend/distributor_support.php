@@ -40,6 +40,13 @@
         Why Us
       </div>
     </div>
+
+    <div class="samples-block"></div>
+    <div class="order-status-block"></div>
+    <div class="why-us-block"></div>
+    <div class="be-the-first-block"></div>
+    <div class="product-customization-block"></div>
+    <div class="promotional-block"></div>
   </div>
 </div>
 <?php $this->load->view('frontend/footer');?>

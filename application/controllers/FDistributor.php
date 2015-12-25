@@ -6,6 +6,7 @@ class FDistributor extends CI_Controller {
   {
     parent::__construct();
     $this->load->language('frontend_lang');
+    $this->load->library('user_agent');
     date_default_timezone_set('Asia/Saigon');
   }
 
@@ -19,6 +20,9 @@ class FDistributor extends CI_Controller {
       base_url().'assets/css/fhome.css',
       base_url().'assets/css/fdistributor.css'
     );
+    if ($this->agent->is_browser('Opera')) {
+      $data['headers'][] = base_url().'assets/css/fdistributor_opera.css';
+    }
 
     //add js to page
     $data['footers'] = array(

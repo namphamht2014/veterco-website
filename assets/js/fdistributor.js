@@ -8,46 +8,71 @@ jQuery(window).load(function () {
     $('.blocks .title2').hide();
   }, 2500);
 
+  $('.blocks .title1, .blocks .title2, .blocks .order-status .text').removeClass('small big biggest');
+  $('.blocks .product-customization .text, .blocks .promotional .text').removeClass('small big biggest');
+  $('.blocks .samples .text, .blocks .why-us .text, .blocks .be-the-first .text').removeClass('small big biggest');
+
+  var winWidth = $(window).width();
+  if(winWidth >= 2764){
+    $('.blocks .title1, .blocks .title2, .blocks .order-status .text').addClass('biggest');
+    $('.blocks .product-customization .text, .blocks .promotional .text').addClass('biggest');
+    $('.blocks .samples .text, .blocks .why-us .text, .blocks .be-the-first .text').addClass('biggest');
+  }else if (winWidth >= 2304 && winWidth < 2764) {
+    $('.blocks .title1, .blocks .title2, .blocks .order-status .text').addClass('big');
+    $('.blocks .product-customization .text, .blocks .promotional .text').addClass('big');
+    $('.blocks .samples .text, .blocks .why-us .text, .blocks .be-the-first .text').addClass('big');
+  }else if (winWidth >= 1920 && winWidth < 2304) {}else {
+    $('.blocks .title1, .blocks .title2, .blocks .order-status .text').addClass('small');
+    $('.blocks .product-customization .text, .blocks .promotional .text').addClass('small');
+    $('.blocks .samples .text, .blocks .why-us .text, .blocks .be-the-first .text').addClass('small');
+  }
+
   var beTheFirstBlock = $('.blocks .be-the-first');
-  beTheFirstBlock.mouseover(function () {
+  var beTheFirstBlockOver = $('.blocks .be-the-first-block');
+  beTheFirstBlockOver.mouseover(function () {
     beTheFirstBlock.css('opacity', '1');
   });
-  beTheFirstBlock.mouseout(function () {
+  beTheFirstBlockOver.mouseout(function () {
     beTheFirstBlock.css('opacity', '0');
   });
   var orderStatusBlock = $('.blocks .order-status');
-  orderStatusBlock.mouseover(function () {
+  var orderStatusBlockOver = $('.blocks .order-status-block');
+  orderStatusBlockOver.mouseover(function () {
     orderStatusBlock.css('opacity', '1');
   });
-  orderStatusBlock.mouseout(function () {
+  orderStatusBlockOver.mouseout(function () {
     orderStatusBlock.css('opacity', '0');
   });
   var productCustomizationBlock = $('.blocks .product-customization');
-  productCustomizationBlock.mouseover(function () {
+  var productCustomizationBlockOver = $('.blocks .product-customization-block');
+  productCustomizationBlockOver.mouseover(function () {
     productCustomizationBlock.css('opacity', '1');
   });
-  productCustomizationBlock.mouseout(function () {
+  productCustomizationBlockOver.mouseout(function () {
     productCustomizationBlock.css('opacity', '0');
   });
   var promotionalBlock = $('.blocks .promotional');
-  promotionalBlock.mouseover(function () {
+  var promotionalBlockOver = $('.blocks .promotional-block');
+  promotionalBlockOver.mouseover(function () {
     promotionalBlock.css('opacity', '1');
   });
-  promotionalBlock.mouseout(function () {
+  promotionalBlockOver.mouseout(function () {
     promotionalBlock.css('opacity', '0');
   });
   var samplesBlock = $('.blocks .samples');
-  samplesBlock.mouseover(function () {
+  var samplesBlockOver = $('.blocks .samples-block');
+  samplesBlockOver.mouseover(function () {
     samplesBlock.css('opacity', '1');
   });
-  samplesBlock.mouseout(function () {
+  samplesBlockOver.mouseout(function () {
     samplesBlock.css('opacity', '0');
   });
   var whyUsBlock = $('.blocks .why-us');
-  whyUsBlock.mouseover(function () {
+  var whyUsBlockOver = $('.blocks .why-us-block');
+  whyUsBlockOver.mouseover(function () {
     whyUsBlock.css('opacity', '1');
   });
-  whyUsBlock.mouseout(function () {
+  whyUsBlockOver.mouseout(function () {
     whyUsBlock.css('opacity', '0');
   });
 });

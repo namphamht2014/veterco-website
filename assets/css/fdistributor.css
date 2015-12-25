@@ -19,7 +19,25 @@
 .blocks .samples .text,
 .blocks .why-us-block,
 .blocks .why-us,
-.blocks .why-us .text{
+.blocks .why-us .text,
+.whyUsContainer .block1,
+.whyUsContainer .block1 .active,
+.whyUsContainer .block1 .text,
+.whyUsContainer .block2,
+.whyUsContainer .block2 .active,
+.whyUsContainer .block2 .text,
+.whyUsContainer .block3,
+.whyUsContainer .block3 .active,
+.whyUsContainer .block3 .text,
+.whyUsContainer .block4,
+.whyUsContainer .block4 .active,
+.whyUsContainer .block4 .text,
+.whyUsContainer .block5,
+.whyUsContainer .block5 .active,
+.whyUsContainer .block5 .text,
+.whyUsContainer .block6,
+.whyUsContainer .block6 .active,
+.whyUsContainer .block6 .text{
   position: absolute;
 }
 .blocks .be-the-first-block,
@@ -62,11 +80,14 @@
 .blocks .title2.biggest{
   font-size: 31px;
 }
+.myContainer,
+.whyUsContainer{
+  background-size: 100% 100%;
+  height: calc(100% - 104px);
+}
 
 .myContainer{
   background: url(/assets/images/distributor-bg-new.png) center center no-repeat;
-  background-size: 100% 100%;
-  height: calc(100% - 104px);
 }
 .blocks{
   width: 100%;
@@ -304,4 +325,166 @@
   padding-top: 4%;
   top: 44%;
   margin-left: -23%;
+}
+
+/*why us*/
+.whyUsContainer .block1,
+.whyUsContainer .block2,
+.whyUsContainer .block3,
+.whyUsContainer .block4,
+.whyUsContainer .block5,
+.whyUsContainer .block6{
+  background: black;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.whyUsContainer .block1 .text,
+.whyUsContainer .block1 .active,
+.whyUsContainer .block2 .text,
+.whyUsContainer .block2 .active,
+.whyUsContainer .block3 .text,
+.whyUsContainer .block3 .active,
+.whyUsContainer .block4 .text,
+.whyUsContainer .block4 .active,
+.whyUsContainer .block5 .text,
+.whyUsContainer .block5 .active,
+.whyUsContainer .block6 .text,
+.whyUsContainer .block6 .active{
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+.whyUsContainer .block1 .active,
+.whyUsContainer .block2 .active,
+.whyUsContainer .block3 .active,
+.whyUsContainer .block4 .active,
+.whyUsContainer .block5 .active,
+.whyUsContainer .block6 .active{
+  background: url(/assets/images/distributor-why-us-block-active.png) center center no-repeat;
+  background-size: 100% 100%;
+  height: 45%;
+  width: 23%;
+  right: -3.5%;
+  top: -14.3%;
+  opacity: 0;
+}
+.whyUsContainer .block1 .text,
+.whyUsContainer .block2 .text,
+.whyUsContainer .block3 .text,
+.whyUsContainer .block4 .text,
+.whyUsContainer .block5 .text,
+.whyUsContainer .block6 .text{
+  text-align: center;
+  color: white;
+  text-transform: uppercase;
+}
+.whyUsContainer .block1 .text,
+.whyUsContainer .block2 .text,
+.whyUsContainer .block3 .text,
+.whyUsContainer .block4 .text{
+  font-size: 22px;
+}
+.whyUsContainer .block1 .text.small,
+.whyUsContainer .block2 .text.small,
+.whyUsContainer .block3 .text.small,
+.whyUsContainer .block4 .text.small{
+  font-size: 18px;
+}
+.whyUsContainer .block1 .text.big,
+.whyUsContainer .block2 .text.big,
+.whyUsContainer .block3 .text.big,
+.whyUsContainer .block4 .text.big{
+  font-size: 26px;
+}
+.whyUsContainer .block1 .text.biggest,
+.whyUsContainer .block2 .text.biggest,
+.whyUsContainer .block3 .text.biggest,
+.whyUsContainer .block4 .text.biggest{
+  font-size: 29px;
+}
+.whyUsContainer .block5 .text.small,
+.whyUsContainer .block6 .text.small{
+  font-size: 17px;
+}
+.whyUsContainer .block5 .text.big,
+.whyUsContainer .block6 .text.big{
+  font-size: 25px;
+}
+.whyUsContainer .block5 .text.biggest,
+.whyUsContainer .block6 .text.biggest{
+  font-size: 28px;
+}
+
+.whyUsContainer{
+  background: url(/assets/images/distributor-why-us-bg) center center no-repeat;
+  background-size: 100% 100%;
+}
+.whyUsContainer .block1{
+  width: 20%;
+  height: 38.3%;
+  left: 45%;
+  top: 47%;
+  margin-top: -9%;
+}
+
+.whyUsContainer .block1 .text{
+  top: 45%;
+  left: 22.5%;
+}
+.whyUsContainer .block2{
+  width: 13%;
+  height: 24.9%;
+  left: 64%;
+  top: 37%;
+  margin-top: -9%;
+}
+.whyUsContainer .block2 .text{
+  top: 49%;
+  left: -7%;
+  width: 105%;
+}
+.whyUsContainer .block3{
+  width: 11%;
+  height: 21.1%;
+  left: 64%;
+  top: 72%;
+  margin-top: -9%;
+}
+.whyUsContainer .block3 .text,
+.whyUsContainer .block4 .text{
+  top: 45%;
+  width: 105%;
+}
+.whyUsContainer .block4{
+  width: 11%;
+  height: 21.1%;
+  left: 35%;
+  top: 39.5%;
+  margin-top: -9%;
+}
+.whyUsContainer .block5{
+  width: 11%;
+  height: 21.1%;
+  left: 25%;
+  top: 52.5%;
+  margin-top: -9%;
+}
+.whyUsContainer .block5 .text,
+.whyUsContainer .block6 .text{
+  font-size: 20px;
+  top: 48%;
+  left: -5%;
+  width: 110%;
+}
+.whyUsContainer .block6{
+  width: 15%;
+  height: 28.5%;
+  left: 31.5%;
+  top: 70%;
+  margin-top: -9%;
 }

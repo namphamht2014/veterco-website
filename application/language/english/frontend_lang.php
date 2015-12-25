@@ -29,4 +29,5 @@ $lang['f_catalogue'] = 'Catalogue';
 Distributor Support
  */
 $lang['f_distributor'] = 'Distributor Support';
+$lang['f_distributor_whyus'] = 'Why Us';
 ?>

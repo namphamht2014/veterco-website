@@ -8,3 +8,22 @@
 .whyUsContainer .block6 .text.biggest {
     font-size: 32px;
 }
+
+.whyUsDetailsContainer .center-block.ongoing .text {
+    font-size: 24px;
+    line-height: 32px;
+}
+.whyUsDetailsContainer .center-block.ongoing .text.big {
+    font-size: 28px;
+    line-height: 38px;
+}
+.whyUsDetailsContainer .white-block.ongoing .text.biggest {
+    left: 0;
+}
+.whyUsDetailsContainer .center-block.ongoing .text.biggest {
+    font-size: 35px;
+    line-height: 50px;
+}
+.whyUsDetailsContainer .center-block.customize .text.biggest {
+    font-size: 30px;
+}

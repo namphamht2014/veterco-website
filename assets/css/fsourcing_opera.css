@@ -1,0 +1,23 @@
+.sourcingAbcContainer .block-left.small .view .items .item1,
+.sourcingAbcContainer .block-left.small .view .items .item2 {
+    line-height: 16px;
+}
+.sourcingAbcContainer .block-left.small .sortBy .items .odd,
+.sourcingAbcContainer .block-left.small .sortBy .items .even {
+    line-height: 34px;
+}
+.sourcingAbcContainer .block-left .view,
+.sourcingAbcContainer .block-left.big .view {
+    height: 4.8%;
+}
+.sourcingAbcContainer .block-left .sortBy .items .odd,
+.sourcingAbcContainer .block-left .sortBy .items .even {
+    font-size: 14px;
+}
+.sourcingAbcContainer .block-left.biggest .view {
+    height: 4.6%;
+}
+.sourcingAbcContainer .block-left.biggest .sortBy .items .odd,
+.sourcingAbcContainer .block-left.biggest .sortBy .items .even {
+    font-size: 22px;
+}

@@ -313,3 +313,27 @@ $( document ).ready(function() {
 	$('#cssmenu>ul>li.has-sub>a').append('<span class="holder"></span>');
 });
 } )( jQuery );
+
+jQuery(window).load(function () {
+  var mainBlocks = $('.sourcingAbcContainer .block-left, .sourcingAbcContainer .block-right');
+  mainBlocks.removeClass('small big biggest');
+  var winWidth = $(window).width();
+  if(winWidth >= 2738){
+    mainBlocks.addClass('biggest');
+  }else if (winWidth >= 2282 && winWidth < 2738) {
+    mainBlocks.addClass('big');
+  }else if (winWidth >= 1902 && winWidth < 2282) {}else {
+    mainBlocks.addClass('small');
+  }
+
+  var blockLeft = $('.sourcingAbcContainer .block-left');
+  var blockRight = $('.sourcingAbcContainer .block-right');
+  if (blockLeft.height() < blockRight.height()) {
+    blockLeft.height(blockRight.height());
+  }
+
+  $('.loadingPage').css('opacity', '0');
+  setTimeout(function() {
+    $('.loadingPage').hide();
+  }, 500);
+});

@@ -1,5 +1,11 @@
 <?php $this->load->view('frontend/home-header'); ?>
 <div class="sourcingAbcContainer">
+  <div class="loadingPage">
+    <img src="/assets/images/waiting.gif" alt="" />
+    <div class="text">
+      Loading...
+    </div>
+  </div>
   <div class="content">
     <div class="banner">
       <div class="title">
@@ -165,9 +171,8 @@
           </div>
         </div>
       </div>
-      <div class="clear-both"></div>
     </div>
   </div>
-</div>
 
-<?php $this->load->view('frontend/footer');?>
+  <?php $this->load->view('frontend/footer');?>
+</div>

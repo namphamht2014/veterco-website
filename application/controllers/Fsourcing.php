@@ -6,6 +6,7 @@ class Fsourcing extends CI_Controller {
   {
     parent::__construct();
     $this->load->language('frontend_lang');
+    $this->load->library('user_agent');
     date_default_timezone_set('Asia/Saigon');
   }
 
@@ -19,6 +20,15 @@ class Fsourcing extends CI_Controller {
       base_url().'assets/css/fhome.css',
       base_url().'assets/css/fsourcing.css'
     );
+    if ($this->agent->is_browser('Safari')) {
+      // $data['headers'][] = base_url().'assets/css/fwelcome_safari.css';
+    } else if ($this->agent->is_browser('Chrome')) {
+      $data['headers'][] = base_url().'assets/css/fsourcing_chrome.css';
+    } else if ($this->agent->is_browser('Opera')) {
+      $data['headers'][] = base_url().'assets/css/fsourcing_opera.css';
+    } else if ($this->agent->is_browser('Firefox')) {
+      $data['headers'][] = base_url().'assets/css/fsourcing_firefox.css';
+    }
 
     //add js to page
     $data['footers'] = array(
@@ -48,6 +58,15 @@ class Fsourcing extends CI_Controller {
       base_url().'assets/css/fhome.css',
       base_url().'assets/css/fsourcing.css'
     );
+    if ($this->agent->is_browser('Safari')) {
+      // $data['headers'][] = base_url().'assets/css/fwelcome_safari.css';
+    } else if ($this->agent->is_browser('Chrome')) {
+      $data['headers'][] = base_url().'assets/css/fsourcing_chrome.css';
+    } else if ($this->agent->is_browser('Opera')) {
+      $data['headers'][] = base_url().'assets/css/fsourcing_opera.css';
+    } else if ($this->agent->is_browser('Firefox')) {
+      $data['headers'][] = base_url().'assets/css/fsourcing_firefox.css';
+    }
 
     //add js to page
     $data['footers'] = array(
@@ -60,7 +79,7 @@ class Fsourcing extends CI_Controller {
     $data['script'] = '$(function(){
       header.active("sourcing");
       $("header").removeClass("header").addClass("headerFixed");
-      $(".footer2").attr("style", "position: relative");
+      $(".footer2").attr("style", "position: relative;clear:both;");
     });';
 
     $this->load->view('template/header', $data);

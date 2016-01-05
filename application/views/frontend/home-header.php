@@ -41,7 +41,7 @@
           </div>
         </a>
       </li>
-			<li><a href="<?= base_url()?>"><img src="<?= base_url()?>assets/images/header-logo.png" alt="" style="margin-top:-13px" /></a></li>
+			<li><a href="<?= site_url('fhome')?>"><img src="<?= base_url()?>assets/images/header-logo.png" alt="" style="margin-top:-13px" /></a></li>
 			<li class="small2" id="distributor">
         <a href="<?= site_url('fdistributor')?>" onmouseover="header.hover(this);" onmouseout="header.unhover(this);">
           <div>

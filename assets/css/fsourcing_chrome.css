@@ -1,0 +1,57 @@
+.sourcingAbcContainer .block-left.small .view .items .item1,
+.sourcingAbcContainer .block-left.small .view .items .item2 {
+    line-height: 16px;
+}
+.sourcingAbcContainer .block-left.small .sortBy .items .odd,
+.sourcingAbcContainer .block-left.small .sortBy .items .even {
+    line-height: 31px;
+}
+.sourcingAbcContainer .block-left .view,
+.sourcingAbcContainer .block-left.big .view {
+    height: 4.3%;
+}
+.sourcingAbcContainer .block-left .view .items .item1,
+.sourcingAbcContainer .block-left .view .items .item2 {
+    line-height: 19px;
+}
+.sourcingAbcContainer .block-left .sortBy .items .odd,
+.sourcingAbcContainer .block-left .sortBy .items .even {
+    line-height: 44px;
+    font-size: 15px;
+}
+.sourcingAbcContainer .block-left .filterBy .title {
+    padding-top: 10px;
+}
+.sourcingAbcContainer .block-left #cssmenu > ul > li > a {
+    padding: 10px 17px;
+    font-size: 16px;
+}
+.sourcingAbcContainer .block-left #cssmenu ul ul li a {
+    line-height: 28px;
+    font-size: 14px;
+    height: 28px;
+}
+.sourcingAbcContainer .block-left.big .view .items .item1,
+.sourcingAbcContainer .block-left.big .view .items .item2 {
+    line-height: 21px;
+    font-size: 16px;
+}
+.sourcingAbcContainer .block-left.big .sortBy .items .odd,
+.sourcingAbcContainer .block-left.big .sortBy .items .even {
+    padding: 0px 15px;
+    font-size: 17px;
+    line-height: 50px;
+}
+.sourcingAbcContainer .block-left.biggest .view .items .item1,
+.sourcingAbcContainer .block-left.biggest .view .items .item2 {
+    line-height: 34px;
+    font-size: 22px;
+}
+.sourcingAbcContainer .block-left.biggest .sortBy .items .odd,
+.sourcingAbcContainer .block-left.biggest .sortBy .items .even {
+    padding: 10px 15px;
+    font-size: 23px;
+}
+.sourcingAbcContainer .block-left.biggest .view {
+    height: 4.6%;
+}

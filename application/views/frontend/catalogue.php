@@ -2,6 +2,12 @@
 <link rel="stylesheet" href="/assets/css/catalogue.css" media="screen" title="no title" charset="utf-8">
 
 <div class="catalogueContainer">
+  <div class="loadingPage">
+    <img src="/assets/images/waiting.gif" alt="" />
+    <div class="text">
+      Loading...
+    </div>
+  </div>
   <div class="content">
     <div class="links">
       <div class="title">Catalog</div>

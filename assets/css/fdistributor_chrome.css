@@ -63,3 +63,12 @@
 .whyUsDetailsContainer .center-block.customize .text.biggest {
     font-size: 30px;
 }
+.whyUsDetailsContainer .white-block.friendly .text.biggest {
+    font-size: 35px;
+}
+.whyUsDetailsContainer .center-block.friendly .text.biggest {
+    font-size: 35px;
+}
+.whyUsDetailsContainer .above-arrow-block {
+    left: 68.2%;
+}

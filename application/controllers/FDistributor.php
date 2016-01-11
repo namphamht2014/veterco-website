@@ -103,6 +103,10 @@ class FDistributor extends CI_Controller {
           <br><br>Our staff is exceptionally knowledgeable and able to provide the right solutions for all needs. We provide highly effective sales and marketing tools along with aggressive marketing campaigns to create end user awareness in the industry.';
           $white_text = 'CUSTOMIZED MARKETING<br>PROGRAMS – EXCEPTIONAL<br>SUPPORT';
           break;
+        case 'friendly':
+          $content_text = 'Veterco Vietnam is a partner that brings real value - we understand distribution and meet your needs like no other. Our primary focus is serving the distributor and we go out of our way to ensure distributor partners succeed.';
+          $white_text = 'DISTRIBUTOR FRIENDLY';
+          break;
 
         default:
           $content_text = '';

@@ -56,3 +56,15 @@
     line-height: 45px;
     font-size: 30px;
 }
+.whyUsDetailsContainer .above-arrow-block {
+    left: 68%;
+}
+.whyUsDetailsContainer .center-block.friendly .text {
+    font-size: 25px;
+}
+.whyUsDetailsContainer .white-block.friendly .text.biggest {
+    font-size: 34px;
+}
+.whyUsDetailsContainer .center-block.friendly .text.biggest {
+    font-size: 35px;
+}

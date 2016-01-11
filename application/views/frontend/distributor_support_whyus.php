@@ -6,7 +6,7 @@
       Loading...
     </div>
   </div>
-  <a href="<?= site_url('FDistributor/whyUs/Details')?>">
+  <a href="<?= site_url('FDistributor/whyUs/Details/friendly')?>">
     <div class="block1">
       <div class="active"></div>
       <div class="text">distributor friendly</div>

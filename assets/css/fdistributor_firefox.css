@@ -30,3 +30,9 @@
 .whyUsDetailsContainer .above-arrow-block{
     left: 68%;
 }
+.whyUsDetailsContainer .white-block.benefit .text.biggest {
+    font-size: 38px;
+}
+.whyUsDetailsContainer .center-block.benefit .text.biggest {
+    font-size: 36px;
+}

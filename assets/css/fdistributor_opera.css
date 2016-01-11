@@ -68,3 +68,12 @@
 .whyUsDetailsContainer .center-block.friendly .text.biggest {
     font-size: 35px;
 }
+.whyUsDetailsContainer .white-block.benefit .text {
+    font-size: 24px;
+}
+.whyUsDetailsContainer .center-block.benefit .text {
+    font-size: 22px;
+}
+.whyUsDetailsContainer .white-block.benefit .text.biggest {
+    font-size: 36px;
+}

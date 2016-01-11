@@ -519,6 +519,10 @@ body{
 .whyUsDetailsContainer .right-block.customize{
   border: 40px solid #b17222;
 }
+.whyUsDetailsContainer .right-block.friendly,
+.whyUsDetailsContainer .right-block.benefit{
+  border: 40px solid #5e9c37;
+}
 .whyUsDetailsContainer .right-block{
   width: 30%;
   height: 57.5%;
@@ -534,6 +538,10 @@ body{
 }
 .whyUsDetailsContainer .small-block.friendly{
   background: url(/assets/images/distributor-why-us-details-friendly-block.png) center center no-repeat;
+  background-size: 100% 100%;
+}
+.whyUsDetailsContainer .small-block.benefit{
+  background: url(/assets/images/distributor-why-us-details-benefit-block.png) center center no-repeat;
   background-size: 100% 100%;
 }
 .whyUsDetailsContainer .small-block.ongoing{
@@ -581,6 +589,25 @@ body{
   font-size: 19px;
   left: 0;
   top: 43%;
+}
+.whyUsDetailsContainer .white-block.benefit .text,
+.whyUsDetailsContainer .white-block.benefit .text.small,
+.whyUsDetailsContainer .white-block.benefit .text.big,
+.whyUsDetailsContainer .white-block.benefit .text.biggest{
+  text-align: center;
+  left: 20%;
+}
+.whyUsDetailsContainer .white-block.benefit .text{
+  font-size: 22px;
+}
+.whyUsDetailsContainer .white-block.benefit .text.small{
+  font-size: 18px;
+}
+.whyUsDetailsContainer .white-block.benefit .text.big{
+  font-size: 26px;
+}
+.whyUsDetailsContainer .white-block.benefit .text.biggest{
+  font-size: 31px;
 }
 .whyUsDetailsContainer .white-block.friendly .text.small{
   font-size: 18px;
@@ -683,6 +710,25 @@ body{
 .whyUsDetailsContainer .center-block.friendly .text.biggest{
   font-size: 31px;
 }
+.whyUsDetailsContainer .center-block.benefit .text{
+  font-size: 20px;
+}
+.whyUsDetailsContainer .center-block.benefit .text,
+.whyUsDetailsContainer .center-block.benefit .text.small,
+.whyUsDetailsContainer .center-block.benefit .text.big,
+.whyUsDetailsContainer .center-block.benefit .text.biggest{
+  top: 60%;
+  left: 60%;
+}
+.whyUsDetailsContainer .center-block.benefit .text.small{
+  font-size: 16px;
+}
+.whyUsDetailsContainer .center-block.benefit .text.big{
+  font-size: 25px;
+}
+.whyUsDetailsContainer .center-block.benefit .text.biggest{
+  font-size: 31px;
+}
 .whyUsDetailsContainer .center-block.customize .text.small{
   line-height: 23px;
   font-size: 15px;
@@ -720,6 +766,10 @@ body{
 }
 .whyUsDetailsContainer .arrow-block.friendly{
   background: url(/assets/images/distributor-why-us-details-friendly-arrow.png) center center no-repeat;
+  background-size: 100% 100%;
+}
+.whyUsDetailsContainer .arrow-block.benefit{
+  background: url(/assets/images/distributor-why-us-details-benefit-arrow.png) center center no-repeat;
   background-size: 100% 100%;
 }
 .whyUsDetailsContainer .arrow-block{

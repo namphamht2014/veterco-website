@@ -107,6 +107,10 @@ class FDistributor extends CI_Controller {
           $content_text = 'Veterco Vietnam is a partner that brings real value - we understand distribution and meet your needs like no other. Our primary focus is serving the distributor and we go out of our way to ensure distributor partners succeed.';
           $white_text = 'DISTRIBUTOR FRIENDLY';
           break;
+        case 'benefit':
+          $content_text = 'We offer extra yearly incentive benefits which is calculated and sent at the end of every 12 months. This offer stimulates the development of your Sales Department and is a great way to boots up the company\'s branding with extra profit.';
+          $white_text = 'YEARLY INCENTIVE <br>BENEFIT';
+          break;
 
         default:
           $content_text = '';

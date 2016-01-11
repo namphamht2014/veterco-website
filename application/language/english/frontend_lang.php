@@ -30,4 +30,8 @@ Distributor Support
  */
 $lang['f_distributor'] = 'Distributor Support';
 $lang['f_distributor_whyus'] = 'Why Us';
+/*
+  Chairman's words
+ */
+$lang['f_chairman'] = 'Chairman\'s words';
 ?>

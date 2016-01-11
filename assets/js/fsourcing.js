@@ -315,9 +315,10 @@ $( document ).ready(function() {
 } )( jQuery );
 
 jQuery(window).load(function () {
+  var winWidth = $(window).width();
+  //abc showcase
   var mainBlocks = $('.sourcingAbcContainer .block-left, .sourcingAbcContainer .block-right');
   mainBlocks.removeClass('small big biggest');
-  var winWidth = $(window).width();
   if(winWidth >= 2738){
     mainBlocks.addClass('biggest');
   }else if (winWidth >= 2282 && winWidth < 2738) {
@@ -330,6 +331,17 @@ jQuery(window).load(function () {
   var blockRight = $('.sourcingAbcContainer .block-right');
   if (blockLeft.height() < blockRight.height()) {
     blockLeft.height(blockRight.height());
+  }
+
+  //product details
+  var detailBlock = $('.sourcingProductDetailsContainer');
+  detailBlock.removeClass('small big biggest');
+  if(winWidth >= 2738){
+    detailBlock.addClass('biggest');
+  }else if (winWidth >= 2282 && winWidth < 2738) {
+    detailBlock.addClass('big');
+  }else if (winWidth >= 1902 && winWidth < 2282) {}else {
+    detailBlock.addClass('small');
   }
 
   $('.loadingPage').css('opacity', '0');

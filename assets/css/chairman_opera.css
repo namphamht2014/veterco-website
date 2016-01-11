@@ -1,0 +1,9 @@
+.chairmanContainer .myPopup {
+    font-size: 21px;
+}
+.chairmanContainer.big .myPopup {
+    font-size: 24px;
+}
+.chairmanContainer.biggest .myPopup {
+    font-size: 32px;
+}

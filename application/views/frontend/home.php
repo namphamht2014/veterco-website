@@ -50,7 +50,7 @@
         </div>
       </div>
       <div class="col-md-6 menu3">
-        <a href="#" onmouseover="menus.hover(this)" onmouseout="menus.unhover(this)"><b>CHAIRMAN'S WORDS</b></a>
+        <a href="<?= site_url('fchairman')?>" onmouseover="menus.hover(this)" onmouseout="menus.unhover(this)"><b>CHAIRMAN'S WORDS</b></a>
         <div class="menu-desc">
           <div class="desc-line"></div>
         </div>

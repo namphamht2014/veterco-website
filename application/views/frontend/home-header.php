@@ -2,7 +2,7 @@
 	<nav>
 		<ul class="main-nav">
 			<li class="small" id="chairman">
-        <a href="" onmouseover="header.hover(this);" onmouseout="header.unhover(this);">
+        <a href="<?= site_url('fchairman')?>" onmouseover="header.hover(this);" onmouseout="header.unhover(this);">
 					<div>
 	          <div class="red-arrow"></div>
 	          <b>Chairman's word</b>

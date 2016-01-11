@@ -1095,17 +1095,47 @@ body, html {
   position: relative;
 }
 .sourcingProductDetailsContainer .bottle{
-  width: 467px;
-  height: 350px;
+  width: 38.15%;
+  height: 47.9%;
   position: absolute;
   top: 170px;
-  left: 15%
+  left: 5%;
+}
+.sourcingProductDetailsContainer.small .bottle{
+  width: 31.1%;
+  height: 47.9%;
+  left: 15%;
+}
+.sourcingProductDetailsContainer.big .bottle{
+  width: 46.7%;
+  height: 47.9%;
+  left: -3%;
+}
+.sourcingProductDetailsContainer.biggest .bottle{
+  width: 57%;
+  height: 47.9%;
+  left: -15%;
 }
 .sourcingProductDetailsContainer .diamond{
-  width: 542px;
-  height: 550px;
+  width: 45.7%;
+  height: 75.2%;
   position: absolute;
+  right: 5%;
+}
+.sourcingProductDetailsContainer.small .diamond{
+  width: 36.2%;
+  height: 75.2%;
   right: 10%;
+}
+.sourcingProductDetailsContainer.big .diamond{
+  width: 55.9%;
+  height: 75.2%;
+  right: -5%;
+}
+.sourcingProductDetailsContainer.biggest .diamond{
+  width: 68.2%;
+  height: 75.2%;
+  right: -15%
 }
 .sourcingProductDetailsContainer .diamond .product-info{
   width: 370px;

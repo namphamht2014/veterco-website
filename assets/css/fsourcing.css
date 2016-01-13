@@ -897,10 +897,29 @@ body, html {
   font-size: 20px;
   width: 100%;
   height: 100%;
+  margin-top: 38%;
+}
+.sourcingAnimalContainer.small .inner-cycle .title{
+  font-size: 20px;
   margin-top: 35%;
+}
+.sourcingAnimalContainer.big .inner-cycle .title{
+  font-size: 28px;
+}
+.sourcingAnimalContainer.biggest .inner-cycle .title{
+  font-size: 35px;
 }
 .sourcingAnimalContainer .inner-cycle .title span{
   font-size: 60px;
+}
+.sourcingAnimalContainer.small .inner-cycle .title span{
+  font-size: 60px;
+}
+.sourcingAnimalContainer.big .inner-cycle .title span{
+  font-size: 75px;
+}
+.sourcingAnimalContainer.biggest .inner-cycle .title span{
+  font-size: 100px;
 }
 .sourcingAnimalContainer .inner-cycle .title:before,
 .sourcingAnimalContainer .inner-cycle .title:after{
@@ -1138,11 +1157,11 @@ body, html {
   right: -15%
 }
 .sourcingProductDetailsContainer .diamond .product-info{
-  width: 370px;
+  width: 68%;
   float: left;
 }
 .sourcingProductDetailsContainer .diamond .buttons{
-  width: 170px;
+  width: 31.3%;
   float: left;
 }
 .sourcingProductDetailsContainer .diamond .desc{
@@ -1178,9 +1197,15 @@ body, html {
   text-shadow: 3px 3px black;
   line-height: 49px;
 }
+.sourcingProductDetailsContainer.biggest .diamond .desc > .title{
+  font-size: 75px;
+}
 .sourcingProductDetailsContainer .diamond .desc > .subtitle{
   font-family: MyriadPro-Semibold;
   font-size: 27px;
+}
+.sourcingProductDetailsContainer.biggest .diamond .desc > .subtitle{
+  font-size: 37px;
 }
 .sourcingProductDetailsContainer .diamond .desc .product-info-group{
   margin-top: 20px;
@@ -1190,11 +1215,17 @@ body, html {
   font-size: 27px;
   line-height: 20px;
 }
+.sourcingProductDetailsContainer.biggest .diamond .desc .product-info .weight{
+  font-size: 37px;
+}
 .sourcingProductDetailsContainer .diamond .desc .product-info .form{
   font-family: MyriadPro-Semibold;
   font-size: 21px;
   font-style: italic;
   color: #a8403b;
+}
+.sourcingProductDetailsContainer.biggest .diamond .desc .product-info .form{
+  font-size: 31px;
 }
 .sourcingProductDetailsContainer .diamond .desc .product-info .product-desc .title,
 .sourcingProductDetailsContainer .diamond .desc .product-info-group .more{
@@ -1202,10 +1233,22 @@ body, html {
   font-family: MyriadPro;
   font-size: 18px;
 }
+.sourcingProductDetailsContainer.big .diamond .desc .product-info .product-desc .title{
+  font-size: 21px;
+}
+.sourcingProductDetailsContainer.biggest .diamond .desc .product-info .product-desc .title{
+  font-size: 26px;
+}
 .sourcingProductDetailsContainer .diamond .desc .product-info .product-desc .title span{
   font-family: MyriadPro-Semibold;
   font-size: 18px;
   color: #a8403b;
+}
+.sourcingProductDetailsContainer.big .diamond .desc .product-info .product-desc .title span{
+  font-size: 21px;
+}
+.sourcingProductDetailsContainer.biggest .diamond .desc .product-info .product-desc .title span{
+  font-size: 26px;
 }
 .sourcingProductDetailsContainer .diamond .desc .product-info-group .more{
   display: none;
@@ -1235,6 +1278,12 @@ body, html {
   display: table-cell;
   vertical-align: middle;
   text-transform: uppercase;
+}
+.sourcingProductDetailsContainer.big .diamond .desc .product-info-group .buttons .line3 a div{
+  font-size: 17px;
+}
+.sourcingProductDetailsContainer.biggest .diamond .desc .product-info-group .buttons .line3 a div{
+  font-size: 19px;
 }
 .sourcingProductDetailsContainer .diamond .desc .product-info-group .buttons .line1 a div.paper{
   background: url(../images/productDetails-btnIcons.png) no-repeat center 10px;
@@ -1351,6 +1400,28 @@ body, html {
 .sourcingLifeCycleDetailsContainer .content .sub-title{
   font-size: 20px;
 }
+.sourcingLifeCycleDetailsContainer.small.trau .content fieldset .desc,
+.sourcingLifeCycleDetailsContainer.small.bosua .content fieldset .desc,
+.sourcingLifeCycleDetailsContainer.small.ca .content fieldset .desc{
+  font-size: 18px
+}
+.sourcingLifeCycleDetailsContainer.big.trau .content fieldset .desc,
+.sourcingLifeCycleDetailsContainer.big.bosua .content fieldset .desc,
+.sourcingLifeCycleDetailsContainer.big.ca .content fieldset .desc{
+  font-size: 23px
+}
+.sourcingLifeCycleDetailsContainer.biggest.trau .content fieldset .desc,
+.sourcingLifeCycleDetailsContainer.biggest.bosua .content fieldset .desc,
+.sourcingLifeCycleDetailsContainer.biggest.ca .content fieldset .desc{
+  font-size: 26px
+}
+
+.sourcingLifeCycleDetailsContainer.big.ga .content fieldset .desc{
+  font-size: 19px
+}
+.sourcingLifeCycleDetailsContainer.biggest.ga .content fieldset .desc{
+  font-size: 22px
+}
 .sourcingLifeCycleDetailsContainer .content fieldset .desc.small{
   font-size: 16px;
 }
@@ -1377,6 +1448,22 @@ body, html {
 
 .sourcingLifeCycleDetailsContainer .content .block1,
 .sourcingLifeCycleDetailsContainer .content .block4{
+  top: 150%;
+}
+.sourcingLifeCycleDetailsContainer.trau.small .content .block1,
+.sourcingLifeCycleDetailsContainer.trau.small .content .block4,
+.sourcingLifeCycleDetailsContainer.bosua.small .content .block1,
+.sourcingLifeCycleDetailsContainer.bosua.small .content .block4,
+.sourcingLifeCycleDetailsContainer.ca.small .content .block1,
+.sourcingLifeCycleDetailsContainer.ca.small .content .block4{
+  top: 90%;
+}
+.sourcingLifeCycleDetailsContainer.trau.small .content .block2,
+.sourcingLifeCycleDetailsContainer.trau.small .content .block3,
+.sourcingLifeCycleDetailsContainer.bosua.small .content .block2,
+.sourcingLifeCycleDetailsContainer.bosua.small .content .block3,
+.sourcingLifeCycleDetailsContainer.ca.small .content .block2,
+.sourcingLifeCycleDetailsContainer.ca.small .content .block3{
   top: 150%;
 }
 .sourcingLifeCycleDetailsContainer .content .block2,

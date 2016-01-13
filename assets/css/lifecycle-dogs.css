@@ -55,3 +55,30 @@
   background-color: #325c85;
   border-radius: 5px;
 }
+.sourcingLifeCycleDetailsContainer.cho.big .content .block1 .desc.cho-big{
+  height: 370px;
+}
+.sourcingLifeCycleDetailsContainer.cho.big .content .block3 .desc.cho-big{
+  height: 400px;
+}
+.sourcingLifeCycleDetailsContainer.cho.big .content .block4 .desc.cho-big{
+  height: 350px;
+}
+.sourcingLifeCycleDetailsContainer.cho.big .content fieldset .desc{
+  font-size: 22px;
+}
+.sourcingLifeCycleDetailsContainer.cho.biggest .content fieldset .desc{
+  font-size: 26px;
+}
+.sourcingLifeCycleDetailsContainer.cho.biggest .content .block1 .desc.cho-big{
+  height: 450px;
+}
+.sourcingLifeCycleDetailsContainer.cho.biggest .content .block3 .desc.cho-big{
+  height: 550px;
+}
+.sourcingLifeCycleDetailsContainer.cho.biggest .content .block4 .desc.cho-big{
+  height: 500px;
+}
+.sourcingLifeCycleDetailsContainer.cho.small .content .block3 .block-arrow{
+  top: 15%;
+}

@@ -32,9 +32,21 @@
   left:calc(45% + 210px);
   top: 300%;
 }
+.sourcingLifeCycleDetailsContainer.big .content .block5{
+  top: 320%;
+}
+.sourcingLifeCycleDetailsContainer.biggest .content .block5{
+  top: 370%;
+}
 .sourcingLifeCycleDetailsContainer .content .block6{
   left:calc(45% + 210px);
   top: 470%;
+}
+.sourcingLifeCycleDetailsContainer.big .content .block6{
+  top: 560%;
+}
+.sourcingLifeCycleDetailsContainer.biggest .content .block6{
+  top: 670%;
 }
 .sourcingLifeCycleDetailsContainer .content .block7{
   left: calc(60% + 280px)

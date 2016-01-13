@@ -1,0 +1,47 @@
+.sourcingLifeCycleDetailsContainer .content fieldset {
+    padding: 10px 15px;
+}
+.sourcingLifeCycleDetailsContainer.tom .content .block7 {
+    top: 580%;
+}
+.sourcingLifeCycleDetailsContainer.tom .content .block2-6 {
+    top: 900%;
+}
+.sourcingLifeCycleDetailsContainer.tom .content .block2-6 .arrow-left {
+    height: 180px;
+    top: -180px;
+}
+.sourcingLifeCycleDetailsContainer.tom.small .block2-6 {
+    top: 670%;
+}
+.sourcingLifeCycleDetailsContainer.tom.small .block2-6 .arrow-left {
+    height: 80px;
+    top: -80px;
+}
+.sourcingLifeCycleDetailsContainer.tom.big .block2-6 {
+    top: 1000%;
+}
+.sourcingLifeCycleDetailsContainer.tom.biggest .content .block4 {
+    top: 500%;
+}
+.sourcingLifeCycleDetailsContainer.tom.biggest .content .block5 {
+    top: 910%;
+}
+.sourcingLifeCycleDetailsContainer.tom.biggest .block2-6 {
+    top: 1350%;
+}
+.sourcingLifeCycleDetailsContainer.tom.biggest .block2-6 .arrow-left {
+    height: 340px;
+    top: -340px;
+}
+.sourcingLifeCycleDetailsContainer.tom.biggest .content .block6 .tom-big,
+.sourcingLifeCycleDetailsContainer.tom.biggest .content .block7 .tom-big {
+    height: 420px;
+}
+.sourcingLifeCycleDetailsContainer.tom.biggest .content .block7 {
+    top: 830%;
+}
+
+.sourcingLifeCycleDetailsContainer.cho .content .block3 .block-arrow{
+  top: 35% !important;
+}

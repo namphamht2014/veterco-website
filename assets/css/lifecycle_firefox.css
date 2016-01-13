@@ -1,0 +1,60 @@
+.sourcingLifeCycleDetailsContainer .content fieldset {
+    padding: 10px 15px;
+}
+.tom.small .block2-6 {
+    top: 660%;
+}
+.tom .block7 .arrow-up {
+    top: -40px;
+}
+.sourcingLifeCycleDetailsContainer.tom.small .content .block6 .tom-small,
+.sourcingLifeCycleDetailsContainer.tom.small .content .block7 .tom-small {
+    height: 150px;
+}
+.sourcingLifeCycleDetailsContainer.tom.small .content .block7 {
+    top: 430%;
+}
+.sourcingLifeCycleDetailsContainer.tom .content .block6 .tom-big,
+.sourcingLifeCycleDetailsContainer.tom .content .block7 .tom-big {
+    height: 230px;
+}
+.sourcingLifeCycleDetailsContainer.tom.big .content .block6 .tom-big,
+.sourcingLifeCycleDetailsContainer.tom.big .content .block7 .tom-big {
+    height: 260px;
+}
+.tom.big .block2-6 .arrow-left {
+    height: 220px;
+    top: -220px;
+}
+.sourcingLifeCycleDetailsContainer.tom.biggest .content .block4 {
+    top: 500%;
+}
+.sourcingLifeCycleDetailsContainer.tom.biggest .content .block5 {
+    top: 910%;
+}
+.sourcingLifeCycleDetailsContainer.tom.biggest .content .block4 .tom-big,
+.sourcingLifeCycleDetailsContainer.tom.biggest .content .block7 .tom-big{
+    overflow-x: hidden;
+}
+.sourcingLifeCycleDetailsContainer.tom.biggest .content .block6 .tom-big,
+.sourcingLifeCycleDetailsContainer.tom.biggest .content .block7 .tom-big {
+    height: 400px;
+}
+.sourcingLifeCycleDetailsContainer.tom.biggest .content .block7 {
+    top: 800%;
+}
+.sourcingLifeCycleDetailsContainer.tom.biggest .block2-6 {
+    top: 1360%;
+}
+.tom.biggest .block2-6 .arrow-left {
+    height: 350px;
+    top: -350px;
+}
+
+.sourcingLifeCycleDetailsContainer.cho.small .content .block3 .block-arrow{
+  top: 5% !important;
+}
+
+.sourcingLifeCycleDetailsContainer.cho .content .block3 .block-arrow{
+  top: 25% !important;
+}

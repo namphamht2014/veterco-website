@@ -15,7 +15,7 @@
   <a href="<?= site_url('FDistributor/whyUs/Details/benefit')?>">
     <div class="block2">
       <div class="active"></div>
-      <div class="text">yearly incentive benifit</div>
+      <div class="text">yearly incentive benefit</div>
     </div>
   </a>
   <a href="<?= site_url('FDistributor/whyUs/Details/ongoing')?>">

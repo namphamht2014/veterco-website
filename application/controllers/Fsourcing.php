@@ -169,6 +169,15 @@ class Fsourcing extends CI_Controller {
       base_url().'assets/css/fhome.css',
       base_url().'assets/css/fsourcing.css'
     );
+    if ($this->agent->is_browser('Safari')) {
+      // $data['headers'][] = base_url().'assets/css/fwelcome_safari.css';
+    } else if ($this->agent->is_browser('Chrome')) {
+      $data['headers'][] = base_url().'assets/css/lifecycle_chrome.css';
+    } else if ($this->agent->is_browser('Opera')) {
+      $data['headers'][] = base_url().'assets/css/lifecycle_opera.css';
+    } else if ($this->agent->is_browser('Firefox')) {
+      $data['headers'][] = base_url().'assets/css/lifecycle_firefox.css';
+    }
 
     //add js to page
     $data['footers'] = array(
@@ -204,6 +213,7 @@ class Fsourcing extends CI_Controller {
     $data['script'] = '$(function(){
       header.active("sourcing");
       $("header").removeClass("header").addClass("headerFixed");
+      $(".sourcingLifeCycleDetailsContainer").addClass("'.$animalName.'");
       $(".footer2").attr("style", "position: relative");
       $(".pill #pill-img").attr("src", "/assets/images/lifecycle-details-'.$animalName.'-pill.png");
       '.$initStr.'

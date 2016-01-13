@@ -1,5 +1,4 @@
 <?php $this->load->view('frontend/home-header'); ?>
-<link rel="stylesheet" href="/assets/css/catalogue.css" media="screen" title="no title" charset="utf-8">
 
 <div class="catalogueContainer">
   <div class="loadingPage">

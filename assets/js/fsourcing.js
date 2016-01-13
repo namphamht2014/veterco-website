@@ -366,6 +366,17 @@ jQuery(window).load(function () {
     lifecycleBlock.addClass('small');
   }
 
+  //lifecycle details
+  var catalogueBlock = $('.catalogueContainer');
+  catalogueBlock.removeClass('small big biggest');
+  if(winWidth >= 2738){
+    catalogueBlock.addClass('biggest');
+  }else if (winWidth >= 2282 && winWidth < 2738) {
+    catalogueBlock.addClass('big');
+  }else if (winWidth >= 1902 && winWidth < 2282) {}else {
+    catalogueBlock.addClass('small');
+  }
+
   $('.loadingPage').css('opacity', '0');
   setTimeout(function() {
     $('.loadingPage').hide();

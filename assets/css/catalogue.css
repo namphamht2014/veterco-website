@@ -24,9 +24,14 @@ body{
 }
 .links{
   font-family: Myriad;
-
   left: 10%;
   top: 10%;
+}
+.big .links{
+  left: 15%;
+}
+.biggest .links{
+  left: 20%;
 }
 .links .title{
   font-size: 32px;

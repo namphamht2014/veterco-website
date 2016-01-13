@@ -6,6 +6,7 @@ class Fcatalogue extends CI_Controller {
   {
     parent::__construct();
     $this->load->language('frontend_lang');
+    $this->load->library('user_agent');
     date_default_timezone_set('Asia/Saigon');
   }
 
@@ -17,8 +18,18 @@ class Fcatalogue extends CI_Controller {
     //Add css to page
     $data['headers'] = array(
       base_url().'assets/css/fhome.css',
-      base_url().'assets/css/fsourcing.css'
+      base_url().'assets/css/fsourcing.css',
+      base_url().'assets/css/catalogue.css'
     );
+    if ($this->agent->is_browser('Safari')) {
+      // $data['headers'][] = base_url().'assets/css/fwelcome_safari.css';
+    } else if ($this->agent->is_browser('Chrome')) {
+      $data['headers'][] = base_url().'assets/css/catalogue_chrome.css';
+    } else if ($this->agent->is_browser('Opera')) {
+      $data['headers'][] = base_url().'assets/css/catalogue_opera.css';
+    } else if ($this->agent->is_browser('Firefox')) {
+      $data['headers'][] = base_url().'assets/css/catalogue_firefox.css';
+    }
 
     //add js to page
     $data['footers'] = array(

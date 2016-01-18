@@ -111,6 +111,10 @@ class FDistributor extends CI_Controller {
           $content_text = 'We offer extra yearly incentive benefits which is calculated and sent at the end of every 12 months. This offer stimulates the development of your Sales Department and is a great way to boots up the company\'s branding with extra profit.';
           $white_text = 'YEARLY INCENTIVE <br>BENEFIT';
           break;
+        case 'monopoly':
+          $content_text = 'The Distributor is normally able to secure a lower price on goods, giving you greater buying power. You handle a specific territory, with exclusive rights to sell the brand in that area. We dedicate our Products and Services for your esteemed company exclusively and double the attention for your company’s branding in the process of introducing the products to your market.';
+          $white_text = 'MONOPOLY + VIP PRICING <BR> MARGIN';
+          break;
 
         default:
           $content_text = '';

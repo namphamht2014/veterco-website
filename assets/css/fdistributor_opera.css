@@ -77,3 +77,14 @@
 .whyUsDetailsContainer .white-block.benefit .text.biggest {
     font-size: 36px;
 }
+.whyUsDetailsContainer .center-block.monopoly .text {
+    padding-top: 11%;
+}
+.whyUsDetailsContainer .center-block.monopoly .text.big {
+    padding-top: 6%;
+}
+.whyUsDetailsContainer .center-block.monopoly .text.biggest {
+    font-size: 32px;
+    line-height: 55px;
+    padding-top: 7%;
+}

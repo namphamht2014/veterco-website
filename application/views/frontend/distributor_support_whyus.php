@@ -30,7 +30,7 @@
       <div class="text">website</div>
     </div>
   </a>
-  <a href="<?= site_url('FDistributor/whyUs/details')?>">
+  <a href="<?= site_url('FDistributor/whyUs/details/monopoly')?>">
     <div class="block5">
       <div class="active"></div>
       <div class="text">monopoly + vip pricing margin</div>

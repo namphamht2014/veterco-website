@@ -36,3 +36,8 @@
 .whyUsDetailsContainer .center-block.benefit .text.biggest {
     font-size: 36px;
 }
+.whyUsDetailsContainer .center-block.monopoly .text.biggest {
+    font-size: 32px;
+    line-height: 55px;
+    padding-top: 6%;
+}

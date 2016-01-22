@@ -419,6 +419,7 @@ body, html {
   color: white;
   font-size: 17px;
   padding: 4px 10px;
+  position: relative;
 }
 .m-l-minus-20{
   margin-left: -20px;
@@ -439,16 +440,14 @@ body, html {
   margin-top: 75px;
 }
 .search-article .caret{
-  display: inline-block;
   width: 0;
   height: 0;
-  vertical-align: middle;
   border-top: 10px solid;
   border-right: 6px solid transparent;
   border-left: 6px solid transparent;
-  float: right;
-  margin-top: 6px;
-  margin-right: 4px;
+  position: absolute;
+  right: 8px;
+  top: 9px;
 }
 .search-article ul.dropdown-menu{
   width: 200px;

@@ -303,7 +303,7 @@ $(function(){
   served - end
    */
    $(window).scroll(function(){
-     var st = $("body").scrollTop();
+     var st = $(window).scrollTop();
 
      //header menus
      if (windowTotalHeight.getPercent(st) >= 5) {

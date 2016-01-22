@@ -10,7 +10,7 @@
       Loading...
     </div>
   </div>
-  <article class="first-article">
+  <article id="first-article" class="first-article">
     <div class="animals">
       <div class="logo-block">
           <img src="/assets/images/logo-path1.png" alt="" id="logo1" />
@@ -100,7 +100,7 @@
   </article>
 </div>
 <!-- Search -->
-<div class="myContainer">
+<div id="search-article" class="myContainer">
   <article class="search-article">
     <div class="search-form-bg"></div>
     <div class="search-form">
@@ -182,7 +182,7 @@
 </div>
 <!-- Hello -->
 <div class="myContainer">
-  <article class="hello-article">
+  <article id="hello-article" class="hello-article">
     <div class="desc">
        We are looking forward to Business Cooperation opportunities and would like to take the chance to not only introduce our high-end quality products but offer one-of-a-kind partnership with expertise and friendliness.
        <br><br>
@@ -204,7 +204,7 @@
 </div>
 <!-- lab -->
 <div class="myContainer">
-  <article class="lab-article">
+  <article id="lab-article" class="lab-article">
     <div class="title">
       <div class="">
         <b>23 TH Aniversary of</b>
@@ -217,7 +217,7 @@
 </div>
 <!-- lab2 -->
 <div class="myContainer">
-  <article class="lab2-article">
+  <article id="lab2-article" class="lab2-article">
     <div class="block-container">
       <div class="red-dot"></div>
       <div class="block1">
@@ -252,13 +252,13 @@
 </div>
 <!-- lab3 -->
 <div class="myContainer">
-  <article class="lab-img-article">
+  <article id="lab-img-article" class="lab-img-article">
     <img src="/assets/images/lab-bg.png"/>
   </article>
 </div>
 <!-- Served -->
 <div class="myContainer served-container">
-  <article class="served-article">
+  <article id="served-article" class="served-article">
     <div class="circle">
       <div class="circle-inner">
         <div class="served-title text-center">
@@ -303,7 +303,7 @@
 </div>
 <!-- distribution -->
 <div class="myContainer">
-  <article class="distribution-article">
+  <article id="distribution-article" class="distribution-article">
     <div class="distribution-title">
       <b>DISTRIBUTION NETWORK</b>
     </div>
@@ -311,14 +311,14 @@
 </div>
 <!-- Vietnam -->
 <div class="myContainer">
-  <article class="vietnam-article">
+  <article id="vietnam-article" class="vietnam-article">
     <div class="vietnam-logo">
     </div>
   </article>
 </div>
 <!-- leading -->
 <div class="myContainer">
-  <article class="leading-article">
+  <article id="leading-article" class="leading-article">
     <div class="leading-bg">
       <div class="white-rec"></div>
       <div class="content1">
@@ -343,7 +343,7 @@
 </div>
 <!-- Value -->
 <div class="myContainer value-article-container">
-  <article class="value-article">
+  <article id="value-article" class="value-article">
     <div class="value-title text-center">
       <b>VETERCO VALUE</b>
     </div>
@@ -426,7 +426,7 @@
   </article>
 </div>
 <div class="myContainer">
-  <article class="thank-article">
+  <article id="thank-article" class="thank-article">
     <div class="thank-title text-center">
       <b>THANK YOU!</b>
     </div>

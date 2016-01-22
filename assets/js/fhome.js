@@ -8,14 +8,8 @@ var header = {
 };
 var menus = {
   scrollTo: function (article, element) {
-    var articlePos = 0;
-    if (article == 1) {
-      articlePos = "800px";
-    }else if (article == 2) {
-      articlePos = "2445px";
-    }
+    $('html, body').animate({ scrollTop: $("#"+article).offset().top });
 
-    $('html, body').animate({ scrollTop: articlePos });
     $('.khop ul li div').removeClass('active');
     element.childNodes[1].className = 'active';
   },
@@ -218,7 +212,21 @@ $(function(){
   $('.thank-article').attr('style', 'height: '+(khop1bg.height - 63)+'px;');
 
   var total_height = khop1bg.height * 18;
-  var windowTotalHeight = new myWindow(total_height);
+  var new_total_height = $('.first-article').height();
+  new_total_height += $('.search-article').height();
+  new_total_height += $('.hello-article').height();
+  new_total_height += $('.lab-article').height();
+  new_total_height += $('.lab2-article').height();
+  new_total_height += $('.lab-img-article').height();
+  new_total_height += $('.served-article').height();
+  new_total_height += $('.distribution-article').height();
+  new_total_height += $('.vietnam-article').height();
+  new_total_height += $('.leading-article').height();
+  new_total_height += $('.value-article-container').height();
+  new_total_height += $('.thank-article').height();
+  console.log('total height: '+total_height);
+  console.log('new total height: '+new_total_height);
+  var windowTotalHeight = new myWindow(new_total_height);
 
   /*
   served
@@ -304,7 +312,7 @@ $(function(){
    */
    $(window).scroll(function(){
      var st = $(window).scrollTop();
-
+     console.log(windowTotalHeight.getPercent(st));
      //header menus
      if (windowTotalHeight.getPercent(st) >= 5) {
        $('header').addClass('show');

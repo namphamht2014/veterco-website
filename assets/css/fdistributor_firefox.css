@@ -78,3 +78,13 @@
 /**
  * Be The First - end
  */
+ .samplesContainer.small .content .title .number,
+ .samplesContainer.small .content .title .txt {
+     line-height: 50px;
+ }
+/**
+ * Samples Shipping Quote
+ */
+/**
+ * Samples Shipping Quote - end
+ */

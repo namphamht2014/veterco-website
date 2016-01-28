@@ -137,3 +137,45 @@
 /**
  * Be the first - end
  */
+
+/**
+ * Samples Shipping Quote
+ */
+ .samplesContainer.small .content .desc,
+ .samplesContainer.small .myForm .myLabel {
+     font-size: 17.5px;
+ }
+
+ .samplesContainer .content .desc,
+ .samplesContainer .myForm .myLabel,
+ .samplesContainer .content .title .txt {
+     font-size: 23px;
+ }
+ .samplesContainer .myForm .myField input,
+ .samplesContainer .myForm .myField textarea,
+ .samplesContainer .myForm .myField .dropdown button {
+    height: 64px;
+    font-size: 17px;
+}
+ .samplesContainer.big .content .desc,
+ .samplesContainer.big .myForm .myLabel,
+ .samplesContainer.big .content .title .txt {
+     font-size: 26px;
+ }
+ .samplesContainer.biggest .content .desc,
+ .samplesContainer.biggest .myForm .myLabel,
+ .samplesContainer.biggest .content .title .txt {
+     font-size: 35px;
+ }
+ .samplesContainer.biggest .myForm .myField input,
+ .samplesContainer.biggest .myForm .myField textarea,
+ .samplesContainer.biggest .myForm .myField .dropdown button {
+    font-size: 25px;
+    height: 86px;
+}
+.samplesContainer.biggest .myForm .myLabel {
+    line-height: 88px;
+}
+/**
+ * Samples Shipping Quote - end
+ */

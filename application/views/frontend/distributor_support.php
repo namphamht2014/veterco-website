@@ -47,7 +47,7 @@
       </div>
     </div>
 
-    <a href=""><div class="samples-block"></div></a>
+    <a href="<?= site_url('fdistributor/samples_shipping_quote')?>"><div class="samples-block"></div></a>
     <a href=""><div class="order-status-block"></div></a>
     <a href="<?= site_url('fdistributor/whyUs')?>"><div class="why-us-block"></div></a>
     <a href="<?= site_url('fdistributor/be_the_first')?>"><div class="be-the-first-block"></div></a>

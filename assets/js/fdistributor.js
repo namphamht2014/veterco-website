@@ -18,6 +18,9 @@ jQuery(window).load(function () {
   //Be the first container
   var beTheFirst = $('.beTheFirstContainer');
   beTheFirst.removeClass('small big biggest');
+  //Samples shipping quote
+  var shippingQuote = $('.samplesContainer');
+  shippingQuote.removeClass('small big biggest');
 
   var winWidth = $(window).width();
   if(winWidth >= 2764){
@@ -25,16 +28,19 @@ jQuery(window).load(function () {
     $('.blocks .product-customization .text, .blocks .promotional .text').addClass('biggest');
     $('.blocks .samples .text, .blocks .why-us .text, .blocks .be-the-first .text').addClass('biggest');
     beTheFirst.addClass('biggest');
+    shippingQuote.addClass('biggest');
   }else if (winWidth >= 2304 && winWidth < 2764) {
     $('.blocks .title1, .blocks .title2, .blocks .order-status .text').addClass('big');
     $('.blocks .product-customization .text, .blocks .promotional .text').addClass('big');
     $('.blocks .samples .text, .blocks .why-us .text, .blocks .be-the-first .text').addClass('big');
     beTheFirst.addClass('big');
+    shippingQuote.addClass('big');
   }else if (winWidth >= 1920 && winWidth < 2304) {}else {
     $('.blocks .title1, .blocks .title2, .blocks .order-status .text').addClass('small');
     $('.blocks .product-customization .text, .blocks .promotional .text').addClass('small');
     $('.blocks .samples .text, .blocks .why-us .text, .blocks .be-the-first .text').addClass('small');
     beTheFirst.addClass('small');
+    shippingQuote.addClass('small');
   }
 
   var beTheFirstBlock = $('.blocks .be-the-first');
@@ -86,3 +92,17 @@ jQuery(window).load(function () {
     whyUsBlock.css('opacity', '0');
   });
 });
+
+var myField = {
+  tmpVal: '',
+  onFocus: function (element) {
+    this.tmpVal = element.value;
+    element.style.textAlign = 'left';
+
+    element.value = '';
+  },
+  onBlur: function (element) {
+    element.style.textAlign = 'center';
+    element.value = this.tmpVal;
+  }
+};

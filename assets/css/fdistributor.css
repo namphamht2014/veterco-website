@@ -1044,3 +1044,218 @@ body{
 /**
  * Be the first - end
  */
+
+/**
+ * Samples Shipping Quote
+ */
+ .samplesContainer {
+  background: url(/assets/images/distributor-be-the-first-bg.jpg) center center no-repeat transparent;
+  background-size: 100% 100%;
+  height: 100%;
+  margin-top: -62px;
+ }
+.samplesContainer .content{
+  width: 35%;
+  height: 100%;
+  margin: auto;
+  padding: 62px 0 42px;
+  position: relative;
+}
+.samplesContainer .content .title{
+  background: url(/assets/images/distributor-shipping-btn.png) center center no-repeat transparent;
+  background-size: 100% 100%;
+  width: 50%;
+  height: 5.4%;
+  position: absolute;
+  top: 13%;
+}
+.samplesContainer .content .title .number,
+.samplesContainer .content .title .txt{
+  float: left;
+  color: white;
+  line-height: 60px;
+  text-align: center
+}
+.samplesContainer .content .title .number{
+  width: 20%;
+  font-size: 40px;
+}
+.samplesContainer .content .title .txt{
+  width: 80%;
+  font-size: 22px;
+}
+.samplesContainer .content .desc{
+  top: 21%;
+  position: absolute;
+  color: white;
+  width: 90%;
+  font-size: 20px;
+}
+.samplesContainer .content .myForm{
+  position: absolute;
+  top: 32%;
+  width: 90%;
+}
+.samplesContainer .myForm .myLabel,
+.samplesContainer .myForm .myField{
+  float: left;
+}
+.samplesContainer .myForm .myLabel{
+  width: 30%;
+  color: white;
+  font-size: 18px;
+  line-height: 50px;
+}
+.samplesContainer .myForm .myField{
+  width: 70%;
+}
+.samplesContainer .myForm .line {
+  margin-bottom: 15px;
+}
+.samplesContainer .myForm .myField input,
+.samplesContainer .myForm .myField textarea{
+  border: 3px solid #f0f0f0;
+  background: transparent;
+  color: white;
+  width: 100%;
+  padding: 5px 10px;
+  font-style: italic;
+  text-align: center;
+  word-break: break-word;
+  height: 56px;
+}
+.samplesContainer .myForm .myField input:focus,
+.samplesContainer .myForm .myField textarea:focus{
+  outline: 0;
+}
+.samplesContainer .myForm .myField .dropdown button{
+  margin: 0;
+  border: 3px solid white;
+  background: transparent;
+  width: 100%;
+  color: white;
+  font-style: italic;
+  border-radius: 0;
+  height: 52px;
+}
+.samplesContainer .myForm .myField .dropdown button .caret{
+  border-top: 8px solid white;
+  border-right: 8px solid transparent;
+  border-left: 8px solid transparent;
+  position: absolute;
+  right: 5%;
+  top: 45%;
+}
+.samplesContainer .myForm .myField .dropdown ul{
+  width: 100%;
+  border-radius: 0;
+  border: 3px solid white;
+  background: black;
+}
+.samplesContainer .myForm .myField .dropdown ul > li > a{
+  color: white;
+}
+.samplesContainer .myForm .myField .dropdown ul > li > a:hover{
+  background-color: rgba(255, 255, 255, 0.2);
+}
+.samplesContainer .myForm #btnSubmit {
+  background: url(/assets/images/distributor-shipping-btn2.png) center center no-repeat transparent;
+  background-size: 100% 100%;
+  border: 0;
+  width: 40%;
+  height: 11%;
+  position: absolute;
+  right: 0;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+}
+/**
+ * small
+ */
+.samplesContainer.small .content .title{
+  width: 65%;
+}
+.samplesContainer.small .content .title .number{
+  font-size: 35px;
+}
+.samplesContainer.small .content .title .number,
+.samplesContainer.small .content .title .txt{
+  line-height: 53px;
+}
+.samplesContainer.small .content .desc{
+  font-size: 18px;
+}
+.samplesContainer.small .myForm .myField input{
+  height: 50px;
+}
+.samplesContainer .myForm .myField .dropdown button .caret{
+  top: 40%;
+}
+/**
+ * big
+ */
+ .samplesContainer.big .content .title .number{
+   font-size: 50px;
+ }
+ .samplesContainer.big .content .title .number,
+ .samplesContainer.big .content .title .txt{
+   line-height: 75px;
+ }
+ .samplesContainer.big .content .title .txt{
+   font-size: 26px;
+ }
+ .samplesContainer.big .content .desc,
+ .samplesContainer.big .myForm .myLabel{
+   font-size: 25px;
+ }
+ .samplesContainer.big .myForm .myField input,
+ .samplesContainer.big .myForm .myField .dropdown button,
+ .samplesContainer.big .myForm .myField textarea{
+   font-size: 18px;
+   height: 74px;
+ }
+ .samplesContainer.big .myForm .myField .dropdown ul > li > a{
+  font-size: 18px;
+ }
+ .samplesContainer.big .myForm .myLabel {
+   line-height: 75px;
+ }
+ .samplesContainer.big .myForm #btnSubmit {
+   font-size: 27px;
+ }
+ /**
+  * biggest
+  */
+  .samplesContainer.biggest .content .title .number{
+    font-size: 60px;
+  }
+  .samplesContainer.biggest .content .title .number,
+  .samplesContainer.biggest .content .title .txt{
+    line-height: 90px;
+  }
+  .samplesContainer.biggest .content .desc,
+  .samplesContainer.biggest .content .title .txt,
+  .samplesContainer.biggest .myForm .myLabel{
+    font-size: 30px;
+  }
+  .samplesContainer.biggest .myForm .myField input,
+  .samplesContainer.biggest .myForm .myField textarea,
+  .samplesContainer.biggest .myForm .myField .dropdown button{
+    font-size: 24px;
+    height: 86px;
+  }
+  .samplesContainer.biggest .myForm .myField .dropdown ul > li > a{
+   font-size: 24px;
+  }
+  .samplesContainer.biggest .myForm #btnSubmit {
+    font-size: 32px;
+  }
+  .samplesContainer.biggest .myForm .myField .dropdown button .caret{
+    border-top: 14px solid white;
+    border-right: 14px solid transparent;
+    border-left: 14px solid transparent;
+  }
+/**
+* Samples Shipping Quote - end
+*/

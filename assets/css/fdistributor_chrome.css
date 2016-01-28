@@ -128,3 +128,54 @@
 /**
  * Be The First - End
  */
+
+/**
+ * samples shipping quote
+ */
+ .samplesContainer .content .desc,
+ .samplesContainer .myForm .myLabel {
+     font-size: 23px;
+ }
+ .samplesContainer .myForm .myField input,
+ .samplesContainer .myForm .myField textarea,
+ .samplesContainer .myForm .myField .dropdown button {
+    height: 64px;
+    font-size: 17px;
+}
+.samplesContainer .myForm .myLabel {
+    line-height: 60px;
+}
+.samplesContainer.small .content .desc,
+.samplesContainer.small .myForm .myLabel {
+    font-size: 17.5px;
+}
+.samplesContainer.small .myForm .myField input,
+.samplesContainer.small .myForm .myField textarea,
+.samplesContainer.small .myForm .myField .dropdown button {
+    height: 52px;
+    font-size: 13px;
+}
+.samplesContainer.small .myForm .myLabel {
+    line-height: 50px;
+}
+.samplesContainer.big .content .desc,
+.samplesContainer.big .myForm .myLabel {
+    font-size: 26px;
+}
+.samplesContainer.biggest .content .desc,
+.samplesContainer.biggest .content .title .txt,
+.samplesContainer.biggest .myForm .myLabel {
+    font-size: 35px;
+}
+.samplesContainer.biggest .myForm .myField input,
+.samplesContainer.biggest .myForm .myField textarea,
+.samplesContainer.biggest .myForm .myField .dropdown button {
+    font-size: 25px;
+    height: 86px;
+}
+.samplesContainer.biggest .myForm .myLabel {
+    line-height: 85px;
+}
+/**
+ * samples shipping quote - end
+ */

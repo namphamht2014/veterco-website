@@ -41,3 +41,40 @@
     line-height: 55px;
     padding-top: 6%;
 }
+/**
+ * Be The First
+ */
+ .beTheFirstContainer .content .line1 .desc,
+ .beTheFirstContainer .content .line2 .desc {
+     font-size: 19px;
+ }
+ .beTheFirstContainer .title .number,
+ .beTheFirstContainer .title .txt {
+    line-height: 75px;
+}
+.beTheFirstContainer .content .line2 {
+    top: calc(100% - 105px);
+}
+ .beTheFirstContainer.big .content .line1 .desc,
+ .beTheFirstContainer.big .content .line2 .desc {
+    font-size: 23px;
+}
+.beTheFirstContainer.biggest .content .line1 .desc,
+.beTheFirstContainer.biggest .content .line2 .desc {
+    font-size: 31px;
+}
+.beTheFirstContainer.biggest .content .line1 button,
+.beTheFirstContainer.biggest .content .line2 button {
+    font-size: 32px;
+    line-height: 110px;
+}
+.beTheFirstContainer.biggest .title .number,
+.beTheFirstContainer.biggest .title .txt {
+    line-height: 120px;
+}
+.beTheFirstContainer.biggest .content .line2 {
+    top: calc(100% - 145px);
+}
+/**
+ * Be The First - end
+ */

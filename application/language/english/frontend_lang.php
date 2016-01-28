@@ -35,6 +35,7 @@ Distributor Support
  */
 $lang['f_distributor'] = 'Distributor Support';
 $lang['f_distributor_whyus'] = 'Why Us';
+$lang['f_distributor_bethefirst'] = 'Be The First';
 /*
   Chairman's words
  */

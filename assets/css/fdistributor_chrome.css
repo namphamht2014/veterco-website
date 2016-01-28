@@ -86,3 +86,45 @@
     line-height: 55px;
     padding-top: 8%;
 }
+/**
+ * Be The First
+ */
+ .beTheFirstContainer .title .number,
+ .beTheFirstContainer .title .txt {
+     line-height: 80px;
+ }
+ .beTheFirstContainer .content .line1 button,
+ .beTheFirstContainer .content .line2 button {
+    font-size: 23px;
+    line-height: 65px;
+}
+.beTheFirstContainer .content .line1 .desc,
+.beTheFirstContainer .content .line2 .desc {
+    font-size: 20px;
+}
+.beTheFirstContainer .content .line2 {
+    top: calc(100% - 110px);
+}
+.beTheFirstContainer.big .content .line1 .desc,
+.beTheFirstContainer.big .content .line2 .desc {
+    font-size: 23px;
+}
+.beTheFirstContainer.biggest .title .number,
+.beTheFirstContainer.biggest .title .txt {
+    line-height: 120px;
+}
+.beTheFirstContainer.biggest .content .line1 button,
+ .beTheFirstContainer.biggest .content .line2 button {
+    font-size: 34px;
+    line-height: 105px;
+}
+.beTheFirstContainer.biggest .content .line1 .desc,
+.beTheFirstContainer.biggest .content .line2 .desc {
+    font-size: 31px;
+}
+.beTheFirstContainer.biggest .content .line2 {
+    top: calc(100% - 145px);
+}
+/**
+ * Be The First - End
+ */

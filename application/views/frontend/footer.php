@@ -12,6 +12,6 @@
     VETERCO VIETNAM LIMITED Registration Number: 1800154272
   </div>
   <div class="textRight">
-    All rights reversed &copy; <?= date('Y')?>
+    All rights reversed &copy; 2016
   </div>
 </footer>

@@ -10,6 +10,11 @@ Welcome page
 $lang['f_welcome'] = 'Welcome 2';
 
 /*
+Talk to US
+ */
+$lang['f_talk_to_us'] = 'Talk To Us';
+
+/*
 Home page
  */
 $lang['f_home'] = 'Home';

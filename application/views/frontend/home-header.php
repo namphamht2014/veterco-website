@@ -67,7 +67,7 @@
         </a>
       </li>
       <li class="m-t-32" id="talk">
-        <a href="" onmouseover="header.hover(this);" onmouseout="header.unhover(this);">
+        <a href="<?= site_url('ftalk')?>" onmouseover="header.hover(this);" onmouseout="header.unhover(this);">
           <div>
 						<div class="red-arrow"></div>
 	          <b>Talk to us</b>

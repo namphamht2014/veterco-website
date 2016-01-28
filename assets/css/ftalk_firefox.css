@@ -1,0 +1,73 @@
+/**
+ * Small
+ */
+.talkContainer.small .block-right .line1{
+  left: 11%;
+}
+.talkContainer.small .block-red1{
+  left: 82%;
+  top: 57%;
+}
+
+/**
+ * Normal
+ */
+.block-right .black-block .content .title{
+  font-size: 27px;
+}
+.block-left-desc,
+.talk-form input,
+.talk-form .bottom-block .txt,
+.talk-form .bottom-block .country .my-label,
+.talk-form .bottom-block .viber .my-label,
+.talk-form .btn-submit,
+.block-right .black-block .content .desc{
+  font-size: 18.9px;
+}
+
+.block-red1{
+ left: 82%;
+ top: 57%;
+}
+
+/**
+ * Big
+ */
+.talkContainer.big .block-left-desc,
+.talkContainer.big .talk-form input,
+.talkContainer.big .talk-form .bottom-block .txt,
+.talkContainer.big .talk-form .bottom-block .country .my-label,
+.talkContainer.big .talk-form .bottom-block .viber .my-label,
+.talkContainer.big .talk-form .btn-submit,
+.talkContainer.big .block-right .black-block .content .desc {
+  font-size: 22.6px;
+}
+.talkContainer.big .talk-form .btn-submit{
+  margin-top: -3.6%;
+}
+.talkContainer.big .block-red1{
+  top: 56.8%;
+}
+
+/**
+ * Biggest
+ */
+.talkContainer.biggest .block-red1{
+  left: 82.5%;
+  top: 56%;
+}
+.talkContainer.biggest .block-left-desc,
+.talkContainer.biggest .talk-form input,
+.talkContainer.biggest .talk-form .bottom-block .txt,
+.talkContainer.biggest .talk-form .bottom-block .country .my-label,
+.talkContainer.biggest .talk-form .bottom-block .viber .my-label,
+.talkContainer.biggest .talk-form .btn-submit,
+.talkContainer.biggest .block-right .black-block .content .desc {
+  font-size: 30px;
+}
+.talkContainer.biggest .block-right .black-block .content .title {
+  font-size: 50px;
+}
+.talkContainer.biggest .talk-form .btn-submit{
+  margin-top: -3%;
+}

@@ -224,8 +224,8 @@ $(function(){
   new_total_height += $('.leading-article').height();
   new_total_height += $('.value-article-container').height();
   new_total_height += $('.thank-article').height();
-  console.log('total height: '+total_height);
-  console.log('new total height: '+new_total_height);
+  // console.log('total height: '+total_height);
+  // console.log('new total height: '+new_total_height);
   var windowTotalHeight = new myWindow(new_total_height);
 
   /*
@@ -312,7 +312,7 @@ $(function(){
    */
    $(window).scroll(function(){
      var st = $(window).scrollTop();
-     console.log(windowTotalHeight.getPercent(st));
+    //  console.log(windowTotalHeight.getPercent(st));
      //header menus
      if (windowTotalHeight.getPercent(st) >= 5) {
        $('header').addClass('show');

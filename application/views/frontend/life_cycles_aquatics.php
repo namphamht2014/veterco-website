@@ -9,7 +9,9 @@
   <ul class="myEllipse">
     <a href=""><li></li></a>
     <a href="<?= site_url('flifecycle/chicken')?>"><li></li></a>
-    <a href="<?= site_url('flifecycle/pig')?>"><li></li></a>
+    <a href="<?= site_url('flifecycle/pigs')?>"><li></li></a>
+    <a href="<?= site_url('flifecycle/cows')?>"><li></li></a>
+    <a href="<?= site_url('flifecycle/pets')?>"><li></li></a>
   </ul>
   <div class="content">
     <div class="title">Aquatics</div>

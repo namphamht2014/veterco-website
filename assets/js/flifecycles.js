@@ -11,7 +11,9 @@ jQuery(window).load(function () {
   var aquatics = $('.aquaticsContainer');
   lifeCycles.removeClass('small big biggest');
   var chicken = $('.chickenContainer');
-  lifeCycles.removeClass('small big biggest');
+  chicken.removeClass('small big biggest');
+  var pigs = $('.pigsContainer');
+  pigs.removeClass('small big biggest');
 
   var winWidth = $(window).width();
 
@@ -19,13 +21,16 @@ jQuery(window).load(function () {
     lifeCycles.addClass('biggest');
     aquatics.addClass('biggest');
     chicken.addClass('biggest');
+    pigs.addClass('biggest');
   }else if (winWidth >= 2282 && winWidth < 2738) {
     lifeCycles.addClass('big');
     aquatics.addClass('big');
     chicken.addClass('big');
+    pigs.addClass('big');
   }else if (winWidth >= 1902 && winWidth < 2282) {}else {
     lifeCycles.addClass('small');
     aquatics.addClass('small');
     chicken.addClass('small');
+    pigs.addClass('small');
   }
 });

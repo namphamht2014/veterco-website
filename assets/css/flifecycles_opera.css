@@ -83,3 +83,29 @@
 .lifeCyclesContainer.biggest .content .animalName {
     line-height: 77px;
 }
+
+/**
+ * pigs
+ */
+.pigsContainer.big .myEllipse li {
+    margin-right: 25px;
+}
+.pigsContainer.biggest .myEllipse li {
+    float: left;
+    margin-right: 35px;
+}
+.pigsContainer .content ul:before{
+   margin-left: -90px;
+   margin-top: 35px;
+   width: 110px;
+}
+.pigsContainer.small .content ul:before{
+  margin-left: -80px;
+  margin-top: 35px;
+  width: 100px;
+}
+.pigsContainer.big .content ul::before {
+    margin-left: -105px;
+    margin-top: 45px;
+    width: 130px;
+}

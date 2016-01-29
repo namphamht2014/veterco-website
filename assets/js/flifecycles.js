@@ -16,6 +16,8 @@ jQuery(window).load(function () {
   pigs.removeClass('small big biggest');
   var cattles = $('.cattlesContainer');
   cattles.removeClass('small big biggest');
+  var pets = $('.petsContainer');
+  pets.removeClass('small big biggest');
 
   var winWidth = $(window).width();
 
@@ -25,17 +27,20 @@ jQuery(window).load(function () {
     chicken.addClass('biggest');
     pigs.addClass('biggest');
     cattles.addClass('biggest');
+    pets.addClass('biggest');
   }else if (winWidth >= 2282 && winWidth < 2738) {
     lifeCycles.addClass('big');
     aquatics.addClass('big');
     chicken.addClass('big');
     pigs.addClass('big');
     cattles.addClass('big');
+    pets.addClass('big');
   }else if (winWidth >= 1902 && winWidth < 2282) {}else {
     lifeCycles.addClass('small');
     aquatics.addClass('small');
     chicken.addClass('small');
     pigs.addClass('small');
     cattles.addClass('small');
+    pets.addClass('small');
   }
 });

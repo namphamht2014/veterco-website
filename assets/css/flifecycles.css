@@ -155,6 +155,10 @@
 .cattlesContainer .content,
 .cattlesContainer .myEllipse,
 .cattlesContainer .content ul:before,
+.petsContainer .bg,
+.petsContainer .content,
+.petsContainer .myEllipse,
+.petsContainer .content ul:before,
 .pigsContainer .bg,
 .pigsContainer .content,
 .pigsContainer .myEllipse,
@@ -164,6 +168,7 @@
 .aquaticsContainer .bg,
 .chickenContainer .bg,
 .cattlesContainer .bg,
+.petsContainer .bg,
 .pigsContainer .bg{
   width: 100%;
   height: 100%;
@@ -171,6 +176,7 @@
 .aquaticsContainer .myEllipse,
 .chickenContainer .myEllipse,
 .cattlesContainer .myEllipse,
+.petsContainer .myEllipse,
 .pigsContainer .myEllipse{
   list-style: disc;
   font-size: 25px;
@@ -180,12 +186,14 @@
 .aquaticsContainer .myEllipse a,
 .chickenContainer .myEllipse a,
 .cattlesContainer .myEllipse a,
+.petsContainer .myEllipse a,
 .pigsContainer .myEllipse a{
   color: #898989;
 }
 .aquaticsContainer .myEllipse li,
 .chickenContainer .myEllipse li,
 .cattlesContainer .myEllipse li,
+.petsContainer .myEllipse li,
 .pigsContainer .myEllipse li{
   float: left;
   margin-right: 15px;
@@ -193,6 +201,7 @@
 .aquaticsContainer .content,
 .chickenContainer .content,
 .cattlesContainer .content,
+.petsContainer .content,
 .pigsContainer .content{
   text-transform: uppercase;
   top: 27%;
@@ -203,6 +212,7 @@
 .aquaticsContainer .content .title,
 .chickenContainer .content .title,
 .cattlesContainer .content .title,
+.petsContainer .content .title,
 .pigsContainer .content .title{
   font-size: 65px;
   font-weight: bold;
@@ -210,6 +220,7 @@
 .aquaticsContainer .content .desc,
 .chickenContainer .content .desc,
 .cattlesContainer .content .desc,
+.petsContainer .content .desc,
 .pigsContainer .content .desc{
   font-size: 20px;
   margin-top: -10px;
@@ -217,6 +228,7 @@
 .aquaticsContainer .content ul,
 .chickenContainer .content ul,
 .cattlesContainer .content ul,
+.petsContainer .content ul,
 .pigsContainer .content ul{
   margin-left: 15%;
   margin-top: 2%;
@@ -227,7 +239,9 @@
 .aquaticsContainer .content ul:before,
 .chickenContainer .content ul:before,
 .cattlesContainer .content ul:before,
-.pigsContainer .content ul:before{
+.petsContainer .content ul:before,
+.pigsContainer .content ul:before,
+.petsContainer .content ul:before{
   content: "";
   width: 80px;
   height: 4px;
@@ -250,12 +264,18 @@
   margin-left: -140px;
   margin-top: 85px;
 }
+.petsContainer .content ul:before{
+  width: 100px;
+  margin-left: -80px;
+  margin-top: 35px;
+}
 /**
  * small
  */
 .aquaticsContainer.small .content .desc,
 .chickenContainer.small .content .desc,
 .cattlesContainer.small .content .desc,
+.petsContainer.small .content .desc,
 .pigsContainer.small .content .desc{
   margin-top: -20px;
 }
@@ -265,24 +285,28 @@
 .aquaticsContainer.big .myEllipse,
 .chickenContainer.big .myEllipse,
 .cattlesContainer.big .myEllipse,
+.petsContainer.big .myEllipse,
 .pigsContainer.big .myEllipse{
   font-size: 30px;
 }
 .aquaticsContainer.big .content .title,
 .chickenContainer.big .content .title,
 .cattlesContainer.big .content .title,
+.petsContainer.big .content .title,
 .pigsContainer.big .content .title{
   font-size: 75px;
 }
 .aquaticsContainer.big .content .desc,
 .chickenContainer.big .content .desc,
 .cattlesContainer.big .content .desc,
+.petsContainer.big .content .desc,
 .pigsContainer.big .content .desc{
   font-size: 25px;
 }
 .aquaticsContainer.big .content ul,
 .chickenContainer.big .content ul,
 .cattlesContainer.big .content ul,
+.petsContainer.big .content ul,
 .pigsContainer.big .content ul{
   font-size: 22px;
 }
@@ -296,36 +320,46 @@
   margin-left: -155px;
   margin-top: 105px;
 }
+.petsContainer.big .content ul:before{
+  width: 120px;
+  margin-left: -100px;
+  margin-top: 45px;
+}
 /**
  * biggest
  */
 .aquaticsContainer.biggest .myEllipse,
 .chickenContainer.biggest .myEllipse,
 .cattlesContainer.biggest .myEllipse,
+.petsContainer.biggest .myEllipse,
 .pigsContainer.biggest .myEllipse{
   font-size: 40px;
 }
 .aquaticsContainer.biggest .content .title,
 .chickenContainer.biggest .content .title,
 .cattlesContainer.biggest .content .title,
+.petsContainer.biggest .content .title,
 .pigsContainer.biggest .content .title{
   font-size: 85px;
 }
 .aquaticsContainer.biggest .content .desc,
 .chickenContainer.biggest .content .desc,
 .cattlesContainer.biggest .content .desc,
+.petsContainer.biggest .content .desc,
 .pigsContainer.biggest .content .desc{
   font-size: 30px;
 }
 .aquaticsContainer.biggest .content ul,
 .chickenContainer.biggest .content ul,
 .cattlesContainer.biggest .content ul,
+.petsContainer.biggest .content ul,
 .pigsContainer.biggest .content ul{
   font-size: 25px;
 }
 .aquaticsContainer.biggest .content ul:before,
 .chickenContainer.biggest .content ul:before,
 .cattlesContainer.biggest .content ul:before,
+.petsContainer.biggest .content ul:before,
 .pigsContainer.biggest .content ul:before{
   width: 120px;
   height: 4px;
@@ -341,6 +375,11 @@
   width: 275px;
   margin-left: -185px;
   margin-top: 120px;
+}
+.petsContainer.biggest .content ul:before{
+  width: 140px;
+  margin-left: -120px;
+  margin-top: 50px;
 }
 /**
  * Aquatics - end

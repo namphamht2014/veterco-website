@@ -140,3 +140,109 @@
 .lifeCyclesContainer.biggest .content .animalName{
   line-height: 68px;
 }
+/**
+ * Aquatics
+ */
+.aquaticsContainer .bg,
+.aquaticsContainer .content,
+.aquaticsContainer .myEllipse,
+.aquaticsContainer .content ul:before{
+  position: absolute;
+}
+.aquaticsContainer .bg{
+  width: 100%;
+  height: 100%;
+}
+.aquaticsContainer .myEllipse{
+  list-style: disc;
+  font-size: 25px;
+  left: 3%;
+  top: 1.5%;
+}
+.aquaticsContainer .myEllipse a{
+  color: #898989;
+}
+.aquaticsContainer .myEllipse li{
+  float: left;
+  margin-right: 15px;
+}
+.aquaticsContainer .content{
+  text-transform: uppercase;
+  top: 27%;
+  left: 36%;
+  width: 50%;
+  color: black;
+}
+.aquaticsContainer .content .title{
+  font-size: 65px;
+  font-weight: bold;
+}
+.aquaticsContainer .content .desc{
+  font-size: 20px;
+  margin-top: -10px;
+}
+.aquaticsContainer .content ul{
+  margin-left: 15%;
+  margin-top: 2%;
+  list-style: disc;
+  font-size: 18px;
+  font-weight: bold;
+}
+.aquaticsContainer .content ul:before{
+  content: "";
+  width: 80px;
+  height: 4px;
+  background: black;
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  transform: rotate(90deg);
+  margin-left: -75px;
+  margin-top: 25px;
+}
+/**
+ * small
+ */
+.aquaticsContainer.small .content .desc{
+  margin-top: -20px;
+}
+/**
+ * big
+ */
+.aquaticsContainer.big .myEllipse{
+  font-size: 30px;
+}
+.aquaticsContainer.big .content .title{
+  font-size: 75px;
+}
+.aquaticsContainer.big .content .desc{
+  font-size: 25px;
+}
+.aquaticsContainer.big .content ul{
+  font-size: 22px;
+}
+/**
+ * biggest
+ */
+.aquaticsContainer.biggest .myEllipse{
+  font-size: 40px;
+}
+.aquaticsContainer.biggest .content .title{
+  font-size: 85px;
+}
+.aquaticsContainer.biggest .content .desc{
+  font-size: 30px;
+}
+.aquaticsContainer.biggest .content ul{
+  font-size: 25px;
+}
+.aquaticsContainer.biggest .content ul:before{
+  width: 120px;
+  height: 4px;
+  margin-left: -105px;
+  margin-top: 35px;
+}
+/**
+ * Aquatics - end
+ */

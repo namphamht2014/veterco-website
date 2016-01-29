@@ -69,3 +69,14 @@
 .lifeCyclesContainer.biggest .content .animalName {
     line-height: 77px;
 }
+
+/**
+ * aquatics
+ */
+ .aquaticsContainer.big .myEllipse li {
+     margin-right: 25px;
+ }
+ .aquaticsContainer.biggest .myEllipse li {
+     float: left;
+     margin-right: 35px;
+ }

@@ -26,7 +26,7 @@ class FDistributor extends CI_Controller {
 
     //add js to page
     $data['footers'] = array(
-      'http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js',
+      base_url().'assets/bower_components/jquery.easing/js/jquery.easing.min.js',
       base_url().'assets/js/jquery-ui.min.js',
       base_url().'assets/js/fsourcing.js',
       base_url().'assets/js/fdistributor.js'
@@ -67,7 +67,7 @@ class FDistributor extends CI_Controller {
 
     //add js to page
     $data['footers'] = array(
-      'http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js',
+      base_url().'assets/bower_components/jquery.easing/js/jquery.easing.min.js',
       base_url().'assets/js/jquery-ui.min.js',
       base_url().'assets/js/fsourcing.js',
       base_url().'assets/js/fdistributor_whyus.js'
@@ -158,7 +158,7 @@ class FDistributor extends CI_Controller {
 
     //add js to page
     $data['footers'] = array(
-      'http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js',
+      base_url().'assets/bower_components/jquery.easing/js/jquery.easing.min.js',
       base_url().'assets/js/jquery-ui.min.js',
       base_url().'assets/js/fsourcing.js',
       base_url().'assets/js/fdistributor.js'
@@ -199,7 +199,7 @@ class FDistributor extends CI_Controller {
 
     //add js to page
     $data['footers'] = array(
-      'http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js',
+      base_url().'assets/bower_components/jquery.easing/js/jquery.easing.min.js',
       base_url().'assets/js/jquery-ui.min.js',
       base_url().'assets/js/fsourcing.js',
       base_url().'assets/js/fdistributor.js'

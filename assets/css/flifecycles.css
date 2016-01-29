@@ -1,0 +1,142 @@
+.lifeCyclesContainer .content .logo,
+.lifeCyclesContainer .content .txt1,
+.lifeCyclesContainer .content .txt2,
+.lifeCyclesContainer .content .desc,
+.lifeCyclesContainer .content .desc:before,
+.lifeCyclesContainer .content .animalTxt,
+.lifeCyclesContainer .content .animalTxt:before,
+.lifeCyclesContainer .content .animalName{
+  position: absolute;
+}
+.lifeCyclesContainer .bg img{
+  width: 100%;
+}
+.lifeCyclesContainer .content .logo{
+  top: 1.5%;
+  left: 1.5%;
+}
+.lifeCyclesContainer .content .txt1,
+.lifeCyclesContainer .content .txt2,
+.lifeCyclesContainer .content .desc,
+.lifeCyclesContainer .content .animalTxt,
+.lifeCyclesContainer .content .animalName{
+  color: white;
+}
+.lifeCyclesContainer .content .txt1,
+.lifeCyclesContainer .content .txt2,
+.lifeCyclesContainer .content .animalTxt,
+.lifeCyclesContainer .content .animalName{
+  text-transform: uppercase;
+}
+.lifeCyclesContainer .content .txt1,
+.lifeCyclesContainer .content .txt2{
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+  left: 50%;
+}
+.lifeCyclesContainer .content .txt1{
+  background: #171717;
+  width: 60%;
+  margin-left: -30%;
+  top: 36.3%;
+}
+.lifeCyclesContainer .content .txt1 span{
+  color: red;
+}
+.lifeCyclesContainer .content .txt2{
+  background: url(/assets/images/lf-txt2.png) center center no-repeat transparent;
+  background-size: 100% 100%;
+  margin-left: -15.25%;
+  top: 43%;
+  width: 35%;
+}
+.lifeCyclesContainer .content .desc:before{
+  content: "";
+  width: 50%;
+  height: 10px;
+  background: white;
+  margin-top: -15%;
+}
+.lifeCyclesContainer .content .desc,
+.lifeCyclesContainer .content .animalTxt,
+.lifeCyclesContainer .content .animalName{
+  font-size: 26px;
+}
+.lifeCyclesContainer .content .desc{
+  top: 166%;
+  left: 10%;
+  width: 30%;
+  line-height: 43px;
+}
+.lifeCyclesContainer .content .animalTxt{
+  top: 176.5%;
+  right: 16%;
+  font-weight: bold;
+}
+.lifeCyclesContainer .content .animalTxt:before{
+  content: "";
+  width: 40%;
+  height: 8px;
+  background: #03427e;
+  margin-top: 10%;
+}
+.lifeCyclesContainer .content .animalName{
+  right: 2%;
+  top: 185%;
+  line-height: 47px;
+}
+/**
+ * small
+ */
+.lifeCyclesContainer.small .content .txt1,
+.lifeCyclesContainer.small .content .txt2{
+  font-size: 33px;
+}
+.lifeCyclesContainer.small .content .desc,
+.lifeCyclesContainer.small .content .animalTxt,
+.lifeCyclesContainer.small .content .animalName{
+  font-size: 22px;
+}
+.lifeCyclesContainer.small .content .desc{
+  line-height: 35px;
+}
+.lifeCyclesContainer.small .content .animalName{
+  line-height: 39px;
+}
+/**
+ * big
+ */
+.lifeCyclesContainer.big .content .txt1,
+.lifeCyclesContainer.big .content .txt2{
+  font-size: 48px;
+}
+.lifeCyclesContainer.big .content .desc,
+.lifeCyclesContainer.big .content .animalTxt,
+.lifeCyclesContainer.big .content .animalName{
+  font-size: 32px;
+}
+.lifeCyclesContainer.big .content .desc{
+  line-height: 50px;
+}
+.lifeCyclesContainer.big .content .animalName{
+  line-height: 57px;
+}
+/**
+ * biggest
+ */
+.lifeCyclesContainer.biggest .content .txt1,
+.lifeCyclesContainer.biggest .content .txt2{
+  font-size: 57px;
+}
+.lifeCyclesContainer.biggest .content .desc,
+.lifeCyclesContainer.biggest .content .animalTxt,
+.lifeCyclesContainer.biggest .content .animalName{
+  font-size: 38px;
+}
+.lifeCyclesContainer.biggest .content .desc{
+  line-height: 60px;
+}
+.lifeCyclesContainer.biggest .content .animalName{
+  line-height: 68px;
+}

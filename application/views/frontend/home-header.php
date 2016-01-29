@@ -26,7 +26,7 @@
         </a>
       </li>
       <li class="m-t-32" id="life">
-        <a href="" onmouseover="header.hover(this);" onmouseout="header.unhover(this);">
+        <a href="<?= site_url('flifecycle')?>" onmouseover="header.hover(this);" onmouseout="header.unhover(this);">
           <div>
 						<div class="red-arrow"></div>
 	          <b>Life cycles</b>

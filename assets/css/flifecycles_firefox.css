@@ -1,0 +1,71 @@
+/**
+ * small
+ */
+.lifeCyclesContainer.small .content .animalTxt {
+    right: 16.5%;
+}
+.lifeCyclesContainer.small .content .desc {
+    line-height: 37px;
+}
+/**
+ * normal
+ */
+ .lifeCyclesContainer .content .desc,
+ .lifeCyclesContainer .content .animalTxt,
+ .lifeCyclesContainer .content .animalName {
+     font-size: 28px;
+ }
+ .lifeCyclesContainer .content .desc {
+     line-height: 46px;
+ }
+ .lifeCyclesContainer .content .animalName {
+     line-height: 48px;
+     top: 189.5%;
+ }
+/**
+ * big
+ */
+ .lifeCyclesContainer.big .content .txt1 {
+     top: 37%;
+ }
+ .lifeCyclesContainer.big .content .txt2 {
+     top: 44%;
+ }
+ .lifeCyclesContainer.big .content .desc,
+ .lifeCyclesContainer.big .content .animalTxt,
+ .lifeCyclesContainer.big .content .animalName {
+     font-size: 33px;
+ }
+ .lifeCyclesContainer.big .content .desc {
+     line-height: 55px;
+ }
+ .lifeCyclesContainer.big .content .animalTxt {
+     right: 16.5%;
+ }
+ .lifeCyclesContainer.big .content .animalName {
+     line-height: 58px;
+ }
+ /**
+  * biggest
+  */
+  .lifeCyclesContainer.biggest .content .txt1,
+  .lifeCyclesContainer.biggest .content .txt2 {
+     font-size: 60px;
+ }
+ .lifeCyclesContainer.biggest .content .txt1 {
+     top: 37%;
+ }
+ .lifeCyclesContainer.biggest .content .txt2 {
+     top: 44%;
+ }
+ .lifeCyclesContainer.biggest .content .desc,
+ .lifeCyclesContainer.biggest .content .animalTxt,
+ .lifeCyclesContainer.biggest .content .animalName {
+     font-size: 45px;
+ }
+.lifeCyclesContainer.biggest .content .desc {
+    line-height: 74px;
+}
+.lifeCyclesContainer.biggest .content .animalName {
+    line-height: 77px;
+}

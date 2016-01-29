@@ -41,4 +41,8 @@ $lang['f_distributor_samples'] = 'Samples Shipping Quote';
   Chairman's words
  */
 $lang['f_chairman'] = 'Chairman\'s words';
+/**
+ * Life Cycle
+ */
+$lang['f_lifecycle'] = 'Life Cycles';
 ?>

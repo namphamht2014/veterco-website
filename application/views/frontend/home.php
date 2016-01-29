@@ -44,7 +44,7 @@
         </div>
       </div>
       <div class="col-md-6 menu2">
-        <a href="#" onmouseover="menus.hover(this)" onmouseout="menus.unhover(this)"><b>LIFE CYCLES</b></a>
+        <a href="<?= site_url('flifecycle')?>" onmouseover="menus.hover(this)" onmouseout="menus.unhover(this)"><b>LIFE CYCLES</b></a>
         <div class="menu-desc">
           <div class="desc-line"></div>
         </div>

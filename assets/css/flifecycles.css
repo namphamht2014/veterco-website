@@ -151,6 +151,10 @@
 .chickenContainer .content,
 .chickenContainer .myEllipse,
 .chickenContainer .content ul:before,
+.cattlesContainer .bg,
+.cattlesContainer .content,
+.cattlesContainer .myEllipse,
+.cattlesContainer .content ul:before,
 .pigsContainer .bg,
 .pigsContainer .content,
 .pigsContainer .myEllipse,
@@ -159,12 +163,14 @@
 }
 .aquaticsContainer .bg,
 .chickenContainer .bg,
+.cattlesContainer .bg,
 .pigsContainer .bg{
   width: 100%;
   height: 100%;
 }
 .aquaticsContainer .myEllipse,
 .chickenContainer .myEllipse,
+.cattlesContainer .myEllipse,
 .pigsContainer .myEllipse{
   list-style: disc;
   font-size: 25px;
@@ -173,17 +179,20 @@
 }
 .aquaticsContainer .myEllipse a,
 .chickenContainer .myEllipse a,
+.cattlesContainer .myEllipse a,
 .pigsContainer .myEllipse a{
   color: #898989;
 }
 .aquaticsContainer .myEllipse li,
 .chickenContainer .myEllipse li,
+.cattlesContainer .myEllipse li,
 .pigsContainer .myEllipse li{
   float: left;
   margin-right: 15px;
 }
 .aquaticsContainer .content,
 .chickenContainer .content,
+.cattlesContainer .content,
 .pigsContainer .content{
   text-transform: uppercase;
   top: 27%;
@@ -193,18 +202,21 @@
 }
 .aquaticsContainer .content .title,
 .chickenContainer .content .title,
+.cattlesContainer .content .title,
 .pigsContainer .content .title{
   font-size: 65px;
   font-weight: bold;
 }
 .aquaticsContainer .content .desc,
 .chickenContainer .content .desc,
+.cattlesContainer .content .desc,
 .pigsContainer .content .desc{
   font-size: 20px;
   margin-top: -10px;
 }
 .aquaticsContainer .content ul,
 .chickenContainer .content ul,
+.cattlesContainer .content ul,
 .pigsContainer .content ul{
   margin-left: 15%;
   margin-top: 2%;
@@ -214,6 +226,7 @@
 }
 .aquaticsContainer .content ul:before,
 .chickenContainer .content ul:before,
+.cattlesContainer .content ul:before,
 .pigsContainer .content ul:before{
   content: "";
   width: 80px;
@@ -232,11 +245,17 @@
   margin-left: -105px;
   margin-top: 45px;
 }
+.cattlesContainer .content ul:before{
+  width: 210px;
+  margin-left: -140px;
+  margin-top: 85px;
+}
 /**
  * small
  */
 .aquaticsContainer.small .content .desc,
 .chickenContainer.small .content .desc,
+.cattlesContainer.small .content .desc,
 .pigsContainer.small .content .desc{
   margin-top: -20px;
 }
@@ -245,54 +264,68 @@
  */
 .aquaticsContainer.big .myEllipse,
 .chickenContainer.big .myEllipse,
+.cattlesContainer.big .myEllipse,
 .pigsContainer.big .myEllipse{
   font-size: 30px;
 }
 .aquaticsContainer.big .content .title,
 .chickenContainer.big .content .title,
+.cattlesContainer.big .content .title,
 .pigsContainer.big .content .title{
   font-size: 75px;
 }
 .aquaticsContainer.big .content .desc,
 .chickenContainer.big .content .desc,
+.cattlesContainer.big .content .desc,
 .pigsContainer.big .content .desc{
   font-size: 25px;
 }
 .aquaticsContainer.big .content ul,
 .chickenContainer.big .content ul,
+.cattlesContainer.big .content ul,
 .pigsContainer.big .content ul{
   font-size: 22px;
 }
-.pigsContainer.biggest .content ul:before{
+.pigsContainer.big .content ul:before{
   width: 110px;
   margin-left: -85px;
   margin-top: 40px;
+}
+.cattlesContainer.big .content ul:before{
+  width: 235px;
+  margin-left: -155px;
+  margin-top: 105px;
 }
 /**
  * biggest
  */
 .aquaticsContainer.biggest .myEllipse,
 .chickenContainer.biggest .myEllipse,
+.cattlesContainer.biggest .myEllipse,
 .pigsContainer.biggest .myEllipse{
   font-size: 40px;
 }
 .aquaticsContainer.biggest .content .title,
 .chickenContainer.biggest .content .title,
+.cattlesContainer.biggest .content .title,
 .pigsContainer.biggest .content .title{
   font-size: 85px;
 }
 .aquaticsContainer.biggest .content .desc,
 .chickenContainer.biggest .content .desc,
+.cattlesContainer.biggest .content .desc,
 .pigsContainer.biggest .content .desc{
   font-size: 30px;
 }
 .aquaticsContainer.biggest .content ul,
 .chickenContainer.biggest .content ul,
+.cattlesContainer.biggest .content ul,
 .pigsContainer.biggest .content ul{
   font-size: 25px;
 }
 .aquaticsContainer.biggest .content ul:before,
 .chickenContainer.biggest .content ul:before,
+.cattlesContainer.biggest .content ul:before,
 .pigsContainer.biggest .content ul:before{
   width: 120px;
   height: 4px;
@@ -303,6 +336,11 @@
   width: 150px;
   margin-left: -125px;
   margin-top: 50px;
+}
+.cattlesContainer.biggest .content ul:before{
+  width: 275px;
+  margin-left: -185px;
+  margin-top: 120px;
 }
 /**
  * Aquatics - end

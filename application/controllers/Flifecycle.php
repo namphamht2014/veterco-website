@@ -149,6 +149,41 @@ class Flifecycle extends CI_Controller {
     $this->load->view('frontend/life_cycles_pigs', $data);
     $this->load->view('template/footer', $data);
   }
+  public function cattles()
+  {
+    //Page title
+    $data['title'] = '- '.$this->lang->line('f_lifecycle').' - Cows';
+
+    //Add css to page
+    $data['headers'] = array(
+      base_url().'assets/css/fhome.css',
+      base_url().'assets/css/flifecycles.css'
+    );
+    if ($this->agent->is_browser('Safari')) {
+      // $data['headers'][] = base_url().'assets/css/fwelcome_safari.css';
+    } else if ($this->agent->is_browser('Chrome')) {
+      $data['headers'][] = base_url().'assets/css/flifecycles_chrome.css';
+    } else if ($this->agent->is_browser('Opera')) {
+      $data['headers'][] = base_url().'assets/css/flifecycles_opera.css';
+    } else if ($this->agent->is_browser('Firefox')) {
+      $data['headers'][] = base_url().'assets/css/flifecycles_firefox.css';
+    }
+
+    //add js to page
+    $data['footers'] = array(
+      // base_url().'assets/js/fhome.js',
+      base_url().'assets/js/flifecycles.js'
+    );
+
+    //add js script to page
+    // $data['script'] = 'main.initFootable();';
+    //add data to page
+    // $data['data'] = array('test', 'test');
+
+    $this->load->view('template/header', $data);
+    $this->load->view('frontend/life_cycles_cattles', $data);
+    $this->load->view('template/footer', $data);
+  }
 }
 
 /* End of file Flifecycle.php */

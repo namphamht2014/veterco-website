@@ -246,3 +246,110 @@
 /**
  * Aquatics - end
  */
+
+/**
+* Chicken
+*/
+.chickenContainer .bg,
+.chickenContainer .content,
+.chickenContainer .myEllipse,
+.chickenContainer .content ul:before{
+ position: absolute;
+}
+.chickenContainer .bg{
+ width: 100%;
+ height: 100%;
+}
+.chickenContainer .myEllipse{
+ list-style: disc;
+ font-size: 25px;
+ left: 3%;
+ top: 1.5%;
+}
+.chickenContainer .myEllipse a{
+ color: #898989;
+}
+.chickenContainer .myEllipse li{
+ float: left;
+ margin-right: 15px;
+}
+.chickenContainer .content{
+ text-transform: uppercase;
+ top: 27%;
+ left: 36%;
+ width: 50%;
+ color: black;
+}
+.chickenContainer .content .title{
+ font-size: 65px;
+ font-weight: bold;
+}
+.chickenContainer .content .desc{
+ font-size: 20px;
+ margin-top: -10px;
+}
+.chickenContainer .content ul{
+ margin-left: 15%;
+ margin-top: 2%;
+ list-style: disc;
+ font-size: 18px;
+ font-weight: bold;
+}
+.chickenContainer .content ul:before{
+ content: "";
+ width: 80px;
+ height: 4px;
+ background: black;
+ -webkit-transform: rotate(90deg);
+ -moz-transform: rotate(90deg);
+ -ms-transform: rotate(90deg);
+ -o-transform: rotate(90deg);
+ transform: rotate(90deg);
+ margin-left: -75px;
+ margin-top: 25px;
+}
+/**
+ * small
+ */
+.chickenContainer.small .content .desc{
+  margin-top: -20px;
+}
+/**
+ * big
+ */
+.chickenContainer.big .myEllipse{
+  font-size: 30px;
+}
+.chickenContainer.big .content .title{
+  font-size: 75px;
+}
+.chickenContainer.big .content .desc{
+  font-size: 25px;
+}
+.chickenContainer.big .content ul{
+  font-size: 22px;
+}
+/**
+ * biggest
+ */
+.chickenContainer.biggest .myEllipse{
+  font-size: 40px;
+}
+.chickenContainer.biggest .content .title{
+  font-size: 85px;
+}
+.chickenContainer.biggest .content .desc{
+  font-size: 30px;
+}
+.chickenContainer.biggest .content ul{
+  font-size: 25px;
+}
+.chickenContainer.biggest .content ul:before{
+  width: 120px;
+  height: 4px;
+  margin-left: -105px;
+  margin-top: 35px;
+}
+/**
+* Chicken - end
+*/

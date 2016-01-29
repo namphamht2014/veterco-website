@@ -80,3 +80,13 @@
      float: left;
      margin-right: 35px;
  }
+ /**
+  * chicken
+  */
+ .chickenContainer.big .myEllipse li {
+     margin-right: 25px;
+ }
+ .chickenContainer.biggest .myEllipse li {
+     float: left;
+     margin-right: 35px;
+ }

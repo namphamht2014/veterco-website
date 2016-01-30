@@ -1259,3 +1259,149 @@ body{
 /**
 * Samples Shipping Quote - end
 */
+
+/**
+ * Promotional Items Selection
+ */
+.promotionalContainer,
+.promotionalContainer .content,
+.promotionalContainer #myCarousel,
+.promotionalContainer #myCarousel .carousel-inner,
+.promotionalContainer #myCarousel .carousel-inner .item,
+.promotionalContainer #myCarousel .carousel-inner .item.active{
+  height: 100%;
+}
+.promotionalContainer{
+  margin-top: -62px;
+}
+.promotionalContainer .carousel-inner>.item>a>img,
+.promotionalContainer .carousel-inner>.item>img{
+  margin: auto;
+  height: 100%;
+}
+.promotionalContainer .carousel-control .glyphicon-menu-left,
+.promotionalContainer .carousel-control .glyphicon-menu-right{
+  width: 30px;
+  height: 30px;
+  margin-top: -15px;
+  font-size: 30px
+}
+.promotionalContainer .carousel-control .glyphicon-menu-left,
+.promotionalContainer .carousel-control .icon-prev{
+  margin-left: -15px;
+}
+.promotionalContainer .carousel-control .glyphicon-menu-right,
+.promotionalContainer .carousel-control .icon-next{
+  margin-right: -15px;
+}
+.promotionalContainer .carousel-control{
+  color: white;
+}
+.promotionalContainer .carousel-control .glyphicon-menu-left,
+.promotionalContainer .carousel-control .glyphicon-menu-right,
+.promotionalContainer .nav-bg{
+  position: absolute;
+  top: 50%;
+  z-index: 5;
+}
+.promotionalContainer .nav-bg{
+  width: 50px;
+  height: 50px;
+  background: #636363;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+  margin-left: -25px;
+  margin-top: -25px;
+}
+.promotionalContainer .right .nav-bg{
+  margin-left: -12.5px;
+}
+.promotionalContainer .carousel-control.left,
+.promotionalContainer .carousel-control.right,
+.promotionalContainer .carousel-control:focus,
+.promotionalContainer .carousel-control:hover{
+  background: none;
+  opacity: 1
+}
+.promotionalContainer .carousel-caption{
+  color: black;
+  left: initial;
+  right: 1%;
+  bottom: 3%;
+  width: 23%;
+  text-transform: uppercase;
+  text-align: left;
+  border: 10px solid black;
+  padding: 0 15px;
+}
+.promotionalContainer .carousel-caption h1:before{
+  content: "";
+  position: absolute;
+  width: 7.5%;
+  height: 5px;
+  background: black;
+  margin-top: 10%;
+}
+.promotionalContainer .carousel-caption h1{
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+.promotionalContainer .carousel-caption p{
+  font-size: 16px;
+}
+/**
+ * small
+ */
+.promotionalContainer.small .carousel-caption h1{
+  font-size: 32px;
+}
+.promotionalContainer.small .carousel-caption p{
+  font-size: 12px;
+}
+.promotionalContainer.small .nav-bg{
+  width: 30px;
+  height: 30px;
+  margin-left: -15px;
+  margin-top: -15px;
+}
+.promotionalContainer.small .right .nav-bg{
+  margin-left: -1px;
+}
+.promotionalContainer.small .glyphicon-menu-right:before,
+.promotionalContainer.small .glyphicon-menu-left:before{
+  font-size: 20px;
+}
+.promotionalContainer.small .carousel-control .glyphicon-menu-left,
+.promotionalContainer.small .carousel-control .glyphicon-menu-right{
+  margin-top: -20px;
+}
+.promotionalContainer.small .carousel-caption h1:before{
+  margin-top: 11.5%;
+}
+/**
+ * big
+ */
+.promotionalContainer.big .carousel-caption h1{
+  font-size: 46px;
+}
+.promotionalContainer.big .carousel-caption p{
+  font-size: 18px;
+}
+/**
+ * biggest
+ */
+.promotionalContainer.biggest .carousel-caption h1{
+  font-size: 56px;
+}
+.promotionalContainer.biggest .carousel-caption p{
+  font-size: 23px;
+}
+.promotionalContainer.biggest .nav-bg{
+  margin-top: -27px;
+}
+/**
+ * Promotional Items Selection - End
+ */

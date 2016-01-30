@@ -52,7 +52,7 @@
     <a href="<?= site_url('fdistributor/whyUs')?>"><div class="why-us-block"></div></a>
     <a href="<?= site_url('fdistributor/be_the_first')?>"><div class="be-the-first-block"></div></a>
     <a href=""><div class="product-customization-block"></div></a>
-    <a href=""><div class="promotional-block"></div></a>
+    <a href="<?= site_url('fdistributor/promotional_items')?>"><div class="promotional-block"></div></a>
   </div>
 </div>
 <?php $this->load->view('frontend/footer');?>

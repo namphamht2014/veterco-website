@@ -21,26 +21,33 @@ jQuery(window).load(function () {
   //Samples shipping quote
   var shippingQuote = $('.samplesContainer');
   shippingQuote.removeClass('small big biggest');
+  //Promotional Items Selection
+  var promotionItems = $('.promotionalContainer');
+  promotionItems.removeClass('small big biggest');
 
   var winWidth = $(window).width();
-  if(winWidth >= 2764){
+  console.log(winWidth);
+  if(winWidth >= 2759){
     $('.blocks .title1, .blocks .title2, .blocks .order-status .text').addClass('biggest');
     $('.blocks .product-customization .text, .blocks .promotional .text').addClass('biggest');
     $('.blocks .samples .text, .blocks .why-us .text, .blocks .be-the-first .text').addClass('biggest');
     beTheFirst.addClass('biggest');
     shippingQuote.addClass('biggest');
-  }else if (winWidth >= 2304 && winWidth < 2764) {
+    promotionItems.addClass('biggest');
+  }else if ((winWidth >= 2304 || winWidth >= 2299) && (winWidth < 2764 || winWidth < 2759)) {
     $('.blocks .title1, .blocks .title2, .blocks .order-status .text').addClass('big');
     $('.blocks .product-customization .text, .blocks .promotional .text').addClass('big');
     $('.blocks .samples .text, .blocks .why-us .text, .blocks .be-the-first .text').addClass('big');
     beTheFirst.addClass('big');
     shippingQuote.addClass('big');
-  }else if (winWidth >= 1920 && winWidth < 2304) {}else {
+    promotionItems.addClass('big');
+  }else if ((winWidth >= 1920 || winWidth >= 1916) && (winWidth < 2304 || winWidth < 2299)) {}else {
     $('.blocks .title1, .blocks .title2, .blocks .order-status .text').addClass('small');
     $('.blocks .product-customization .text, .blocks .promotional .text').addClass('small');
     $('.blocks .samples .text, .blocks .why-us .text, .blocks .be-the-first .text').addClass('small');
     beTheFirst.addClass('small');
     shippingQuote.addClass('small');
+    promotionItems.addClass('small');
   }
 
   var beTheFirstBlock = $('.blocks .be-the-first');

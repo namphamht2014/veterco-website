@@ -37,6 +37,7 @@ $lang['f_distributor'] = 'Distributor Support';
 $lang['f_distributor_whyus'] = 'Why Us';
 $lang['f_distributor_bethefirst'] = 'Be The First';
 $lang['f_distributor_samples'] = 'Samples Shipping Quote';
+$lang['f_distributor_promotional'] = 'Promotional Items Selection';
 /*
   Chairman's words
  */

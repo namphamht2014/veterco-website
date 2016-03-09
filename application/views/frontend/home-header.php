@@ -9,7 +9,7 @@
 					</div>
         </a>
       </li>
-			<li class="m-t-32" id="story">
+			<li class="m-t-32" id="about_us">
         <a href="<?= site_url('all_about_us')?>" onmouseover="header.hover(this);" onmouseout="header.unhover(this);">
           <div>
 						<div class="red-arrow"></div>

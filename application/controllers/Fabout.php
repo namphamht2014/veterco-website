@@ -18,21 +18,21 @@ class Fabout extends CI_Controller {
     //Add css to page
     $data['headers'] = array(
       base_url().'assets/css/fhome.css',
-      base_url().'assets/css/chairman.css'
+      base_url().'assets/css/about_us.css'
     );
     if ($this->agent->is_browser('Safari')) {
       // $data['headers'][] = base_url().'assets/css/fwelcome_safari.css';
     } else if ($this->agent->is_browser('Chrome')) {
-      $data['headers'][] = base_url().'assets/css/chairman_chrome.css';
+      // $data['headers'][] = base_url().'assets/css/aboutUs_chrome.css';
     } else if ($this->agent->is_browser('Opera')) {
-      $data['headers'][] = base_url().'assets/css/chairman_opera.css';
+      // $data['headers'][] = base_url().'assets/css/aboutUs_opera.css';
     } else if ($this->agent->is_browser('Firefox')) {
-      $data['headers'][] = base_url().'assets/css/chairman_firefox.css';
+      // $data['headers'][] = base_url().'assets/css/aboutUs_firefox.css';
     }
 
     //add js to page
     $data['footers'] = array(
-      base_url().'assets/js/chairman.js'
+      base_url().'assets/js/about_us.js'
     );
 
     //add js script to page
@@ -45,7 +45,7 @@ class Fabout extends CI_Controller {
     $data['data'] = array('test', 'test');
 
     $this->load->view('template/header', $data);
-    $this->load->view('frontend/chairman', $data);
+    $this->load->view('frontend/about_us', $data);
     $this->load->view('template/footer', $data);
   }
 

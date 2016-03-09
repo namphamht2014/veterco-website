@@ -1,25 +1,3 @@
-@font-face {
-   font-family: Myriad;
-   src: url(../font/Myriad_Pro_font/MyriadPro-Regular.otf);
-}
-
-@font-face {
-   font-family: Myriad-Cond;
-   src: url(../font/Myriad_Pro_font/MyriadPro-Cond.otf);
-}
-
-@font-face {
-   font-family: Myriad-Bold;
-   src: url(../font/Myriad_Pro_font/MyriadPro-Bold.otf);
-   font-weight: bold;
-}
-
-@font-face {
-   font-family: MyriadPro-Semibold;
-   src: url(../font/Myriad_Pro_font/MyriadPro-Semibold.otf);
-   font-weight: bold;
-}
-
 body, html {
   font-family: Myriad;
   height: 100%;

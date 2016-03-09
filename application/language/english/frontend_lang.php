@@ -42,6 +42,10 @@ $lang['f_distributor_promotional'] = 'Promotional Items Selection';
   Chairman's words
  */
 $lang['f_chairman'] = 'Chairman\'s words';
+/*
+  All about us
+ */
+$lang['f_about_us'] = 'All About Us';
 /**
  * Life Cycle
  */

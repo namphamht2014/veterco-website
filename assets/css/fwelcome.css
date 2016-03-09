@@ -1,25 +1,3 @@
-@font-face {
-   font-family: Myriad;
-   src: url(../font/Myriad_Pro_font/MyriadPro-Regular.otf);
-}
-
-@font-face {
-   font-family: Myriad-Light;
-   src: url(../font/Myriad_Pro_font/MyriadPro-Light.otf);
-}
-
-@font-face {
-   font-family: Myriad-Bold;
-   src: url(../font/Myriad_Pro_font/MyriadPro-Bold.otf);
-   font-weight: bold;
-}
-
-@font-face {
-   font-family: Pepsi;
-   src: url(../font/PEPSI_pl.ttf);
-   font-weight: bold;
-}
-
 body, html {
   font-family: Myriad;
   padding: 0; margin: 0;

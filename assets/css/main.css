@@ -1,3 +1,8 @@
+@font-face {font-family: 'Myriad-Bold';src: url('../font/Myriad_Pro_font/MyriadPro-Bold.eot');src: url('../font/Myriad_Pro_font/MyriadPro-Bold.eot?#iefix') format('embedded-opentype'),url('../font/Myriad_Pro_font/MyriadPro-Bold.woff2') format('woff2'),url('../font/Myriad_Pro_font/MyriadPro-Bold.woff') format('woff'),url('../font/Myriad_Pro_font/MyriadPro-Bold.ttf') format('truetype');}
+@font-face {font-family: 'Myriad-Light';src: url('../font/Myriad_Pro_font/MyriadPro-Light.eot');src: url('../font/Myriad_Pro_font/MyriadPro-Light.eot?#iefix') format('embedded-opentype'),url('../font/Myriad_Pro_font/MyriadPro-Light.woff2') format('woff2'),url('../font/Myriad_Pro_font/MyriadPro-Light.woff') format('woff'),url('../font/Myriad_Pro_font/MyriadPro-Light.ttf') format('truetype');}
+@font-face {font-family: 'Myriad';src: url('../font/Myriad_Pro_font/MyriadPro-Regular.eot');src: url('../font/Myriad_Pro_font/MyriadPro-Regular.eot?#iefix') format('embedded-opentype'),url('../font/Myriad_Pro_font/MyriadPro-Regular.woff2') format('woff2'),url('../font/Myriad_Pro_font/MyriadPro-Regular.woff') format('woff'),url('../font/Myriad_Pro_font/MyriadPro-Regular.ttf') format('truetype');}
+@font-face {font-family: 'Pepsi';src: url('../font/PEPSI_pl.eot');src: url('../font/PEPSI_pl.eot?#iefix') format('embedded-opentype'),url('../font/PEPSI_pl.woff2') format('woff2'),url('../font/PEPSI_pl.woff') format('woff'),url('../font/PEPSI_pl.ttf') format('truetype');}
+
 body{
   background-color: #eee;
 }

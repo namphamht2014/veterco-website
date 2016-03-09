@@ -91,7 +91,7 @@
       <div class="col-md-6">
       </div>
       <div class="col-md-6 menu9">
-        <a href="#" onmouseover="menus.hover(this)" onmouseout="menus.unhover(this)"><b>OUR STORY</b></a>
+        <a href="<?= site_url('all_about_us')?>" onmouseover="menus.hover(this)" onmouseout="menus.unhover(this)"><b>ALL ABOUT US</b></a>
         <div class="menu-desc">
           <div class="desc-line"></div>
         </div>

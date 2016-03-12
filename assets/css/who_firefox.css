@@ -1,0 +1,155 @@
+.small .location-block .location2 {
+    left: 22%;
+    top: 13%;
+}
+.location-block .location4 {
+    left: 20.5%;
+}
+.location-block .location3 {
+    right: 17.7%;
+    top: 17%;
+}
+.big .location-block .location2 {
+    left: 23.5%;
+}
+.big .location-block .location3 {
+    right: 12.7%;
+    top: 17%;
+}
+.biggest .location-block .location2 {
+    left: 26%;
+    top: 17%;
+}
+.biggest .location-block .location4 {
+    left: 22.5%;
+    top: 49%;
+}
+.biggest .location-block .location3 {
+    right: 14%;
+    top: 21%;
+}
+.small .manufacturing-block .manu3 {
+    left: 7.5%;
+    top: 22%;
+}
+.small .manufacturing-block .manu4 {
+    right: 17%;
+    top: 55%;
+}
+.big .manufacturing-block .manu1 {
+    left: 13.2%;
+    top: 44%;
+}
+.big .manufacturing-block .manu4 {
+    right: 17.5%;
+}
+.biggest .manufacturing-block .manu4 {
+    top: 50%;
+}
+.biggest .manufacturing-block .manu1 {
+    left: 14%;
+    top: 42%;
+}
+.biggest .manufacturing-block .manu3 {
+    left: 9%;
+    top: 23%;
+}
+.biggest .capacity1 {
+    top: 44%;
+}
+.biggest .capacity3 {
+    top: 18.5%;
+}
+.biggest .capacity4 {
+    right: 8.5%;
+    top: 39%;
+}
+.small .manufacturing-block .manu1 {
+    left: 11.8%;
+    top: 45%;
+}
+.small .hight-quality-block .manu3 {
+    left: 21%;
+    top: 16%;
+}
+.hight-quality-block .manu3 {
+    top: 17%;
+}
+.big .hight-quality-block .manu3 {
+    left: 21.5%;
+    top: 17%;
+}
+.biggest .manufacturing-block .manu1 img {
+    width: 600px;
+}
+.biggest .manufacturing-block .manu1 .manu-diamond {
+    width: 200px;
+}
+.biggest .manufacturing-block .manu3 {
+    left: 23%;
+    top: 18%;
+}
+.gmp-block .capacity2 {
+    left: 23.5%;
+    top: 16%;
+}
+.gmp-block .capacity1 {
+    left: 21.5%;
+    top: 45.5%;
+}
+.gmp-block .capacity3 {
+    right: 21%;
+    top: 32%;
+    z-index: 9;
+}
+.gmp-block .capacity4 {
+    right: 8.5%;
+    top: 41.5%;
+}
+.big .gmp-block .capacity2 {
+    left: 21.5%;
+    top: 13%;
+}
+.big .gmp-block .capacity1 {
+    left: 20%;
+    top: 49.5%;
+}
+.biggest .gmp-block .capacity1 {
+    top: 46.5%;
+}
+.biggest .gmp-block .capacity4 {
+    right: 9.5%;
+    top: 43.5%;
+}
+.biggest .gmp-block .capacity3 {
+    right: 21%;
+    top: 35%;
+    z-index: 9;
+}
+.small .gmp-block .capacity3 {
+    right: 21.5%;
+    top: 31%;
+    z-index: 9;
+}
+.big .lab-block .manu1,
+.small .lab-block .manu1,
+.lab-block .manu1 {
+    left: 10.7%;
+    top: 40.5%;
+}
+.small .lab-block .manu3 {
+    left: 7%;
+    top: 15%;
+}
+.lab-block .manu3 {
+    left: 6.5%;
+    top: 16%;
+}
+.biggest .lab-block .manu1{
+    left: 10.7%;
+    top: 40%;
+}
+.biggest .lab-block .manu3 {
+    left: 8%;
+    top: 17%;
+}

@@ -74,12 +74,9 @@
         </div>
       </div>
       <div class="col-md-6 menu7">
-        <div class="text-center">
-          <a href="#" onmouseover="menus.hover(this)" onmouseout="menus.unhover(this)"><b>INNOVATION AND</b><br><b>TECHNOLOGY CENTER</b></a>
-
-          <div class="menu-desc" style="padding-left: 150px">
-            <div class="desc-line"></div>
-          </div>
+        <a href="<?= site_url('who')?>" onmouseover="menus.hover(this)" onmouseout="menus.unhover(this)"><b>WHO</b></a>
+        <div class="menu-desc">
+          <div class="desc-line"></div>
         </div>
       </div>
       <div class="col-md-6 menu8">

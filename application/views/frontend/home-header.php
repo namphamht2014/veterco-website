@@ -50,11 +50,11 @@
           </div>
         </a>
       </li>
-      <li class="big" id="innovation">
-        <a href="" onmouseover="header.hover(this);" onmouseout="header.unhover(this);">
+      <li class="big" id="who">
+        <a href="<?= site_url('who')?>" onmouseover="header.hover(this);" onmouseout="header.unhover(this);">
           <div>
 						<div class="red-arrow"></div>
-	          <b>Innovation and technology center</b>
+	          <b>WHO</b>
           </div>
         </a>
       </li>

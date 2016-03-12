@@ -46,6 +46,10 @@ $lang['f_chairman'] = 'Chairman\'s words';
   All about us
  */
 $lang['f_about_us'] = 'All About Us';
+/*
+  WHO
+ */
+$lang['f_who'] = 'WHO';
 /**
  * Life Cycle
  */

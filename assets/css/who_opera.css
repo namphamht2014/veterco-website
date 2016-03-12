@@ -1,0 +1,211 @@
+.location-block .location4 {
+    left: 20.5%;
+    top: 51%;
+}
+.small .location-block .location2 {
+    top: 13.5%;
+}
+.location-block .location3 {
+    top: 19.5%;
+    right: 17.6%;
+}
+.big .location-block .location2 {
+    top: 17.5%;
+    left: 24%;
+}
+.big .location-block .location4 {
+    left: 20.5%;
+    top: 54%;
+}
+.big .location-block .location3 {
+    top: 17.5%;
+}
+.biggest .location-block .location3 img {
+    width: 430px;
+}
+.biggest .location-block .location3 {
+    top: 19%;
+    right: 13.7%;
+}
+.biggest .location-block .location2 img {
+    width: 320px;
+}
+.biggest .location-block .location4 {
+    left: 20.5%;
+    top: 50%;
+}
+.manufacturing-block .manu4 {
+    top: 51%;
+}
+.manufacturing-block .manu1 {
+    top: 43%;
+    left: 14%;
+}
+.small .manufacturing-block .manu3 {
+    top: 22%;
+    left: 7.5%;
+}
+.manufacturing-block .manu3 {
+    top: 23%;
+    left: 8.5%;
+}
+.big .manufacturing-block .manu4 img {
+    width: 345px;
+}
+.big .manufacturing-block .manu1 img {
+    width: 420px;
+}
+.big .manufacturing-block .manu1 .manu-diamond {
+    width: 140px;
+}
+.big .manufacturing-block .manu3 img {
+    width: 260px;
+}
+.biggest .manufacturing-block .manu4 {
+    top: 49.5%;
+}
+.capacity1 {
+    top: 46%;
+}
+.capacity3 {
+    top: 18%;
+}
+.capacity4 {
+    right: 8%;
+    top: 39%;
+}
+.small .capacity1 {
+    top: 49.5%;
+    left: 21%;
+}
+.small .capacity3 {
+    right: 17.7%;
+    top: 17.5%;
+}
+.small .capacity4 {
+    right: 7.5%;
+    top: 41%;
+}
+.big .capacity4 {
+    right: 7.5%;
+    top: 41%;
+}
+.big .capacity1 {
+    top: 48.5%;
+}
+.biggest .capacity1 {
+    top: 44%;
+}
+.biggest .capacity4 {
+    right: 9%;
+}
+.small .hight-quality-block .manu3 {
+    top: 16%;
+    left: 21.4%;
+}
+.hight-quality-block .manu3 {
+    top: 18.5%;
+    left: 22.2%;
+}
+.biggest .manufacturing-block .manu1 img {
+    width: 550px;
+}
+.biggest .manufacturing-block .manu1 .manu-diamond {
+    width: 180px;
+}
+.biggest .hight-quality-block .manu1 .manu-diamond {
+    width: 210px;
+}
+.biggest .hight-quality-block .manu3 {
+    left: 23.2% !important;
+    top: 18.5% !important;
+}
+.biggest .manufacturing-block .manu3 {
+    top: 24%;
+    left: 9%;
+}
+.gmp-block .capacity4 {
+    right: 8%;
+    top: 44%;
+}
+.gmp-block .capacity3 {
+    right: 20%;
+    top: 35%;
+    z-index: 9;
+}
+.small .gmp-block .capacity2 {
+  top: 13%;
+  left: 20%;
+}
+.gmp-block .capacity2 {
+  top: 22%;
+  left: 24%;
+}
+.gmp-block .capacity1 {
+    left: 22.5%;
+    top: 50.5%;
+}
+.biggest .hight-quality-block .manu1 img {
+    width: 630px;
+}
+.small .gmp-block .capacity3 {
+    right: 21.2%;
+    top: 31%;
+    z-index: 9;
+}
+.small .gmp-block .capacity4 {
+    right: 8%;
+    top: 41%;
+}
+.small .gmp-block .capacity1 {
+  left: 18%;
+  top: 51%;
+}
+.big .gmp-block .capacity3 {
+    right: 21%;
+}
+.big .gmp-block .capacity2 {
+    top: 18%;
+    left: 21%;
+}
+.big .gmp-block .capacity1 {
+    top: 54%;
+    left: 19.5%;
+}
+.biggest .gmp-block .capacity2 {
+    top: 22%;
+    left: 23%;
+}
+.biggest .gmp-block .capacity1 {
+    top: 52.5%;
+    left: 21%;
+}
+.biggest .gmp-block .capacity4 {
+    right: 8.5%;
+    top: 44.5%;
+}
+.biggest .gmp-block .capacity3 {
+    right: 20%;
+    top: 36%;
+    z-index: 9;
+}
+.small .lab-block .manu3 {
+    top: 15.5%;
+    left: 7%;
+}
+.lab-block .manu1 {
+    top: 39.5%;
+    left: 12%;
+}
+.lab-block .manu3 {
+    top: 17%;
+    left: 8.5%;
+}
+.biggest .lab-block .manu1 {
+  top: 39%;
+  left: 12%;
+}
+.biggest .lab-block .manu3 {
+  left: 8.8%;
+  top: 16.8%;
+}

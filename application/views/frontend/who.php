@@ -7,6 +7,10 @@
     </div>
   </div>
   <div class="content">
+    <div class="block-left"></div>
+    <div class="block-left2"></div>
+    <div class="block-right"></div>
+    <div class="block-right2"></div>
     <div id="myCarousel" class="carousel slide h-full" data-ride="carousel" data-interval="false">
       <!-- Indicators -->
       <ol class="carousel-indicators">

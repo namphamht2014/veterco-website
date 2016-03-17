@@ -206,4 +206,26 @@ jQuery(window).load(function () {
     $('.child2 .row4 .btnPlus').attr('style', 'bottom: 0px;');
   });
   /* / WHO WE ARE? */
+
+  /* CORE BELIEFS AT WORK PLACE */
+  $('.child3 .buttons').mouseover(function () {
+    $(this).find('.btnPlus img').css('bottom', '100%');
+    $(this).find('.btnMinus img').css('bottom', '0%');
+  });
+  $('.child3 .buttons').mouseout(function () {
+    $(this).find('.btnPlus img').css('bottom', '0%');
+    $(this).find('.btnMinus img').css('bottom', '-100%');
+  });
+  $('.child3 .buttons').click(function () {
+    var textID = $(this).attr('id');
+    $('.child3 .col2 .texts').hide();
+    $('.child3 .col2 .texts.text'+textID).show();
+
+    $('.child3 .buttons').find('.btnPlus img').attr('src', '/assets/images/workplace-btn-plus.jpg');
+    $('.child3 .buttons').find('.btnMinus img').attr('src', '/assets/images/workplace-btn-plus-black.jpg');
+
+    $(this).find('.btnPlus img').attr('src', '/assets/images/workplace-btn-minus.jpg');
+    $(this).find('.btnMinus img').attr('src', '/assets/images/workplace-btn-minus-black.jpg');
+  });
+  /* / CORE BELIEFS AT WORK PLACE */
 });

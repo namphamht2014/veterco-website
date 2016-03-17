@@ -35,7 +35,7 @@
     </div>
     <div class="row">
       <div class="col-md-6 menu1">
-        <a href="#" onmouseover="menus.hover(this)" onmouseout="menus.unhover(this)"><b>WORKPLACE</b></a>
+        <a href="<?= site_url('workplace')?>" onmouseover="menus.hover(this)" onmouseout="menus.unhover(this)"><b>WORKPLACE</b></a>
         <div class="menu-desc">
           <div class="desc-line"></div>
           <div class="desc-content">

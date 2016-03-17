@@ -17,8 +17,8 @@
           </div>
         </a>
       </li>
-			<li class="m-t-32" id="workplac">
-        <a href="" onmouseover="header.hover(this);" onmouseout="header.unhover(this);">
+			<li class="m-t-32" id="workplace">
+        <a href="<?= site_url('workplace')?>" onmouseover="header.hover(this);" onmouseout="header.unhover(this);">
           <div>
 						<div class="red-arrow"></div>
 	          <b>Workplace</b>

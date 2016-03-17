@@ -54,3 +54,4 @@ $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
 $route['all_about_us'] = 'fabout';
 $route['who'] = 'fwho';
+$route['workplace'] = 'fworkplace';

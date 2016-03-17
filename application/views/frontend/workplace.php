@@ -8,10 +8,12 @@
   </div>
   <div class="content">
     <div class="row1">WORKPLACE</div>
-    <div class="row2">
-      <img src="/assets/images/workplace-row2.png" alt="" />
-      <span>WHO<br>WE ARE?</span>
-    </div>
+    <a href="<?= site_url('workplace/who_we_are')?>">
+      <div class="row2">
+        <img src="/assets/images/workplace-row2.png" alt="" />
+        <span>WHO<br>WE ARE?</span>
+      </div>
+    </a>
     <div class="row3 w-full">
       <img src="/assets/images/workplace-row3-2.png" alt="" class="floatImg"/>
       <span class="floatText">OUR R&D<br>TEAM IS PASSIONATE<br>ABOUT THEIR WORK</span>

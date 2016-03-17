@@ -55,3 +55,4 @@ $route['translate_uri_dashes'] = FALSE;
 $route['all_about_us'] = 'fabout';
 $route['who'] = 'fwho';
 $route['workplace'] = 'fworkplace';
+$route['workplace/who_we_are'] = 'fworkplace/whoweare';

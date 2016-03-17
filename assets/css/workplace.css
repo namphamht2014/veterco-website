@@ -19,7 +19,9 @@
   width: 610px;
   position: relative;
 }
-.workplaceContainer .row2 span{
+.workplaceContainer .row2 span,
+.workplaceContainer .row3 span,
+.workplaceContainer .row4 span{
   position: absolute;
   right: 75px;
   top: 50px;
@@ -27,7 +29,8 @@
   color: white;
   font-size: 26px;
 }
-.workplaceContainer .row3{
+.workplaceContainer .row3,
+.workplaceContainer .row4{
   text-align: right;
   position: relative;
 }
@@ -42,22 +45,198 @@
   top: 70px;
 }
 .workplaceContainer .row3 span{
-  position: absolute;
   right: 50px;
   top: 50px;
-  text-align: center;
-  color: white;
-  font-size: 26px;
-}
-.workplaceContainer .row4{
-  text-align: right;
-  position: relative;
 }
 .workplaceContainer .row4 span{
-  position: absolute;
   right: 380px;
   top: 55px;
-  text-align: center;
+}
+/*workplace 2*/
+.workplaceContainer.child2{
+  background: url(../images/workplace2-bg.jpg) center center no-repeat transparent;
+  background-size: 100% 100%;
+}
+.workplaceContainer.child2 .content{
+  width: 1110px;
+  left: calc(50% - 555px);
+}
+.workplaceContainer.child2 a:hover{
+  text-decoration: none;
+}
+.workplaceContainer.child2 .row1 img{
+  vertical-align: initial;
+  margin: 0 15px 0 10px;
+}
+.workplaceContainer.child2 .row2{
+  width: 100%
+}
+.workplaceContainer.child2 .row2 span{
+  width: 423px;
+  text-align: justify;
+  right: 0;
+  top: 0;
+  font-size: 20px;
+}
+.workplaceContainer.child2 .row2 .mySlider{
+  width: 398px;
+  height: 210px;
+}
+.workplaceContainer.child2 .row2 .block{
+  position: relative;
+  overflow: hidden;
+}
+.workplaceContainer.child2 .row2 .block span,
+.workplaceContainer.child2 .row3 .block span,
+.workplaceContainer.child2 .row3 .block-float span,
+.workplaceContainer.child2 .row4 .block span{
+  left: 0;
   color: white;
+  opacity: 1;
+  text-align: center;
+  width: 223px;
+  text-transform: uppercase;
+  top: 50px;
   font-size: 26px;
 }
+
+.workplaceContainer.child2 .block .buttons,
+.workplaceContainer.child2 .block-float .buttons{
+  width: 51px;
+  height: 51px;
+  position: absolute;
+  bottom: 0;
+  overflow: hidden;
+}
+.workplaceContainer.child2 .block .btnPlus,
+.workplaceContainer.child2 .block-float .btnPlus,
+.workplaceContainer.child2 .block .btnMinus,
+.workplaceContainer.child2 .block-float .btnMinus{
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 51px;
+  width: 51px;
+  transition: bottom 0.3s ease-in-out;
+  -moz-transition: bottom 0.3s ease-in-out;
+  -webkit-transition: bottom 0.3s ease-in-out;
+}
+.workplaceContainer.child2 .block .btnMinus,
+.workplaceContainer.child2 .block-float .btnMinus{
+  bottom: -51px;
+}
+.workplaceContainer.child2 .row2 .block2{
+  position: absolute;
+  bottom: 0;
+  right: 40px;
+}
+
+.workplaceContainer.child2 .row3{
+  height: 200px;
+  padding-top: 33px;
+}
+.workplaceContainer.child2 .row3 .block,
+.workplaceContainer.child2 .row3 .mySlider{
+  float: right;
+}
+.workplaceContainer.child2 .row3 .mySlider{
+  width: 363px;
+  height: 167px;
+  text-align: left;
+}
+.workplaceContainer.child2 .row3 .block span{
+  right: 0;
+  left: initial;
+  top: 70px;
+}
+.workplaceContainer.child2 .row3 .block-float{
+  width: 195px;
+  height: 184px;
+  position: absolute;
+  bottom: 0;
+}
+.workplaceContainer.child2 .row3 .block-float span{
+  width: 100%;
+  top: 10px;
+  font-size: 22px;
+}
+
+.workplaceContainer.child2 .row4{
+  height: 214px;
+  padding-top: 34px;
+}
+.workplaceContainer.child2 .row4 .mySlider{
+  width: 310px;
+  height: 181px;
+  float: right;
+  margin-right: 97px;
+  text-align: left;
+}
+.workplaceContainer.child2 .row4 .mySlider-float{
+  float: initial;
+  margin: initial;
+  width: 419px;
+  height: 214px;
+  position: absolute;
+  left: 0;
+  bottom: 0
+}
+.workplaceContainer.child2 .row4 .mySlider .controls{
+  right: initial;
+}
+.workplaceContainer.child2 .row4 .block .buttons{
+  right: 407px;
+  bottom: -1px;
+}
+.workplaceContainer.child2 .row4 .block span{
+  right: 407px;
+  top: 80px;
+  left: initial;
+  width: 193px;
+}
+/* / workplace 2*/
+/*mySlider*/
+.workplaceContainer .mySlider{
+  overflow: hidden;
+  display: inline;
+  float: left;
+  position: relative;
+}
+.workplaceContainer .mySlider img.items{
+  position: absolute;
+  transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  right: -100%;
+}
+.workplaceContainer .mySlider img.items.active{
+  right: 0;
+}
+.workplaceContainer .controls{
+  position: absolute;
+  bottom: 0;
+  height: 51px;
+  width: 102px;
+  right: 0;
+}
+.workplaceContainer .controls div{
+  width: 51px;
+  height: 51px;
+  position: absolute;;
+  overflow: hidden;
+}
+.workplaceContainer .controls div.btnNext{
+  right: 0;
+}
+.workplaceContainer .controls div img{
+  transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  position: absolute;
+  top: 0;
+  left: 0
+}
+.workplaceContainer .controls div img.unhover{
+  top: 100%;
+}
+/* / mySlider*/

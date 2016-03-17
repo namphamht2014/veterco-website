@@ -54,6 +54,7 @@ $lang['f_who'] = 'WHO';
   workplace
  */
 $lang['f_workplace'] = 'WORKPLACE';
+$lang['f_workplace_who'] = 'WORKPLACE - WHO WE ARE?';
 /**
  * Life Cycle
  */

@@ -56,6 +56,7 @@ $lang['f_who'] = 'WHO';
 $lang['f_workplace'] = 'WORKPLACE';
 $lang['f_workplace_who'] = 'WORKPLACE - WHO WE ARE?';
 $lang['f_workplace_core'] = 'WORKPLACE - CORE BELIEFS AT WORK PLACE';
+$lang['f_workplace_working'] = 'WORKPLACE - WORKING IN COLLABORATION';
 /**
  * Life Cycle
  */

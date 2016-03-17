@@ -28,6 +28,7 @@
   text-align: center;
   color: white;
   font-size: 26px;
+  text-transform: uppercase;
 }
 .workplaceContainer .row3,
 .workplaceContainer .row4{
@@ -340,6 +341,53 @@
   margin-top: 340px;
 }
 /* / workplace 3 */
+/* workplace 4 - Working in collaboration*/
+.workplaceContainer.child4{
+  background: url(../images/workplace4-bg.jpg) center center no-repeat transparent;
+  background-size: 100% 100%;
+}
+.workplaceContainer.child4 .content{
+  width: 1110px;
+  left: calc(50% - 555px);
+}
+.workplaceContainer.child4 a:hover{
+  text-decoration: none;
+}
+.workplaceContainer.child4 .row1 img{
+  vertical-align: initial;
+  margin: 0 15px 0 10px;
+}
+.workplaceContainer.child4 .row2{
+  width: 100%;
+  margin-bottom: 30px;
+}
+.workplaceContainer.child4 .row2 .block1{
+  width: 621px;
+  height: 210px;
+  position: relative;
+  float: left;
+  margin-right: 48px;
+}
+.workplaceContainer.child4 .row2 .block1 span{
+  right: 60px;
+  top: 70px
+}
+.workplaceContainer.child4 .row3{
+  text-align: left;
+}
+.workplaceContainer.child4 .row3 .block1{
+  float: left;
+  margin-right: 25px;
+}
+.workplaceContainer.child4 .row3 .block2 span{
+  font-size: 20px;
+  width: 556px;
+  top: 20px;
+  right: 0px;
+  text-align: justify;
+  line-height: 23px
+}
+/* / workplace 4 - Working in collaboration*/
 /*mySlider*/
 .workplaceContainer .mySlider{
   overflow: hidden;

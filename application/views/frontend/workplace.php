@@ -23,8 +23,10 @@
       </a>
     </div>
     <div class="row4 w-full">
-      <img src="/assets/images/workplace-row4.png" alt="" />
-      <span>WORKING<br>IN<br>COLLABORATION</span>
+      <a href="<?= site_url('workplace/working_in_collaboration')?>">
+        <img src="/assets/images/workplace-row4.png" alt="" />
+        <span>WORKING<br>IN<br>COLLABORATION</span>
+      </a>
     </div>
   </div>
   <?php $this->load->view('frontend/footer');?>

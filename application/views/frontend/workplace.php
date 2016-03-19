@@ -15,8 +15,10 @@
       </div>
     </a>
     <div class="row3 w-full">
-      <img src="/assets/images/workplace-row3-2.png" alt="" class="floatImg"/>
-      <span class="floatText">OUR R&D<br>TEAM IS PASSIONATE<br>ABOUT THEIR WORK</span>
+      <a href="<?= site_url('workplace/our_r_and_d_team_is_passionate_about_their_work')?>">
+        <img src="/assets/images/workplace-row3-2.png" alt="" class="floatImg"/>
+        <span class="floatText">OUR R&D<br>TEAM IS PASSIONATE<br>ABOUT THEIR WORK</span>
+      </a>
       <a href="<?= site_url('workplace/core_beliefs_at_work_place')?>">
         <img src="/assets/images/workplace-row3.jpg" alt="" />
         <span>CORE<br>BELIEFS<br>AT<br>WORK PLACE</span>

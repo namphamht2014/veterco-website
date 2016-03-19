@@ -28,7 +28,6 @@
   text-align: center;
   color: white;
   font-size: 26px;
-  text-transform: uppercase;
 }
 .workplaceContainer .row3,
 .workplaceContainer .row4{
@@ -38,12 +37,14 @@
 .workplaceContainer .row3 .floatImg{
   position: absolute;
   left: 0;
+  z-index: 999;
 }
 .workplaceContainer .row3 .floatText{
   position: absolute;
   left: 15px;
   right: initial;
   top: 70px;
+  z-index: 9999;
 }
 .workplaceContainer .row3 span{
   right: 50px;
@@ -126,6 +127,7 @@
 .workplaceContainer.child2 .block-float .btnMinus{
   bottom: -51px;
 }
+
 .workplaceContainer.child2 .row2 .block2{
   position: absolute;
   bottom: 0;
@@ -385,9 +387,99 @@
   top: 20px;
   right: 0px;
   text-align: justify;
-  line-height: 23px
+  line-height: 23px;
+  text-transform: uppercase;
 }
 /* / workplace 4 - Working in collaboration*/
+/* OUR R&D TEAM IS PASSIONATE ABOUT THEIR WORK */
+.workplaceContainer.child5{
+  background: url(../images/workplace5-bg.jpg) center center no-repeat transparent;
+  background-size: 100% 100%;
+}
+.workplaceContainer.child5 .content{
+  width: 1010px;
+  left: calc(50% - 505px);
+}
+.workplaceContainer.child5 a:hover{
+  text-decoration: none;
+}
+.workplaceContainer.child5 .row1 img{
+  vertical-align: initial;
+  margin: 0 15px 0 10px;
+}
+.workplaceContainer.child5 .row2{
+  width: 100%
+}
+.workplaceContainer.child5 .row2 span{
+  width: 423px;
+  text-align: justify;
+  right: 0;
+  top: 0;
+  font-size: 20px;
+}
+.workplaceContainer.child5 .row2 .mySlider{
+  width: 398px;
+  height: 210px;
+}
+.workplaceContainer.child5 .row2 .block{
+  position: relative;
+  overflow: hidden;
+}
+.workplaceContainer.child5 .row2 .block span{
+  left: 0;
+  color: white;
+  opacity: 1;
+  text-align: center;
+  width: 223px;
+  text-transform: uppercase;
+  top: 15px;
+  font-size: 26px;
+}
+.workplaceContainer.child5 .buttons{
+  position: absolute;
+  bottom: 0;
+  left: 0px;
+  width: 51px;
+  height: 51px;
+  overflow: hidden;
+}
+.workplaceContainer.child5 .buttons img{
+  transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  position: absolute;
+}
+.workplaceContainer.child5 .buttons .btnPlus img{
+  bottom: 0;
+}
+.workplaceContainer.child5 .buttons .btnMinus img{
+  bottom: -100%;
+}
+.workplaceContainer.child5 .row2 .block2{
+  position: absolute;
+  bottom: 0;
+  right: 40px;
+}
+.workplaceContainer.child5 .row3{
+  text-align: left;
+  margin-top: 25px;
+}
+.workplaceContainer.child5 .row3 .block1{
+  float: left;
+}
+.workplaceContainer.child5 .row3 .block1 span{
+  text-transform: uppercase;
+  font-size: 18px;
+  text-align: justify;
+  width: 568px;
+  left: 30px;
+  top: 25px;
+}
+.workplaceContainer.child5 .row3 .block2{
+  float: right;
+  margin-top: 30px;
+}
+/* / OUR R&D TEAM IS PASSIONATE ABOUT THEIR WORK */
 /*mySlider*/
 .workplaceContainer .mySlider{
   overflow: hidden;

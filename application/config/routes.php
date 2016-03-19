@@ -58,3 +58,4 @@ $route['workplace'] = 'fworkplace';
 $route['workplace/who_we_are'] = 'fworkplace/whoweare';
 $route['workplace/core_beliefs_at_work_place'] = 'fworkplace/atwork';
 $route['workplace/working_in_collaboration'] = 'fworkplace/working';
+$route['workplace/our_r_and_d_team_is_passionate_about_their_work'] = 'fworkplace/our';

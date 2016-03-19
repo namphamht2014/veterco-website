@@ -132,6 +132,29 @@ class Fworkplace extends CI_Controller {
     $this->load->view('frontend/workplace_4', $data);
     $this->load->view('template/footer', $data);
   }
+  public function our()
+  {
+    //Page title
+    $data['title'] = '- '.$this->lang->line('f_workplace_our');
+
+    //Add css to page
+    $data['headers'] = array(
+      base_url().'assets/css/fhome.css',
+      base_url().'assets/css/workplace.css'
+    );
+
+    //add js to page
+    $data['footers'] = array(
+      base_url().'assets/js/workplace.js'
+    );
+
+    //add data to page
+    $data['data'] = array('test', 'test');
+
+    $this->load->view('template/header', $data);
+    $this->load->view('frontend/workplace_5', $data);
+    $this->load->view('template/footer', $data);
+  }
 
 }
 

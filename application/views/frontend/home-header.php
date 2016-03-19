@@ -50,7 +50,7 @@
           </div>
         </a>
       </li>
-      <li class="big" id="who">
+      <li class="small m-t-32" id="who">
         <a href="<?= site_url('who')?>" onmouseover="header.hover(this);" onmouseout="header.unhover(this);">
           <div>
 						<div class="red-arrow"></div>
@@ -71,6 +71,14 @@
           <div>
 						<div class="red-arrow"></div>
 	          <b>Talk to us</b>
+          </div>
+        </a>
+      </li>
+      <li class="m-t-32" id="login">
+        <a onmouseover="header.hover(this);" onmouseout="header.unhover(this);">
+          <div>
+						<div class="red-arrow"></div>
+	          <b>Login</b>
           </div>
         </a>
       </li>

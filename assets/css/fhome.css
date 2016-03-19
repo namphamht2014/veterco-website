@@ -335,6 +335,10 @@ body, html {
   margin-left: 29px;
   display: none;
 }
+.headerFixed #login .red-arrow,
+.header #login .red-arrow{
+  margin-left: 10px !important;
+}
 .headerFixed > nav > ul > li.active > a,
 .header > nav > ul > li.active > a{
   color: red;

@@ -1469,3 +1469,12 @@ footer .copyright2{
   letter-spacing: .75px;
 }
 /*Footer-end*/
+
+/*Big Screen*/
+@media screen and (min-width:2100px) {
+  .headerFixed > nav ,
+  .header > nav {
+    width: 1370px;
+  }
+}
+/* / Big Screen*/

@@ -32,6 +32,7 @@ class Fabout extends CI_Controller {
 
     //add js to page
     $data['footers'] = array(
+      base_url().'assets/bower_components/jquery-mousewheel/jquery.mousewheel.min.js',
       base_url().'assets/js/about_us.js'
     );
 

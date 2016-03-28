@@ -1,0 +1,507 @@
+/*commons*/
+.aboutUsContainer .myTimeline .logo,
+.aboutUsContainer .myTimeline .line1,
+.aboutUsContainer .myTimeline .line2,
+.aboutUsContainer .myTimeline .line3,
+.aboutUsContainer .myTimeline .line4,
+.aboutUsContainer .myTimeline .line1 .top .item1,
+.aboutUsContainer .myTimeline .line1 .top .item1:before,
+.aboutUsContainer .myTimeline .line1 .top .item1 span,
+.aboutUsContainer .myTimeline .line1 .top .item2,
+.aboutUsContainer .myTimeline .line1 .top .item3,
+.aboutUsContainer .myTimeline .line1 .top .item4,
+.aboutUsContainer .myTimeline .line1 .top .item5,
+.aboutUsContainer .myTimeline .line1 .top .item6,
+.aboutUsContainer .myTimeline .line1 .bottom .item1,
+.aboutUsContainer .myTimeline .line1 .bottom .item2,
+.aboutUsContainer .myTimeline .line1 .bottom .item3,
+.aboutUsContainer .myTimeline .line1 .bottom .item4,
+.aboutUsContainer .myTimeline .line1 .bottom .item4:before,
+.aboutUsContainer .myTimeline .line1 .bottom .item4 span,
+.aboutUsContainer .myTimeline .line1 .bottom .item5,
+.aboutUsContainer .myTimeline .line1 .bottom .item6,
+.aboutUsContainer .myTimeline .line2 .top .item1,
+.aboutUsContainer .myTimeline .line2 .top .item2,
+.aboutUsContainer .myTimeline .line2 .top .item3,
+.aboutUsContainer .myTimeline .line2 .top .item3:before,
+.aboutUsContainer .myTimeline .line2 .top .item3 span,
+.aboutUsContainer .myTimeline .line2 .top .item4,
+.aboutUsContainer .myTimeline .line2 .bottom .item1,
+.aboutUsContainer .myTimeline .line2 .bottom .item2,
+.aboutUsContainer .myTimeline .line2 .bottom .item3,
+.aboutUsContainer .myTimeline .line3 .bottom .item1,
+.aboutUsContainer .myTimeline .line3 .bottom .item2,
+.aboutUsContainer .myTimeline .line3 .top .item1,
+.aboutUsContainer .myTimeline .line3 .top .item2,
+.aboutUsContainer .myTimeline .line3 .top .item3,
+.aboutUsContainer .myTimeline .line4 .top .item1,
+.aboutUsContainer .myTimeline .line4 .top .item1 img,
+.aboutUsContainer .myTimeline .line4 .top .item1:before,
+.aboutUsContainer .myTimeline .line4 .top .item1 span,
+.aboutUsContainer .myTimeline .line4 .top .item2,
+.aboutUsContainer .myTimeline .line4 .bottom .item1,
+.aboutUsContainer .myTimeline .line4 .bottom .item2,
+.aboutUsContainer .content{
+  position: absolute;
+}
+.aboutUsContainer .myTimeline .line1,
+.aboutUsContainer .myTimeline .line2,
+.aboutUsContainer .myTimeline .line3,
+.aboutUsContainer .myTimeline .line4{
+  height: 28px;
+}
+.aboutUsContainer .myTimeline .line1 .top .item1,
+.aboutUsContainer .myTimeline .line1 .top .item2,
+.aboutUsContainer .myTimeline .line1 .bottom .item3,
+.aboutUsContainer .myTimeline .line1 .bottom .item4,
+.aboutUsContainer .myTimeline .line1 .bottom .item5,
+.aboutUsContainer .myTimeline .line1 .bottom .item6 span,
+.aboutUsContainer .myTimeline .line2 .top .item1,
+.aboutUsContainer .myTimeline .line2 .top .item2,
+.aboutUsContainer .myTimeline .line2 .top .item3 span,
+.aboutUsContainer .myTimeline .line2 .top .item4,
+.aboutUsContainer .myTimeline .line2 .bottom .item1,
+.aboutUsContainer .myTimeline .line2 .bottom .item3,
+.aboutUsContainer .myTimeline .line3 .bottom .item1,
+.aboutUsContainer .myTimeline .line3 .bottom .item2,
+.aboutUsContainer .myTimeline .line3 .top .item2,
+.aboutUsContainer .myTimeline .line3 .top .item3,
+.aboutUsContainer .myTimeline .line4 .top .item1,
+.aboutUsContainer .myTimeline .line4 .bottom .item1,
+.aboutUsContainer .myTimeline .line4 .bottom .item2,
+.aboutUsContainer .line1 .textbox{
+  color: white;
+}
+.aboutUsContainer .myTimeline .line4 .top .item2,
+.aboutUsContainer .myTimeline .line4 .top .item1,
+.aboutUsContainer .myTimeline .line4 .bottom .item1 span,
+.aboutUsContainer .myTimeline .line3 .top .item2 span,
+.aboutUsContainer .myTimeline .line3 .bottom .item3 span,
+.aboutUsContainer .myTimeline .line3 .bottom .item2 span,
+.aboutUsContainer .myTimeline .line3 .bottom .item1 span,
+.aboutUsContainer .myTimeline .line1 .bottom .item3,
+.aboutUsContainer .myTimeline .line1 .bottom .item4,
+.aboutUsContainer .myTimeline .line1 .bottom .item6 .color1,
+.aboutUsContainer .myTimeline .line1 .bottom .item6 .color2,
+.aboutUsContainer .myTimeline .line1 .top .item6,
+.aboutUsContainer .myTimeline .line1 .top .item1{
+  text-transform: uppercase;
+}
+.aboutUsContainer .line4 .textbox,
+.aboutUsContainer .line3 .textbox,
+.aboutUsContainer .line2 .textbox,
+.aboutUsContainer .line1 .textbox{
+  background: rgba(239, 197, 212, 0.2);
+  padding: 20px 10px;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  font-size: 10px;
+}
+.aboutUsContainer .line1 .textbox.lightPink{
+  background: rgba(221, 200, 230, 0.2);
+}
+.aboutUsContainer .line2 .textbox{
+  background: rgba(215, 215, 215, 0.2);
+}
+.aboutUsContainer .line3 .textbox{
+  background: rgba(195, 201, 235, 0.2);
+}
+.aboutUsContainer .line4 .textbox,
+.aboutUsContainer .line3 .textbox.veryLightScreen{
+  background: rgba(202, 227, 229, 0.2);
+}
+.aboutUsContainer .line4 .textbox.veryLightScreen{
+  background: rgba(198, 241, 164, 0.2);
+}
+.aboutUsContainer .myTimeline .line4 .top .item2,
+.aboutUsContainer .myTimeline .line4 .top .item1 .color4,
+.aboutUsContainer .myTimeline .line4 .top .item1 .color3,
+.aboutUsContainer .myTimeline .line4 .top .item1 .color2,
+.aboutUsContainer .myTimeline .line3 .top .item1 .color2,
+.aboutUsContainer .myTimeline .line2 .bottom .item2,
+.aboutUsContainer .myTimeline .line1 .bottom .item1,
+.aboutUsContainer .myTimeline .line1 .top .item4,
+.aboutUsContainer .myTimeline .line1 .top .item6 span,
+.aboutUsContainer .myTimeline .line1 .bottom .item3 div{
+  font-size: 16px;
+}
+.aboutUsContainer .myTimeline .line2 .top .item4,
+.aboutUsContainer .myTimeline .line1 .top .item2,
+.aboutUsContainer .myTimeline .line1 .bottom .item5{
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  padding-top: 30px;
+  font-size: 28px;
+}
+/* / commons*/
+/*Big Screen*/
+@media screen and (min-width:2100px) {
+  .aboutUsContainer .line3 .textbox,
+  .aboutUsContainer .line2 .textbox,
+  .aboutUsContainer .line1 .textbox{
+    font-size: 8px;
+  }
+}
+/* / Big Screen*/
+.aboutUsContainer{
+  height: 100%;
+  margin-top: -62px;
+  background: url(/assets/images/aboutus_bg.jpg) center center no-repeat transparent;
+  background-size: 100% 100%;
+  padding-top: 62px;
+  padding-bottom: 42px;
+}
+.aboutUsContainer .content{
+  width: 1180px;
+  height: 700px;
+  left: calc(50% - 520px);
+  top: calc(50% - 345px);
+  overflow: hidden;
+}
+.aboutUsContainer .content .myTimeline{
+  width: calc(100% * 4);
+  height: 100%;
+}
+.aboutUsContainer .myTimeline .logo{
+  left: 0;
+  top: calc(50% - 43px);
+  width: 150px;
+}
+/* Line 1*/
+.aboutUsContainer .myTimeline .line1{
+  background: url(/assets/images/aboutUs-line1.png) center center no-repeat transparent;
+  background-size: 100% 100%;
+  width: calc(100% - 150px);
+  top: 50%;
+  left: 150px;
+}
+.aboutUsContainer .myTimeline .line1 .top .item1{
+  background: #455a63;
+  padding: 5px 5px 5px 32px;
+  top: -35px;
+  left: 70px
+}
+.aboutUsContainer .myTimeline .line1 .top .item1:before{
+  content: "";
+  height: 70px;
+  width: 3px;
+  background: #3f5f70;
+  top: -70px;
+  left: 0;
+}
+.aboutUsContainer .myTimeline .line1 .top .item1 span{
+  width: 27px;
+  height: 100%;
+  background: #d64b4b;
+  left: 0;
+  top: 0;
+  text-align: center;
+  padding-top: 2px;
+  font-size: 18px;
+}
+.aboutUsContainer .myTimeline .line1 .top .item2{
+  background: url(/assets/images/aboutUs-line1-img1.png) center center no-repeat transparent;
+  background-size: 100% 100%;
+  top: -195px;
+  left: 25px;
+}
+.aboutUsContainer .myTimeline .line1 .top .item3{
+  width: 150px;
+  bottom: 35px;
+  left: 210px;
+}
+.aboutUsContainer .myTimeline .line1 .top .item4{
+  color: #f04684;
+  top: -23px;
+  left: 415px;
+}
+.aboutUsContainer .myTimeline .line1 .top .item5{
+  width: 280px;
+  bottom: 65px;
+  left: 415px;
+}
+.aboutUsContainer .myTimeline .line1 .top .item6{
+  left: 734px;
+  border-left: 2px solid #d46ba3;
+  padding: 10px 5px 0;
+  top: -130px;
+}
+.aboutUsContainer .myTimeline .line1 .top .item6 div{
+  line-height: 16px;
+}
+.aboutUsContainer .myTimeline .line1 .top .item6 .color1{
+  color: #df1fad;
+  font-size: 18px;
+}
+.aboutUsContainer .myTimeline .line1 .top .item6 .color2{
+  color: #f06ae2;
+}
+.aboutUsContainer .myTimeline .line1 .top .item6 .color3{
+  color: #e444d3;
+}
+.aboutUsContainer .myTimeline .line1 .top .item6 img{
+  width: 60px;
+  margin-top: 5px;
+}
+
+.aboutUsContainer .myTimeline .line1 .bottom .item1{
+  color: #d64b4b;
+  bottom: -15px;
+  left: 35px;
+}
+.aboutUsContainer .myTimeline .line1 .bottom .item2{
+  width: 145px;
+  top: 50px;
+}
+.aboutUsContainer .myTimeline .line1 .bottom .item3{
+  left: 233px;
+  border-left: 2px solid #3f5f70;
+  padding: 10px 5px;
+  bottom: -110px;
+}
+.aboutUsContainer .myTimeline .line1 .bottom .item3 img{
+  width: 170px;
+}
+.aboutUsContainer .myTimeline .line1 .bottom .item4{
+  background: #455a63;
+  padding: 5px 5px 5px 32px;
+  bottom: -86px;
+  left: 453px
+}
+.aboutUsContainer .myTimeline .line1 .bottom .item4:before{
+  content: "";
+  height: 55px;
+  width: 3px;
+  background: #3f5f70;
+  top: -55px;
+  left: 0;
+}
+.aboutUsContainer .myTimeline .line1 .bottom .item4 span{
+  width: 27px;
+  height: 100%;
+  background: #d64b4b;
+  left: 0;
+  top: 0;
+  text-align: center;
+  padding-top: 2px;
+  font-size: 18px;
+}
+.aboutUsContainer .myTimeline .line1 .bottom .item5{
+  background: url(/assets/images/aboutUs-line1-img3.png) center center no-repeat transparent;
+  background-size: 100% 100%;
+  bottom: -190px;
+  left: 415px;
+  padding-right: 3px;
+}
+.aboutUsContainer .myTimeline .line1 .bottom .item6{
+  left: 718px;
+  width: 260px;
+  top: 25px;
+}
+.aboutUsContainer .myTimeline .line1 .bottom .item6 .color1{
+  color: #df1fad;
+}
+.aboutUsContainer .myTimeline .line1 .bottom .item6 .color2{
+  color: #ff59e2;
+}
+/* / Line 1*/
+/*Line 2*/
+.aboutUsContainer .myTimeline .line2{
+  background: url(/assets/images/aboutUs-line2.png) center center no-repeat transparent;
+  background-size: 100% 100%;
+  width: calc(100% - 150px);
+  top: calc(50% - 4px);
+  left: calc(100% - 70px);
+}
+.aboutUsContainer .myTimeline .line2 .top .item1{
+  width: 260px;
+  left: 40px;
+  bottom: 30px;
+}
+.aboutUsContainer .myTimeline .line2 .top .item1 span{
+  color: #ef4ca0;
+}
+.aboutUsContainer .myTimeline .line2 .top .item2{
+  width: 260px;
+  left: 370px;
+  bottom: 30px;
+}
+.aboutUsContainer .myTimeline .line2 .top .item2 span{
+  color: #8c30b0;
+}
+.aboutUsContainer .myTimeline .line2 .top .item3{
+  background: #455a63;
+  padding: 5px 5px 5px 32px;
+  top: -35px;
+  left: 736px;
+  color: #cd95fb;
+}
+.aboutUsContainer .myTimeline .line2 .top .item3:before{
+  content: "";
+  height: 70px;
+  width: 3px;
+  background: #3f5f70;
+  top: -70px;
+  left: 0;
+}
+.aboutUsContainer .myTimeline .line2 .top .item3 span{
+  width: 27px;
+  height: 100%;
+  background: #7242d8;
+  left: 0;
+  top: 0;
+  text-align: center;
+  padding-top: 2px;
+  font-size: 18px;
+}
+.aboutUsContainer .myTimeline .line2 .top .item4{
+  background: url(/assets/images/aboutUs-line2-img1.png) center center no-repeat transparent;
+  background-size: 100% 100%;
+  top: -195px;
+  left: 690px;
+}
+
+.aboutUsContainer .myTimeline .line2 .bottom .item1{
+  width: 270px;
+  left: 200px;
+  top: 30px;
+}
+.aboutUsContainer .myTimeline .line2 .bottom .item1 span{
+  color: #b13591;
+}
+.aboutUsContainer .myTimeline .line2 .bottom .item2{
+  left: 710px;
+  top: 35px;
+  color: #c58bf4;
+}
+.aboutUsContainer .myTimeline .line2 .bottom .item3{
+  width: 360px;
+  top: 65px;
+  left: 700px;
+}
+/* / Line 2*/
+/*Line 3*/
+.aboutUsContainer .myTimeline .line3{
+  background: url(/assets/images/aboutUs-line3.png) center center no-repeat transparent;
+  background-size: 100% 100%;
+  width: 170%;
+  top: calc(50% - 2px);
+  left: 175%;
+}
+.aboutUsContainer .myTimeline .line3 .top .item1{
+  background: url(/assets/images/aboutUs-line3-img1.png) bottom right no-repeat transparent;
+  background-size: 154px 150px;
+  left: 315px;
+  border-left: 2px solid #3f5f70;
+  bottom: 35px;
+  height: 150px;
+  width: 190px;
+  padding-left: 5px;
+}
+.aboutUsContainer .myTimeline .line3 .top .item1 div{
+  line-height: 16px;
+}
+.aboutUsContainer .myTimeline .line3 .top .item1 .color1{
+  color: #7c28ee;
+  font-size: 18px;
+}
+.aboutUsContainer .myTimeline .line3 .top .item1 .color2{
+  color: #9e7efe;
+}
+.aboutUsContainer .myTimeline .line3 .top .item1 img{
+  width: 60px;
+  margin-top: 5px;
+}
+.aboutUsContainer .myTimeline .line3 .top .item2{
+  width: 240px;
+  left: 665px;
+  bottom: 40px;
+}
+.aboutUsContainer .myTimeline .line3 .top .item2 span{
+  color: #4c63f7;
+}
+.aboutUsContainer .myTimeline .line3 .top .item3{
+  width: 270px;
+  left: 1420px;
+  bottom: 40px;
+}
+.aboutUsContainer .myTimeline .line3 .top .item3 span{
+  color: #5ce3db;
+}
+
+.aboutUsContainer .myTimeline .line3 .bottom .item1{
+  width: 260px;
+  left: 270px;
+  top: 40px;
+}
+.aboutUsContainer .myTimeline .line3 .bottom .item1 span{
+  color: #7344fd;
+}
+.aboutUsContainer .myTimeline .line3 .bottom .item2{
+  width: 280px;
+  left: 1050px;
+  top: 40px;
+}
+.aboutUsContainer .myTimeline .line3 .bottom .item2 span{
+  color: #66ccff;
+}
+/* / Line 3*/
+/*Line 4*/
+.aboutUsContainer .myTimeline .line4{
+  background: url(/assets/images/aboutUs-line4.png) center center no-repeat transparent;
+  background-size: 100% 100%;
+  width: 170%;
+  top: calc(50% - 2px);
+  left: calc(300%);
+}
+.aboutUsContainer .myTimeline .line4 .top .item1{
+  left: 807px;
+  border-left: 2px solid #477d2b;
+  padding: 5px;
+  bottom: 35px;
+  width: 150px;
+  height: 90px
+}
+.aboutUsContainer .myTimeline .line4 .top .item1 div{
+  line-height: 16px;
+}
+.aboutUsContainer .myTimeline .line4 .top .item1 .color3 i,
+.aboutUsContainer .myTimeline .line4 .top .item1 .color1{
+  color: #9dfcb3;
+}
+.aboutUsContainer .myTimeline .line4 .top .item1 .color1{
+  font-size: 18px;
+}
+.aboutUsContainer .myTimeline .line4 .top .item1 .color4,
+.aboutUsContainer .myTimeline .line4 .top .item1 .color3,
+.aboutUsContainer .myTimeline .line4 .top .item1 .color2{
+  color: #31d01f;
+}
+.aboutUsContainer .myTimeline .line4 .top .item1 img{
+  width: 60px;
+  top: calc(50% - 30px);
+  left: -70px;
+}
+.aboutUsContainer .myTimeline .line4 .top .item2{
+  left: 1550px;
+  bottom: 40px;
+}
+.aboutUsContainer .myTimeline .line4 .top .item2 img{
+  width: 100px;
+  margin-right: 5px;
+}
+
+.aboutUsContainer .myTimeline .line4 .bottom .item1{
+  width: 240px;
+  left: 300px;
+  top: 40px;
+}
+.aboutUsContainer .myTimeline .line4 .bottom .item1 span{
+  color: #66cccc;
+}
+.aboutUsContainer .myTimeline .line4 .bottom .item2{
+  width: 240px;
+  left: 1040px;
+  top: 40px;
+}
+/*Line 4*/

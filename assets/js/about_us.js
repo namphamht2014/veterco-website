@@ -26,6 +26,7 @@ var myPopup = {
 };
 jQuery(window).load(function () {
   var winWidth = $(window).width();
+  console.log(winWidth);
 
   var mainBlocks = $('.aboutUsContainer');
   mainBlocks.removeClass('small big biggest');
@@ -45,4 +46,12 @@ jQuery(window).load(function () {
   setTimeout(function() {
     $('.loadingPage').hide();
   }, 500);
+
+  $(".aboutUsContainer .content").mousewheel(function(event, delta) {
+
+      this.scrollLeft -= (delta * 30);
+
+      event.preventDefault();
+
+   });
 });

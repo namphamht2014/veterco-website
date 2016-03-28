@@ -2,6 +2,12 @@ body{
   overflow: hidden;
 }
 /*Common*/
+.promotionalContainer.listItems{
+  background: url(/assets/images/distributor-bg.jpg) center center no-repeat transparent;
+  background-size: 100% 100%;
+  margin-top:  -82px;
+}
+
 .blocks .bground,
 .blocks .title1,
 .blocks .title2,

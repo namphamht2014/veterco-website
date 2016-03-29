@@ -1472,3 +1472,124 @@ body, html {
   margin-right: 4px;
   color: white;
 }
+/*Product Forms*/
+.productFormsContainer{
+  height: calc(100% - 62px);
+  background: url(/assets/images/productForms-bg.jpg) center center no-repeat transparent;
+  background-size: 100% 100%;
+}
+.productFormsContainer .cycle{
+  width: 750px;
+  height: 750px;
+  position: absolute;
+  left: calc(50% - 350px);
+  top: calc(50% - 350px);
+  background: black;
+  border: 1px solid transparent;
+  border-radius: 50%;
+  -o-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+}
+
+.productFormsContainer .cycle .form1{
+  position: absolute;
+  width: 1010px;
+  top: -56px;
+  left: -148px;
+}
+.productFormsContainer .cycle .form2{
+  position: absolute;
+  width: 1065px;
+  top: -2px;
+  left: -313px;
+  display: none;
+}
+.productFormsContainer .cycle .form3{
+  position: absolute;
+  width: 1135px;
+  top: -103px;
+  left: -190px;
+  display: none;
+}
+.productFormsContainer .cycle .form4{
+  position: absolute;
+  width: 935px;
+  top: -132px;
+  left: -107px;
+  display: none;
+}
+.productFormsContainer .controls .container{
+  position: absolute;
+  width: 30px;
+  height: 30px;
+}
+.productFormsContainer .controls .container.ctop{
+  left: calc(50% - 15px);
+  top: 20px;
+}
+.productFormsContainer .controls .container.cright{
+  right: 20px;
+  top: calc(50% - 15px);
+}
+.productFormsContainer .controls .container.cleft{
+  left: 20px;
+  top: calc(50% - 15px);
+}
+.productFormsContainer .controls .container.cbottom{
+  left: calc(50% - 15px);
+  bottom: 20px;
+}
+.productFormsContainer .controls div.showBlock1,
+.productFormsContainer .controls div.showBlock2,
+.productFormsContainer .controls div.showBlock3,
+.productFormsContainer .controls div.showBlock4{
+  width: 14px;
+  height: 14px;
+  border: 2px solid transparent;
+  position: absolute;
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, 0), inset 0 0 0 7px rgba(255, 255, 255, 1);
+  border-radius: 100%;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -o-border-radius: 100%;
+  top: 25%;
+  left: 25%;
+}
+.productFormsContainer .controls div.active{
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, 1), inset 0 0 0 7px rgba(255, 255, 255, 0);
+}
+.productFormsContainer .cycle .text1,
+.productFormsContainer .cycle .text2,
+.productFormsContainer .cycle .text3,
+.productFormsContainer .cycle .text3_2,
+.productFormsContainer .cycle .text4{
+  position: absolute;
+  color: white;
+  font-size: 60px;
+}
+.productFormsContainer .cycle .text1{
+  left: 275px;
+  top: 330px;
+}
+.productFormsContainer .cycle .text2{
+  left: 250px;
+  top: 320px;
+  display: none;
+}
+.productFormsContainer .cycle .text3{
+  left: 250px;
+  top: 300px;
+  display: none;
+}
+.productFormsContainer .cycle .text3_2{
+  left: 290px;
+  top: 360px;
+  display: none;
+}
+.productFormsContainer .cycle .text4{
+  left: 250px;
+  top: 335px;
+  display: none;
+}
+/* / Product Forms*/

@@ -223,6 +223,46 @@ class Fsourcing extends CI_Controller {
     $this->load->view('template/footer');
   }
 
+  public function productForms()
+  {
+    //Page title
+    $data['title'] = '- '.$this->lang->line('f_sourcing_productForms');
+
+    //Add css to page
+    $data['headers'] = array(
+      base_url().'assets/css/fhome.css',
+      base_url().'assets/css/fsourcing.css'
+    );
+    if ($this->agent->is_browser('Safari')) {
+      // $data['headers'][] = base_url().'assets/css/fwelcome_safari.css';
+    } else if ($this->agent->is_browser('Chrome')) {
+      $data['headers'][] = base_url().'assets/css/fsourcing_chrome.css';
+    } else if ($this->agent->is_browser('Opera')) {
+      $data['headers'][] = base_url().'assets/css/fsourcing_opera.css';
+    } else if ($this->agent->is_browser('Firefox')) {
+      $data['headers'][] = base_url().'assets/css/fsourcing_firefox.css';
+    }
+
+    //add js to page
+    $data['footers'] = array(
+      base_url().'assets/bower_components/jquery.easing/js/jquery.easing.min.js',
+      base_url().'assets/js/jquery-ui.min.js',
+      base_url().'assets/js/fsourcing.js',
+      base_url().'assets/js/fsourcing_productForm.js'
+    );
+
+    //add js script to page
+    $data['script'] = '$(function(){
+      header.active("sourcing");
+      $("header").removeClass("header").addClass("headerFixed");
+      $(".footer2").attr("style", "position: relative;clear:both;");
+    });';
+
+    $this->load->view('template/header', $data);
+    $this->load->view('frontend/sourcing_product_forms');
+    $this->load->view('template/footer');
+  }
+
 }
 
 /* End of file Fsourcing.php */

@@ -45,7 +45,7 @@
         </div>
       </div>
     </a>
-    <a href="" onmouseover="block.hover(this)" onmouseout="block.unhover(this)">
+    <a href="<?= site_url('product_forms')?>" onmouseover="block.hover(this)" onmouseout="block.unhover(this)">
       <div class="block4-bg">
       </div>
       <div class="block4">

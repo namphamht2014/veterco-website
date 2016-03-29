@@ -26,7 +26,6 @@ jQuery(window).load(function () {
   promotionItems.removeClass('small big biggest');
 
   var winWidth = $(window).width();
-  console.log(winWidth);
   if(winWidth >= 2759){
     $('.blocks .title1, .blocks .title2, .blocks .order-status .text').addClass('biggest');
     $('.blocks .product-customization .text, .blocks .promotional .text').addClass('biggest');

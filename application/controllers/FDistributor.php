@@ -259,7 +259,7 @@ class Fdistributor extends CI_Controller {
     $this->load->view('template/footer', $data);
   }
 
-  public function promotional_items2()
+  public function promotional_item_details()
   {
     //Page title
     $data['title'] = '- '.$this->lang->line('f_distributor_promotional');
@@ -296,7 +296,7 @@ class Fdistributor extends CI_Controller {
     // $data['data'] = array('test', 'test');
 
     $this->load->view('template/header', $data);
-    $this->load->view('frontend/distributor_promotional', $data);
+    $this->load->view('frontend/distributor_promotional_item', $data);
     $this->load->view('template/footer', $data);
   }
 }

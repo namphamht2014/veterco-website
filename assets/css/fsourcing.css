@@ -1577,31 +1577,28 @@ body, html {
   -webkit-border-radius: 50%;
 }
 
-.productFormsContainer .cycle .form1{
+.productFormsContainer .cycle .form1,
+.productFormsContainer .cycle .form1-active,
+.productFormsContainer .cycle .form2,
+.productFormsContainer .cycle .form2-active,
+.productFormsContainer .cycle .form3,
+.productFormsContainer .cycle .form3-active,
+.productFormsContainer .cycle .form4,
+.productFormsContainer .cycle .form4-active{
   position: absolute;
-  width: 1010px;
-  top: -56px;
-  left: -148px;
+  width: 1055px;
+  top: -75px;
+  left: -150px;
 }
-.productFormsContainer .cycle .form2{
-  position: absolute;
-  width: 1065px;
-  top: -2px;
-  left: -313px;
+.productFormsContainer .cycle .form1-active,
+.productFormsContainer .cycle .form2-active,
+.productFormsContainer .cycle .form3-active,
+.productFormsContainer .cycle .form4-active{
   display: none;
 }
-.productFormsContainer .cycle .form3{
-  position: absolute;
-  width: 1135px;
-  top: -103px;
-  left: -190px;
-  display: none;
-}
+.productFormsContainer .cycle .form2,
+.productFormsContainer .cycle .form3,
 .productFormsContainer .cycle .form4{
-  position: absolute;
-  width: 935px;
-  top: -132px;
-  left: -107px;
   display: none;
 }
 .productFormsContainer .controls .container{

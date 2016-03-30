@@ -1,11 +1,3 @@
-var blocks = {
-  deactive: function () {
-
-  },
-  active: function () {
-
-  }
-};
 $(function () {
   $('.productFormsContainer .controls .container').mouseenter(function () {
     $('.productFormsContainer .controls .container div').removeClass('active');

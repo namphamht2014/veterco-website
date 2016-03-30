@@ -308,7 +308,17 @@ body, html {
   background: url(../images/showcase-banner.jpg) no-repeat;
   background-size: 100% 100%;
   width: 100%;
-  height: 167px;
+  height: 16.5%;
+}
+.sourcingAbcContainer .banner .images{
+  height: 100%;
+  width: 84.5%;
+  float: right;
+}
+.sourcingAbcContainer .banner .images img{
+  float: right;
+  width: 50%;
+  height: 100%;
 }
 .sourcingAbcContainer .banner .title{
   font-family: Myriad-Cond;
@@ -324,18 +334,20 @@ body, html {
 .sourcingAbcContainer .block-left,
 .sourcingAbcContainer .block-right,
 .sourcingAbcContainer{
-  height: 100%;
+  height: calc(100% - 104px);
 }
 .sourcingAbcContainer .block-left,
 .sourcingAbcContainer .block-right{
   float: left;
 }
 .sourcingAbcContainer .block-left{
-  min-height: 890px;
   width: 15.5%;
   background: #313131;
+  position: fixed;
+  top: 0;
+  min-height: 100%;
 }
-.sourcingAbcContainer .block-left .view,
+/*.sourcingAbcContainer .block-left .view,
 .sourcingAbcContainer .block-left.big .view{
   height: 5.3%;
 }
@@ -344,7 +356,7 @@ body, html {
 }
 .sourcingAbcContainer .block-left.biggest .view{
   height: 5.1%;
-}
+}*/
 .sourcingAbcContainer .block-left .title{
   padding-left: 15px;
   color: #e83643;
@@ -352,7 +364,7 @@ body, html {
   text-transform: uppercase;
   background: #1a1a1a;
 }
-.sourcingAbcContainer .block-left.small .title{
+/*.sourcingAbcContainer .block-left.small .title{
   font-size: 16px;
 }
 .sourcingAbcContainer .block-left.big .title{
@@ -360,11 +372,11 @@ body, html {
 }
 .sourcingAbcContainer .block-left.biggest .title{
   font-size: 30px;
-}
+}*/
 
-.sourcingAbcContainer .block-left .view .items{
+/*.sourcingAbcContainer .block-left .view .items{
   height: 45%;
-}
+}*/
 .sourcingAbcContainer .block-left .view .items .item1,
 .sourcingAbcContainer .block-left .view .items .item2{
   float: left;
@@ -375,7 +387,7 @@ body, html {
   color: #e83643;
   line-height: 21px;
 }
-.sourcingAbcContainer .block-left.big .view .items .item1,
+/*.sourcingAbcContainer .block-left.big .view .items .item1,
 .sourcingAbcContainer .block-left.big .view .items .item2{
   line-height: inherit;
   font-size: 18px;
@@ -384,7 +396,7 @@ body, html {
 .sourcingAbcContainer .block-left.biggest .view .items .item2{
   line-height: inherit;
   font-size: 22px;
-}
+}*/
 .sourcingAbcContainer .block-left .view .items .active,
 .sourcingAbcContainer .block-left .sortBy .items .active,
 .sourcingAbcContainer .block-left .sortBy .items .odd:hover,
@@ -396,7 +408,7 @@ body, html {
 .sourcingAbcContainer .block-left .sortBy{
   height: 15%;
 }
-.sourcingAbcContainer .block-left.small .sortBy{
+/*.sourcingAbcContainer .block-left.small .sortBy{
   height: 12.5%;
 }
 .sourcingAbcContainer .block-left.big .sortBy{
@@ -404,7 +416,7 @@ body, html {
 }
 .sourcingAbcContainer .block-left.biggest .sortBy{
   height: 15%;
-}
+}*/
 .sourcingAbcContainer .block-left .sortBy .title{
   height: 27.5%;
   padding-top: 7px;
@@ -425,7 +437,7 @@ body, html {
   padding: 1px 15px;
   font-size: 12px;
 }
-.sourcingAbcContainer .block-left.small .sortBy .items .odd,
+/*.sourcingAbcContainer .block-left.small .sortBy .items .odd,
 .sourcingAbcContainer .block-left.small .sortBy .items .even{
   padding: 0px 15px;
   font-size: 10px;
@@ -439,7 +451,7 @@ body, html {
 .sourcingAbcContainer .block-left.biggest .sortBy .items .even{
   padding: 12px 15px;
   font-size: 19px;
-}
+}*/
 .sourcingAbcContainer .block-left .sortBy .items .odd,
 .sourcingAbcContainer .block-left #cssmenu ul ul li a.odd{
   background: #212121;
@@ -451,6 +463,7 @@ body, html {
   background: #313131;
 }
 
+/*
 .sourcingAbcContainer .block-left .filterBy{
   height: 31%;
 }
@@ -462,10 +475,33 @@ body, html {
 }
 .sourcingAbcContainer .block-left.biggest .filterBy{
   height: 33%;
-}
+}*/
 .sourcingAbcContainer .block-left .filterBy .title{
   height: 14.5%;
   padding-top: 7px;
+}
+.sourcingAbcContainer .block-left .search{
+  padding-top: 66px;
+  padding-bottom: 5px;
+  background: black;
+  position: relative;
+}
+.sourcingAbcContainer .block-left .search .tfSearch{
+  background: black;
+  border-color: red;
+  width: 100%;
+  color: white;
+  padding-right: 25px;
+}
+.sourcingAbcContainer .block-left .search:after{
+  content: '';
+  width: 14px;
+  height: 14px;
+  background: url(../images/search-icon.png) center center no-repeat transparent;
+  background-size: 100% 100%;
+  position: absolute;
+  right: 10px;
+  bottom: 9px;
 }
 
 .sourcingAbcContainer .block-left .watch,
@@ -495,10 +531,10 @@ body, html {
 .sourcingAbcContainer .block-left .recommend .products img{
   width: 70%;
 }
-.sourcingAbcContainer .block-left.small .watch .products img,
+/*.sourcingAbcContainer .block-left.small .watch .products img,
 .sourcingAbcContainer .block-left.small .recommend .products img{
   width: 70%;
-}
+}*/
 
 .sourcingAbcContainer .block-left .watch .product-name,
 .sourcingAbcContainer .block-left .recommend .product-name{
@@ -510,7 +546,7 @@ body, html {
   padding-left: 5px;
   font-size: 16px;
 }
-.sourcingAbcContainer .block-left.small .watch .product-name,
+/*.sourcingAbcContainer .block-left.small .watch .product-name,
 .sourcingAbcContainer .block-left.small .recommend .product-name{
   font-size: 14px;
 }
@@ -521,11 +557,12 @@ body, html {
 .sourcingAbcContainer .block-left.biggest .watch .product-name,
 .sourcingAbcContainer .block-left.biggest .recommend .product-name{
   font-size: 24px;
-}
+}*/
 
 .sourcingAbcContainer .block-right{
   min-height: 890px;
   width: 84.5%;
+  margin-left: 15.5%;
 }
 .sourcingAbcContainer .block-right .redLine{
   background: url(../images/showcase-redLine.png);
@@ -535,21 +572,25 @@ body, html {
 }
 .sourcingAbcContainer .block-right .product-list{
   text-align: center;
-  padding: 0 50px;
+  padding: 0 5px;
 }
 
 .sourcingAbcContainer .block-right .product.first{
   margin-top: 50px;
 }
 .sourcingAbcContainer .block-right .product{
+  background: white;
   float: left;
-  width: 25%;
-  margin-top: 60px;
+  width: calc(25% - 10px);
   position: relative;
   -webkit-transition: width .5s ease-in-out;
   -moz-transition: width .5s ease-in-out;
   -o-transition: width .5s ease-in-out;
   transition: width .5s ease-in-out;
+  margin: 10px 5px;
+  overflow: hidden;
+  text-align: left;
+  padding: 10px;
 }
 .sourcingAbcContainer .block-right .product img,
 .sourcingAbcContainer .block-right .product .product-name{
@@ -558,8 +599,6 @@ body, html {
 .sourcingAbcContainer .block-right .product .product-name{
   color: black;
   text-transform: uppercase;
-  margin: 10px auto;
-  text-align: left;
   padding-left: 10px;
   font-size: 18px;
 }
@@ -571,6 +610,52 @@ body, html {
 }
 .sourcingAbcContainer .block-right.biggest .product .product-name{
   font-size: 26px;
+}
+.sourcingAbcContainer .block-right .product:after {
+  content: "";
+  position: absolute;
+  top: -110%;
+  right: -210%;
+  width: 200%;
+  height: 200%;
+  opacity: 0;
+  transform: rotate(-30deg);
+  -o-transform: rotate(-30deg);
+  -moz-transform: rotate(-30deg);
+  -webkit-transform: rotate(-30deg);
+
+  background: rgba(255, 255, 255, 0.13);
+  background: linear-gradient(
+    to left,
+    rgba(255, 255, 255, 0.2) 0%,
+    rgba(255, 255, 255, 0.2) 77%,
+    rgba(255, 255, 255, 0.5) 92%,
+    rgba(255, 255, 255, 0.0) 100%
+  );
+}
+.sourcingAbcContainer .block-right .product:hover:after {
+  opacity: 1;
+  top: -30%;
+  left: -30%;
+  transition-property: left, top, opacity;
+  transition-duration: 0.7s, 0.7s, 0.15s;
+  transition-timing-function: ease;
+}
+.sourcingAbcContainer .block-right .product:active:after {
+  opacity: 0;
+}
+.sourcingAbcContainer .block-right .product .product-form-details{
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  border-right: 2px solid black;
+  padding: 0 5px;
+  text-align: right;
+  color: black;
+  display: none;
+}
+.sourcingAbcContainer .block-right .product .product-form-details .big{
+  text-transform: uppercase;
 }
 
 .sourcingAbcContainer .block-left #cssmenu,

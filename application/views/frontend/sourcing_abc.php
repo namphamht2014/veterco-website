@@ -8,12 +8,19 @@
   </div>
   <div class="content">
     <div class="banner">
-      <div class="title">
+      <!-- <div class="title">
         Enzyme & Probiotic
+      </div> -->
+      <div class="images">
+        <img src="/assets/images/showcase-banner2.jpg" alt="" />
+        <img src="/assets/images/showcase-banner1.jpg" alt="" />
       </div>
     </div>
     <div class="blocks">
       <div class="block-left">
+        <section class="search">
+          <input type="text" name="name" value="" class="tfSearch">
+        </section>
         <section class="view">
           <div class="title">
             view
@@ -21,6 +28,7 @@
           <div class="items">
             <a onclick="grid.show(this, 4)"><div class="item1 active">4</div></a>
             <a onclick="grid.show(this, 6)"><div class="item2">6</div></a>
+            <div class="clearfix"></div>
           </div>
         </section>
         <section class="sortBy">
@@ -74,7 +82,7 @@
           </div>
           <div class="products">
             <a href="">
-              <img src="/assets/images/sourcing-product1.png" alt="" />
+              <img src="/assets/images/sourcing-new-product1.png" alt="" />
               <div class="product-name">Flumequil</div>
             </a>
           </div>
@@ -85,7 +93,7 @@
           </div>
           <div class="products">
             <a href="">
-              <img src="/assets/images/sourcing-product1.png" alt="" />
+              <img src="/assets/images/sourcing-new-product1.png" alt="" />
               <div class="product-name">Flumequil</div>
             </a>
           </div>
@@ -97,82 +105,132 @@
           <!-- line 1 -->
           <div class="product">
             <a href="<?= site_url('fsourcing/product_details/4')?>">
-              <img src="/assets/images/sourcing-product4.png" alt="" />
+              <img src="/assets/images/sourcing-new-product4.png" alt="" />
               <div class="product-name">ade bc complex</div>
+              <div class="product-form-details">
+                <span class="big">antiparasitics</span><br>
+                <span class="small">Powder</span>
+              </div>
             </a>
           </div>
           <div class="product">
             <a href="<?= site_url('fsourcing/product_details/3')?>">
-              <img src="/assets/images/sourcing-product3.png" alt="" />
+              <img src="/assets/images/sourcing-new-product3.png" alt="" />
               <div class="product-name">ampi cotrim oral</div>
+              <div class="product-form-details">
+                <span class="big">antiparasitics</span><br>
+                <span class="small">Powder</span>
+              </div>
             </a>
           </div>
           <div class="product">
             <a href="<?= site_url('fsourcing/product_details/1')?>">
-              <img src="/assets/images/sourcing-product1.png" alt="" />
+              <img src="/assets/images/sourcing-new-product1.png" alt="" />
               <div class="product-name">Flumequil</div>
+              <div class="product-form-details">
+                <span class="big">antiparasitics</span><br>
+                <span class="small">Powder</span>
+              </div>
             </a>
           </div>
           <div class="product">
             <a href="<?= site_url('fsourcing/product_details/2')?>">
-              <img src="/assets/images/sourcing-product2.png" alt="" />
+              <img src="/assets/images/sourcing-new-product2.png" alt="" />
               <div class="product-name">enzymsubtyl</div>
+              <div class="product-form-details">
+                <span class="big">antiparasitics</span><br>
+                <span class="small">Powder</span>
+              </div>
             </a>
           </div>
           <!-- line 2 -->
           <div class="product">
             <a href="<?= site_url('fsourcing/product_details/5')?>">
-              <img src="/assets/images/sourcing-product5.png" alt="" />
+              <img src="/assets/images/sourcing-new-product5.png" alt="" />
               <div class="product-name">erytracin-c</div>
+              <div class="product-form-details">
+                <span class="big">antiparasitics</span><br>
+                <span class="small">Powder</span>
+              </div>
             </a>
           </div>
           <div class="product">
             <a href="<?= site_url('fsourcing/product_details/6')?>">
-              <img src="/assets/images/sourcing-product2.png" alt="" />
+              <img src="/assets/images/sourcing-new-product2.png" alt="" />
               <div class="product-name">enzymsubtyl</div>
+              <div class="product-form-details">
+                <span class="big">antiparasitics</span><br>
+                <span class="small">Powder</span>
+              </div>
             </a>
           </div>
           <div class="product">
             <a href="<?= site_url('fsourcing/product_details/7')?>">
-              <img src="/assets/images/sourcing-product6.png" alt="" />
+              <img src="/assets/images/sourcing-new-product6.png" alt="" />
               <div class="product-name">anti-stress</div>
+              <div class="product-form-details">
+                <span class="big">antiparasitics</span><br>
+                <span class="small">Powder</span>
+              </div>
             </a>
           </div>
           <div class="product">
             <a href="<?= site_url('fsourcing/product_details/8')?>">
-              <img src="/assets/images/sourcing-product1.png" alt="" />
+              <img src="/assets/images/sourcing-new-product1.png" alt="" />
               <div class="product-name">Flumequil</div>
+              <div class="product-form-details">
+                <span class="big">antiparasitics</span><br>
+                <span class="small">Powder</span>
+              </div>
             </a>
           </div>
           <!-- line 3 -->
           <div class="product">
             <a href="">
-              <img src="/assets/images/sourcing-product4.png" alt="" />
+              <img src="/assets/images/sourcing-new-product4.png" alt="" />
               <div class="product-name">ade bc complex</div>
+              <div class="product-form-details">
+                <span class="big">antiparasitics</span><br>
+                <span class="small">Powder</span>
+              </div>
             </a>
           </div>
           <div class="product">
             <a href="">
-              <img src="/assets/images/sourcing-product3.png" alt="" />
+              <img src="/assets/images/sourcing-new-product3.png" alt="" />
               <div class="product-name">ampi cotrim oral</div>
+              <div class="product-form-details">
+                <span class="big">antiparasitics</span><br>
+                <span class="small">Powder</span>
+              </div>
             </a>
           </div>
           <div class="product">
             <a href="">
-              <img src="/assets/images/sourcing-product1.png" alt="" />
+              <img src="/assets/images/sourcing-new-product1.png" alt="" />
               <div class="product-name">Flumequil</div>
+              <div class="product-form-details">
+                <span class="big">antiparasitics</span><br>
+                <span class="small">Powder</span>
+              </div>
             </a>
           </div>
           <div class="product">
             <a href="">
-              <img src="/assets/images/sourcing-product2.png" alt="" />
+              <img src="/assets/images/sourcing-new-product2.png" alt="" />
               <div class="product-name">enzymsubtyl</div>
+              <div class="product-form-details">
+                <span class="big">antiparasitics</span><br>
+                <span class="small">Powder</span>
+              </div>
             </a>
           </div>
+
+          <div class="clearfix"></div>
         </div>
       </div>
     </div>
   </div>
 
-  <?php $this->load->view('frontend/footer');?>
+  <!-- <?php $this->load->view('frontend/footer');?> -->
 </div>

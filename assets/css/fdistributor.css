@@ -346,6 +346,14 @@ body{
 .whyUsContainer .block3,
 .whyUsContainer .block4,
 .whyUsContainer .block5,
+.whyUsContainer .block6{
+  overflow: hidden;
+}
+.whyUsContainer .block1,
+.whyUsContainer .block2,
+.whyUsContainer .block3,
+.whyUsContainer .block4,
+.whyUsContainer .block5,
 .whyUsContainer .block6,
 .whyUsDetailsContainer .center-block
 .whyUsDetailsContainer .right-block{
@@ -356,18 +364,18 @@ body{
   -o-transform: rotate(45deg);
   transform: rotate(45deg);
 }
-.whyUsContainer .block1 .text,
 .whyUsContainer .block1 .active,
-.whyUsContainer .block2 .text,
 .whyUsContainer .block2 .active,
-.whyUsContainer .block3 .text,
 .whyUsContainer .block3 .active,
-.whyUsContainer .block4 .text,
 .whyUsContainer .block4 .active,
-.whyUsContainer .block5 .text,
 .whyUsContainer .block5 .active,
-.whyUsContainer .block6 .text,
 .whyUsContainer .block6 .active,
+.whyUsContainer .block1 .text,
+.whyUsContainer .block2 .text,
+.whyUsContainer .block3 .text,
+.whyUsContainer .block4 .text,
+.whyUsContainer .block5 .text,
+.whyUsContainer .block6 .text,
 .whyUsDetailsContainer .center-block .text{
   -webkit-transform: rotate(-45deg);
   -moz-transform: rotate(-45deg);
@@ -381,13 +389,25 @@ body{
 .whyUsContainer .block4 .active,
 .whyUsContainer .block5 .active,
 .whyUsContainer .block6 .active{
-  background: url(/assets/images/distributor-why-us-block-active.png) center center no-repeat;
+  background: url(/assets/images/distributor-why-us-block-active2.jpg) center center no-repeat;
   background-size: 100% 100%;
-  height: 45%;
-  width: 23%;
-  right: -3.5%;
-  top: -14.3%;
-  opacity: 0;
+  height: 150%;
+  width: 150%;
+  right: -112%;
+  top: -112%;
+  transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+}
+.whyUsContainer .block1 .active.moved,
+.whyUsContainer .block2 .active.moved,
+.whyUsContainer .block3 .active.moved,
+.whyUsContainer .block4 .active.moved,
+.whyUsContainer .block5 .active.moved,
+.whyUsContainer .block6 .active.moved{
+  right: -40%;
+  top: -40%;
 }
 .whyUsContainer .block1 .text,
 .whyUsContainer .block2 .text,
@@ -517,7 +537,7 @@ body{
   border: 40px solid #7e7acd;
 }
 .whyUsDetailsContainer .right-block.ongoing{
-  border: 40px solid #4e2b8f;
+  border: 40px solid #358fb1;
 }
 .whyUsDetailsContainer .right-block.customize{
   border: 40px solid #b17222;
@@ -590,10 +610,38 @@ body{
   width: 15%;
   height: 28.5%;
 }
+.whyUsDetailsContainer .white-block.ongoing,
+.whyUsDetailsContainer .white-block.website{
+  background: white;
+  border: 15px solid #7e7acd;
+  transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  width: 10.5%;
+  height: 20%;
+  left: 22.2%;
+  top: 34.5%;
+}
+.whyUsDetailsContainer .white-block.ongoing .text,
+.whyUsDetailsContainer .white-block.website .text{
+  transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+.whyUsDetailsContainer .white-block.website .text.small{
+  top: 40%;
+  left: 20%;
+}
+.whyUsDetailsContainer .white-block.ongoing{
+  border-color: #aaccd8;
+}
 .whyUsDetailsContainer .white-block.ongoing .text{
   width: 100%;
   text-align: center;
-  left: 0;
+  left: 0%;
+  top: 25%;
 }
 .whyUsDetailsContainer .white-block.customize .text{
   width: 100%;
@@ -650,7 +698,8 @@ body{
   font-size: 25px;
 }
 .whyUsDetailsContainer .white-block.ongoing .text.small{
-  left: 0;
+  left: 0%;
+  top: 15%;
   font-size: 22px;
 }
 .whyUsDetailsContainer .white-block.customize .text.small{

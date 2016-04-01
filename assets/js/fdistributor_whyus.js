@@ -26,52 +26,10 @@ jQuery(window).load(function () {
     $('.whyUsDetailsContainer .white-block .text, .whyUsDetailsContainer .center-block .text, .whyUsDetailsContainer .arrow-block .text').addClass('small');
   }
 
-  var blockFriendly = $('.whyUsContainer .block1');
-  var blockFriendlyActive = $('.whyUsContainer .block1 .active');
-  blockFriendly.mouseover(function () {
-    blockFriendlyActive.css('opacity', '1');
+  $('.whyUsContainer .blocks').mouseenter(function () {
+    $(this).find('.active').addClass('moved');
   });
-  blockFriendly.mouseout(function () {
-    blockFriendlyActive.css('opacity', '0');
-  });
-  var blockBenefit = $('.whyUsContainer .block2');
-  var blockBenefitActive = $('.whyUsContainer .block2 .active');
-  blockBenefit.mouseover(function () {
-    blockBenefitActive.css('opacity', '1');
-  });
-  blockBenefit.mouseout(function () {
-    blockBenefitActive.css('opacity', '0');
-  });
-  var blockTraining = $('.whyUsContainer .block3');
-  var blockTrainingActive = $('.whyUsContainer .block3 .active');
-  blockTraining.mouseover(function () {
-    blockTrainingActive.css('opacity', '1');
-  });
-  blockTraining.mouseout(function () {
-    blockTrainingActive.css('opacity', '0');
-  });
-  var blockWebsite = $('.whyUsContainer .block4');
-  var blockWebsiteActive = $('.whyUsContainer .block4 .active');
-  blockWebsite.mouseover(function () {
-    blockWebsiteActive.css('opacity', '1');
-  });
-  blockWebsite.mouseout(function () {
-    blockWebsiteActive.css('opacity', '0');
-  });
-  var blockPricing = $('.whyUsContainer .block5');
-  var blockPricingActive = $('.whyUsContainer .block5 .active');
-  blockPricing.mouseover(function () {
-    blockPricingActive.css('opacity', '1');
-  });
-  blockPricing.mouseout(function () {
-    blockPricingActive.css('opacity', '0');
-  });
-  var blockProducts = $('.whyUsContainer .block6');
-  var blockProductsActive = $('.whyUsContainer .block6 .active');
-  blockProducts.mouseover(function () {
-    blockProductsActive.css('opacity', '1');
-  });
-  blockProducts.mouseout(function () {
-    blockProductsActive.css('opacity', '0');
+  $('.whyUsContainer .blocks').mouseleave(function () {
+    $(this).find('.active').removeClass('moved');
   });
 });

@@ -2,8 +2,7 @@ body{
   overflow: hidden;
 }
 /*Catalogue - Page*/
-.catalogueContainer,
-.catalogueContainer .loginContainer{
+.catalogueContainer{
   height: calc(100% - 104px);
   background: url(../images/catalogue-bg.jpg) center center no-repeat;
   background-size: 100% 100%;
@@ -103,15 +102,45 @@ body{
 }
 .catalogueContainer .books .book .desc .title.color1{
   font-size: 32px;
-  color: #d0a615;
+  color: #8e393b;
 }
 .catalogueContainer .books .book .desc .title.color2{
-  font-size: 22px;
-  color: #339933;
+  font-size: 32px;
+  color: #8d7eb4;
 }
 .catalogueContainer .books .book .desc .title.color3{
-  color: #de620e;
+  color: #6ebad1;
   font-size: 32px;
+}
+.catalogueContainer .books .book .desc .title.color4{
+  color: #be609e;
+  font-size: 32px;
+}
+.catalogueContainer .books .book .desc .title.color5{
+  color: #3f6d47;
+  font-size: 32px;
+}
+.catalogueContainer .books .book .desc .title.color6{
+  color: #6ebad1;
+  font-size: 32px;
+}
+.catalogueContainer .books .book.item1 .desc .order{
+  color: #8e393b;
+}
+.catalogueContainer .books .book.item2 .desc .order{
+  color: #8d7eb4;
+}
+.catalogueContainer .books .book.item3 .desc .order{
+  color: #6ebad1;
+}
+.catalogueContainer .books .book.item4 .desc .order{
+  color: #be609e;
+}
+.catalogueContainer .books .book.item5 .desc .order{
+  color: #3f6d47;
+}
+.catalogueContainer .books .book.item6 .desc .order{
+  color: #6ebad1;
 }
 .catalogueContainer .books .book .desc .title{
   line-height: 40px
@@ -196,8 +225,7 @@ body{
   margin: 0 80px;
 }
 .catalogueContainer .light{
-
-  top: -260%;
+  top: -350%;
   -webkit-transition: left .5s ease-in-out;
   -moz-transition: left .5s ease-in-out;
   -o-transition: left .5s ease-in-out;
@@ -212,308 +240,38 @@ body{
 .catalogueContainer .light.move2{
   left: 66%;
 }
-/*Login container*/
+
 .links,
 .catalogueContainer .dock,
 .catalogueContainer .books,
 .catalogueContainer .books .book .desc,
 .catalogueContainer .books .book ul > li,
 .catalogueContainer .books .book .diamond,
-.catalogueContainer .light,
-.catalogueContainer .loginContainer,
-.catalogueContainer .loginContainer .block-people,
-.catalogueContainer .loginContainer .block-people:before,
-.catalogueContainer .loginContainer .block-people img,
-.catalogueContainer .loginContainer .block2,
-.catalogueContainer .loginContainer .block2 .halfBlack,
-.catalogueContainer .loginContainer .block2-bg,
-.catalogueContainer .loginContainer .block2-bg:before,
-.catalogueContainer .loginContainer .block2-bg:after,
-.catalogueContainer .loginContainer .block2 .title,
-.catalogueContainer .loginContainer .block-arrow,
-.catalogueContainer .loginContainer .block1,
-.catalogueContainer .loginContainer .block1-outside-bg2,
-.catalogueContainer .loginContainer .block1-outside-bg,
-.catalogueContainer .loginContainer .block1-outside-bg:after,
-.catalogueContainer .loginContainer .block1 .title,
-.catalogueContainer .loginContainer.active .login{
+.catalogueContainer .light{
   position: absolute;
 }
-.catalogueContainer .loginContainer .block-people,
-.catalogueContainer .loginContainer .block2,
-.catalogueContainer .loginContainer .block2 .halfBlack,
-.catalogueContainer .loginContainer .block-arrow,
-.catalogueContainer .loginContainer .block1,
-.catalogueContainer .loginContainer .block1-outside-bg:after,
-.catalogueContainer .loginContainer.active .login{
-  -webkit-transform: rotate(45deg);
-  -moz-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  -o-transform: rotate(45deg);
-  transform: rotate(45deg);
-}
-.catalogueContainer .loginContainer .block-people img,
-.catalogueContainer .loginContainer .block2-bg:before,
-.catalogueContainer .loginContainer .block2-bg:after,
-.catalogueContainer .loginContainer .block2 .title,
-.catalogueContainer .loginContainer .block-arrow img,
-.catalogueContainer .loginContainer .block1-outside-bg2,
-.catalogueContainer .loginContainer .block1 .title,
-.catalogueContainer .loginContainer.active .block1,
-.catalogueContainer .loginContainer.active .block-arrow{
-  -webkit-transform: rotate(-45deg);
-  -moz-transform: rotate(-45deg);
-  -ms-transform: rotate(-45deg);
-  -o-transform: rotate(-45deg);
-  transform: rotate(-45deg);
-}
-.catalogueContainer .loginContainer.active .block1 .title,
-.catalogueContainer .books .book .desc,
-.catalogueContainer .loginContainer{
+.catalogueContainer .books .book .desc{
   display: none;
 }
-.catalogueContainer .loginContainer .content,
 .catalogueContainer .books .book ul{
   position: relative;
 }
-.catalogueContainer .loginContainer,
-.catalogueContainer .loginContainer .block-people .line,
-.catalogueContainer .loginContainer .block1-bg,
-.catalogueContainer .loginContainer.active .login .fields input{
-  width: 100%;
-}
-.catalogueContainer .loginContainer .block-people,
-.catalogueContainer .loginContainer .block-arrow{
-  width: 90px;
-  height: 90px;
-}
-.catalogueContainer .loginContainer .block-people:before,
-.catalogueContainer .loginContainer .block1-outside-bg:after{
-  border-left: 2px solid black;
-}
-.catalogueContainer .loginContainer .block-people:before,
-.catalogueContainer .loginContainer .block2-bg:before,
-.catalogueContainer .loginContainer .block2-bg:after,
-.catalogueContainer .loginContainer .block1-outside-bg:after{
-  content: "";
-}
-.catalogueContainer .loginContainer .block-people .line,
-.catalogueContainer .loginContainer .block-arrow,
-.catalogueContainer .loginContainer .block1-bg{
-  background: black;
-}
-.catalogueContainer .loginContainer .block-people .line,
-.catalogueContainer .loginContainer .block1-bg{
-  height: 100%;
-}
-.catalogueContainer .loginContainer .block1,
-.catalogueContainer .loginContainer .block2{
-  width: 200px;
-  height: 200px;
-}
-.catalogueContainer .loginContainer .block2-bg:before,
-.catalogueContainer .loginContainer .block2-bg:after{
-  border-top: 2px solid black;
-}
-.catalogueContainer .loginContainer .block2 .title,
-.catalogueContainer .loginContainer .block1 .title,
-.catalogueContainer .loginContainer.active .login .subTitle,
-.catalogueContainer .loginContainer.active .login .fields label,
-.catalogueContainer .loginContainer.active .login .fields input,
 .catalogueContainer .books .book .desc .order{
   color: white;
 }
-.catalogueContainer .loginContainer .block2 .title,
-.catalogueContainer .loginContainer .block1 .title,
-.catalogueContainer .loginContainer.active .login .fields label,
 .links .title,
 .links ul li,
 .catalogueContainer .books .book .desc .title{
   text-transform: uppercase;
 }
-.catalogueContainer .loginContainer .block-arrow,
-.catalogueContainer .loginContainer .block1,
-.catalogueContainer .loginContainer .block1-outside-bg2,
-.catalogueContainer .loginContainer .block1-outside-bg,
-.catalogueContainer .loginContainer .block1-outside-bg:after{
-  -webkit-transition: all 1s ease-in-out;
-  -moz-transition: all 1s ease-in-out;
-  -o-transition: all 1s ease-in-out;
-  transition: all 1s ease-in-out;
-}
-.catalogueContainer .loginContainer .block2 .title,
-.catalogueContainer .loginContainer .block1 .title,
-.catalogueContainer .loginContainer.active .form-title,
 .links .title,
 .catalogueContainer .books .book .desc .readMore{
   font-weight: bold;
 }
-.catalogueContainer .loginContainer.active .login .subTitle,
-.catalogueContainer .loginContainer .block1 .title,
-.catalogueContainer .loginContainer.active .login .fields input{
-  font-size: 18px;
-}
 
-.catalogueContainer .loginContainer .content{
-  height: 800px;
-  width: 1200px;
-  margin: auto;
-}
-.catalogueContainer .loginContainer{
-  /*background: url(../images/catalogue-login-bg.png) center center no-repeat;
-  background-size: 100% 100%;*/
-  background: rgba(255, 255, 255, 0.5);
-  z-index: 99999999;
-}
-.catalogueContainer .loginContainer .block-people{
-  left: 20%;
-  top: 25%;
-}
-.catalogueContainer .loginContainer .block-people:before{
-  width: 500%;
-  height: 500%;
-  top: -270%;
-  left: 40%;
-}
-.catalogueContainer .loginContainer .block-people img{
-  top: 10px;
-  left: 13px;
-}
-.catalogueContainer .loginContainer .block2{
-  background: #bd114c;
-  left: 30%;
-  top: 30%;
-  overflow: hidden;
-}
-.catalogueContainer .loginContainer .block2 .halfBlack{
-  width: 142%;
-  height: 142%;
-  top: -71%;
-  left: 29%;
-  background: rgba(0, 0, 0, 0.1);
-}
-.catalogueContainer .loginContainer .block2-bg{
-  left: 29.5%;
-  top: 45%;
-}
-.catalogueContainer .loginContainer .block2-bg:before{
-  width: 1300%;
-  height: 1300%;
-  left: -375%;
-  top: -10%;
-}
-.catalogueContainer .loginContainer .block2-bg:after{
-  width: 700%;
-  height: 700%;
-  right: -250%;
-  top: 170%;
-}
-.catalogueContainer .loginContainer .block2 .title{
-  font-size: 32px;
-  left: 8%;
-  top: 38%;
-}
-.catalogueContainer .loginContainer .block-arrow{
-  top: 50%;
-  left: 34.6%;
-}
-.catalogueContainer .loginContainer .block-arrow img{
-  margin-top: 35px;
-  margin-left: 28px;
-}
-
-.catalogueContainer .loginContainer .block1{
-  left: 46.5%;
-  top: 41.5%;
-}
-.catalogueContainer .loginContainer .block1-outside-bg2{
-  border-left: 140px solid transparent;
-  border-bottom: 140px solid #b41145;
-  left: 54%;
-  top: 45.2%;
-}
-.catalogueContainer .loginContainer .block1-outside-bg{
-  top: 56.2%;
-  left: 45.5%;
-}
-.catalogueContainer .loginContainer .block1-outside-bg:after{
-  width: 320%;
-  height: 320%;
-  left: 60%;
-  top: -20%;
-}
-.catalogueContainer .loginContainer .block1 .title,
-.catalogueContainer .loginContainer.active .login,
 .catalogueContainer .books{
   text-align: center;
 }
-.catalogueContainer .loginContainer .block1 .title{
-  left: -17%;
-  top: 32%;
-  width: 130%;
-}
-
-.catalogueContainer .loginContainer.active .block1{
-  width: 480px;
-  height: 480px;
-  left: 38%;
-  top: 25.5%;
-}
-.catalogueContainer .loginContainer.active .block-arrow{
-  z-index: 999;
-  background: #1a1a1a;
-}
-.catalogueContainer .loginContainer.active .block1-outside-bg{
-  top: 82%;
-  left: 48%;
-}
-.catalogueContainer .loginContainer.active .block1-outside-bg:after{
-  width: 640%;
-  height: 640%;
-  top: -120%;
-}
-.catalogueContainer .loginContainer.active .block1-outside-bg2{
-  left: 74%;
-  top: 46.7%;
-}
-.catalogueContainer .loginContainer.active .login{
-  width: 80%;
-  left: 50%;
-  top: 50%;
-  margin: -45% 0 0 -37%;
-  -webkit-transition: opacity 1s 1s ease-in-out;
-  -moz-transition: opacity 1s 1s ease-in-out;
-  -o-transition: opacity 1s 1s ease-in-out;
-  transition: opacity 1s 1s ease-in-out;
-  opacity: 1;
-}
-.catalogueContainer .loginContainer .login,
 .catalogueContainer .books .book .diamond{
   opacity: 0;
-}
-.catalogueContainer .loginContainer.active .form-title{
-  color: #e70e4c;
-  font-size: 40px;
-}
-.catalogueContainer .loginContainer.active .login .fields{
-  margin: 25px auto;
-  text-align: left;
-  width: 78%;
-}
-.catalogueContainer .loginContainer.active .login .fields label{
-  display: block;
-  font-size: 20px;
-}
-.catalogueContainer .loginContainer.active .login .fields input{
-  background: transparent;
-  border-radius: 10px;
-  height: 50px;
-  border: 3px solid #989797;
-  padding: 0 15px;
-}
-.catalogueContainer .loginContainer.active .login .fields input:focus{
-  outline: 0;
-}
-.catalogueContainer .loginContainer.active .login .fields .password{
-  margin-top: 10px;
 }

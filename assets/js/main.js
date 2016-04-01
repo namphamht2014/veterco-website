@@ -126,3 +126,26 @@ var main = {
     location.href = url +'/'+ element.value;
   }
 };
+
+var loginForm = {
+  show: function () {
+    $('.loginContainer').show();
+  }
+};
+var loginBlock = $('.loginContainer');
+loginBlock.click(function () {
+  loginBlock.removeClass('active').hide();
+});
+
+loginBlock.find('.btnSubmit').click(function (event) {
+  event.stopPropagation();
+  if (loginBlock.hasClass('active')) {
+    alert('do submit');
+  }else {
+    loginBlock.addClass('active');
+  }
+});
+
+loginBlock.find('.content .block1').click(function (event) {
+  event.stopPropagation();
+});

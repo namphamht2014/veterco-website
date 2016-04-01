@@ -51,3 +51,4 @@ defined('BASEPATH') OR exit('No direct script access allowed');
       </div>
     </nav>
     <?php endif; ?>
+    <?php $this->load->view('frontend/login_block');?>

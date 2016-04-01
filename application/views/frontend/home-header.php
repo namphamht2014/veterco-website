@@ -75,7 +75,7 @@
         </a>
       </li>
       <li class="m-t-32" id="login">
-        <a onmouseover="header.hover(this);" onmouseout="header.unhover(this);">
+        <a onmouseover="header.hover(this);" onmouseout="header.unhover(this);" onclick="loginForm.show()">
           <div>
 						<div class="red-arrow"></div>
 	          <b>Login</b>

@@ -20,7 +20,7 @@
   </div>
   <div class="above-arrow-block"></div>
   <div class="arrow-block <?= $section?>">
-    <a href="<?= site_url('FDistributor/whyUs')?>">
+    <a href="<?= site_url('Fdistributor/whyUs')?>">
       <div class="text">
         Why Us
       </div>

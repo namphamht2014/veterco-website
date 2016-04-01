@@ -238,19 +238,6 @@ var catalogue = {
     element.nextElementSibling.style.display = 'none';
   }
 };
-var loginForm = {
-  show: function () {
-    $('.loginContainer').attr('style', 'display: block;');
-  },
-  active: function () {
-    var loginContainer = $('.loginContainer');
-    if (loginContainer.hasClass('active')) {
-      alert('do submit');
-    } else {
-      loginContainer.addClass('active');
-    }
-  }
-};
 
 ( function( $ ) {
 $( document ).ready(function() {

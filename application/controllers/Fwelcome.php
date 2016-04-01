@@ -32,12 +32,43 @@ class Fwelcome extends CI_Controller {
     );
 
     //add js script to page
-    // $data['script'] = 'main.initFootable();';
+    $data['script'] = 'setTimeout(function() {window.location = "'.base_url('index.php/welcome_2').'";}, 3000);';
     //add data to page
     $data['data'] = array('test', 'test');
 
     $this->load->view('template/header', $data);
     $this->load->view('frontend/welcome', $data);
+    $this->load->view('template/footer', $data);
+  }
+  public function welcome2()
+  {
+    //Page title
+    $data['title'] = '- '.$this->lang->line('f_welcome2');
+
+    //Add css to page
+    $data['headers'] = array(base_url().'assets/css/fwelcome.css');
+    if ($this->agent->is_browser('Safari')) {
+      // $data['headers'][] = base_url().'assets/css/fwelcome_safari.css';
+    } else if ($this->agent->is_browser('Chrome')) {
+      $data['headers'][] = base_url().'assets/css/fwelcome_chrome.css';
+    } else if ($this->agent->is_browser('Opera')) {
+      $data['headers'][] = base_url().'assets/css/fwelcome_opera.css';
+    } else if ($this->agent->is_browser('Firefox')) {
+      $data['headers'][] = base_url().'assets/css/fwelcome_firefox.css';
+    }
+
+    //add js to page
+    $data['footers'] = array(
+      base_url().'assets/js/fwelcome.js'
+    );
+
+    //add js script to page
+    // $data['script'] = 'main.initFootable();';
+    //add data to page
+    $data['data'] = array('test', 'test');
+
+    $this->load->view('template/header', $data);
+    $this->load->view('frontend/welcome2', $data);
     $this->load->view('template/footer', $data);
   }
 }

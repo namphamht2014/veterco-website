@@ -7,7 +7,8 @@ $lang['sitename'] = "Veterco";
 /*
 Welcome page
  */
-$lang['f_welcome'] = 'Welcome 2';
+$lang['f_welcome'] = 'Welcome 1';
+$lang['f_welcome2'] = 'Welcome 2';
 
 /*
 Talk to US

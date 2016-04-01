@@ -19,7 +19,158 @@ body, html {
 .video-block .content .block-back .title{
   position: absolute;
 }
+/*welcome1*/
+/* / welcome1*/
+/*Commons*/
+.welcome1 .content .text1 .gmp.redDot:after,
+.welcome1 .content .texts,
+.welcome1 .content{
+  position: absolute;
+}
 
+.welcome1 .content .text2,
+.welcome1 .content .text1{
+  text-transform: uppercase;
+}
+/* / Commons*/
+.welcome1{
+  background: #2c2c2c;
+  height: 100%;
+}
+.welcome1 .content{
+  width: 1024px;
+  background: url(/assets/images/welcome1-logo.png) center center no-repeat transparent;
+  background-size: 100% 100%;
+  height: 640px;
+  left: calc(50% - 512px);
+  top: calc(50% - 320px);
+}
+.welcome1 .texts{
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+.welcome1 .content .text1 .companyName{
+  color: #b1b1b1;
+  font-size: 22px;
+}
+.welcome1 .content .text1 .gmp.redDot{
+  margin-right: 20px;
+}
+.welcome1 .content .text1 .gmp.redDot:after{
+  content: '';
+  width: 12px;
+  height: 12px;
+  background: #840003;
+  right: -16px;
+  top: 2px;
+  border-radius: 50%;
+  -o-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+}
+.welcome1 .content .text1 .gmp{
+  color: white;
+  font-size: 16px;
+  position: relative;
+}
+.welcome1 .text2{
+  color: #cd3a44;
+  font-family: Myriad-Bold;
+  font-size: 22px;
+  margin: 5px 0;
+}
+.welcome1 .text3{
+  color: #a3a2a2;
+  padding: 0 25px;
+}
+/* HD */
+@media screen and (min-width: 1346px) {
+  .welcome1 .content{
+    width: 1228px;
+    height: 768px;
+    left: calc(50% - 614px);
+    top: calc(50% - 384px);
+  }
+  .welcome1 .content .texts{
+    bottom: 40px;
+  }
+  .welcome1 .content .text1 .companyName,
+  .welcome1 .text2{
+    font-size: 24px;
+  }
+  .welcome1 .content .text1 .gmp.redDot:after{
+    top: 3px;
+  }
+  .welcome1 .content .text1 .gmp{
+    font-size: 19px;
+  }
+  .welcome1 .text3{
+    font-size: 16px;
+    padding: 0 50px;
+  }
+}
+/* / HD */
+/* HD+ */
+@media screen and (min-width: 1580px){
+  .welcome1 .content{
+    width: 1440px;
+    height: 900px;
+    left: calc(50% - 720px);
+    top: calc(50% - 450px);
+  }
+  .welcome1 .content .texts{
+    bottom: 50px;
+  }
+  .welcome1 .content .text1 .companyName{
+    font-size: 27px;
+  }
+  .welcome1 .content .text1 .gmp.redDot:after{
+    top: 3px;
+  }
+  .welcome1 .content .text1 .gmp{
+    font-size: 22px;
+  }
+  .welcome1 .text2{
+    font-size: 27px;
+    margin: 5px 0;
+  }
+  .welcome1 .text3{
+    font-size: 19px;
+  }
+}
+/* / HD+ */
+/* > Full HD */
+@media screen and (min-width: 1960px) {
+  .welcome1 .content{
+    width: 1638px;
+    height: 1024px;
+    left: calc(50% - 816px);
+    top: calc(50% - 512px);
+  }
+  .welcome1 .content .text1 .companyName{
+    font-size: 27px;
+  }
+  .welcome1 .content .text1 .gmp.redDot{
+    margin-right: 20px;
+  }
+  .welcome1 .content .text1 .gmp.redDot:after{
+    top: 3px;
+  }
+  .welcome1 .content .text1 .gmp{
+    font-size: 25px;
+  }
+  .welcome1 .text2{
+    font-size: 30px;
+    margin: 5px 0;
+  }
+  .welcome1 .text3{
+    font-size: 22px;
+  }
+}
+/* / > Full HD */
+
+/* welcome2*/
 .myContainer{
   background: url(/assets/images/welcome-bg.png) center center no-repeat;
   background-size: 100% 100%;
@@ -441,3 +592,4 @@ body, html {
   bottom: 12%;
   margin-left: 15%
 }
+/* / welcome2*/

@@ -32,9 +32,9 @@ class Fwelcome extends CI_Controller {
     );
 
     //add js script to page
-    $data['script'] = 'setTimeout(function() {window.location = "'.base_url('index.php/welcome_2').'";}, 3000);';
+    $data['script'] = 'setTimeout(function() {window.location = "'.base_url('index.php/welcome_2').'";}, 10000);';
     //add data to page
-    $data['data'] = array('test', 'test');
+    // $data['data'] = array('test', 'test');
 
     $this->load->view('template/header', $data);
     $this->load->view('frontend/welcome', $data);

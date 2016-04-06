@@ -5,6 +5,7 @@
       Loading...
     </div>
   </div>
+  <div class="layer1"></div>
   <div class="content">
     <div class="texts">
       <div class="text1">

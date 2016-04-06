@@ -1,4 +1,5 @@
 var welcome2 = {
+  videoWidth: 0,
   blockHover: function (className) {
     $('.'+className+' #active').attr('style', 'opacity:1');
   },
@@ -8,7 +9,7 @@ var welcome2 = {
   hideVideoBlock: function () {
     $('.video-block .block-right iframe').attr('style', 'opacity:0');
     setTimeout(function() {
-      $('.video-block .block-right').attr('style', 'width: 0%');
+      $('.video-block .content').css('width', '250px');
     }, 500);
     setTimeout(function() {
       $('.video-block').hide();
@@ -19,6 +20,7 @@ var welcome2 = {
     $('.video-link').removeClass('active');
 
     $('.video-block').show();
+
     var titleEle = $('.video-block .top .title');
     var currEle = $('.video-block .bottom #'+eleID);
     var blockEle = $('.video-block .top');
@@ -46,11 +48,11 @@ var welcome2 = {
       videoEle.html('<iframe src="https://www.youtube.com/embed/OmXuqDsESMM" frameborder="0" allowfullscreen></iframe>');
     }
     setTimeout(function() {
-      videoEle.attr('style', 'width: 75%');
+      $('.video-block .content').css('width', welcome2.videoWidth);
     }, 500);
     setTimeout(function() {
       $('.video-block .block-right iframe').attr('style', 'opacity:1');
-    }, 1000);
+    }, 1500);
   },
   videoChange: function (videoName, currentEle) {
     $('.video-link').removeClass('active');
@@ -82,7 +84,22 @@ var welcome2 = {
   }
 };
 
+var welcome2Bg = {
+  hover: function (eleID) {
+    $('.layer'+eleID).css('opacity', 1);
+  },
+  blur: function (eleID) {
+    $('.layer'+eleID).css('opacity', 0);
+  }
+}
+
 jQuery(window).load(function () {
+  // welcome 1
+  $('.welcome1 .layer1, .welcome1 .content').click(function () {
+    window.location = 'index.php/welcome_2';
+  });
+  // / welcome 1
+
   var winWidth = $(window).width();
   $('.block-right .text').removeClass('biggest big small');
   $('.block-big .text').removeClass('biggest big small');
@@ -143,11 +160,13 @@ jQuery(window).load(function () {
   $('.loadingPage').css('opacity', '0');
   setTimeout(function() {
     $('.loadingPage').hide();
+    welcome2.videoWidth = $('.video-block .content').outerWidth();
+    $('.video-block .content').css('width', (welcome2.videoWidth * 0.33));
   }, 500);
 
   var lastX = 0;
   var count = 0;
-  $('div.myContainer').mousemove(function(e){
+  $('.welcome2').mousemove(function(e){
     count++;
     if (count % 8 === 0) {
       if (lastX === 0) {
@@ -155,19 +174,9 @@ jQuery(window).load(function () {
       }
 
       if (e.pageX > lastX) {
-        $('#fly1').css('left', '+=1');
-        $('#fly2').css('left', '+=1');
-        $('#fly3').css('left', '+=1');
-        $('#fly4').css('left', '+=1');
-        $('#fly5').css('left', '+=1');
-        $('#fly6').css('left', '+=1');
+        $('.welcome2 .layer.float').css('left', '+=2');
       }else{
-        $('#fly1').css('left', '-=1');
-        $('#fly2').css('left', '-=1');
-        $('#fly3').css('left', '-=1');
-        $('#fly4').css('left', '-=1');
-        $('#fly5').css('left', '-=1');
-        $('#fly6').css('left', '-=1');
+        $('.welcome2 .layer.float').css('left', '-=2');
       }
       lastX = e.pageX;
     }

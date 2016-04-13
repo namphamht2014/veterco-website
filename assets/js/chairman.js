@@ -45,4 +45,8 @@ jQuery(window).load(function () {
   setTimeout(function() {
     $('.loadingPage').hide();
   }, 500);
+
+  $('.btnPlus').click(function () {
+    $('.wrap, .btnPlus').toggleClass('active');
+  });
 });

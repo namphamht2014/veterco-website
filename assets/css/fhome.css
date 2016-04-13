@@ -350,6 +350,22 @@ body, html {
 .big .red-arrow{
   margin-left:85px !important;
 }
+@media screen and (max-width: 1024px) {
+  .headerFixed > nav,
+  .header > nav {
+    width: 1024px;
+  }
+  .headerFixed > nav > ul > li.small,
+  .header > nav > ul > li.small {
+    width: 80px;
+  }
+  .headerFixed > nav > ul > li, .header > nav > ul > li {
+    margin: 24px 10px 0 10px;
+  }
+  .chairmanContainer .wrap .wrap-content .txt-content {
+    font-size: 14px;
+  }
+}
 /*header - end*/
 
 /*search Article*/

@@ -142,6 +142,12 @@
   transition: all 600ms cubic-bezier(0.55, 0.055, 0.675, 0.19);
 }
 
+@media screen and (max-width: 1024px) {
+  .chairmanContainer .wrap .wrap-content .txt-content {
+    font-size: 14px;
+  }
+}
+
 @media screen and (min-width: 1580px) {
   .chairmanContainer .wrap .wrap-content .txt-content{
     font-size: 20px;

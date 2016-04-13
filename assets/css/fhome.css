@@ -362,9 +362,6 @@ body, html {
   .headerFixed > nav > ul > li, .header > nav > ul > li {
     margin: 24px 10px 0 10px;
   }
-  .chairmanContainer .wrap .wrap-content .txt-content {
-    font-size: 14px;
-  }
 }
 /*header - end*/
 

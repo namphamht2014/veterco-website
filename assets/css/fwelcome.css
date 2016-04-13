@@ -113,10 +113,50 @@ body, html {
   -moz-animation: zoomBg 13s ease-in-out 0s infinite;
   -webkit-animation: zoomBg 13s ease-in-out 0s infinite;
 }
+.welcome1 .shine{
+  position: relative;
+  width: 415px;
+  height: 238px;
+  left: calc(50% - 208px);
+  top: calc(50% - 178px);
+  overflow: hidden;
+}
+.welcome1 .shine img{
+  width: 100%;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+.welcome1 .shine:after{
+  content: "";
+  position: absolute;
+  background: rgba(255,255,255,0.4);
+  top: 0;
+  left: -50%;
+  width: 10%;
+  height: 100%;
+	-webkit-transform: skew(-45deg);
+	   -moz-transform: skew(-45deg);
+	     -o-transform: skew(-45deg);
+	        transform: skew(-45deg);
+  transition: all 1s ease-out;
+  -o-transition: all 1s ease-out;
+  -moz-transition: all 1s ease-out;
+  -webkit-transition: all 1s ease-out;
+  border-radius: 15px;
+  -o-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -webkit-border-radius: 15px;
+  opacity: 0;
+}
+.welcome1 .shine.active:after{
+  left: 150%;
+  opacity: 1;
+}
 .welcome1 .content{
   width: 1024px;
-  background: url(/assets/images/welcome1-logo.png) center center no-repeat transparent;
-  background-size: 100% 100%;
+  /*background: url(/assets/images/welcome1-logo.png) center center no-repeat transparent;
+  background-size: 100% 100%;*/
   height: 640px;
   left: calc(50% - 512px);
   top: calc(50% - 320px);
@@ -390,6 +430,12 @@ body, html {
     font-size: 16px;
     padding: 0 50px;
   }
+  .welcome1 .shine{
+    width: 443px;
+    height: 255px;
+    left: calc(50% - 220px);
+    top: calc(50% - 192px);
+  }
   /* / welcome1*/
   /* welcome2*/
   .welcome2 .layer,
@@ -459,6 +505,12 @@ body, html {
   }
   .welcome1 .text3{
     font-size: 19px;
+  }
+  .welcome1 .shine{
+    width: 533px;
+    height: 305px;
+    left: calc(50% - 265px);
+    top: calc(50% - 230px);
   }
   /* / welcome1*/
   /* welcome2*/
@@ -534,6 +586,14 @@ body, html {
 /* / HD+ */
 /* Full HD */
 @media screen and (min-width: 1900px) {
+  /* welcome1*/
+  .welcome1 .shine{
+    width: 670px;
+    height: 385px;
+    left: calc(50% - 330px);
+    top: calc(50% - 290px);
+  }
+  /* / welcome1*/
   /* welcome2*/
   .welcome2 .layer,
   .welcome2 .content{

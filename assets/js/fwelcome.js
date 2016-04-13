@@ -92,6 +92,15 @@ var welcome2Bg = {
     $('.layer'+eleID).css('opacity', 0);
   }
 }
+function letShine() {
+  setInterval(function() {
+    $('.welcome1 .shine').addClass('active');
+
+    setTimeout(function() {
+      $('.welcome1 .shine').removeClass('active');
+    }, 2000);
+  }, 4000);
+}
 
 jQuery(window).load(function () {
   // welcome 1
@@ -165,12 +174,16 @@ jQuery(window).load(function () {
   }, 500);
 
   var lastX = 0;
+  var lastY = 0;
   var count = 0;
   $('.welcome2').mousemove(function(e){
     count++;
     if (count % 8 === 0) {
       if (lastX === 0) {
         lastX = e.pageX;
+      }
+      if (lastY === 0) {
+        lastY = e.pageY;
       }
 
       if (e.pageX > lastX) {
@@ -179,6 +192,13 @@ jQuery(window).load(function () {
         $('.welcome2 .layer.float').css('left', '-=2');
       }
       lastX = e.pageX;
+
+      if (e.pageY > lastY) {
+        $('.welcome2 .layer.float').css('top', '+=2');
+      }else{
+        $('.welcome2 .layer.float').css('top', '-=2');
+      }
+      lastY = e.pageY;
     }
   });
 });

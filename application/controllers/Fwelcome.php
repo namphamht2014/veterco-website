@@ -32,7 +32,7 @@ class Fwelcome extends CI_Controller {
     );
 
     //add js script to page
-    $data['script'] = 'setTimeout(function() {window.location = "'.base_url('index.php/welcome_2').'";}, 10000);';
+    $data['script'] = 'letShine();setTimeout(function() {window.location = "'.base_url('index.php/welcome_2').'";}, 10000);';
     //add data to page
     // $data['data'] = array('test', 'test');
 

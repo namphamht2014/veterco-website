@@ -6,6 +6,9 @@
     </div>
   </div>
   <div class="layer1"></div>
+  <div class="shine">
+    <img src="/assets/images/welcome1-logo-trim.png" alt="" />
+  </div>
   <div class="content">
     <div class="texts">
       <div class="text1">

@@ -117,7 +117,7 @@ body, html {
   position: absolute;
   left: 50%;
   margin-left: -222px;
-  top: 10%;
+  top: 3%;
 }
 .first-article .title-block{
   margin-left: -166px;
@@ -125,7 +125,7 @@ body, html {
   color: #ed3743;
   letter-spacing: 2.5px;
   position: absolute;
-  top: calc(417px + 17%);
+  top: calc(417px + 10%);
   left: 50%;
 }
 .first-article .title-block::before{
@@ -149,63 +149,58 @@ body, html {
   margin-top: 6%;
 }
 .first-article .menu1{
-  padding-left: 295px;
+  padding-left: 55px;
   font-size: 19px;
   letter-spacing: 2.3px;
 }
 .first-article .menu2{
-  padding-left: 244px;
-  padding-top: 16px;
   font-size: 19px;
   letter-spacing: 1.9px;
+  padding-left: 160px;
+}
+.first-article .menu7,
+.first-article .menu5{
+  padding-top: 50px;
 }
 .first-article .menu3{
-  padding-left: 137px;
-  padding-top: 66px;
+  padding-top: 40px;
   font-size: 19px;
   letter-spacing: 2.6px;
 }
 .first-article .menu4{
-  padding-left: 367px;
-  padding-top: 54px;
   font-size: 19px;
   letter-spacing: 2.2px;
+  padding-left: 230px;
 }
 .first-article .menu5{
-  padding-left: 273px;
-  padding-top: 100px;
+  padding-left: 40px;
   font-size: 19px;
   letter-spacing: 2.5px;
 }
 .first-article .menu6{
-  padding-top: 52px;
-  padding-left: 496px;
   font-size: 19px;
   letter-spacing: 2.6px;
+  padding-left: 250px;
 }
 .first-article .menu7{
-  padding-right: 243px;
-  padding-top: 109px;
-  padding-left: 170px;
+  padding-left: 100px;
   font-size: 19px;
   letter-spacing: 2.6px;
 }
 .first-article .menu8{
-  padding-top: 67px;
-  padding-left: 357px;
   font-size: 19px;
   letter-spacing: 3px;
+  padding-left: 230px;
 }
 .first-article .menu9{
-  padding-left: 299px;
-  padding-top: 63px;
   font-size: 19px;
   letter-spacing: 2.4px;
+  padding-left: 200px;
 }
 .first-article .row{
   padding-top: 5.2%;
   margin: auto;
-  max-width: 1585px;
+  width: 1000px;
 }
 .first-article .col-md-6{
   height: 130px;
@@ -349,19 +344,6 @@ body, html {
 }
 .big .red-arrow{
   margin-left:85px !important;
-}
-@media screen and (max-width: 1024px) {
-  .headerFixed > nav,
-  .header > nav {
-    width: 1024px;
-  }
-  .headerFixed > nav > ul > li.small,
-  .header > nav > ul > li.small {
-    width: 80px;
-  }
-  .headerFixed > nav > ul > li, .header > nav > ul > li {
-    margin: 24px 10px 0 10px;
-  }
 }
 /*header - end*/
 
@@ -1483,11 +1465,90 @@ footer .copyright2{
 }
 /*Footer-end*/
 
-/*Big Screen*/
+/* 1024 screen */
+@media screen and (max-width: 1024px) {
+  .headerFixed > nav,
+  .header > nav {
+    width: 1024px;
+  }
+  .headerFixed > nav > ul > li.small,
+  .header > nav > ul > li.small {
+    width: 80px;
+  }
+  .headerFixed > nav > ul > li, .header > nav > ul > li {
+    margin: 24px 10px 0 10px;
+  }
+}
+/* / 1024 screen */
+/* 1366 screen*/
+@media screen and (min-width: 1346px) {
+  .first-article .row {
+    width: 1346px;
+  }
+  .first-article .menu1 {
+    padding-left: 155px;
+  }
+  .first-article .menu5 {
+    padding-left: 110px;
+  }
+  .first-article .menu7 {
+    padding-left: 180px;
+  }
+  .first-article .menu6 {
+    padding-left: 390px;
+  }
+  .first-article .menu8,
+  .first-article .menu4 {
+    padding-left: 330px;
+  }
+  .first-article .menu2 {
+    padding-left: 250px;
+  }
+  .first-article .menu9 {
+    padding-left: 290px;
+  }
+}
+/* / 1366 screen*/
+/* 1580 screen*/
+@media screen and (min-width: 1580px) {
+  .first-article .row {
+    padding-top: 8.2%;
+  }
+  .first-article .animals {
+    top: 10%;
+  }
+  .first-article .title-block {
+    top: calc(417px + 17%);
+  }
+}
+/* / 1580 screen*/
+/* 1900 screen*/
+@media screen and (min-width: 1900px) {
+  .first-article .row {
+    padding-top: 12%;
+  }
+  .first-article .animals {
+    top: 18%;
+  }
+  .first-article .title-block {
+    top: calc(417px + 25%);
+  }
+}
+/* / 1900 screen*/
+/* > 1920x1080 Screen*/
 @media screen and (min-width:2100px) {
   .headerFixed > nav ,
   .header > nav {
     width: 1370px;
   }
+  .first-article .row {
+    padding-top: 18%;
+  }
+  .first-article .animals {
+    top: 25%;
+  }
+  .first-article .title-block {
+    top: calc(417px + 30%);
+  }
 }
-/* / Big Screen*/
+/* /  > 1920x1080 Screen*/

@@ -301,8 +301,41 @@
 <!-- distribution -->
 <div class="myContainer">
   <article id="distribution-article" class="distribution-article">
-    <div class="distribution-title">
-      <b>DISTRIBUTION NETWORK</b>
+    <div class="bground"></div>
+    <div class="distribution-content">
+      <div class="distribution-title">
+        <b>DISTRIBUTION NETWORK</b>
+      </div>
+      <div class="capacity">
+        <div class="line1 t-uppercase">Capacity</div>
+        <div class="line2">
+          <div class="col1 b-b t-uppercase">
+            Manufacturing section
+          </div>
+          <div class="col2 b-b t-uppercase">
+            production capacity (per day)
+          </div>
+          <div class="clearfix"></div>
+        </div>
+        <div class="line2">
+          <div class="col1 m-t-5">
+            Powder Section
+          </div>
+          <div class="col2 m-t-5">
+            9.0 ton
+          </div>
+          <div class="clearfix"></div>
+        </div>
+        <div class="line2">
+          <div class="col1">
+            Liquid Section
+          </div>
+          <div class="col2">
+            24000 liters
+          </div>
+          <div class="clearfix"></div>
+        </div>
+      </div>
     </div>
   </article>
 </div>
@@ -350,11 +383,11 @@
               <a href="#">
                   <div class="up">
                       <div class="shadow"></div>
-                      <div class="inn">NEW PRODUCER APP</div>
+                      <div class="inn">QUALITY OBSESSION</div>
                   </div>
                   <div class="down">
                       <div class="shadow"></div>
-                      <div class="inn">NEW PRODUCER APP</div>
+                      <div class="inn">QUALITY OBSESSION</div>
                   </div>
               </a>
           </li>
@@ -362,11 +395,11 @@
               <a href="#">
                   <div class="up">
                       <div class="shadow"></div>
-                      <div class="inn">1</div>
+                      <div class="inn f45">DEDICATION AND PRESTIGE</div>
                   </div>
                   <div class="down">
                       <div class="shadow"></div>
-                      <div class="inn">1</div>
+                      <div class="inn f45">DEDICATION AND PRESTIGE</div>
                   </div>
               </a>
           </li>
@@ -374,11 +407,11 @@
               <a href="#">
                   <div class="up">
                       <div class="shadow"></div>
-                      <div class="inn">2</div>
+                      <div class="inn f45">CREATIVITY AND INNOVATION</div>
                   </div>
                   <div class="down">
                       <div class="shadow"></div>
-                      <div class="inn">2</div>
+                      <div class="inn f45">CREATIVITY AND INNOVATION</div>
                   </div>
               </a>
           </li>
@@ -386,11 +419,11 @@
               <a href="#">
                   <div class="up">
                       <div class="shadow"></div>
-                      <div class="inn">3</div>
+                      <div class="inn f42">AFFORDABILITY AND EFFICACY</div>
                   </div>
                   <div class="down">
                       <div class="shadow"></div>
-                      <div class="inn">3</div>
+                      <div class="inn f42">AFFORDABILITY AND EFFICACY</div>
                   </div>
               </a>
           </li>
@@ -398,23 +431,11 @@
               <a href="#">
                   <div class="up">
                       <div class="shadow"></div>
-                      <div class="inn">4</div>
+                      <div class="inn f30">PROFESSIONALISM AND STANDARDIZATION</div>
                   </div>
                   <div class="down">
                       <div class="shadow"></div>
-                      <div class="inn">4</div>
-                  </div>
-              </a>
-          </li>
-          <li>
-              <a href="#">
-                  <div class="up">
-                      <div class="shadow"></div>
-                      <div class="inn">5</div>
-                  </div>
-                  <div class="down">
-                      <div class="shadow"></div>
-                      <div class="inn">5</div>
+                      <div class="inn f30">PROFESSIONALISM AND STANDARDIZATION</div>
                   </div>
               </a>
           </li>

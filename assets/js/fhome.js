@@ -202,7 +202,10 @@ $(function(){
   $('.lab-img-article').attr('style', 'height: '+khop1bg.height+'px;');
   $('.served-container').attr('style', 'height: '+(khop1bg.height * 2)+'px;');
   $('.served-article').attr('style', 'height: '+(khop1bg.height * 2)+'px;');
-  $('.served-article .circle').attr('style', 'height: '+(khop1bg.height - 62)+'px;');
+
+  var circleWidth = khop1bg.height - 62;
+  $('.served-article .circle').attr('style', 'height: '+circleWidth+'px;width: '+circleWidth+'px;margin-left: -'+(circleWidth / 2)+'px;');
+
   $('.distribution-article').attr('style', 'height: '+khop1bg.height+'px;');
   $('.vietnam-article').attr('style', 'height: '+khop1bg.height+'px;');
   $('.leading-article').attr('style', 'height: '+(khop1bg.height * 2)+'px;');
@@ -251,12 +254,14 @@ $(function(){
         $(".circle-number1").text('332');
         $(".circle-number2").text('720,000');
         $(".circle-number3").text('5,000');
+        $('.circle-content3-left').parent().removeClass('no-indent');
       }
     },
     startBlock2: function () {
       $('.circle-content').html('<b>YEARS</b> OF <b>CONTINUOUS INNOVATION</b>');
       $('.circle-content2-left').html('<b class="circle-text-bold">DRUG</b>');
       $('.circle-content2-right').text('COMBINATION TESTED');
+      $('.circle-content3-left').parent().addClass('no-indent');
       $('.circle-content3-left b').text('GOAL - ');
       $('.circle-content3-right').text('IN PURSUIT OF EXCELENTCE');
 
@@ -380,7 +385,6 @@ $(function(){
       articleBlock.top();
     } else if(windowTotalHeight.getPercent(st) >= 66.31 && windowTotalHeight.getPercent(st) < 94.42){
       articleBlock.fixed();
-
       if (st > lastScrollTop){
         // downscroll code
         articleBlock.scroll("down");
@@ -391,6 +395,57 @@ $(function(){
       lastScrollTop = st;
     }else if(windowTotalHeight.getPercent(st) >= 94.42){
       articleBlock.bottom();
+    }
+
+    //active cac khop
+
+    if (windowTotalHeight.getPercent(st) < 5.3) {
+      //active khop1
+      $('.khop ul li div').removeClass('active');
+      $('.khop ul li div.khop1').addClass('active');
+    }else if (windowTotalHeight.getPercent(st) > 5.3 && windowTotalHeight.getPercent(st) < 10.8) {
+      //active khop2
+      $('.khop ul li div').removeClass('active');
+      $('.khop ul li div.khop2').addClass('active');
+    }else if (windowTotalHeight.getPercent(st) > 10.8 && windowTotalHeight.getPercent(st) < 17.2) {
+      //active khop3
+      $('.khop ul li div').removeClass('active');
+      $('.khop ul li div.khop3').addClass('active');
+    }else if (windowTotalHeight.getPercent(st) > 17.2 && windowTotalHeight.getPercent(st) < 22.1) {
+      //active khop4
+      $('.khop ul li div').removeClass('active');
+      $('.khop ul li div.khop4').addClass('active');
+    }else if (windowTotalHeight.getPercent(st) > 22.1 && windowTotalHeight.getPercent(st) < 27.6) {
+      //active khop5
+      $('.khop ul li div').removeClass('active');
+      $('.khop ul li div.khop5').addClass('active');
+    }else if (windowTotalHeight.getPercent(st) > 27.6 && windowTotalHeight.getPercent(st) < 33) {
+      //active khop6
+      $('.khop ul li div').removeClass('active');
+      $('.khop ul li div.khop6').addClass('active');
+    }else if (windowTotalHeight.getPercent(st) > 33 && windowTotalHeight.getPercent(st) < 44.5) {
+      //active khop7
+      $('.khop ul li div').removeClass('active');
+      $('.khop ul li div.khop7').addClass('active');
+    }else if (windowTotalHeight.getPercent(st) > 44.5 && windowTotalHeight.getPercent(st) < 50) {
+      //active khop8
+      $('.khop ul li div').removeClass('active');
+      $('.khop ul li div.khop8').addClass('active');
+    }else if (windowTotalHeight.getPercent(st) > 50 && windowTotalHeight.getPercent(st) < 55.4) {
+      //active khop9
+      $('.khop ul li div').removeClass('active');
+      $('.khop ul li div.khop9').addClass('active');
+    }else if (windowTotalHeight.getPercent(st) > 55.4 && windowTotalHeight.getPercent(st) < 66.6) {
+      //active khop10
+      $('.khop ul li div').removeClass('active');
+      $('.khop ul li div.khop10').addClass('active');
+    }else if (windowTotalHeight.getPercent(st) > 55.4 && windowTotalHeight.getPercent(st) < 99.5) {
+      //active khop11
+      $('.khop ul li div').removeClass('active');
+      $('.khop ul li div.khop11').addClass('active');
+    }else{
+      $('.khop ul li div').removeClass('active');
+      $('.khop ul li div.khop12').addClass('active');
     }
   }).scroll();
 });

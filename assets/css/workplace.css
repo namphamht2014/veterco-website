@@ -351,6 +351,7 @@
 .workplaceContainer.child4 .content{
   width: 1110px;
   left: calc(50% - 555px);
+  top: calc(50% - 335px);
 }
 .workplaceContainer.child4 a:hover{
   text-decoration: none;
@@ -527,6 +528,8 @@
 /* / mySlider*/
 @media screen and (min-width: 1000px) and (max-width: 1366px) {
   /*workplace 1*/
+  .workplaceContainer.child5 .content,
+  .workplaceContainer.child4 .content,
   .workplaceContainer.child2 .content,
   .workplaceHome .content {
     width: 850px;
@@ -685,5 +688,51 @@
   }
   .workplaceContainer.child3 .row2 .col2 .texts.text5{
     margin-top: 365px;
+  }
+  /*workplace4*/
+  .workplaceContainer.child4 .row2 .block1 {
+    width: 473px;
+    height: 160px;
+    margin-right: 40px;
+  }
+  .workplaceContainer.child4 .row2 .block1 img,
+  .workplaceContainer.child4 .row2 .block2 img{
+    height: 160px;
+  }
+  .workplaceContainer.child4 .row3 .block1 img,
+  .workplaceContainer.child4 .row3 .block2 img{
+    height: 295px;
+  }
+  .workplaceContainer.child4 .row3 .block2 span {
+    font-size: 13px;
+    width: 403px;
+    top: 20px;
+    right: 35px;
+    line-height: 17px;
+  }
+  /*workplace5*/
+  .workplaceContainer.child5 .row2 .mySlider,
+  .workplaceContainer.child5 .row2 .mySlider .items{
+    height: 170px;
+    width: 322px;
+  }
+  .workplaceContainer.child5 .row2 .block img.block{
+    height: 170px;
+  }
+  .workplaceContainer.child5 .row2 .block span {
+    width: 181px;
+    top: 5px;
+    font-size: 20px;
+    height: 170px;
+  }
+  .workplaceContainer.child5 .row3 .block2 img{
+    height: 265px;
+  }
+  .workplaceContainer.child5 .row3 .block1 img{
+    height: 323px;
+  }
+  .workplaceContainer.child5 .row3 .block1 span {
+    font-size: 17px;
+    width: 520px;
   }
 }

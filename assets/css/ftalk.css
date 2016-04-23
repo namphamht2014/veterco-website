@@ -253,6 +253,7 @@ Lines
   top: 15%;
 }
 .block-right .line3{
+  display: none;
   background: white;
   height: 4px;
   width: 20%;
@@ -366,4 +367,145 @@ Lines
  }
 .talkContainer.biggest .talk-form .btn-submit{
   margin-top: -3.5%;
+}
+
+@media screen and (max-width: 1024px) {
+  .talkContainer.small .block-left-desc,
+  .talkContainer.small .talk-form input,
+  .talkContainer.small .talk-form .bottom-block .txt,
+  .talkContainer.small .talk-form .bottom-block .country .my-label,
+  .talkContainer.small .talk-form .bottom-block .viber .my-label,
+  .talkContainer.small .talk-form .btn-submit,
+  .talkContainer.small .block-right .black-block .content .desc {
+    font-size: 11px;
+  }
+  .block-left-desc {
+    top: 17.5%;
+  }
+  .talk-form {
+    top: 27%;
+  }
+  .talk-form .line {
+    margin-bottom: 8px;
+  }
+  .talk-form .btn-submit {
+    margin-top: -7.4%;
+  }
+  .block-right .map {
+    width: 15%;
+    height: 21.8%;
+    top: 19.3%;
+    left: 56.4%;
+  }
+  .block-right .black-block,
+  .block-right .pink-block {
+    width: 29%;
+  }
+  .pink-text {
+    left: 70.5%;
+  }
+  .block-red2 {
+    width: 10.5%;
+    top: 41.5%;
+    left: 53.3%;
+  }
+  .block-right .line2 {
+    top: 35%;
+  }
+  .talkContainer.small .block-right .line1 {
+    left: 7.7% !important;
+    width: 107% !important;
+  }
+  .block-red1 {
+    top: 57.2%;
+    left: 88.5%;
+  }
+}
+@media screen and (min-width: 1050px) and (max-width: 1366px) {
+  .talkContainer.small .block-left-desc,
+  .talkContainer.small .talk-form input,
+  .talkContainer.small .talk-form .bottom-block .txt,
+  .talkContainer.small .talk-form .bottom-block .country .my-label,
+  .talkContainer.small .talk-form .bottom-block .viber .my-label,
+  .talkContainer.small .talk-form .btn-submit,
+  .talkContainer.small .block-right .black-block .content .desc {
+    font-size: 12px;
+  }
+  .talk-form .line {
+    margin-bottom: 8px;
+  }
+  .talk-form .btn-submit {
+      margin-top: -5%;
+  }
+  .block-left-desc {
+    top: 18.5%;
+  }
+  .talk-form {
+    top: 27%;
+  }
+  .talk-form .bottom-block {
+    padding: 10px 20px 25px;
+  }
+  .talk-form .bottom-block .txt {
+    margin-bottom: 10px;
+  }
+  .block-right .black-block,
+  .block-right .pink-block {
+    width: 22%;
+  }
+  .block-right .map {
+    width: 14.3%;
+    height: 28.8%;
+    top: 16%;
+    left: 53.5%;
+  }
+  .block-right .line2 {
+    left: 60%;
+  }
+  .block-red1 {
+    width: 5.5%;
+    top: 57%;
+    left: 81%;
+  }
+}
+@media screen and (min-width: 1900px) {
+  .block-left-desc,
+  .talk-form input,
+  .talk-form .bottom-block .txt,
+  .talk-form .bottom-block .country .my-label,
+  .talk-form .bottom-block .viber .my-label,
+  .talk-form .btn-submit,
+  .block-right .black-block .content .desc {
+    font-size: 18px !important;
+  }
+}
+@media screen and (min-width: 1950px) {
+  .block-right .black-block,
+  .block-right .pink-block {
+    width: 27.5%;
+    height: 44.1%;
+  }
+  .block-right .map {
+    width: 16.1%;
+    height: 25.8%;
+    top: 17.5%;
+    left: 54.1%;
+  }
+  .pink-text {
+    left: 68.5%;
+  }
+  .block-red2 {
+    width: 9%;
+    top: 43%;
+    left: 54%;
+  }
+  .block-right .line1 {
+    left: 3.5%;
+    width: 110%;
+  }
+  .block-right .line2 {
+    left: 63%;
+    top: 15%;
+    width: 120%;
+  }
 }

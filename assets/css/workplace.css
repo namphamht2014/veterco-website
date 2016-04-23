@@ -525,11 +525,11 @@
   top: 100%;
 }
 /* / mySlider*/
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1000px) and (max-width: 1366px) {
+  .workplaceContainer.child2 .content,
   .workplaceHome .content {
     width: 850px;
     height: 555px;
-    position: absolute;
     top: calc(50% - 270px);
     left: calc(50% - 425px);
   }
@@ -564,5 +564,86 @@
     right: 315px;
     top: 40px;
     font-size: 24px;
+  }
+
+  .workplaceContainer.child2 .row2 .mySlider,
+  .workplaceContainer.child2 .row2 .mySlider img.items{
+    height: 164px !important;
+    width: 310px !important;
+  }
+  .workplaceContainer.child2 .row2 .block{
+    height: 164px;
+  }
+  .workplaceContainer.child2 .row2 .block2{
+    height: 185px;
+    right: 20px;
+  }
+  .workplaceContainer.child2 .row2 span {
+    font-size: 16px;
+    width: 327px;
+  }
+  .workplaceContainer.child2 .row3 {
+    height: 170px;
+  }
+  .workplaceContainer.child2 .row3 img.block,
+  .workplaceContainer.child2 .row3 .block-float {
+    width: 163px;
+    height: 154px;
+  }
+  .workplaceContainer.child2 .row3 .block-float span {
+    top: 0px;
+    font-size: 22px;
+  }
+  .workplaceContainer.child2 .row3 .block img.block{
+    height: 137px;
+  }
+  .workplaceContainer.child2 .row3 .mySlider,
+  .workplaceContainer.child2 .row3 .mySlider img.items{
+    height: 137px !important;
+    width: 298px !important;
+  }
+  .workplaceContainer.child2 .row4 {
+    height: 184px;
+    padding-top: 34px;
+  }
+  .workplaceContainer.child2 .row4 .mySlider-float,
+  .workplaceContainer.child2 .row4 .mySlider-float img.items{
+    height: 184px !important;
+    width: 360px !important;
+  }
+  .workplaceContainer.child2 .row4 .mySlider.alone,
+  .workplaceContainer.child2 .row4 .mySlider.alone img.items{
+    height: 151px !important;
+    width: 259px !important;
+  }
+  .workplaceContainer.child2 .row4 .mySlider{
+    margin-right: 38px;
+  }
+  .workplaceContainer.child2 .row4 .block img.block{
+    height: 151px;
+  }
+  .workplaceContainer.child2 .row2 .block span,
+  .workplaceContainer.child2 .row3 .block span,
+  .workplaceContainer.child2 .row3 .block-float span,
+  .workplaceContainer.child2 .row4 .block span{
+    font-size: 24px;
+    width: 174px;
+  }
+  .workplaceContainer.child2 .row2 .block span{
+    top: 15px;
+  }
+  .workplaceContainer.child2 .row3 .block-float span{
+    width: 163px;
+    height: 154px;
+    font-size: 18px;
+  }
+  .workplaceContainer.child2 .row3 .block span{
+    top: 51px;
+    width: 163px !important;
+  }
+  .workplaceContainer.child2 .row4 .block span {
+    right: 297px;
+    top: 66px;
+    width: 161px !important;
   }
 }

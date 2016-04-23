@@ -1,5 +1,5 @@
 <?php $this->load->view('frontend/home-header'); ?>
-<div class="workplaceContainer">
+<div class="workplaceContainer workplaceHome">
   <div class="loadingPage">
     <img src="/assets/images/waiting.gif" alt="" />
     <div class="text">

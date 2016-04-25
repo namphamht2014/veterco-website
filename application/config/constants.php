@@ -91,3 +91,4 @@ define('EXIT__AUTO_MAX', 125); // highest automatically-assigned error code
 define('isAdmin', 0);
 define('isUser1', 1);
 define('isUser2', 2);
+define('isCustomer', 3);

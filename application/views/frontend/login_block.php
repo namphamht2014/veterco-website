@@ -41,11 +41,11 @@
           <div class="fields">
             <div class="username">
               <label for="username">Account</label>
-              <input type="text" name="username" value="">
+              <input type="text" id="username" name="username" value="">
             </div>
             <div class="password">
               <label for="password">Password</label>
-              <input type="password" name="password" value="">
+              <input type="password" id="password" name="password" value="">
             </div>
           </div>
         </form>

@@ -117,4 +117,11 @@ class Backend extends CI_Controller{
       redirect('Welcome', 'refresh');
     }
   }
+  function customerLogout()
+  {
+    if ($this->session->userdata('loggedIn')) {
+      $this->session->unset_userdata('loggedIn');
+      redirect('fhome', 'refresh');
+    }
+  }
 }

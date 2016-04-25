@@ -127,20 +127,44 @@ var main = {
   }
 };
 
-var loginForm = {
-  show: function () {
-    $('.loginContainer').show();
-  }
-};
 var loginBlock = $('.loginContainer');
 loginBlock.click(function () {
   loginBlock.removeClass('active').hide();
 });
+var procressLogin = true;
+var loginForm = {
+  show: function () {
+    $('.loginContainer').show();
+    $('.loginContainer #username').focus();
+  },
+  login: function () {
+    var jsonData = {
+      username: $('.loginContainer #username').val(),
+      password: $('.loginContainer #password').val()
+    };
+    $.post( "/index.php/welcome/customerLogin", jsonData, function( data ) {
+      data = JSON.parse(data);
+      console.log(data);
+      if (data.result == 'OK') {
+        loginBlock.removeClass('active').hide();
+        $('nav #login a').removeAttr('onclick');
+        $('nav #login a').attr('href', '/index.php/backend/customerLogout');
+        $('nav #login b').text('Logout');
+      }else if(data.result == 'Failed'){
+        alert(data.message);
+        $('.loginContainer #username').focus();
+      }
+    });
+  }
+};
 
 loginBlock.find('.btnSubmit').click(function (event) {
   event.stopPropagation();
   if (loginBlock.hasClass('active')) {
-    alert('do submit');
+    if (procressLogin) {
+      procressLogin = false;
+      loginForm.login();
+    }
   }else {
     loginBlock.addClass('active');
   }

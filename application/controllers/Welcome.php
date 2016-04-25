@@ -64,6 +64,27 @@ class Welcome extends CI_Controller {
 		}
 	}
 
+  public function customerLogin()
+  {
+    $result = array(
+      'result' => 'OK'
+    );
+		$value = array(
+			'username' => $this->input->post('username'),
+			'password' => $this->input->post('password')
+		);
+		$pw = $this->Users_model->getUserByUsername($value['username'], md5($value['password']));
+    $result['data'] = $value;
+		if ($pw) {
+			$this->session->userdata['loggedIn'] = $pw[0];
+		} else {
+      $result['result'] = 'Failed';
+      $result['message'] = 'Wrong username or password.';
+		}
+
+    die(json_encode($result));
+  }
+
   function checkLogin()
   {
     return ($this->session->userdata('loggedIn')) ? redirect('Backend', 'refresh') : FALSE ;

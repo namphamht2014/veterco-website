@@ -75,12 +75,21 @@
         </a>
       </li>
       <li class="m-t-32" id="login">
+		    <?php if ($this->session->userdata('loggedIn')): ?>
+        <a onmouseover="header.hover(this);" onmouseout="header.unhover(this);" href="<?= site_url('backend/customerLogout')?>">
+          <div>
+						<div class="red-arrow"></div>
+	          <b>Logout</b>
+          </div>
+        </a>
+				<?php else: ?>
         <a onmouseover="header.hover(this);" onmouseout="header.unhover(this);" onclick="loginForm.show()">
           <div>
 						<div class="red-arrow"></div>
 	          <b>Login</b>
           </div>
         </a>
+				<?php endif; ?>
       </li>
 		</ul>
 	</nav>

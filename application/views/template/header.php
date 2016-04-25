@@ -26,6 +26,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
   </head>
   <body>
     <?php if ($this->session->userdata('loggedIn')): ?>
+    <?php if($this->session->userdata['loggedIn']->vaitro < 2): ?>
     <nav class="navbar navbar-inverse navbar-fixed-top">
       <div class="container">
         <div class="navbar-header">
@@ -50,5 +51,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         </div><!--/.nav-collapse -->
       </div>
     </nav>
+    <?php endif; ?>
     <?php endif; ?>
     <?php $this->load->view('frontend/login_block');?>

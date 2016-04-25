@@ -373,3 +373,33 @@ body{
   margin-top: 10px;
 }
 /* / Login Container*/
+@media screen and (max-width: 1200px) {
+  .loginContainer .content {
+    height: 100%;
+    width: 1000px;
+  }
+  .loginContainer .block1-outside-bg2 {
+    left: 59%;
+    top: 48%;
+  }
+  .loginContainer .block1-outside-bg {
+    top: 61%;
+    left: 49.5%;
+  }
+  .loginContainer .block-arrow {
+    top: 55%;
+    left: 35.5%;
+  }
+  .loginContainer .block1 {
+    left: 50.5%;
+    top: 43.5%;
+  }
+  .loginContainer .block2-bg {
+    left: 26.5%;
+    top: 44%;
+  }
+  .loginContainer.active .block1-outside-bg2 {
+    left: 80.5%;
+    top: 50.4%;
+  }
+}

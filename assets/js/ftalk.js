@@ -20,17 +20,17 @@ jQuery(window).load(function () {
     else tm++;
   }, 500);
 
-  var winWidth = $(window).width();
-
-  var mainBlocks = $('.talkContainer');
-  mainBlocks.removeClass('small big biggest');
-  if(winWidth >= 2738){
-    mainBlocks.addClass('biggest');
-  }else if (winWidth >= 2282 && winWidth < 2738) {
-    mainBlocks.addClass('big');
-  }else if (winWidth >= 1902 && winWidth < 2282) {}else {
-    mainBlocks.addClass('small');
-  }
+  // var winWidth = $(window).width();
+  //
+  // var mainBlocks = $('.talkContainer');
+  // mainBlocks.removeClass('small big biggest');
+  // if(winWidth >= 2738){
+  //   mainBlocks.addClass('biggest');
+  // }else if (winWidth >= 2282 && winWidth < 2738) {
+  //   mainBlocks.addClass('big');
+  // }else if (winWidth >= 1902 && winWidth < 2282) {}else {
+  //   mainBlocks.addClass('small');
+  // }
 });
 var myField = {
   tmpVal: '',

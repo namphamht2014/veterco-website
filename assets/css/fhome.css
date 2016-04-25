@@ -1422,7 +1422,7 @@ footer.footer2 .textRight{
 footer.footer2 .textLeft{
   position: absolute;
   left: 50%;
-  margin-left: -567px;
+  margin-left: -500px;
 }
 footer.footer2 .textLeft ul{
   height: 42px;
@@ -1477,7 +1477,7 @@ footer.footer2 .textCenter{
 }
 footer.footer2 .textRight{
   left: 50%;
-  margin-left: 310px;
+  margin-left: 340px;
   margin-top: 13px;
 }
 footer .copyright{

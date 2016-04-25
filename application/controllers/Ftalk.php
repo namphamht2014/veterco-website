@@ -22,11 +22,11 @@ class Ftalk extends CI_Controller {
       if ($this->agent->is_browser('Safari')) {
         // $data['headers'][] = base_url().'assets/css/fwelcome_safari.css';
       } else if ($this->agent->is_browser('Chrome')) {
-        $data['headers'][] = base_url().'assets/css/ftalk_chrome.css';
+        // $data['headers'][] = base_url().'assets/css/ftalk_chrome.css';
       } else if ($this->agent->is_browser('Opera')) {
-        $data['headers'][] = base_url().'assets/css/ftalk_opera.css';
+        // $data['headers'][] = base_url().'assets/css/ftalk_opera.css';
       } else if ($this->agent->is_browser('Firefox')) {
-        $data['headers'][] = base_url().'assets/css/ftalk_firefox.css';
+        // $data['headers'][] = base_url().'assets/css/ftalk_firefox.css';
       }
 
       //add js to page

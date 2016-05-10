@@ -23,11 +23,11 @@ class Fwho extends CI_Controller {
     if ($this->agent->is_browser('Safari')) {
       // $data['headers'][] = base_url().'assets/css/fwelcome_safari.css';
     } else if ($this->agent->is_browser('Chrome')) {
-      $data['headers'][] = base_url().'assets/css/who_chrome.css';
+      // $data['headers'][] = base_url().'assets/css/who_chrome.css';
     } else if ($this->agent->is_browser('Opera')) {
-      $data['headers'][] = base_url().'assets/css/who_opera.css';
+      // $data['headers'][] = base_url().'assets/css/who_opera.css';
     } else if ($this->agent->is_browser('Firefox')) {
-      $data['headers'][] = base_url().'assets/css/who_firefox.css';
+      // $data['headers'][] = base_url().'assets/css/who_firefox.css';
     }
 
     //add js to page
@@ -36,10 +36,9 @@ class Fwho extends CI_Controller {
     );
 
     //add js script to page
-    // $data['script'] = '$(function(){
-    //   header.active("sourcing");
-    //   $("header").removeClass("header").addClass("headerFixed");
-    // });';
+    $data['script'] = '$(function(){
+      $("footer").remove();
+    });';
 
     //add data to page
     $data['data'] = array('test', 'test');

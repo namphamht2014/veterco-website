@@ -27,15 +27,15 @@ var myPopup = {
 jQuery(window).load(function () {
   var winWidth = $(window).width();
 
-  var mainBlocks = $('.whoContainer');
-  mainBlocks.removeClass('small big biggest');
-  if(winWidth >= 2738){
-    mainBlocks.addClass('biggest');
-  }else if (winWidth >= 2282 && winWidth < 2738) {
-    mainBlocks.addClass('big');
-  }else if (winWidth >= 1902 && winWidth < 2282) {}else {
-    mainBlocks.addClass('small');
-  }
+  // var mainBlocks = $('.whoContainer');
+  // mainBlocks.removeClass('small big biggest');
+  // if(winWidth >= 2738){
+  //   mainBlocks.addClass('biggest');
+  // }else if (winWidth >= 2282 && winWidth < 2738) {
+  //   mainBlocks.addClass('big');
+  // }else if (winWidth >= 1902 && winWidth < 2282) {}else {
+  //   mainBlocks.addClass('small');
+  // }
 
   $('header ul li').removeClass('active');
   $('header ul li#who').addClass('active');

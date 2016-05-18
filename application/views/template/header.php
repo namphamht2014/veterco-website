@@ -26,7 +26,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
   </head>
   <body>
     <?php if ($this->session->userdata('loggedIn')): ?>
-    <?php if($this->session->userdata['loggedIn']->vaitro < 2): ?>
+    <?php if($this->session->userdata['loggedIn']->vaitro <= 2): ?>
     <nav class="navbar navbar-inverse navbar-fixed-top">
       <div class="container">
         <div class="navbar-header">
@@ -36,11 +36,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="<?= base_url()?>"><?= $this->lang->line('sitename')?></a>
+          <a class="navbar-brand" href="<?= base_url('index.php/backend')?>"><?= $this->lang->line('sitename')?></a>
         </div>
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="<?= base_url()?>"><?= $this->lang->line('menu_home')?></a></li>
+            <li class="active"><a href="<?= base_url('index.php/backend')?>"><?= $this->lang->line('menu_home')?></a></li>
             <?php if ($this->session->userdata['loggedIn']->vaitro == 0): ?>
             <li id="customers"><a href="<?= site_url('Customers')?>"><?= $this->lang->line('menu_customer')?></a></li>
             <li id="users"><a href="<?= site_url('Users')?>"><?= $this->lang->line('menu_user')?></a></li>

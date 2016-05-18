@@ -1514,7 +1514,7 @@ footer .copyright2{
 @media screen and (max-width: 1024px) {
   .headerFixed > nav,
   .header > nav {
-    width: 1024px;
+    width: 1000px;
   }
   .headerFixed > nav > ul > li.small,
   .header > nav > ul > li.small {

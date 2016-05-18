@@ -15,6 +15,7 @@
         <img src="/assets/images/showcase-banner2.jpg" alt="" />
         <img src="/assets/images/showcase-banner1.jpg" alt="" />
       </div>
+      <div class="myClearfix"></div>
     </div>
     <div class="blocks">
       <div class="block-left">
@@ -38,14 +39,17 @@
           <div class="items">
             <a href=""><div class="odd active">new arrival</div></a>
             <a href="#"><div class="even">best featured</div></a>
+            <div class="myClearfix"></div>
           </div>
           <div class="items">
             <div class="even">name</div>
             <div class="odd">price hight to low</div>
+            <div class="myClearfix"></div>
           </div>
           <div class="items">
             <div class="odd"></div>
             <div class="even">price low to hight</div>
+            <div class="myClearfix"></div>
           </div>
         </section>
         <section class="filterBy">
@@ -56,23 +60,68 @@
             <ul>
                <li class='active has-sub open'><a href='#'><span>animal type</span></a>
                   <ul style="display: block;">
-                     <li><a href='#' class="odd"><div>pig</div></a></li
-                     ><li><a href='#' class="even"><div>aquatics</div></a></li
-                     ><li><a href='#' class="even"><div>poultry</div></a></li
-                     ><li><a href='#' class="odd"><div>pets</div></a></li
-                     ><li><a href='#' class="odd"><div>chicken</div></a></li
-                     ><li><a href='#' class="even"><div>catle</div></a></li>
+                     <li><a href='#' class="odd"><div>pig</div></a></li>
+                     <li><a href='#' class="even"><div>poultry</div></a></li>
+                     <li><a href='#' class="even"><div>camel</div></a></li>
+                     <li><a href='#' class="odd"><div>horse</div></a></li>
+                     <li><a href='#' class="odd"><div>cattle</div></a></li>
+                     <li><a href='#' class="even"><div>fish</div></a></li>
+                     <li><a href='#' class="even"><div>pet</div></a></li>
+                     <li><a href='#' class="odd"><div>shrimp</div></a></li>
                    </ul>
                </li>
                <li class='active has-sub'><a href='#'><span>pathology | deseases</span></a>
                   <ul>
-                     <li><a href='#' class="odd"><span>Product 1</span></a></li
-                     ><li><a href='#' class="even"><span>Product 2</span></a></li>
+                     <li><a href='#' class="odd"><div>pig</div></a></li>
+                     <li><a href='#' class="even"><div>poultry</div></a></li>
+                     <li><a href='#' class="even"><div>camel</div></a></li>
+                     <li><a href='#' class="odd"><div>horse</div></a></li>
+                     <li><a href='#' class="odd"><div>cattle</div></a></li>
+                     <li><a href='#' class="even"><div>fish</div></a></li>
+                     <li><a href='#' class="even"><div>pet</div></a></li>
+                     <li><a href='#' class="odd"><div>shrimp</div></a></li>
                   </ul>
                </li>
-               <li><a href='#'><span>Category</span></a></li>
-               <li><a href='#'><span>product series</span></a></li>
-               <li class='last'><a href='#'><span>product form</span></a></li>
+               <li class='active has-sub'><a href='#'><span>Category</span></a>
+                  <ul>
+                     <div class="sub-title">aquatic</div>
+                     <li><a href='#' class="odd"><div>Antiparasitics</div></a></li>
+                     <li><a href='#' class="even"><div>environmental treatment</div></a></li>
+                     <li><a href='#' class="even"><div>enzyme-probiotic</div></a></li>
+                     <li><a href='#' class="odd"><div>multi-entibiotic</div></a></li>
+                     <li><a href='#' class="odd"><div>nutriton & supplement</div></a></li>
+                     <li><a href='#' class="even"><div>single-antibiotic</div></a></li>
+                  </ul>
+                  <ul>
+                     <div class="sub-title">animal</div>
+                     <li><a href='#' class="odd"><div>antibiotic-herbal</div></a></li>
+                     <li><a href='#' class="even"><div>antibiotic & vitamin</div></a></li>
+                     <li><a href='#' class="even"><div>antiparasitics</div></a></li>
+                     <li><a href='#' class="odd"><div>enzyme-probiotic</div></a></li>
+                     <li><a href='#' class="odd"><div>multi-antibiotic</div></a></li>
+                     <li><a href='#' class="even"><div>mycotoxin</div></a></li>
+                     <li><a href='#' class="even"><div>nutriton & supplement</div></a></li>
+                     <li><a href='#' class="odd"><div>single-entibiotic</div></a></li>
+                  </ul>
+               </li>
+               <li class='active has-sub'><a href='#'><span>product series</span></a>
+                  <ul>
+                     <li><a href='#' class="odd"><div>dr. t</div></a></li>
+                     <li><a href='#' class="even"><div>pro-react</div></a></li>
+                     <li><a href='#' class="even"><div>wsp antimax</div></a></li>
+                     <li><a href='#' class="odd"><div>wsp pro-react</div></a></li>
+                     <li><a href='#' class="odd"><div>wsp pro-support</div></a></li>
+                     <li><a href='#' class="odd"><div>wsp pro-bio</div></a></li>
+                  </ul>
+               </li>
+               <li class='active has-sub last'><a href='#'><span>product form</span></a>
+                  <ul>
+                     <li><a href='#' class="odd"><div>powder</div></a></li>
+                     <li><a href='#' class="even"><div>ointment</div></a></li>
+                     <li><a href='#' class="even"><div>liquid solution</div></a></li>
+                     <li><a href='#' class="odd"><div>lick block</div></a></li>
+                  </ul>
+               </li>
             </ul>
           </div>
         </section>
@@ -103,46 +152,46 @@
         <div class="redLine"></div>
         <div class="product-list">
           <!-- line 1 -->
-          <div class="product">
-            <a href="<?= site_url('fsourcing/product_details/4')?>">
+          <a href="<?= site_url('fsourcing/product_details/4')?>">
+            <div class="product">
               <img src="/assets/images/sourcing-new-product4.png" alt="" />
               <div class="product-name">ade bc complex</div>
               <div class="product-form-details">
                 <span class="big">antiparasitics</span><br>
                 <span class="small">Powder</span>
               </div>
-            </a>
-          </div>
-          <div class="product">
-            <a href="<?= site_url('fsourcing/product_details/3')?>">
+            </div>
+          </a>
+          <a href="<?= site_url('fsourcing/product_details/3')?>">
+            <div class="product">
               <img src="/assets/images/sourcing-new-product3.png" alt="" />
               <div class="product-name">ampi cotrim oral</div>
               <div class="product-form-details">
                 <span class="big">antiparasitics</span><br>
                 <span class="small">Powder</span>
               </div>
-            </a>
-          </div>
-          <div class="product">
-            <a href="<?= site_url('fsourcing/product_details/1')?>">
+            </div>
+          </a>
+          <a href="<?= site_url('fsourcing/product_details/1')?>">
+            <div class="product">
               <img src="/assets/images/sourcing-new-product1.png" alt="" />
               <div class="product-name">Flumequil</div>
               <div class="product-form-details">
                 <span class="big">antiparasitics</span><br>
                 <span class="small">Powder</span>
               </div>
-            </a>
-          </div>
-          <div class="product">
-            <a href="<?= site_url('fsourcing/product_details/2')?>">
+            </div>
+          </a>
+          <a href="<?= site_url('fsourcing/product_details/2')?>">
+            <div class="product">
               <img src="/assets/images/sourcing-new-product2.png" alt="" />
               <div class="product-name">enzymsubtyl</div>
               <div class="product-form-details">
                 <span class="big">antiparasitics</span><br>
                 <span class="small">Powder</span>
               </div>
-            </a>
-          </div>
+            </div>
+          </a>
           <!-- line 2 -->
           <div class="product">
             <a href="<?= site_url('fsourcing/product_details/5')?>">
@@ -225,10 +274,134 @@
               </div>
             </a>
           </div>
+          <!-- line 4 -->
+          <div class="product">
+            <a href="">
+              <img src="/assets/images/sourcing-new-product4.png" alt="" />
+              <div class="product-name">ade bc complex</div>
+              <div class="product-form-details">
+                <span class="big">antiparasitics</span><br>
+                <span class="small">Powder</span>
+              </div>
+            </a>
+          </div>
+          <div class="product">
+            <a href="">
+              <img src="/assets/images/sourcing-new-product3.png" alt="" />
+              <div class="product-name">ampi cotrim oral</div>
+              <div class="product-form-details">
+                <span class="big">antiparasitics</span><br>
+                <span class="small">Powder</span>
+              </div>
+            </a>
+          </div>
+          <div class="product">
+            <a href="">
+              <img src="/assets/images/sourcing-new-product1.png" alt="" />
+              <div class="product-name">Flumequil</div>
+              <div class="product-form-details">
+                <span class="big">antiparasitics</span><br>
+                <span class="small">Powder</span>
+              </div>
+            </a>
+          </div>
+          <div class="product">
+            <a href="">
+              <img src="/assets/images/sourcing-new-product2.png" alt="" />
+              <div class="product-name">enzymsubtyl</div>
+              <div class="product-form-details">
+                <span class="big">antiparasitics</span><br>
+                <span class="small">Powder</span>
+              </div>
+            </a>
+          </div>
+          <!-- line 5 -->
+          <div class="product">
+            <a href="">
+              <img src="/assets/images/sourcing-new-product4.png" alt="" />
+              <div class="product-name">ade bc complex</div>
+              <div class="product-form-details">
+                <span class="big">antiparasitics</span><br>
+                <span class="small">Powder</span>
+              </div>
+            </a>
+          </div>
+          <div class="product">
+            <a href="">
+              <img src="/assets/images/sourcing-new-product3.png" alt="" />
+              <div class="product-name">ampi cotrim oral</div>
+              <div class="product-form-details">
+                <span class="big">antiparasitics</span><br>
+                <span class="small">Powder</span>
+              </div>
+            </a>
+          </div>
+          <div class="product">
+            <a href="">
+              <img src="/assets/images/sourcing-new-product1.png" alt="" />
+              <div class="product-name">Flumequil</div>
+              <div class="product-form-details">
+                <span class="big">antiparasitics</span><br>
+                <span class="small">Powder</span>
+              </div>
+            </a>
+          </div>
+          <div class="product">
+            <a href="">
+              <img src="/assets/images/sourcing-new-product2.png" alt="" />
+              <div class="product-name">enzymsubtyl</div>
+              <div class="product-form-details">
+                <span class="big">antiparasitics</span><br>
+                <span class="small">Powder</span>
+              </div>
+            </a>
+          </div>
+          <!-- line 6 -->
+          <div class="product">
+            <a href="">
+              <img src="/assets/images/sourcing-new-product4.png" alt="" />
+              <div class="product-name">ade bc complex</div>
+              <div class="product-form-details">
+                <span class="big">antiparasitics</span><br>
+                <span class="small">Powder</span>
+              </div>
+            </a>
+          </div>
+          <div class="product">
+            <a href="">
+              <img src="/assets/images/sourcing-new-product3.png" alt="" />
+              <div class="product-name">ampi cotrim oral</div>
+              <div class="product-form-details">
+                <span class="big">antiparasitics</span><br>
+                <span class="small">Powder</span>
+              </div>
+            </a>
+          </div>
+          <div class="product">
+            <a href="">
+              <img src="/assets/images/sourcing-new-product1.png" alt="" />
+              <div class="product-name">Flumequil</div>
+              <div class="product-form-details">
+                <span class="big">antiparasitics</span><br>
+                <span class="small">Powder</span>
+              </div>
+            </a>
+          </div>
+          <div class="product">
+            <a href="">
+              <img src="/assets/images/sourcing-new-product2.png" alt="" />
+              <div class="product-name">enzymsubtyl</div>
+              <div class="product-form-details">
+                <span class="big">antiparasitics</span><br>
+                <span class="small">Powder</span>
+              </div>
+            </a>
+          </div>
 
-          <div class="clearfix"></div>
+          <div class="myClearfix"></div>
         </div>
       </div>
+      <div class="myClearfix"></div>
     </div>
   </div>
 

@@ -58,15 +58,15 @@ class Fsourcing extends CI_Controller {
       base_url().'assets/css/fhome.css',
       base_url().'assets/css/fsourcing.css'
     );
-    if ($this->agent->is_browser('Safari')) {
-      // $data['headers'][] = base_url().'assets/css/fwelcome_safari.css';
-    } else if ($this->agent->is_browser('Chrome')) {
-      $data['headers'][] = base_url().'assets/css/fsourcing_chrome.css';
-    } else if ($this->agent->is_browser('Opera')) {
-      $data['headers'][] = base_url().'assets/css/fsourcing_opera.css';
-    } else if ($this->agent->is_browser('Firefox')) {
-      $data['headers'][] = base_url().'assets/css/fsourcing_firefox.css';
-    }
+    // if ($this->agent->is_browser('Safari')) {
+    //   // $data['headers'][] = base_url().'assets/css/fwelcome_safari.css';
+    // } else if ($this->agent->is_browser('Chrome')) {
+    //   $data['headers'][] = base_url().'assets/css/fsourcing_chrome.css';
+    // } else if ($this->agent->is_browser('Opera')) {
+    //   $data['headers'][] = base_url().'assets/css/fsourcing_opera.css';
+    // } else if ($this->agent->is_browser('Firefox')) {
+    //   $data['headers'][] = base_url().'assets/css/fsourcing_firefox.css';
+    // }
 
     //add js to page
     $data['footers'] = array(

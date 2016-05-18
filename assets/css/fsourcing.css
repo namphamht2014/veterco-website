@@ -107,8 +107,8 @@ body, html {
 .sourcingContainer .block4,
 .sourcingContainer .block5,
 .sourcingContainer .block6{
-  width: 218px;
-  height: 218px;
+  width: 185px;
+  height: 185px;
 }
 .sourcingContainer .block1-bg,
 .sourcingContainer .block2-bg,
@@ -116,18 +116,18 @@ body, html {
 .sourcingContainer .block4-bg,
 .sourcingContainer .block5-bg,
 .sourcingContainer .block6-bg{
-  width: 210px;
-  height: 210px;
+  width: 179px;
+  height: 179px;
 }
 .sourcingContainer .block1-bg.move,
 .sourcingContainer .block2-bg.move,
 .sourcingContainer .block3-bg.move{
-  top: 225px;
+  top: 135px;
 }
 .sourcingContainer .block4-bg.move,
 .sourcingContainer .block5-bg.move,
 .sourcingContainer .block6-bg.move{
-  margin-top: 25px;
+  margin-top: 15px;
 }
 .sourcingContainer .block1-bg,
 .sourcingContainer .block2-bg,
@@ -149,41 +149,34 @@ body, html {
 .sourcingContainer{
   height: calc(100% -  104px);
   width: 100%;
-  background: url(../images/sourcing-bg.jpg) center 0;
-  background-size: 100%;
+  background: url(../images/sourcing-bg.jpg) center center no-repeat transparent;
+  background-size: 100% 100%;
 }
 
 .sourcingContainer .content{
-  width: 1250px;
-  height: 100%;
-  left: 50%;
-  top: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -moz-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  -o-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+  width: 1000px;
+  height: 560px;
+  left: calc(50% - 500px);
+  top: calc(50% - 280px);
   position: absolute;
-  padding-top: 61px;
-  padding-bottom: 42px;
 }
 .sourcingContainer .title{
   position: absolute;
   color: #00d9a8;
   left: 145px;
-  top: 127px;
+  top: 35px;
   font-size: 31.5px;
   letter-spacing: .1px
 }
 
 .sourcingContainer .block1{
-  top: 252px;
-  left: 112px;
+  top: 150px;
+  left: 65px;
   background-position-x: -218px;
 }
 .sourcingContainer .block1-bg{
-  top: 256px;
-  left: 114px;
+  top: 155px;
+  left: 70px;
 }
 .sourcingContainer a:hover .block1{
   background-position-x: 0px;
@@ -197,12 +190,12 @@ body, html {
 
 .sourcingContainer .block2{
   background-position-x: -654px;
-  top: 252px;
-  left: 440px;
+  top: 150px;
+  left: 350px;
 }
 .sourcingContainer .block2-bg{
-  top: 256px;
-  left: 443px;
+  top: 153px;
+  left: 354px;
 }
 .sourcingContainer .block2 .block-title{
   width: 150px;
@@ -216,15 +209,13 @@ body, html {
 }
 
 .sourcingContainer .block3{
-  top: 250px;
-  left: 50%;
-  margin-left: 141px;
+  top: 150px;
+  left: 635px;
   background-position-x: -1090px;
 }
 .sourcingContainer .block3-bg{
-  top: 255px;
-  left: 50%;
-  margin-left: 142px;
+  top: 153px;
+  left: 637px;
 }
 .sourcingContainer .block3 .block-title{
   width: 200px;
@@ -237,13 +228,13 @@ body, html {
 }
 
 .sourcingContainer .block4{
-  top: 413px;
-  left: 930px;
+  top: 290px;
+  left: 775px;
   background-position-x: -1526px;
 }
 .sourcingContainer .block4-bg{
-  top: 417px;
-  left: 935px;
+  top: 293px;
+  left: 778px;
 }
 .sourcingContainer .block4 .block-title{
   width: 200px;
@@ -256,13 +247,13 @@ body, html {
 }
 
 .sourcingContainer .block5{
-  top: 413px;
-  left: 603px;
+  top: 290px;
+  left: 495px;
   background-position-x: -1962px;
 }
 .sourcingContainer .block5-bg{
-  top: 415px;
-  left: 607px;
+  top: 295px;
+  left: 499px;
 }
 .sourcingContainer .block5 .block-title{
   width: 150px;
@@ -276,13 +267,13 @@ body, html {
 
 
 .sourcingContainer .block6{
-  top: 411px;
-  left: 273px;
+  top: 290px;
+  left: 210px;
   background-position-x: -2398px;
 }
 .sourcingContainer .block6-bg{
-  top: 416px;
-  left: 279px;
+  top: 293px;
+  left: 214px;
 }
 .sourcingContainer a:hover .block6{
   background-position-x: -2180px;
@@ -297,8 +288,6 @@ body, html {
 .sourcingAbcContainer{
   background: url(../images/showcase-bg.jpg) no-repeat;
   background-size: 100% 100%;
-  width: 100%;
-  min-height: 1010px;
   position: relative;
 }
 .sourcingAbcContainer .content{
@@ -308,11 +297,9 @@ body, html {
   background: url(../images/showcase-banner.jpg) no-repeat;
   background-size: 100% 100%;
   width: 100%;
-  height: 16.5%;
 }
 .sourcingAbcContainer .banner .images{
-  height: 100%;
-  width: 84.5%;
+  width: calc(100% - 280px);
   float: right;
 }
 .sourcingAbcContainer .banner .images img{
@@ -330,53 +317,25 @@ body, html {
   font-size: 29px;
 }
 
-.sourcingAbcContainer .blocks,
-.sourcingAbcContainer .block-left,
-.sourcingAbcContainer .block-right,
-.sourcingAbcContainer{
-  height: calc(100% - 104px);
-}
 .sourcingAbcContainer .block-left,
 .sourcingAbcContainer .block-right{
   float: left;
 }
 .sourcingAbcContainer .block-left{
-  width: 15.5%;
+  width: 340px;
   background: #313131;
-  position: fixed;
+  position: absolute;
   top: 0;
-  min-height: 100%;
+  height: 100%;
+  min-height: 1000px;
 }
-/*.sourcingAbcContainer .block-left .view,
-.sourcingAbcContainer .block-left.big .view{
-  height: 5.3%;
-}
-.sourcingAbcContainer .block-left.small .view{
-  height: 4%;
-}
-.sourcingAbcContainer .block-left.biggest .view{
-  height: 5.1%;
-}*/
 .sourcingAbcContainer .block-left .title{
   padding-left: 15px;
   color: #e83643;
-  font-size: 20px;
+  font-size: 18px;
   text-transform: uppercase;
   background: #1a1a1a;
 }
-/*.sourcingAbcContainer .block-left.small .title{
-  font-size: 16px;
-}
-.sourcingAbcContainer .block-left.big .title{
-  font-size: 24px;
-}
-.sourcingAbcContainer .block-left.biggest .title{
-  font-size: 30px;
-}*/
-
-/*.sourcingAbcContainer .block-left .view .items{
-  height: 45%;
-}*/
 .sourcingAbcContainer .block-left .view .items .item1,
 .sourcingAbcContainer .block-left .view .items .item2{
   float: left;
@@ -387,16 +346,6 @@ body, html {
   color: #e83643;
   line-height: 21px;
 }
-/*.sourcingAbcContainer .block-left.big .view .items .item1,
-.sourcingAbcContainer .block-left.big .view .items .item2{
-  line-height: inherit;
-  font-size: 18px;
-}
-.sourcingAbcContainer .block-left.biggest .view .items .item1,
-.sourcingAbcContainer .block-left.biggest .view .items .item2{
-  line-height: inherit;
-  font-size: 22px;
-}*/
 .sourcingAbcContainer .block-left .view .items .active,
 .sourcingAbcContainer .block-left .sortBy .items .active,
 .sourcingAbcContainer .block-left .sortBy .items .odd:hover,
@@ -405,27 +354,6 @@ body, html {
   background: #e83643 !important;
 }
 
-.sourcingAbcContainer .block-left .sortBy{
-  height: 15%;
-}
-/*.sourcingAbcContainer .block-left.small .sortBy{
-  height: 12.5%;
-}
-.sourcingAbcContainer .block-left.big .sortBy{
-  height: 15%;
-}
-.sourcingAbcContainer .block-left.biggest .sortBy{
-  height: 15%;
-}*/
-.sourcingAbcContainer .block-left .sortBy .title{
-  height: 27.5%;
-  padding-top: 7px;
-}
-.sourcingAbcContainer .block-left .sortBy .items{
-  width: 100%;
-  float: left;
-  height: 25%;
-}
 .sourcingAbcContainer .block-left .sortBy .items .odd,
 .sourcingAbcContainer .block-left .sortBy .items .even{
   float: left;
@@ -437,21 +365,6 @@ body, html {
   padding: 1px 15px;
   font-size: 12px;
 }
-/*.sourcingAbcContainer .block-left.small .sortBy .items .odd,
-.sourcingAbcContainer .block-left.small .sortBy .items .even{
-  padding: 0px 15px;
-  font-size: 10px;
-}
-.sourcingAbcContainer .block-left.big .sortBy .items .odd,
-.sourcingAbcContainer .block-left.big .sortBy .items .even{
-  padding: 8px 15px;
-  font-size: 16px;
-}
-.sourcingAbcContainer .block-left.biggest .sortBy .items .odd,
-.sourcingAbcContainer .block-left.biggest .sortBy .items .even{
-  padding: 12px 15px;
-  font-size: 19px;
-}*/
 .sourcingAbcContainer .block-left .sortBy .items .odd,
 .sourcingAbcContainer .block-left #cssmenu ul ul li a.odd{
   background: #212121;
@@ -463,25 +376,7 @@ body, html {
   background: #313131;
 }
 
-/*
-.sourcingAbcContainer .block-left .filterBy{
-  height: 31%;
-}
-.sourcingAbcContainer .block-left.small .filterBy{
-  height: 25.1%;
-}
-.sourcingAbcContainer .block-left.big .filterBy{
-  height: 34%;
-}
-.sourcingAbcContainer .block-left.biggest .filterBy{
-  height: 33%;
-}*/
-.sourcingAbcContainer .block-left .filterBy .title{
-  height: 14.5%;
-  padding-top: 7px;
-}
 .sourcingAbcContainer .block-left .search{
-  padding-top: 66px;
   padding-bottom: 5px;
   background: black;
   position: relative;
@@ -504,17 +399,6 @@ body, html {
   bottom: 9px;
 }
 
-.sourcingAbcContainer .block-left .watch,
-.sourcingAbcContainer .block-left .recommend{
-  height: 24.7%;
-}
-
-.sourcingAbcContainer .block-left .watch .title,
-.sourcingAbcContainer .block-left .recommend .title{
-  height: 15%;
-  padding-top: 7px;
-}
-
 .sourcingAbcContainer .block-left .watch .products,
 .sourcingAbcContainer .block-left .recommend .products{
   width: 100%;
@@ -526,15 +410,14 @@ body, html {
 .sourcingAbcContainer .block-left .recommend .products a{
   text-decoration: none
 }
+.sourcingAbcContainer .myClearfix{
+  clear: both;
+}
 
 .sourcingAbcContainer .block-left .watch .products img,
 .sourcingAbcContainer .block-left .recommend .products img{
   width: 70%;
 }
-/*.sourcingAbcContainer .block-left.small .watch .products img,
-.sourcingAbcContainer .block-left.small .recommend .products img{
-  width: 70%;
-}*/
 
 .sourcingAbcContainer .block-left .watch .product-name,
 .sourcingAbcContainer .block-left .recommend .product-name{
@@ -546,23 +429,10 @@ body, html {
   padding-left: 5px;
   font-size: 16px;
 }
-/*.sourcingAbcContainer .block-left.small .watch .product-name,
-.sourcingAbcContainer .block-left.small .recommend .product-name{
-  font-size: 14px;
-}
-.sourcingAbcContainer .block-left.big .watch .product-name,
-.sourcingAbcContainer .block-left.big .recommend .product-name{
-  font-size: 20px;
-}
-.sourcingAbcContainer .block-left.biggest .watch .product-name,
-.sourcingAbcContainer .block-left.biggest .recommend .product-name{
-  font-size: 24px;
-}*/
 
 .sourcingAbcContainer .block-right{
-  min-height: 890px;
-  width: 84.5%;
-  margin-left: 15.5%;
+  width: calc(100% - 340px);
+  margin-left: 340px;
 }
 .sourcingAbcContainer .block-right .redLine{
   background: url(../images/showcase-redLine.png);
@@ -600,16 +470,7 @@ body, html {
   color: black;
   text-transform: uppercase;
   padding-left: 10px;
-  font-size: 18px;
-}
-.sourcingAbcContainer .block-right.small .product .product-name{
-  font-size: 16px;
-}
-.sourcingAbcContainer .block-right.big .product .product-name{
-  font-size: 22px;
-}
-.sourcingAbcContainer .block-right.biggest .product .product-name{
-  font-size: 26px;
+  font-size: 10px;
 }
 .sourcingAbcContainer .block-right .product:after {
   content: "";
@@ -657,6 +518,10 @@ body, html {
 .sourcingAbcContainer .block-right .product .product-form-details .big{
   text-transform: uppercase;
 }
+.sourcingAbcContainer .block-right .product .product-form-details .big,
+.sourcingAbcContainer .block-right .product .product-form-details .small{
+  font-size: 9px;
+}
 
 .sourcingAbcContainer .block-left #cssmenu,
 .sourcingAbcContainer .block-left #cssmenu ul,
@@ -679,6 +544,11 @@ body, html {
   color: #ffffff;
   height: 85.5%;
 }
+.sourcingAbcContainer .block-left #cssmenu .sub-title{
+  text-transform: uppercase;
+  font-size: 11px;
+  padding: 6px;
+}
 .sourcingAbcContainer .block-left #cssmenu > ul{
   height: 100%;
   background: #212121;
@@ -690,7 +560,7 @@ body, html {
 }
 .sourcingAbcContainer .block-left #cssmenu ul ul li{
   display: inline-block;
-  width: 50%;
+  width: calc(50% - 2px);
 }
 .align-right {
   float: right;
@@ -699,7 +569,7 @@ body, html {
   padding: 6px 17px;
   cursor: pointer;
   z-index: 2;
-  font-size: 15px;
+  font-size: 12px;
   text-transform: uppercase;
   text-decoration: none;
   color: #ffffff;
@@ -811,27 +681,12 @@ body, html {
   line-height: 23px;
   z-index: 1;
   text-decoration: none;
-  font-size: 13px;
+  font-size: 10px;
   color: #eeeeee;
   background: #49505a;
   text-transform: uppercase;
   height: 25px;
-  padding: 2px 7px;
-}
-.sourcingAbcContainer .block-left.small #cssmenu ul ul li a {
-  height: 20px;
-  font-size: 12px;
-  padding: 0 0 0 7px;
-}
-.sourcingAbcContainer .block-left.big #cssmenu ul ul li a {
-  font-size: 17px;
-  padding: 7px 15px;
-  height: 35px;
-}
-.sourcingAbcContainer .block-left.biggest #cssmenu ul ul li a {
-  font-size: 21px;
-  padding: 10px 15px;
-  height: 40px;
+  padding: 2px 14px;
 }
 .sourcingAbcContainer .block-left #cssmenu ul ul li:hover > a,
 .sourcingAbcContainer .block-left #cssmenu ul ul li.open > a,
@@ -1564,11 +1419,15 @@ body, html {
   background-size: 100% 100%;
 }
 .productFormsContainer .cycle{
-  width: 750px;
-  height: 750px;
+  /*width: 750px;
+  height: 750px;*/
   position: absolute;
-  left: calc(50% - 350px);
-  top: calc(50% - 350px);
+  /*left: calc(50% - 350px);*/
+  /*top: calc(50% - 350px);*/
+  width: 500px;
+  height: 500px;
+  left: calc(50% - 225px);
+  top: calc(50% - 225px);
   background: black;
   border: 1px solid transparent;
   border-radius: 50%;
@@ -1586,9 +1445,12 @@ body, html {
 .productFormsContainer .cycle .form4,
 .productFormsContainer .cycle .form4-active{
   position: absolute;
-  width: 1055px;
+  /*width: 1055px;
   top: -75px;
-  left: -150px;
+  left: -150px;*/
+  width: 710px;
+  top: -52px;
+  left: -104px;
 }
 .productFormsContainer .cycle .form1-active,
 .productFormsContainer .cycle .form2-active,
@@ -1648,30 +1510,174 @@ body, html {
 .productFormsContainer .cycle .text4{
   position: absolute;
   color: white;
-  font-size: 60px;
+  /*font-size: 60px;*/
+  font-size: 45px;
 }
+
 .productFormsContainer .cycle .text1{
-  left: 275px;
-  top: 330px;
+  left: 175px;
+  top: 210px;
 }
+.productFormsContainer .cycle .text4,
 .productFormsContainer .cycle .text2{
-  left: 250px;
-  top: 320px;
+  left: 155px;
+  top: 210px;
   display: none;
 }
 .productFormsContainer .cycle .text3{
-  left: 250px;
-  top: 300px;
+  left: 155px;
+  top: 190px;
   display: none;
 }
 .productFormsContainer .cycle .text3_2{
-  left: 290px;
-  top: 360px;
-  display: none;
-}
-.productFormsContainer .cycle .text4{
-  left: 250px;
-  top: 335px;
+  left: 170px;
+  top: 250px;
   display: none;
 }
 /* / Product Forms*/
+@media screen and (min-width: 1580px) {
+  /*ABC*/
+  .sourcingAbcContainer .block-right .product .product-form-details .big,
+  .sourcingAbcContainer .block-right .product .product-name {
+    font-size: 14px;
+  }
+  .sourcingAbcContainer .block-right .product .product-form-details .small{
+    font-size: 12px;
+}
+
+@media screen and (min-width: 1900px) {
+  .sourcingContainer .block1,
+  .sourcingContainer .block2,
+  .sourcingContainer .block3,
+  .sourcingContainer .block4,
+  .sourcingContainer .block5,
+  .sourcingContainer .block6{
+    width: 218px;
+    height: 218px;
+  }
+  .sourcingContainer .block1-bg,
+  .sourcingContainer .block2-bg,
+  .sourcingContainer .block3-bg,
+  .sourcingContainer .block4-bg,
+  .sourcingContainer .block5-bg,
+  .sourcingContainer .block6-bg{
+    width: 212px;
+    height: 212px;
+  }
+  .sourcingContainer .content {
+    width: 1060px;
+    height: 600px;
+    left: calc(50% - 530px);
+    top: calc(50% - 300px);
+  }
+  .sourcingContainer .block1,
+  .sourcingContainer .block2,
+  .sourcingContainer .block3{
+    top: 160px;
+  }
+  .sourcingContainer .block1-bg,
+  .sourcingContainer .block2-bg,
+  .sourcingContainer .block3-bg{
+    top: 162px;
+  }
+  .sourcingContainer .block4,
+  .sourcingContainer .block5,
+  .sourcingContainer .block6{
+    top: 335px;
+  }
+  .sourcingContainer .block4-bg,
+  .sourcingContainer .block5-bg,
+  .sourcingContainer .block6-bg{
+    top: 337px;
+  }
+  .sourcingContainer .block2 {
+    left: 395px;
+  }
+  .sourcingContainer .block2-bg {
+    left: 398px;
+  }
+  .sourcingContainer .block3 {
+    left: 725px;
+  }
+  .sourcingContainer .block3-bg {
+    left: 728px;
+  }
+  .sourcingContainer .block4 {
+    left: 890px;
+  }
+  .sourcingContainer .block4-bg {
+    left: 893px;
+  }
+  .sourcingContainer .block5 {
+    left: 560px;
+  }
+  .sourcingContainer .block5-bg {
+    left: 563px;
+  }
+  .sourcingContainer .block6 {
+    left: 225px;
+  }
+  .sourcingContainer .block6-bg {
+    left: 228px;
+  }
+  .sourcingContainer .block4-bg.move,
+  .sourcingContainer .block5-bg.move,
+  .sourcingContainer .block6-bg.move{
+    margin-top: 25px;
+  }
+
+  /*Product Form*/
+  .productFormsContainer .cycle{
+    width: 750px;
+    height: 750px;
+    left: calc(50% - 350px);
+    top: calc(50% - 350px);
+  }
+
+  .productFormsContainer .cycle .form1,
+  .productFormsContainer .cycle .form1-active,
+  .productFormsContainer .cycle .form2,
+  .productFormsContainer .cycle .form2-active,
+  .productFormsContainer .cycle .form3,
+  .productFormsContainer .cycle .form3-active,
+  .productFormsContainer .cycle .form4,
+  .productFormsContainer .cycle .form4-active{
+    width: 1055px;
+    top: -75px;
+    left: -150px;
+  }
+  .productFormsContainer .cycle .text1,
+  .productFormsContainer .cycle .text2,
+  .productFormsContainer .cycle .text3,
+  .productFormsContainer .cycle .text3_2,
+  .productFormsContainer .cycle .text4{
+    font-size: 60px;
+  }
+
+  .productFormsContainer .cycle .text1{
+    left: 270px;
+    top: 325px;
+  }
+  .productFormsContainer .cycle .text4,
+  .productFormsContainer .cycle .text2{
+    left: 250px;
+    top: 325px;
+  }
+  .productFormsContainer .cycle .text3{
+    left: 240px;
+    top: 290px;
+  }
+  .productFormsContainer .cycle .text3_2{
+    left: 280px;
+    top: 370px;
+  }
+
+  /*ABC*/
+  .sourcingAbcContainer .block-right .product .product-form-details .big,
+  .sourcingAbcContainer .block-right .product .product-name {
+    font-size: 16px;
+  }
+  .sourcingAbcContainer .block-right .product .product-form-details .small{
+    font-size: 14px;
+  }
+}

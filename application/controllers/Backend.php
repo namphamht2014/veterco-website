@@ -37,6 +37,7 @@ class Backend extends CI_Controller{
       );
 
       $data['user'] = $this->Users_model->getUserByID($this->session->userdata['loggedIn']->id);
+      $data['user'][0]->username = $data['user'][0]->ten;
 
       $this->load->view('template/header', $data);
       $this->load->view('backend/myinfo');

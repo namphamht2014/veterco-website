@@ -329,6 +329,15 @@ body, html {
   height: 100%;
   min-height: 1000px;
 }
+.sourcingAbcContainer .block-left.height2{
+  min-height: 1300px;
+}
+.sourcingAbcContainer .block-left.height3{
+  min-height: 1350px;
+}
+.sourcingAbcContainer .block-left.height4{
+  min-height: 1400px;
+}
 .sourcingAbcContainer .block-left .title{
   padding-left: 15px;
   color: #e83643;
@@ -462,8 +471,7 @@ body, html {
   text-align: left;
   padding: 10px;
 }
-.sourcingAbcContainer .block-right .product img,
-.sourcingAbcContainer .block-right .product .product-name{
+.sourcingAbcContainer .block-right .product img{
   width: 75%;
 }
 .sourcingAbcContainer .block-right .product .product-name{
@@ -471,6 +479,10 @@ body, html {
   text-transform: uppercase;
   padding-left: 10px;
   font-size: 10px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  width: 100%;
+  white-space: nowrap;
 }
 .sourcingAbcContainer .block-right .product:after {
   content: "";

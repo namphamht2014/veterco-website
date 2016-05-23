@@ -8,6 +8,7 @@ class Fsourcing extends CI_Controller {
     $this->load->language('frontend_lang');
     $this->load->library('user_agent');
     date_default_timezone_set('Asia/Saigon');
+    $this->load->model('Sanpham_model', 'database');
   }
 
   public function index()
@@ -53,6 +54,34 @@ class Fsourcing extends CI_Controller {
     //Page title
     $data['title'] = '- '.$this->lang->line('f_sourcing_abc');
 
+    $data['sortBy'] = 'newest';
+    $data['filterBy'] = [
+      'animal' => '',
+      'category' => '',
+      'serie' => '',
+      'form' => ''
+    ];
+    $limit = 24;
+    $url = parse_url($_SERVER['REQUEST_URI']);
+    if (isset($url['query'])) {
+      $limit = 0;
+      parse_str($url['query'], $params);
+      $data['sortBy'] = (isset($params['sort'])? $params['sort']: 'newest');
+      $data['filterBy']['animal'] = (isset($params['animaltype'])? $params['animaltype']: '');
+      $data['filterBy']['category'] = (isset($params['category'])? str_replace('AND', '&', $params['category']): '');
+      $data['filterBy']['serie'] = (isset($params['serie'])? $params['serie']: '');
+      $data['filterBy']['form'] = (isset($params['form'])? $params['form']: '');
+    }
+
+    $tmp = 0;
+    foreach ($data['filterBy'] as $key => $value) {
+      if ($value != '') $tmp++;
+    }
+
+    $data['blockHeight'] = $tmp;
+
+    $data['products'] = $this->database->getAllWith($limit, $data['sortBy'], $data['filterBy']);
+
     //Add css to page
     $data['headers'] = array(
       base_url().'assets/css/fhome.css',
@@ -83,7 +112,7 @@ class Fsourcing extends CI_Controller {
     });';
 
     $this->load->view('template/header', $data);
-    $this->load->view('frontend/sourcing_abc');
+    $this->load->view('frontend/sourcing_abc', $data);
     $this->load->view('template/footer');
   }
 

@@ -301,6 +301,93 @@ $( document ).ready(function() {
 });
 } )( jQuery );
 
+var productSearch = {
+  defaultUrl: '/index.php/fsourcing/abc',
+  doSort: function (sortType) {
+    var newUrl = productSearch.defaultUrl+'?';
+    var params = [];
+
+    params.push('sort='+sortType);
+    sessionStorage.sortBy = sortType;
+
+    if (sessionStorage.animalType) {
+      params.push('animaltype='+sessionStorage.animalType);
+    }
+    if (sessionStorage.category) {
+      var filterStr = sessionStorage.category.replace('&', 'AND');
+      params.push('category='+filterStr);
+    }
+    if (sessionStorage.serie) {
+      params.push('serie='+sessionStorage.serie);
+    }
+    if (sessionStorage.form) {
+      params.push('form='+sessionStorage.form);
+    }
+
+    window.location.href = newUrl+params.join('&');
+  },
+  doFilter: function (element, filterBy, filterStr) {
+    var theParent = $(element).parent();
+
+    var newUrl = productSearch.defaultUrl+'?';
+    var params = [];
+    if (sessionStorage.sortBy) {
+      params.push('sort='+sessionStorage.sortBy);
+    }
+
+    if (filterBy == 'animal') {
+      if (theParent.hasClass('active')) {
+        theParent.removeClass('active');
+        delete sessionStorage.animalType;
+      }else{
+        params.push('animaltype='+filterStr);
+        sessionStorage.animalType = filterStr;
+      }
+    }else if (sessionStorage.animalType) {
+      params.push('animaltype='+sessionStorage.animalType);
+    }
+
+    if (filterBy == 'category') {
+      if (theParent.hasClass('active')) {
+        theParent.removeClass('active');
+        delete sessionStorage.category;
+      }else{
+        sessionStorage.category = filterStr;
+        filterStr = filterStr.replace('&', 'AND');
+        params.push('category='+filterStr);
+      }
+    }else if (sessionStorage.category) {
+      var filterStr2 = sessionStorage.category.replace('&', 'AND');
+      params.push('category='+filterStr2);
+    }
+
+    if (filterBy == 'serie') {
+      if (theParent.hasClass('active')) {
+        theParent.removeClass('active');
+        delete sessionStorage.serie;
+      }else{
+        sessionStorage.serie = filterStr;
+        params.push('serie='+filterStr);
+      }
+    }else if (sessionStorage.serie) {
+      params.push('serie='+sessionStorage.serie);
+    }
+    if (filterBy == 'form') {
+      if (theParent.hasClass('active')) {
+        theParent.removeClass('active');
+        delete sessionStorage.form;
+      }else{
+        sessionStorage.form = filterStr;
+        params.push('form='+filterStr);
+      }
+    }else if (sessionStorage.form) {
+      params.push('form='+sessionStorage.form);
+    }
+
+    window.location.href = newUrl+params.join('&');
+  }
+};
+
 jQuery(window).load(function () {
   var winWidth = $(window).width();
   //abc showcase

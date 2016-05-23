@@ -7,6 +7,7 @@ class Products extends CI_Controller{
     parent::__construct();
     //Codeigniter : Write Less Do More
     $this->checkLogin();
+    date_default_timezone_set('Asia/SaiGon');
     $this->form_validation->set_error_delimiters('<div class="alert alert-danger">', '</div>');
     $this->load->model('Sanpham_model', 'database');
     $this->load->model('Thanhphan_model', 'database_tp');
@@ -168,6 +169,8 @@ class Products extends CI_Controller{
     }
     else
     {
+      ini_set('memory_limit', '256M');
+      ini_set('max_execution_time', 300);
       $uploadData = array('upload_data' => $this->upload->data());
       $file = $uploadData['upload_data']['full_path'];
       $objPHPExcel= PHPExcel_IOFactory::load($file);
@@ -187,45 +190,44 @@ class Products extends CI_Controller{
       $data['values'] = $arr_data;
 
       foreach ($arr_data as $key => $value) {
-        if (isset($value['D']) && $value['D'] !='' &&
-            isset($value['E']) && $value['E'] != '') {
+        if (isset($value['E']) && $value['E'] !='' &&
+            isset($value['F']) && $value['F'] != '') {
           $ten = (isset($value['B'])) ? $value['B'] : '' ;
-          $dong = $this->database->getDong($value['D']);
+          $dong = $this->database->getDong($value['E']);
           if (!$dong) {
-            $dongID = $this->database_dong->save(array('ten' => $value['D']));
+            $dongID = $this->database_dong->save(array('ten' => strtolower($value['E'])));
             $objDong = new stdClass();
             $objDong->id = $dongID;
             $dong = array($objDong);
           }
-          $nhom = $this->database->getNhom($value['E']);
+          $nhom = $this->database->getNhom($value['F']);
           if (!$nhom) {
-            $nhomID = $this->database_nhom->save(array('ten' => $value['E']));
+            $nhomID = $this->database_nhom->save(array('ten' => strtolower($value['F'])));
             $objNhom = new stdClass();
             $objNhom->id = $nhomID;
             $nhom = array($objNhom);
           }
-          $phanloai = $this->database->getPhanloai($value['F']);
+          $phanloai = $this->database->getPhanloai($value['G']);
           if (!$phanloai) {
-            $phanloaiID = $this->database_phanloai->save(array('ten' => $value['F']));
+            $phanloaiID = $this->database_phanloai->save(array('ten' => $value['G']));
             $objPhanloai = new stdClass();
             $objPhanloai->id = $phanloaiID;
             $phanloai = array($objPhanloai);
           }
-          $mota = (isset($value['G'])) ? $value['G'] : '' ;
-          $chidinh = (isset($value['H'])) ? $value['H'] : '' ;
-          $chongchidinh = (isset($value['I'])) ? $value['I'] : '' ;
-          $lieudung = (isset($value['J'])) ? $value['J'] : '' ;
-          $cachdung = (isset($value['K'])) ? $value['K'] : '' ;
+          $mota = (isset($value['H'])) ? $value['H'] : '' ;
+          $chidinh = (isset($value['I'])) ? $value['I'] : '' ;
+          $chongchidinh = (isset($value['J'])) ? $value['J'] : '' ;
+          $lieudung = (isset($value['K'])) ? $value['K'] : '' ;
+          $cachdung = (isset($value['L'])) ? $value['L'] : '' ;
 
           $thuArr = array(
-            'Fish' => (isset($value['L'])) ? 1 : 0 ,
-            'Shirmp' => (isset($value['M'])) ? 1 : 0 ,
-            'Pig' => (isset($value['N'])) ? 1 : 0 ,
-            'Chicken' => (isset($value['O'])) ? 1 : 0 ,
-            'Poultry' => (isset($value['P'])) ? 1 : 0 ,
-            'Pets' => (isset($value['Q'])) ? 1 : 0 ,
-            'Buffalo' => (isset($value['R'])) ? 1 : 0 ,
-            'Cattle' => (isset($value['S'])) ? 1 : 0 ,
+            'Fish' => (isset($value['M'])) ? 1 : 0 ,
+            'Shirmp' => (isset($value['N'])) ? 1 : 0 ,
+            'Pig' => (isset($value['O'])) ? 1 : 0 ,
+            'Pets' => (isset($value['P'])) ? 1 : 0 ,
+            'Poultry' => (isset($value['Q'])) ? 1 : 0 ,
+            'Cattle' => (isset($value['R'])) ? 1 : 0 ,
+            'Buffalo' => (isset($value['S'])) ? 1 : 0 ,
             'Horse' => (isset($value['T'])) ? 1 : 0 ,
             'Camel' =>(isset($value['U'])) ? 1 : 0
           );
@@ -236,10 +238,11 @@ class Products extends CI_Controller{
             }
           }
           $productData = array(
-            'ten' => $ten,
+            'ten' => strtolower($ten),
             'dongID' => $dong[0]->id,
             'nhomID' => $nhom[0]->id,
             'phanloaiID' => $phanloai[0]->id,
+            'dang' => strtolower($value['D']),
             'mota' => $mota,
             'chidinh' => $chidinh,
             'chongchidinh' => $chongchidinh,

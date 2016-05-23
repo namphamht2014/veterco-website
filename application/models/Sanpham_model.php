@@ -47,12 +47,45 @@ class Sanpham_model extends CI_Model{
 
   function getAll($limit)
   {
-    $this->db->select('sanpham.id as spID, sanpham.ten as tensp, sanpham.lieudung, sanpham.khoiluong, nhomsp.ten as tenNhom');
+    $this->db->select('sanpham.id as spID, sanpham.ten as tensp, sanpham.lieudung, sanpham.khoiluong, sanpham.dang as formsp, nhomsp.ten as tenNhom');
     $this->db->join('nhomsp', 'sanpham.nhomID = nhomsp.id');
     $this->db->where('sanpham.status', 1);
     $this->db->order_by('sanpham.id', 'desc');
     if ($limit > 0) {
       $this->db->limit($limit);
+    }
+    $query = $this->db->get('sanpham');
+    return $query->result();
+  }
+
+  function getAllWith($limit=0, $orderBy='', $filterBy=array())
+  {
+    $this->db->select('sanpham.id as spID, sanpham.ten as tensp, sanpham.lieudung, sanpham.khoiluong, sanpham.dang as formsp, nhomsp.ten as tenNhom');
+    $this->db->join('nhomsp', 'sanpham.nhomID = nhomsp.id');
+    $this->db->join('loaithu', 'sanpham.loaithuID = loaithu.id');
+    $this->db->join('dongsp', 'sanpham.dongID = dongsp.id');
+    $this->db->where('sanpham.status', 1);
+    if ($limit > 0) {
+      $this->db->limit($limit);
+    }
+    if ($orderBy != '') {
+      if ($orderBy == 'newest') {
+        $this->db->order_by('sanpham.ngaytao', 'desc');
+      } else if($orderBy == 'name'){
+        $this->db->order_by('sanpham.ten', 'asc');
+      }
+    }
+    if ($filterBy['animal'] != '') {
+      $this->db->where('loaithu.ten', $filterBy['animal']);
+    }
+    if ($filterBy['category'] != '') {
+      $this->db->where('nhomsp.ten', $filterBy['category']);
+    }
+    if ($filterBy['serie'] != '') {
+      $this->db->where('dongsp.ten', $filterBy['serie']);
+    }
+    if ($filterBy['form'] != '') {
+      $this->db->where('sanpham.dang', $filterBy['form']);
     }
     $query = $this->db->get('sanpham');
     return $query->result();
@@ -66,6 +99,24 @@ class Sanpham_model extends CI_Model{
     $this->db->where('status', 1);
     $query = $this->db->get('dongsp');
     return $query->result();
+  }
+
+  function saveBenh($name='')
+  {
+    $this->db->where('ten', $name);
+    $this->db->where('status', 1);
+    $check = $this->db->get('loaibenh');
+    if ($check->num_rows()) {
+      $tmpObj = $check->row();
+      return $tmpObj->id;
+    }else{
+      $this->db->insert('loaibenh', array('ten'=>$name));
+      return $this->db->insert_id();
+    }
+  }
+  function saveBenh2($value='')
+  {
+    $this->db->insert_batch('benhcuathu', $value);
   }
 
   function getNhom($name='')

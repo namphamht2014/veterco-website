@@ -59,7 +59,8 @@ class Fsourcing extends CI_Controller {
       'animal' => '',
       'category' => '',
       'serie' => '',
-      'form' => ''
+      'form' => '',
+      'searchStr' => ''
     ];
     $limit = 24;
     $url = parse_url($_SERVER['REQUEST_URI']);
@@ -71,6 +72,7 @@ class Fsourcing extends CI_Controller {
       $data['filterBy']['category'] = (isset($params['category'])? str_replace('AND', '&', $params['category']): '');
       $data['filterBy']['serie'] = (isset($params['serie'])? $params['serie']: '');
       $data['filterBy']['form'] = (isset($params['form'])? $params['form']: '');
+      $data['filterBy']['searchStr'] = (isset($params['searchStr'])? str_replace('AND', '&', $params['searchStr']): '');
     }
 
     $tmp = 0;

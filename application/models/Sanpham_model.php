@@ -87,6 +87,9 @@ class Sanpham_model extends CI_Model{
     if ($filterBy['form'] != '') {
       $this->db->where('sanpham.dang', $filterBy['form']);
     }
+    if ($filterBy['searchStr'] != '') {
+      $this->db->like('sanpham.ten', $filterBy['searchStr']);
+    }
     $query = $this->db->get('sanpham');
     return $query->result();
   }

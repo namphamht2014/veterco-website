@@ -396,6 +396,7 @@ body, html {
   width: 100%;
   color: white;
   padding-right: 25px;
+  padding-left: 12px;
 }
 .sourcingAbcContainer .block-left .search:after{
   content: '';

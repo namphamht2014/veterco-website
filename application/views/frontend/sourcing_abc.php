@@ -20,7 +20,7 @@
     <div class="blocks">
       <div class="block-left height<?= $blockHeight?>">
         <section class="search">
-          <input type="text" name="name" value="" class="tfSearch">
+          <input type="text" name="name" value="<?= $filterBy['searchStr']?>" class="tfSearch">
         </section>
         <section class="view">
           <div class="title">

@@ -300,7 +300,6 @@ $( document ).ready(function() {
 	$('#cssmenu>ul>li.has-sub>a').append('<span class="holder"></span>');
 });
 } )( jQuery );
-
 var productSearch = {
   defaultUrl: '/index.php/fsourcing/abc',
   doSort: function (sortType) {
@@ -322,6 +321,10 @@ var productSearch = {
     }
     if (sessionStorage.form) {
       params.push('form='+sessionStorage.form);
+    }
+    if (sessionStorage.searchStr) {
+      var newStr = sessionStorage.searchStr.replace('&', 'AND');
+      params.push('searchStr='+newStr);
     }
 
     window.location.href = newUrl+params.join('&');
@@ -383,10 +386,27 @@ var productSearch = {
     }else if (sessionStorage.form) {
       params.push('form='+sessionStorage.form);
     }
+    var filterStr3 = '';
+    if (filterBy == 'string') {
+      sessionStorage.searchStr = filterStr;
+      filterStr3 = sessionStorage.searchStr.replace('&', 'AND');
+      params.push('searchStr='+filterStr);
+    }else if (sessionStorage.searchStr) {
+      filterStr3 = sessionStorage.searchStr.replace('&', 'AND');
+      params.push('searchStr='+filterStr3);
+      $('.tfSearch').val(sessionStorage.searchStr);
+    }
 
     window.location.href = newUrl+params.join('&');
   }
 };
+$('.tfSearch').keyup(function (e) {
+  if (e.keyCode == 13) {
+    if ($(this).val() !== '') {
+      productSearch.doFilter(this, 'string', $(this).val());
+    }
+  }
+});
 
 jQuery(window).load(function () {
   var winWidth = $(window).width();

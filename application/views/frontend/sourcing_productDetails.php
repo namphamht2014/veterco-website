@@ -7,39 +7,30 @@
     </div>
   </div>
   <div class="content">
+    <div class="diamond-block"></div>
     <div class="diamond">
       <div class="desc">
-        <div class="title">
-          ANTIPARASITICS
-        </div>
-        <div class="subtitle">
-          Antiparasitics Treatment
-        </div>
+        <div class="title"><?= $productObj->tensp?></div>
+        <div class="subtitle"><?= $productObj->tenNhom?></div>
         <div class="product-info-group">
           <div class="product-info">
-            <div class="weight">100 GM</div>
-            <div class="form">Water Soluble power</div>
+            <div class="weight"><?= $productObj->khoiluong?></div>
+            <div class="form"><?= $productObj->formsp?></div>
             <div class="product-desc">
               <div class="title">
-                <span>Indicatons:</span> Stimulate weight gain, help pigs for with shiny skin,
-                prevent many diseases caused by diarrhea in piglets.
+                <span>Description:</span> <?= $productObj->mota?>
               </div>
               <div class="title">
-                <span>Dosage:</span> Mix 100 g into 40kg of feed. Should be mix a feed intake approximately 2-3 kg, before mixing.
+                <span>Indication:</span> <?= $productObj->chidinh?>
               </div>
               <div class="title">
-                <span>Indicatons:</span> Stimulate weight gain, help pigs for with shiny skin,
-                prevent many diseases caused by diarrhea in piglets.
+                <span>Contra-Indication:</span> <?= $productObj->chongchidinh?>
               </div>
               <div class="title">
-                <span>Dosage:</span> Mix 100 g into 40kg of feed. Should be mix a feed intake approximately 2-3 kg, before mixing.
+                <span>Dosage and Administration:</span> <?= $productObj->lieudung?>
               </div>
               <div class="title">
-                <span>Indicatons:</span> Stimulate weight gain, help pigs for with shiny skin,
-                prevent many diseases caused by diarrhea in piglets.
-              </div>
-              <div class="title">
-                <span>Dosage:</span> Mix 100 g into 40kg of feed. Should be mix a feed intake approximately 2-3 kg, before mixing.
+                <span>Withdrawal period:</span> <?= $productObj->cachdung?>
               </div>
             </div>
             <div class="more">

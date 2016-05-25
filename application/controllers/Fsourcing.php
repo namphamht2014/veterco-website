@@ -138,6 +138,12 @@ class Fsourcing extends CI_Controller {
       $data['headers'][] = base_url().'assets/css/fsourcing_firefox.css';
     }
 
+    $productObj = $this->database->getProductWithID($type);
+    // print_r($productObj);exit;
+    $data['productObj'] = $productObj;
+
+    $type = 1;
+
     //add js to page
     $data['footers'] = array(
       base_url().'assets/bower_components/jquery.easing/js/jquery.easing.min.js',
@@ -152,11 +158,11 @@ class Fsourcing extends CI_Controller {
       $(".footer2").attr("style", "position: relative");
       $(".sourcingProductDetailsContainer .diamond .desc > .title").addClass("line'.$type.'");
       $(".sourcingProductDetailsContainer .bottle").attr("style", "background: url(/assets/images/productDetails-line'.$type.'-bottle.png) no-repeat center center;background-size: 100% 100%;");
-      $(".sourcingProductDetailsContainer .diamond").attr("style", "background: url(/assets/images/productDetails-line'.$type.'-diamond.png) no-repeat center center;background-size: 100% 100%;");
+      $(".sourcingProductDetailsContainer .diamond-block").attr("style", "background: url(/assets/images/productDetails-line'.$type.'-diamond.png) no-repeat center center;background-size: 100% 100%;");
     });';
 
     $this->load->view('template/header', $data);
-    $this->load->view('frontend/sourcing_productDetails');
+    $this->load->view('frontend/sourcing_productDetails', $data);
     $this->load->view('template/footer');
   }
 

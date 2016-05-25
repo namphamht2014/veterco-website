@@ -88,10 +88,23 @@ class Sanpham_model extends CI_Model{
       $this->db->where('sanpham.dang', $filterBy['form']);
     }
     if ($filterBy['searchStr'] != '') {
-      $this->db->like('sanpham.ten', $filterBy['searchStr']);
+      $this->db->like('vtc_sanpham.ten', $filterBy['searchStr']);
     }
     $query = $this->db->get('sanpham');
     return $query->result();
+  }
+
+  function getProductWithID($productID='')
+  {
+    $this->db->select('sanpham.id as spID, sanpham.ten as tensp, sanpham.mota, sanpham.chidinh, sanpham.chongchidinh, sanpham.lieudung, sanpham.cachdung, sanpham.khoiluong, sanpham.dang as formsp, nhomsp.ten as tenNhom');
+    $this->db->join('nhomsp', 'sanpham.nhomID = nhomsp.id');
+    $this->db->join('loaithu', 'sanpham.loaithuID = loaithu.id');
+    $this->db->join('dongsp', 'sanpham.dongID = dongsp.id');
+    $this->db->where('sanpham.status', 1);
+    $this->db->where('sanpham.id', $productID);
+    $this->db->limit(1);
+    $query = $this->db->get('sanpham');
+    return $query->row();
   }
 
   function getDong($name='')

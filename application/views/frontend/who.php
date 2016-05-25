@@ -143,7 +143,7 @@
               </div>
               <div class="manu2 rotate-45 p-ab">
                 <img src="/assets/images/who-manu-4.png" alt="" class="blockItem"/>
-                <div class="text1 rotate-nag-45 p-ab">HIGHT-QUALITY</div>
+                <div class="text1 rotate-nag-45 p-ab">HIGH-QUALITY</div>
                 <div class="text2 rotate-nag-45 p-ab">MANUFACTURING</div>
               </div>
               <div class="manu3 rotate-45 p-ab">

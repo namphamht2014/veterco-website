@@ -1040,52 +1040,28 @@ body, html {
 }
 .sourcingProductDetailsContainer .content{
   height: 100%;
-  width: 1500px;
+  width: 1000px;
   margin: auto;
   position: relative;
 }
 .sourcingProductDetailsContainer .bottle{
-  width: 38.15%;
-  height: 47.9%;
+  width: 382px;
+  height: 275px;
   position: absolute;
-  top: 170px;
-  left: 5%;
-}
-.sourcingProductDetailsContainer.small .bottle{
-  width: 31.1%;
-  height: 47.9%;
-  left: 15%;
-}
-.sourcingProductDetailsContainer.big .bottle{
-  width: 46.7%;
-  height: 47.9%;
-  left: -3%;
-}
-.sourcingProductDetailsContainer.biggest .bottle{
-  width: 57%;
-  height: 47.9%;
-  left: -15%;
+  top: calc(50% - 127px);
+  left: 30px;
 }
 .sourcingProductDetailsContainer .diamond{
-  width: 45.7%;
-  height: 75.2%;
+  width: 520px;
   position: absolute;
-  right: 5%;
+  right: 0;
+  top: calc(50% - 220px);
 }
-.sourcingProductDetailsContainer.small .diamond{
-  width: 36.2%;
-  height: 75.2%;
-  right: 10%;
-}
-.sourcingProductDetailsContainer.big .diamond{
-  width: 55.9%;
-  height: 75.2%;
-  right: -5%;
-}
-.sourcingProductDetailsContainer.biggest .diamond{
-  width: 68.2%;
-  height: 75.2%;
-  right: -15%
+.sourcingProductDetailsContainer .diamond-block{
+  position: absolute;
+  width: 542px;
+  height: 550px;
+  right: 0;
 }
 .sourcingProductDetailsContainer .diamond .product-info{
   width: 68%;
@@ -1094,9 +1070,6 @@ body, html {
 .sourcingProductDetailsContainer .diamond .buttons{
   width: 31.3%;
   float: left;
-}
-.sourcingProductDetailsContainer .diamond .desc{
-  margin-top: 27%;
 }
 .sourcingProductDetailsContainer .diamond .desc > .title.line1{
   color: #ea7c27;
@@ -1124,19 +1097,15 @@ body, html {
 }
 .sourcingProductDetailsContainer .diamond .desc > .title{
   font-family: MyriadPro-Semibold;
-  font-size: 55px;
+  font-size: 45px;
   text-shadow: 3px 3px black;
   line-height: 49px;
-}
-.sourcingProductDetailsContainer.biggest .diamond .desc > .title{
-  font-size: 75px;
+  text-transform: uppercase;
 }
 .sourcingProductDetailsContainer .diamond .desc > .subtitle{
   font-family: MyriadPro-Semibold;
-  font-size: 27px;
-}
-.sourcingProductDetailsContainer.biggest .diamond .desc > .subtitle{
-  font-size: 37px;
+  font-size: 22px;
+  text-transform: capitalize;
 }
 .sourcingProductDetailsContainer .diamond .desc .product-info-group{
   margin-top: 20px;
@@ -1146,17 +1115,11 @@ body, html {
   font-size: 27px;
   line-height: 20px;
 }
-.sourcingProductDetailsContainer.biggest .diamond .desc .product-info .weight{
-  font-size: 37px;
-}
 .sourcingProductDetailsContainer .diamond .desc .product-info .form{
   font-family: MyriadPro-Semibold;
   font-size: 21px;
   font-style: italic;
   color: #a8403b;
-}
-.sourcingProductDetailsContainer.biggest .diamond .desc .product-info .form{
-  font-size: 31px;
 }
 .sourcingProductDetailsContainer .diamond .desc .product-info .product-desc .title,
 .sourcingProductDetailsContainer .diamond .desc .product-info-group .more{
@@ -1164,29 +1127,17 @@ body, html {
   font-family: MyriadPro;
   font-size: 18px;
 }
-.sourcingProductDetailsContainer.big .diamond .desc .product-info .product-desc .title{
-  font-size: 21px;
-}
-.sourcingProductDetailsContainer.biggest .diamond .desc .product-info .product-desc .title{
-  font-size: 26px;
-}
 .sourcingProductDetailsContainer .diamond .desc .product-info .product-desc .title span{
   font-family: MyriadPro-Semibold;
   font-size: 18px;
   color: #a8403b;
-}
-.sourcingProductDetailsContainer.big .diamond .desc .product-info .product-desc .title span{
-  font-size: 21px;
-}
-.sourcingProductDetailsContainer.biggest .diamond .desc .product-info .product-desc .title span{
-  font-size: 26px;
 }
 .sourcingProductDetailsContainer .diamond .desc .product-info-group .more{
   display: none;
 }
 .sourcingProductDetailsContainer .diamond .desc .product-info-group .more,
 .sourcingProductDetailsContainer .diamond .desc .product-info-group .product-desc{
-  height: 325px;
+  height: 300px;
   overflow-y: auto;
 }
 .sourcingProductDetailsContainer .diamond .desc .product-info-group .buttons{
@@ -1195,14 +1146,14 @@ body, html {
 .sourcingProductDetailsContainer .diamond .desc .product-info-group .buttons .line1 a > div,
 .sourcingProductDetailsContainer .diamond .desc .product-info-group .buttons .line2 a > div{
   border: 2px solid black;
-  width: 65px;
-  height: 60px;
+  width: 60px;
+  height: 55px;
   display: inline-block;
 }
 .sourcingProductDetailsContainer .diamond .desc .product-info-group .buttons .line3 a div{
   font-family: MyriadPro;
   border: 2px solid black;
-  width: 137px;
+  width: 128px;
   height: 60px;
   color: black;
   text-align: center;
@@ -1217,10 +1168,10 @@ body, html {
   font-size: 19px;
 }
 .sourcingProductDetailsContainer .diamond .desc .product-info-group .buttons .line1 a div.paper{
-  background: url(../images/productDetails-btnIcons.png) no-repeat center 10px;
+  background: url(../images/productDetails-btnIcons.png) no-repeat center 7px;
 }
 .sourcingProductDetailsContainer .diamond .desc .product-info-group .buttons .line2 a div.pointer{
-  background: url(../images/productDetails-btnIcons.png) no-repeat center -83px;
+  background: url(../images/productDetails-btnIcons.png) no-repeat center -85px;
 }
 .sourcingProductDetailsContainer .diamond .desc .product-info-group .buttons .line2 a div div.blackArrow{
   border-bottom: 20px solid black;
@@ -1231,7 +1182,7 @@ body, html {
   -o-transform: rotate(-45deg);
   transform: rotate(-45deg);
   width: 20px;
-  margin: 13px 20px;
+  margin: 11px 19px;
 }
 .sourcingProductDetailsContainer .diamond .desc .product-info-group .buttons .line1 a > div div.blackCircle{
   width: 25px;
@@ -1242,8 +1193,8 @@ body, html {
   -webkit-border-radius: 100%;
   -moz-border-radius: 100%;
   background: black;
-  margin-left: 19px;
-  margin-top: 15px;
+  margin-left: 16px;
+  margin-top: 14px;
 }
 .m-l-5{
   margin-left: 5px;
@@ -1556,6 +1507,11 @@ body, html {
   }
   .sourcingAbcContainer .block-right .product .product-form-details .small{
     font-size: 12px;
+  }
+  .sourcingProductDetailsContainer .diamond-block {
+    width: 641px;
+    height: 650px;
+  }
 }
 
 @media screen and (min-width: 1900px) {
@@ -1692,5 +1648,9 @@ body, html {
   }
   .sourcingAbcContainer .block-right .product .product-form-details .small{
     font-size: 14px;
+  }
+  .sourcingProductDetailsContainer .diamond-block{
+    width: 745px;
+    height: 756px;
   }
 }

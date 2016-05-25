@@ -15,9 +15,19 @@ var menus = {
   },
   hover: function (element) {
     element.nextElementSibling.childNodes[1].style.width = '280px';
+    element.nextElementSibling.childNodes[[3]].style.opacity = '1';
   },
   unhover: function (element) {
     element.nextElementSibling.childNodes[1].style.width = '242px';
+    element.nextElementSibling.childNodes[[3]].style.opacity = '0';
+  }
+};
+var labBlock = {
+  hover: function(element){
+    $(element).addClass('active');
+  },
+  blur: function(element){
+    $(element).removeClass('active');
   }
 };
 var logo = {
@@ -556,9 +566,9 @@ jQuery(window).load(function () {
         $('div.desc-line').attr('style', 'width:242px');
       }, 800);
     }, 2200);
-    setTimeout(function() {
+    /*setTimeout(function() {
       $('div.desc-content').attr('style', 'opacity:1;');
-    }, 3500);
+    }, 3500);*/
     /*Menus - end*/
   }, 500);
 });

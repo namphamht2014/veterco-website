@@ -784,6 +784,10 @@ body, html {
 }
 .lab2-article .block-container .block3 img{
   position: absolute;
+  right: 23%;
+  top: 22%;
+}
+.lab2-article .block-container .block3.active img{
   right: 13px;
   top: 5px;
 }
@@ -809,6 +813,10 @@ body, html {
   position: absolute;
   width: 200px;
   text-align: center;
+  top: 125px;
+  left: 0;
+}
+.lab2-article .block-container .block3.active .title{
   top: 70px;
   left: 52px;
 }
@@ -824,6 +832,10 @@ body, html {
   position: absolute;
   right: 10px;
   top: 95px;
+  display:none;
+}
+.lab2-article .block-container .block3.active .desc{
+  display:block;
 }
 .lab2-article .block-container .red-dot{
   width: 64px;

@@ -229,7 +229,7 @@
           International standard
         </div>
       </div>
-      <div class="block3">
+      <div class="block3" onmouseover="labBlock.hover(this);" onmouseout="labBlock.blur(this);">
         <img src="/assets/images/lab-block2.png" alt="" />
         <div class="title">
           Premium customer service
